@@ -9864,14 +9864,14 @@ blockquote.fancy cite {
   right: 0.75rem;
   margin-top: -1.6875rem;
   content: "\f107";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 5 Free solid';
   font-size: 3.75rem;
   font-weight: 900;
   color: #AD4200; }
 
 .is-active > .accordion-title::before {
   content: "\f106";
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 5 Free solid';
   font-size: 3.75rem;
   font-weight: 900;
   color: #AD4200; }
