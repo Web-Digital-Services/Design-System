@@ -1,7 +1,5 @@
 /* ============================================================
-
     TEXT STYLES
-
 ============================================================ */
 
 html {
@@ -23,16 +21,24 @@ body {
     line-height: 1.5;
 }
 
-h1 {
+h1,
+.h1 {
     margin-bottom: rem-calc(27px);
+    line-height: 1.5;
 }
 
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
     margin-bottom: rem-calc(18px);
+    line-height: 1.5;
 }
 
 label {
@@ -62,7 +68,6 @@ strong {
 
 .supersize {
     font-size: rem-calc(80px);
-
     @media screen and (max-width: 1022px) {
         font-size: rem-calc(38px);
     }
@@ -88,17 +93,14 @@ p {
         color: $blue-70;
         background-color: transparent !important;
     }
-
     &.filled {
         color: $off-white !important;
         background-color: $blue-70;
     }
-
     &.color {
         color: $blue;
         background-color: transparent;
     }
-
     &.filled {
         color: $off-white !important;
         background-color: $blue;
@@ -108,7 +110,6 @@ p {
 p.light {
     font-weight: 100;
 }
-
 
 .ruled {
     padding-bottom: 0.25em;
@@ -122,22 +123,18 @@ p.light {
 }
 
 // ======= Figcaption
-
 figcaption {
     color: $blue;
     font-style: italic;
     padding: rem-calc(2px);
     text-align: center;
     text-align: left;
-
     &.small {
         font-size: rem-calc(14px);
     }
-
     &.large {
         font-size: rem-calc(22px);
     }
-
     &.grey {
         color: $dark-grey;
     }
@@ -147,9 +144,8 @@ figcaption {
     color: $off-white !important;
 }
 
-
-
 // ======= Links
+
 /*%old-underline {
     border-radius: 1rem;
     border-top: .15rem solid $orange;
@@ -199,12 +195,10 @@ a {
     color: $orange;
     text-decoration: none;
     transition: .5s ease-out;
-
     &:hover {
         color: $dark-orange;
         text-decoration: none;
     }
-
     &:visited,
     &:focus {
         color: $dark-orange;
@@ -219,13 +213,10 @@ p {
         font-weight: $black-font-weight;
         font-size: 18.7px;
         @extend %link-underline;
-
-
         &:hover {
             @extend %link-underline-hover
         }
     }
-
     a.no-underline {
         background-image: none;
     }
@@ -241,7 +232,6 @@ a.arrow {
         margin-left: .3rem;
         transition: .5s ease-out;
     }
-
     &:hover:after {
         color: $dark-orange;
         transform: translatex(.2rem);
@@ -252,136 +242,100 @@ a.arrow {
 a.highlight {
     background-color: $orange;
     color: $off-white;
-    background-image: linear-gradient(transparent, transparent),
-                linear-gradient($dark-orange, $dark-orange) !important;
-
+    background-image: linear-gradient(transparent, transparent), linear-gradient($dark-orange, $dark-orange) !important;
     &:hover {
         color: $dark-orange;
         background-color: inherit;
     }
 }
 
-
-
 // ======= apply links to paragraph text on colored backgrounds
 .color {
     a {
         color: $off-white;
-
         &:hover {
             color: $off-white;
         }
-
         &:visited {
             color: $light-grey;
         }
-
     }
-
     p>a:not(.button) {
         background-image: linear-gradient($blue-link, $blue-link);
-
         color: $blue-link;
         padding-left: .5% !important;
         padding-right: .5% !important;
-
         &:hover {
-
             background-color: $blue-link;
             color: $blue-90;
         }
-
         &.arrow {
             &:after {
                 color: $blue-link;
             }
-
             &:hover:after {
                 color: $blue-90;
             }
         }
-
         &.highlight {
             background-color: $blue-10;
             color: $blue-90 !important;
-            background-image: linear-gradient(transparent, transparent),
-                linear-gradient($blue-link, $blue-link) !important;
-
+            background-image: linear-gradient(transparent, transparent), linear-gradient($blue-link, $blue-link) !important;
             &:hover {
                 color: $blue-link !important;
                 background-color: inherit !important;
             }
         }
-
     }
-
     &.orange,
     &.darken {
-
         p>a:not(.button) {
             background-image: linear-gradient($orange-link, $orange-link);
-
             color: $orange-link;
-
             &:hover {
-
                 background-color: $light-beige;
                 color: $orange-90;
             }
-
             &.arrow {
                 &:after {
                     color: $orange-link;
                 }
-
                 &:hover:after {
                     color: $orange-90;
                 }
             }
-
             &.highlight {
                 background-color: $light-beige;
                 color: $dark-orange !important;
                 background-image: linear-gradient(transparent, transparent), linear-gradient($orange-link, $orange-link) !important;
-
                 &:hover {
                     color: $orange-link !important;
                     background-color: inherit;
                 }
             }
-
         }
     }
-
     &.grey,
     &.dark-grey {
-
         p>a:not(.button) {
             background-image: linear-gradient($grey-link, $grey-link);
-
             color: $grey-link;
-
             &:hover {
-
                 background-color: $grey-link;
                 color: $grey-90;
             }
-
             &.arrow {
                 &:after {
                     color: $grey-link;
                 }
-
                 &:hover:after {
                     color: $grey-90;
                 }
             }
-
             &.highlight {
                 background-color: $grey-link;
                 color: $grey-90 !important;
                 background-image: linear-gradient(transparent, transparent), linear-gradient($grey-link, $grey-link) !important;
-
                 &:hover {
                     color: $grey-link !important;
                     background-color: inherit;
@@ -389,53 +343,42 @@ a.highlight {
             }
         }
     }
-
-
     .card,
     .callout {
         a:not(.button) {
             color: $orange;
-
             &:hover {
                 color: $dark-orange;
             }
-
             &:visited {
                 color: $dark-orange;
             }
         }
     }
-
 }
 
 .img-fill {
-
     p>a:not(.button) {
         background-image: linear-gradient($grey-link, $grey-link);
-
         color: $grey-link;
-
         &:hover {
-
             background-color: $grey-link;
             color: $grey-90;
         }
-
         &.highlight {
             background-color: $grey-link;
             color: $grey-90 !important;
             background-image: linear-gradient(transparent, transparent), linear-gradient($grey-link, $grey-link) !important;
-
             &:hover {
                 color: $grey-link !important;
                 background-color: transparent !important;
             }
         }
-
     }
 }
 
 //Apply underline effect to paragraph text
+
 /*p>a:not(.button, .no-underline):before {
     @extend %link-underline;
 }
@@ -459,14 +402,12 @@ Date
 
 .date {
     text-align: center;
-
     span:first-child {
         font-weight: 800;
         font-size: rem-calc(22px);
         text-transform: capitalize;
         line-height: .75;
     }
-
     span:last-child {
         font-weight: 900;
         font-size: rem-calc(40px);
