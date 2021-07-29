@@ -1,0 +1,78 @@
+/* ============================================================
+    QUICKFACTS
+============================================================ */
+
+.factoid {
+    padding: .5rem;
+    i {
+        color: $blue;
+    }
+    .supersize,
+    .h1,
+    .h2,
+    .h3 {
+        font-weight: 900;
+        font-family: $sans-serif-font;
+    }
+    .fa-5x {
+        @media screen and (max-width: 639px) {
+            font-size: 3.5rem;
+        }
+    }
+}
+
+.bleed.color {
+    .factoid {
+        i {
+            color: $off-white;
+        }
+    }
+}
+
+.cell.quickfact {
+    background-color: $beige;
+    padding: rem-calc(30px);
+    h3 {
+        padding-top: 0;
+        padding-bottom: 0.12rem;
+        border-bottom: #808a8f rem-calc(1px) solid;
+    }
+    h4 {
+        font-weight: 900;
+        font-family: $sans-serif-font;
+        color: $dark-orange;
+        margin-bottom: .25rem;
+    }
+    &.grey {
+        background-color: $light-grey !important;
+        h4 {
+            color: $dark-grey;
+        }
+    }
+    &.color {
+        color: $off-white !important;
+        background-color: $blue;
+        h4 {
+            color: $light-grey !important;
+        }
+        h3 {
+            border-bottom: $off-white rem-calc(1px) solid;
+        }
+        &.darken {
+            background-color: $dark-orange;
+            h4 {
+                color: $dark-beige !important;
+            }
+            h3 {
+                color: $dark-beige !important;
+                border-bottom: $beige rem-calc(1px) solid;
+            }
+        }
+        &.dark-grey {
+            background-color: $dark-grey;
+            h4 {
+                color: $light-grey !important;
+            }
+        }
+    }
+}

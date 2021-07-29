@@ -1,0 +1,233 @@
+/* ============================================================
+    NAVIGATION
+============================================================ */
+
+// ======= Breadcrumbs
+
+.breadcrumbs {
+    margin-top: 0 !important;
+}
+
+.breadcrumbs a {
+    color: $orange;
+    text-transform: none;
+    font-size: rem-calc(18px);
+    font-weight: 600;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    font-family: "Font Awesome 5 Free solid";
+    content: "\f105";
+    font-weight: 900;
+    color: $orange;
+    font-size: rem-calc(18px);
+}
+
+.breadcrumbs li:last-child {
+    color: $off-black;
+    font-weight: 200;
+    text-transform: none;
+    font-size: rem-calc(18px);
+}
+
+@media screen and (max-width:639px) {
+    .breadcrumbs li:first-child::before {
+        font-family: "Font Awesome 5 Free solid";
+        content: "\f104";
+        font-weight: 900;
+        color: $orange;
+        font-size: rem-calc(18px);
+    }
+}
+
+// ======= Pagination
+
+.pagination a {
+    color: $orange;
+    font-size: rem-calc(18px);
+    font-weight: 400;
+}
+
+.pagination a:hover,
+.pagination button:hover {
+    background-color: $light-beige;
+}
+
+.pagination .current {
+    background-color: $orange;
+    color: $off-white;
+    font-weight: 900;
+    font-size: rem-calc(18px);
+}
+
+.pagination-previous a::before {
+    font-family: "Font Awesome 5 Free solid";
+    content: "\f104";
+    font-weight: 900;
+}
+
+.pagination-next a::after {
+    font-family: "Font Awesome 5 Free solid";
+    content: "\f105";
+    font-weight: 900;
+}
+
+.pagination .ellipsis::after {
+    color: $orange;
+    font-size: rem-calc(18px);
+}
+
+// ======= Subnav
+.accordion-menu li:not(.nested li) {
+    border-bottom: rem-calc(1px) #99A3A8 solid;
+}
+
+.accordion-menu .is-active {
+    font-weight: 900 !important;
+    font-style: italic;
+    color: $dark-orange;
+}
+
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a::after {
+    font-family: "Font Awesome 5 Free solid";
+    content: "\f107";
+    font-weight: 900;
+    color: $orange;
+    font-size: rem-calc(18px);
+}
+
+.accordion-menu .is-accordion-submenu-parent[aria-expanded='true']>a::after {
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+}
+
+// ======= Navbar
+
+.nav-bar {
+    background-image: linear-gradient(to right,$orange, $orange 40%, $dark-orange 70%, $dark-orange);
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    .top-bar {
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        width: 1440px;
+
+        .top-bar-left {
+            ul {
+                background: $orange;
+
+                li {
+                    transition: .2s ease-in-out;
+                }
+
+                li:hover {
+                    background: $dark-orange;
+                }
+
+                li a {
+                    color: $off-white;
+                }
+            }
+        }
+
+        .top-bar-right {
+
+            border-left: rem-calc(3px) solid $gold;
+            background: $dark-orange;
+
+            ul {
+                background: $dark-orange;
+
+                li {
+                    transition: .2s ease-in-out;
+                }
+
+                li:hover {
+                    background: darken($color: $dark-orange, $amount: 5);
+                }
+
+                li a {
+                    color: $off-white;
+                }
+            }
+        }
+
+        .menu {
+            li {
+                font-size: rem-calc(22px);
+            }
+        }
+
+        &.utility {
+
+            background: $light-grey;
+
+            .top-bar-left {
+                ul {
+                    background: $light-grey;
+
+                    li {
+
+                        border-right: rem-calc(1px) solid $dark-grey;
+
+                        a {
+                            color: $dark-grey;
+                            font-weight: 700;
+                            text-decoration: rem-calc(1.5px) solid $dark-grey;
+                        }
+
+                        &:last-child {
+                            border-right: none;
+                        }
+
+                        &:hover {
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+
+            .top-bar-right {
+                border-left: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:465px) {
+
+    .top-bar {
+
+        border-top: rem-calc(4px) solid $gold;
+
+        ul {
+            display: block;
+            background: $dark-grey !important;
+
+            li {
+
+                display: block !important;
+
+                &:hover {
+                    background: $off-white !important;
+                }
+
+                a {
+                    &:hover {
+                        color: $orange;
+                        //font-weight: 900;
+                    }
+                }
+
+                border-bottom: rem-calc(1.75px) solid $grey-10;
+            }
+        }
+
+        .top-bar-right {
+
+            border-left: none !important;
+        }
+    }
+}

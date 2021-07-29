@@ -1,0 +1,112 @@
+/* ============================================================
+    STANDARD FOOTER
+============================================================ */
+
+footer {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-top: rem-calc(100px);
+    color: $off-white;
+    position: relative;
+    background-color: $dark-grey;
+
+    .alamo {
+        position: absolute;
+        top: rem-calc(-60px);
+        width: 100%;
+        text-align: center;
+        svg {
+            width: rem-calc(200px);
+            fill: $dark-grey;
+        }
+        /* object svg {
+            width: 200px;
+            fill: $dark-grey;
+        }*/ 
+    }
+    h2 {
+        font-size: rem-calc(26px);
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: rem-calc(24px);
+        font-weight: 400;
+        padding-top: 0;
+        margin-bottom: rem-calc(30px);
+    }
+
+    p.large-text {
+        font-family: "Lora";
+        font-size: rem-calc(20px);
+    }
+
+    a {
+        color: $off-white;
+
+        &.arrow:after {
+            color: $off-white;
+        }
+    }
+
+    .vr  {
+        border-left: $off-white rem-calc(1.5px) solid;
+    }
+
+    .bleed {
+        background-color: #1A2429;
+        color: $off-white;
+    }
+}
+
+footer.flat {
+    margin-top: 0;
+}
+
+/* ============================================================
+    MISSION FOOTER
+============================================================ */
+
+footer.mission {
+    background-color: $pure-white;
+    color: $off-black;
+    margin-top: rem-calc(25px);
+
+    a {
+        color: $orange;
+
+        &.arrow:after {
+            color: $orange;
+        }
+    }
+
+    & hr {
+        border-top: solid #A9A9A9 rem-calc(.75px);
+        border-bottom: solid #A9A9A9 rem-calc(.75px);
+        margin: rem-calc(50px 0);
+        max-width: none;
+    }
+
+    & hr:after {
+        content: url( '../../images/orange-shield.svg');
+        left: 50%;
+        position: absolute;
+        transform: translateY(-50%) translateX(-50%);
+        padding: rem-calc(20px);
+        background: #fff;
+    }
+
+    h2 {
+        font-size: rem-calc(26px);
+        font-weight: 700;
+        margin-bottom: rem-calc(30px);
+    }
+
+    .bleed {
+        background-color: $orange;
+
+        a {
+            color: $off-white;
+        }
+    }
+}

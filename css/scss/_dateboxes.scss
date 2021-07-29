@@ -1,0 +1,123 @@
+/* ============================================================
+    DATEBOXES
+============================================================ */
+
+// ======= Single Day Events
+.datebox {
+    max-width: rem-calc(90px);
+    display: block;
+
+    div:first-child {
+        text-align: center;
+        background-color: $dark-orange;
+        border-top-left-radius: $rounded-corners;
+        border-top-right-radius: $rounded-corners;
+        padding: rem-calc(5px 20px);
+
+
+        & span {
+            font-weight: 900;
+            color: $off-white;
+            font-size: rem-calc(24px);
+        }
+    }
+
+    div:last-child {
+        text-align: center;
+        background-color: $orange;
+        border-bottom-left-radius: $rounded-corners;
+        border-bottom-right-radius: $rounded-corners;
+        padding: rem-calc(5px 20px);
+
+        & span:not(.multi) {
+            font-weight: 900;
+            color: $off-white;
+            font-size: rem-calc(36px) !important;
+        }
+
+        & span.multi {
+            font-weight: 900;
+            color: $off-white;
+            font-size: rem-calc(22px) !important;
+        }
+    }
+
+    &.grey {
+        div:first-child {
+            background-color: $dark-grey;
+        }
+
+        div:last-child {
+            background-color: $grey;
+        }
+
+    }
+
+    &.blue {
+        div:first-child {
+            background-color: $blue-90;
+        }
+
+        div:last-child {
+            background-color: $blue-60;
+        }
+    }
+}
+
+.flex-container {
+    .datebox {
+        margin-right: 1rem;
+    }
+}
+
+// ======= Long Event
+a.event {
+    display: block;
+    background-color: $beige;
+    border-radius: $rounded-corners;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: rem-calc(450px);
+    margin-bottom: rem-calc(20px);
+
+    .date {
+        background-color: $orange;
+        color: $off-white;
+        max-width: rem-calc(120px);
+        padding: rem-calc(15px 40px);
+        border-top-left-radius: rem-calc(5px);
+        border-bottom-left-radius: rem-calc(5px);
+        align-items: center;
+
+        div:first-child {
+            font-weight: 700;
+            font-size: rem-calc(24px);
+            align-self: center;
+        }
+
+        div:nth-child(2) {
+            font-weight: 900;
+            font-size: rem-calc(40px);
+            align-self: center;
+        }
+    }
+
+    & p {
+        font-weight: 700;
+        padding: rem-calc(30px 15px);
+        margin-bottom: 0;
+    }
+
+    &:after {
+        position: relative;
+        display: block;
+        font-family: "Font Awesome 5 Free solid";
+        font-weight: 900;
+        font-size: rem-calc(40px);
+        content: "\f105";
+        right: 0;
+        color: $orange;
+        margin-right: .5rem;
+    }
+}

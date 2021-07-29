@@ -1,0 +1,140 @@
+/* ============================================================
+    HEADER COMPONENTS
+============================================================ */
+
+// ======= Global Bar
+.top-bar.global-bar {
+    background-color: $dark-grey;
+    padding: rem-calc(5px 10px);
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $off-white;
+        font-weight: 900;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .top-bar.global-bar {
+        display: none !important;
+    }
+}
+
+// ======= Mission Bar
+.top-bar.mission-bar {
+    background-color: $light-grey;
+    a { 
+        color: $dark-grey;
+        text-decoration: underline;
+        font-weight: 700;
+    }
+    li {
+        border-right: rem-calc(1px) solid $dark-grey;
+    }
+}
+
+// ======= Header
+header.regular, header.mission {
+    max-width: rem-calc(1440px);
+    margin-right: auto;
+    margin-left: auto;
+
+    @media print, screen and (min-width: 40em) {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem;
+    }
+}
+
+// ======= Mission Header
+header.mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: rem-calc(30px 0px);
+}
+
+header img {
+    width: rem-calc(300px);
+}
+
+.mission nav {
+    display: inline-block;
+    & .menu a {
+    font-weight: 300;
+    font-size: rem-calc(30px);
+    padding: rem-calc(0px 40px);
+    }
+}
+
+// ======= Regular Bar
+
+.regular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: rem-calc(30px 0px);
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            padding-right: rem-calc(30px);
+            border-right: rem-calc(2px) solid $dark-grey;
+        }
+
+        p {
+            padding-left: rem-calc(30px);
+            font-weight: 700;
+            font-size: rem-calc(26px);
+        }
+    }
+
+    .right {
+        width: rem-calc(400px);
+        text-align: right;
+
+        a:first-child {
+            margin-right: rem-calc(30px);
+        }
+    }
+}
+
+header .search {
+    margin: rem-calc(30px 0px);
+}
+
+// ======= Mobile Header
+
+@media screen and (max-width:770px) {
+    .top-bar.global-bar, .top-bar.mission-bar, header.regular, header.mission {
+        display: none !important;
+    }
+
+    header.title-bar{
+        display: flex !important;
+        flex-direction: row;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        background: $orange;
+        color: $off-white;
+        padding: rem-calc(15px 12px);
+        box-shadow: rem-calc(0px 2px 5px 0) rgba(23, 23, 23, 0.5);
+
+        img {
+            width: rem-calc(145px);
+            align-content: flex-start;
+        }
+
+    }
+}
+
+@media screen and (min-width:771px) {
+
+    header.title-bar{
+        display: none !important;
+    }
+}

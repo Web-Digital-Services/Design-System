@@ -1,0 +1,45 @@
+/* ============================================================
+    ALERTS
+============================================================ */
+
+.callout {
+    &.alert {
+        background-color: $dark-orange;
+        color: $off-white;
+        font-weight: 500;
+        box-shadow: rem-calc(1px -1px 8px 0px) rgba(23, 23, 23, 0.55);
+
+        button.close-button {
+            color: $pure-white;
+        }
+    }
+}
+
+.alert {
+    padding: rem-calc(30px);
+    font-weight: 900;
+    font-size: rem-calc(20px);
+
+    p {
+        margin: 0;
+    }
+
+    &.sitewide {
+        background-color: $gold;
+    }
+}
+
+.grid-container {
+    .alert {
+        background-color: $blue-20;
+
+        &.blue {
+            background-color: $blue-20;
+        }
+
+        &.grey {
+            background-color: $grey-20;
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+/* ============================================================
+    TABLES
+============================================================ */
+
+table {
+    thead {
+        background-color: $grey;
+        color: $off-white;
+
+        th {
+            font-size: rem-calc(20px);
+            font-weight: 900;
+        }
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: $light-grey;
+    }
+
+    tfoot {
+        background-color: $dark-grey;
+        color: $gold;
+    }
+
+}
+
+table.unstriped {
+    tbody tr:nth-child(even) {
+        background-color: $pure-white;
+    }
+
+    td {
+        border: rem-calc(1px) solid $light-grey;
+    }
+}
+
+table.hover thead tr:hover {
+    background-color: $dark-grey;
+}

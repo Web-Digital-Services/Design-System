@@ -1,0 +1,135 @@
+/* ============================================================
+    LISTS
+============================================================ */
+
+ul.arrow,
+ul.check {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul.arrow li,
+ul.check li {
+    text-indent: -0.875rem;
+    padding-left: 1em;
+}
+
+ul.arrow li:before {
+    font-family: "Font Awesome 5 Free solid";
+    font-weight: 900;
+    content: "\f105";
+    color: $orange;
+    padding-right: .313rem;
+}
+
+.color {
+    ul.arrow li:before {
+        color: $off-white;
+    }
+
+    .card,
+    .callout {
+        ul.arrow li:before {
+            color: $orange;
+
+        }
+    }
+}
+
+ul.check li:before {
+    font-family: "Font Awesome 5 Free solid";
+    font-weight: 900;
+    font-size: .85em;
+    content: "\f00c";
+    padding-right: .313rem;
+}
+
+ul.lines,
+ol.lines {
+    list-style-type: none;
+
+    li {
+        padding: 0.938em 0;
+        border-bottom: solid rem-calc(1px) #667075;
+    }
+
+    & a {
+        display: block;
+    }
+}
+
+ul.indent-list,
+ol.indent-list {
+    margin-left: 2.5rem;
+}
+
+ul.loose-list,
+ol.loose-list {
+    li {
+        margin-bottom: 0.625rem;
+    }
+}
+
+ul.inline,
+ol.inline {
+    li {
+        list-style-type: none;
+        display: inline-block;
+    }
+}
+
+ul,
+ol {
+    margin: 0 1.25rem 1.25rem 1.25rem;
+}
+
+ul.decoration {
+    li>a {
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-color: $orange;
+        text-decoration-thickness: rem-calc(1px);
+
+
+        &:hover {
+            text-decoration-line: underline;
+            text-decoration-color: $dark-orange;
+        }
+    }
+}
+
+.color {
+    ul.decoration {
+        li>a {
+            text-decoration-color: $off-white;
+            transition: opacity .3s;
+
+            &:hover {
+                text-decoration-color: $off-white;
+            }
+        }
+    }
+}
+
+ul.underline {
+    @extend %link-underline;
+
+    &:hover {
+        @extend %link-underline-hover;
+    }
+}
+
+// ======= News Byline
+
+ul.byline {
+    margin-bottom: rem-calc(27px);
+    margin-left: 0;
+    padding-left: 0;
+
+    li {
+        font-weight: 300;
+        margin-top: 0;
+        list-style: none;
+    }
+}
