@@ -1,23 +1,31 @@
 <div class="top-bar global-bar">
     <div class="top-bar-left"></div>  
     <div class="top-bar-right">
-        <p><a><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
+        <p><a href="#"><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
     </div>
 </div><header class="regular">
-    <a><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
+    <a href="#"><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
     <div>
+        <!--<div class="search-bar">
+            <form class="search">
+                <input type="search" placeholder="Search">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>-->
         <form class="search">
-            <input type="search" placeholder="Search">
-        </form>
-        <div class="right">
-            <a>
+    <input type="search" class="search-box" placeholder="Search">
+    <button type="submit">
+        <i class="fa fa-search"></i>
+    </button>
+</form>        <div class="right">
+            <a href="#">
                 <span class="fa-stack outline">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-notes-medical fa-stack-1x fa-inverse"></i>
                 </span>
                 <span>MyChart</span>
             </a> 
-            <a>
+            <a href="#">
                 <span class="fa-stack outline">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
@@ -28,8 +36,9 @@
     </div>
 </header>
 
-<header class="title-bar">
-    <a><img src="../../images/whiteUTHSA_logo.svg"></a>
+<header class="title-bar" data-responsive-toggle>
+    <a href="#"><img src="../../images/whiteUTHSA_logo.svg"></a>
+    <button class="menu-icon" type="button" data-toggle>Menu</button>
 </header><!--<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
     <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
     <div class="title-bar-title">Menu</div>
@@ -56,7 +65,7 @@
 </nav><section class="hero bleed">
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x">
-			<div class="cell medium-12 large-7">
+			<div class="cell small-12 medium-7 large-7">
 				<h1>Faculty Practice</h1>
 				<p class="margin-bottom">The Faculty Practice at UT Dentistry offers professional dentists who are
 					experts in their field
@@ -64,39 +73,37 @@
 					Dentistry. You do not have to be part of the UT System to be seen in our practice. New patients from
 					the general public can simply call to make an appointment without a referral. We offer comprehensive
 					dental care. </p>
-				<p class="text-accent h5"> <i class="far fa-calendar"></i> Appointments</p>
+				<p class="text-accent h5"> <i class="far fa-calendar"></i>Appointments</p>
 				<p>To make an appointment or patient referral, please call us at <a>210-450-3270</a> or request an
 					appointment online.</p>
 			</div>
-			<div class="cell medium-12 large-5">
+			<div class="cell small-12 medium-5 large-5">
 				<img src="https://placedog.net/570/425" alt="adorable pup">
 			</div>
 		</div>
 	</div>
 </section>
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="#">Parent</a></li>
+    <li><a href="#">Child</a></li>
+    <li>
+      <span class="show-for-sr">Current: </span> Child
+    </li>
+  </ul>
+</nav>
+
 <section class="bleed">
 	<div class="grid-container">
-		<div class="grid-x grid-margin-x ">
-			<div class="cell medium-12 large-12 text-center">
-				<nav aria-label="You are here:" role="navigation">
-					<ul class="breadcrumbs">
-						<li><a href="#">Practices</a></li>
-						<li>
-							<span class="show-for-sr">Current: </span> Faculty Practice
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
 		<div class="grid-x grid-margin-x align-center ">
-			<div class="cell medium-12 large-8">
+			<div class="cell small-12 medium-10 large-8">
 				<h2 class="text-center">Faculty practice services</h2>
 				<p>Our focus is providing proactive, compassionate care through a team of professionals who deliver
 					personalized treatments designed to keep you as healthy as possible.</p>
 			</div>
 		</div>
 		<div class="grid-x grid-margin-x align-center">
-			<div class="cell medium-4 large-4">
+			<div class="cell small-12 medium-6 large-4">
 				<ul class="lines">
 					<li><a href="#">Crown Lengthening</a></li>
 					<li><a href="#">Crowns and Bridges</a></li>
@@ -109,7 +116,7 @@
 					<li><a href="#">Management of Oral Infection</a></li>
 				</ul>
 			</div>
-			<div class="cell medium-4 large-4">
+			<div class="cell small-12 medium-6 large-4">
 				<ul class="lines">
 					<li><a href="#">Management of Oral Manifestations of Systemic Disease</a></li>
 					<li><a href="#">Nutritional Counseling</a></li>
@@ -127,25 +134,25 @@
 <section class="bleed color">
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x grid-padding-x grid-padding-y margin-bottom">
-			<div class="cell small-12 medium-6 card">
+			<div class="cell small-12 medium-12 large-6 card">
 				<div class="grid-x grid-padding-x">
-					<div class="cell small-12 medium-4">
-						<img src="http://placedog.net/190/270" alt="pupper">
+					<div class="cell small-12 medium-4 large-4">
+						<img src="../../images/portrait-dog.jpeg" alt="dressed up pup">
 					</div>
-					<div class="cell small-12 medium-8">
-						<h3 class="ruled"><a>Dan Iya</a></h3>
+					<div class="cell small-12 medium-8 large-8">
+						<h2 class="ruled h3"><a>Dan Iya</a></h2>
 						<p>Privateer aft black spot bucko yo-ho-ho Barbary Coast salmagundi interloper take a caulk
 							flogging.</p>
 					</div>
 				</div>
 			</div>
-			<div class="cell small-12 medium-6 card">
+			<div class="cell small-12 medium-12 large-6 card">
 				<div class="grid-x grid-padding-x">
-					<div class="cell small-12 medium-4">
-						<img src="http://placedog.net/190/270" alt="pupper">
+					<div class="cell small-12 medium-4 large-4">
+						<img src="../../images/portrait-dog.jpeg" alt="dressed up pup">
 					</div>
-					<div class="cell small-12 medium-8">
-						<h3 class="ruled"><a>Jeff Svec</a></h3>
+					<div class="cell small-12 medium-8 large-8">
+						<h2 class="ruled h3"><a>Jeff Svec</a></h2>
 						<p>Privateer aft black spot bucko yo-ho-ho Barbary Coast salmagundi interloper take a caulk
 							flogging.</p>
 					</div>
@@ -153,8 +160,10 @@
 			</div>
 		</div>
 		<div class="grid-x grid-margin-x align-center">
-			<div class="cell small-12 medium-5">
-				<a href="#" class=" button">See all of our faculty dentists an appointment</a>
+			<div class="cell small-12 medium-12 large-12">
+			    <div class="button-group align-center">
+					<a href="#" class=" button">See all of our faculty dentists</a>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -195,11 +204,11 @@
 			</div>
 		</div>
 		<div class="grid-x grid-margin-x  ">
-			<div class="cell medium-12 large-6">
+			<div class="cell small-12 medium-6 large-6 small-order-2 medium-order-1">
 				<img src="https://placedog.net/570/379" alt="adorable pup">
 			</div>
-			<div class="cell medium-12 large-6 align-self-middle">
-				<p>1st Floor, Center for Oral Health Care and Research <br>
+			<div class="cell small-12 medium-6 large-6 align-self-middle small-order-1 medium-order-2">
+				<p>1st Floor, Center for Oral Health Care &#38; Research <br>
 					8210 Floyd Curl Drive<br>
 					San Antonio, Texas 78229</p>
 				<p><a class="arrow"> Parking</a></p>
@@ -212,7 +221,7 @@
     <div class="alamo">
         <!--<img src="../../images/logo-alamo-only.svg">-->
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 116.256 47.344" enable-background="new 0 0 116.256 47.344" xml:space="preserve">
-        <path d="M0.116,47.344l116.069-0.002V44.05v-10.1v-4.303h-14.539v-5.724h-3.418c0,0-7.529,0.29-13.178-3.052 c-5.586-3.306-6.625-6.449-6.641-6.464V9.806h-7.446C69.692,4.193,64.675,0,58.674,0c-6.003,0-11.02,4.193-12.29,9.806h-7.579v4.601c-0.029,0.03-1.068,3.165-6.639,6.464c-5.649,3.342-13.179,3.052-13.179,3.052h-4.449v5.724H0v4.303v10.1v3.228"></path>
+        <path id="never-forget" d="M0.116,47.344l116.069-0.002V44.05v-10.1v-4.303h-14.539v-5.724h-3.418c0,0-7.529,0.29-13.178-3.052 c-5.586-3.306-6.625-6.449-6.641-6.464V9.806h-7.446C69.692,4.193,64.675,0,58.674,0c-6.003,0-11.02,4.193-12.29,9.806h-7.579v4.601c-0.029,0.03-1.068,3.165-6.639,6.464c-5.649,3.342-13.179,3.052-13.179,3.052h-4.449v5.724H0v4.303v10.1v3.228"></path>
         </svg>
     </div>
     <div class="grid-container">
@@ -224,39 +233,39 @@
                     <div class="cell medium-6 large-6">
                         <ul class="fa-ul stacked loose-list">
                             <li>
-                                <a>
+                                <a href="#">
                                     <span class="fa-li">
                                     <span class="fa-stack">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
-                                    </span> 
+                                    </span>
                                     </span> <span >210-567-0000 </span>
                                 </a>
                             </li>
 
                             <li>
-                                <a>
+                                <a href="#">
                                     <span class="fa-li">
                                     <span class="fa-stack">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
-                                    </span> 
                                     </span>
-                                </a> 
-                                <span>7703 Floyd Curl Drive<br>San Antonio, TX 78229<br><a>Map and directions</a></span>
-                                
+                                    </span>
+                                </a>
+                                <span>7703 Floyd Curl Drive<br>San Antonio, TX 78229<br></span><a href="#"><span>Map and directions</span></a>
+
                             </li>
                         </ul>
                     </div>
                     <div class="cell medium-6 large-6">
-                        <p><a class="arrow">Careers</a></p>
-                        <p><a class="arrow">Contact Us</a></p>
+                        <p><a href="#" class="arrow">Careers</a></p>
+                        <p><a href="#" class="arrow">Contact Us</a></p>
                         <span>
-                            <a><i class="fab fa-facebook-square fa-2x"></i></a>
-                            <a><i class="fab fa-linkedin fa-2x"></i></a>
-                            <a><i class="fab fa-twitter-square fa-2x"></i></a>
-                            <a><i class="fab fa-instagram-square fa-2x"></i></a>
-                            <a><i class="fab fa-youtube-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-youtube-square fa-2x"></i></a>
                         </span>
                     </div>
                 </div>
@@ -264,14 +273,14 @@
             </div>
             <div class="cell medium-6 large-6 vr">
                 <p class="large-text">We make lives better ®</p>
-                <p>The University of Texas Health Science Center at San Antonio, also called <a>UT Health San Antonio</a>, is a leading academic health center with a mission to make lives better through excellence in <a>advanced academics</a>, <a>life-saving research</a> and comprehensive clinical care including <a>health</a>, <a>dental</a> and <a>cancer services</a>.</p>
+                <p>The University of Texas Health Science Center at San Antonio, also called <a href="#">UT Health San Antonio</a>, is a leading academic health center with a mission to make lives better through excellence in <a href="#">advanced academics</a>, <a href="#">life-saving research</a> and comprehensive clinical care including <a href="#">health</a>, <a href="#">dental</a> and <a href="#">cancer services</a>.</p>
             </div>
         </div>
     </div>
     <div class="bleed">
         <div class="grid-container">
             <div class="cell">
-                <p><a>Web Privacy</a> | Links from websites affiliated with UT Health's website (uthscsa.edu) to other websites do not constitute or imply university endorsement of those sites, their content, or products and services associated with those sites. The content on this website is intended to be used for informational purposes only. Health information on this site is not meant to be used to diagnose or treat conditions. Consult a health care provider if you are in need of treatment.</p>
+                <p><a href="#">Web Privacy</a> | Links from websites affiliated with UT Health's website (uthscsa.edu) to other websites do not constitute or imply university endorsement of those sites, their content, or products and services associated with those sites. The content on this website is intended to be used for informational purposes only. Health information on this site is not meant to be used to diagnose or treat conditions. Consult a health care provider if you are in need of treatment.</p>
             </div>
         </div>
     </div>

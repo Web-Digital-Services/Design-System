@@ -14,13 +14,21 @@
 @import "node_modules/@fortawesome/fontawesome-free/scss/brands";
 @import "node_modules/@fortawesome/fontawesome-free/scss/regular";
 
+/* ==============================
+    CHART.CSS
+============================== */
+
+@import "node_modules/chart.css";
+
 /* ============================== */
+
 @import "scss/variables";
 @import "scss/text";
 @import "scss/blockquote";
 @import "scss/accordions";
 @import "scss/bleeds";
 @import "scss/callouts";
+@import "scss/grid-demo";
 @import "scss/modal";
 @import "scss/lists";
 @import "scss/icons";
@@ -37,6 +45,8 @@
 @import "scss/header";
 @import "scss/tags";
 @import "scss/quickfacts";
-@import "scss/dateboxes";
+@import "scss/dates";
 @import "scss/alerts";
 @import "scss/heroBanners";
+@import "scss/carousel";
+

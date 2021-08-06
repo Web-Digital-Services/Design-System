@@ -5,19 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
 
-    <link rel="stylesheet" href="../../css/main.css?1627579879055" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1627579879055" media="all" />
-    <script type="text/javascript" src="../../js/vendor/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="../../js/shield.min.js"></script>
-    <script type="text/javascript" src="../../js/vendor/what-input/what-input.min.js"></script>
-    <script type="module" src="../../js/vendor/foundation/foundation.min.js"></script>
+    <link rel="stylesheet" href="../../css/main.css?1628286348828" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1628286348828" media="all" />
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1627579879055" media="all">
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1628286348828" media="all">
     <!-- End Pattern Lab -->
   </head>
   <body class=""><!-- View All Patterns in a Pattern Sub-Type -->
@@ -37,7 +33,60 @@
 			</div><!--end pl-c-category__description-->
 			
 		</div><!--end pl-c-category-->
-					<div id="components-long-event" class="pl-c-pattern">
+					<div id="components-event" class="pl-c-pattern">
+		
+			<div class="pl-c-pattern__header">
+		
+				<h3 class="pl-c-pattern__title">
+		
+					<a href="../../patterns/components-dates-event&#x2F;components-dates-event.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-event" title="Link to Pattern">
+						Event
+		
+		
+					</a><!--end pl-c-pattern__title-link-->
+		
+				</h3><!--end pl-c-pattern__title-->
+		
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-event" data-patternpartial="components-event" title="View Pattern Info">
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
+					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
+					<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
+						<svg viewBox="0 0 16 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--expand">
+							<path fill="currentColor" d="M9 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+						</svg>
+		
+						<svg viewBox="0 0 20 16" width="20" height="20" class="pl-c-pattern__toggle-icon pl-c-pattern__toggle-icon--collapse">
+							<path fill="currentColor" d="M13 11.5l1.5 1.5 5-5-5-5-1.5 1.5 3.5 3.5z"></path>
+							<path fill="currentColor" d="M7 4.5l-1.5-1.5-5 5 5 5 1.5-1.5-3.5-3.5z"></path>
+							<path fill="currentColor" d="M10.958 2.352l1.085 0.296-3 11-1.085-0.296 3-11z"></path>
+						</svg>
+					</div>
+				</button>
+		
+			</div><!--end pl-c-pattern__header-->
+		
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-event">
+		    </div><!--end pl-c-pattern__extra-->
+		
+			<div class="pl-js-pattern-example">
+			<div class="event">
+    <div class="date">
+        <div class="month">jan</div>
+        <div class="day">10</div>
+    </div>
+    <div class="details">
+        <div class="name">Event name here</div>
+        <div class="date">January 10, 2022 (8AM CT)</div>
+    </div>
+</div>
+			</div><!--end pl-js-pattern-example-->
+		
+			<script type="text/json" id="pl-pattern-data-components-event" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-program","lineagePath":"../../patterns/templates-programs-program/templates-programs-program.rendered.html"}],"lineageR":[{"lineagePattern":"templates-program","lineagePath":"../../patterns/templates-programs-program/templates-programs-program.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<p>A static event listing.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dates"},"patternExtension":"twig","patternName":"Event","patternPartial":"components-event","patternState":"","patternEngineName":"twig-php","extraOutput":{"order":1}}
+			</script>
+		
+		</div><!--end pl-c-pattern-->		<div id="components-long-event" class="pl-c-pattern">
 		
 			<div class="pl-c-pattern__header">
 		
@@ -74,34 +123,37 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<a class="event">
+			<a href="#" class="event long">
     <div class="date">
-        <div>Jan</div>
-        <div>00</div>
+        <div class="month">jan</div>
+        <div class="day">10</div>
     </div>
-    <p>Dessert candy canes powder croissant</p>
+    <div class="details">
+        <p class="name">Event name here</p>
+    </div>
+    <div class="arrow"></div>
 </a>
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-components-long-event" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-academic","lineagePath":"../../patterns/templates-mission-academic/templates-mission-academic.rendered.html"},{"lineagePattern":"templates-patient-care","lineagePath":"../../patterns/templates-mission-patient-care/templates-mission-patient-care.rendered.html"},{"lineagePattern":"templates-home","lineagePath":"../../patterns/templates-university-home-home/templates-university-home-home.rendered.html"}],"lineageR":[{"lineagePattern":"templates-academic","lineagePath":"../../patterns/templates-mission-academic/templates-mission-academic.rendered.html"},{"lineagePattern":"templates-patient-care","lineagePath":"../../patterns/templates-mission-patient-care/templates-mission-patient-care.rendered.html"},{"lineagePattern":"templates-home","lineagePath":"../../patterns/templates-university-home-home/templates-university-home-home.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dates"},"patternExtension":"twig","patternName":"Long Event","patternPartial":"components-long-event","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-academic","lineagePath":"../../patterns/templates-mission-academic/templates-mission-academic.rendered.html"},{"lineagePattern":"templates-patient-care","lineagePath":"../../patterns/templates-mission-patient-care/templates-mission-patient-care.rendered.html"},{"lineagePattern":"templates-home","lineagePath":"../../patterns/templates-university-home-home/templates-university-home-home.rendered.html"}],"lineageR":[{"lineagePattern":"templates-academic","lineagePath":"../../patterns/templates-mission-academic/templates-mission-academic.rendered.html"},{"lineagePattern":"templates-patient-care","lineagePath":"../../patterns/templates-mission-patient-care/templates-mission-patient-care.rendered.html"},{"lineagePattern":"templates-home","lineagePath":"../../patterns/templates-university-home-home/templates-university-home-home.rendered.html"}],"patternLineageEExists":true,"patternDesc":"<p>An interactive event.</p>\n<p>There will be no other color options available for this component.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dates"},"patternExtension":"twig","patternName":"Long Event","patternPartial":"components-long-event","patternState":"","patternEngineName":"twig-php","extraOutput":{"order":2}}
 			</script>
 		
-		</div><!--end pl-c-pattern-->		<div id="components-multi-day" class="pl-c-pattern">
+		</div><!--end pl-c-pattern-->		<div id="components-datebox-interactive" class="pl-c-pattern">
 		
 			<div class="pl-c-pattern__header">
 		
 				<h3 class="pl-c-pattern__title">
 		
-					<a href="../../patterns/components-dates-multi-day&#x2F;components-dates-multi-day.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-multi-day" title="Link to Pattern">
-						Multi Day
+					<a href="../../patterns/components-dates-datebox-interactive&#x2F;components-dates-datebox-interactive.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-datebox-interactive" title="Link to Pattern">
+						Datebox Interactive
 		
 		
 					</a><!--end pl-c-pattern__title-link-->
 		
 				</h3><!--end pl-c-pattern__title-->
 		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-multi-day" data-patternpartial="components-multi-day" title="View Pattern Info">
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-datebox-interactive" data-patternpartial="components-datebox-interactive" title="View Pattern Info">
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
 					<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
@@ -120,43 +172,37 @@
 		
 			</div><!--end pl-c-pattern__header-->
 		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-multi-day">
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-datebox-interactive">
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<div class="grid-x grid-margin-x">
-    <div class="cell large-2">
-        <a class="datebox">
-            <div>
-                <span>Jan</span>
-            </div>
-            <div>
-                <span class="multi">00-00</span>
-            </div>
-        </a>
+			<a href="#">
+    <div class="datebox">
+        <div class="month">jan</div>
+        <div class="day">10</div>
     </div>
-</div>
+</a>
 			</div><!--end pl-js-pattern-example-->
 		
-			<script type="text/json" id="pl-pattern-data-components-multi-day" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dates"},"patternExtension":"twig","patternName":"Multi Day","patternPartial":"components-multi-day","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
+			<script type="text/json" id="pl-pattern-data-components-datebox-interactive" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>Interactive datebox.</p>\n<p>Only the interactive datebox has rounded corners and is orange.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dates"},"patternExtension":"twig","patternName":"Datebox Interactive","patternPartial":"components-datebox-interactive","patternState":"","patternEngineName":"twig-php","extraOutput":{"order":3}}
 			</script>
 		
-		</div><!--end pl-c-pattern-->		<div id="components-single-day" class="pl-c-pattern">
+		</div><!--end pl-c-pattern-->		<div id="components-datebox-static-grey" class="pl-c-pattern">
 		
 			<div class="pl-c-pattern__header">
 		
 				<h3 class="pl-c-pattern__title">
 		
-					<a href="../../patterns/components-dates-single-day&#x2F;components-dates-single-day.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-single-day" title="Link to Pattern">
-						Single Day
+					<a href="../../patterns/components-dates-datebox-static-grey&#x2F;components-dates-datebox-static-grey.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-datebox-static-grey" title="Link to Pattern">
+						Default&#x2F;Grey Static Datebox
 		
 		
 					</a><!--end pl-c-pattern__title-link-->
 		
 				</h3><!--end pl-c-pattern__title-->
 		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-single-day" data-patternpartial="components-single-day" title="View Pattern Info">
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-datebox-static-grey" data-patternpartial="components-datebox-static-grey" title="View Pattern Info">
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
 					<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
@@ -175,43 +221,35 @@
 		
 			</div><!--end pl-c-pattern__header-->
 		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-single-day">
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-datebox-static-grey">
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<div class="grid-x grid-margin-x">
-    <div class="cell large-2">
-        <a class="datebox">
-            <div>
-                <span>Jan</span>
-            </div>
-            <div>
-                <span>00</span>
-            </div>
-        </a>
-    </div>
+			<div class="datebox">
+    <div class="month">jan</div>
+    <div class="day">10</div>
 </div>
 			</div><!--end pl-js-pattern-example-->
 		
-			<script type="text/json" id="pl-pattern-data-components-single-day" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dates"},"patternExtension":"twig","patternName":"Single Day","patternPartial":"components-single-day","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
+			<script type="text/json" id="pl-pattern-data-components-datebox-static-grey" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>Static default datebox.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dates"},"patternExtension":"twig","patternName":"Default/Grey Static Datebox","patternPartial":"components-datebox-static-grey","patternState":"","patternEngineName":"twig-php","extraOutput":{"order":4}}
 			</script>
 		
-		</div><!--end pl-c-pattern-->		<div id="components-single-day-blue" class="pl-c-pattern">
+		</div><!--end pl-c-pattern-->		<div id="components-datebox-static-blue" class="pl-c-pattern">
 		
 			<div class="pl-c-pattern__header">
 		
 				<h3 class="pl-c-pattern__title">
 		
-					<a href="../../patterns/components-dates-single-day-blue&#x2F;components-dates-single-day-blue.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-single-day-blue" title="Link to Pattern">
-						Single Day Blue
+					<a href="../../patterns/components-dates-datebox-static-blue&#x2F;components-dates-datebox-static-blue.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-datebox-static-blue" title="Link to Pattern">
+						Blue Static Datebox
 		
 		
 					</a><!--end pl-c-pattern__title-link-->
 		
 				</h3><!--end pl-c-pattern__title-->
 		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-single-day-blue" data-patternpartial="components-single-day-blue" title="View Pattern Info">
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-datebox-static-blue" data-patternpartial="components-datebox-static-blue" title="View Pattern Info">
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
 					<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
@@ -230,43 +268,35 @@
 		
 			</div><!--end pl-c-pattern__header-->
 		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-single-day-blue">
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-datebox-static-blue">
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<div class="grid-x grid-margin-x">
-    <div class="cell large-2">
-        <div class="datebox blue">
-            <div>
-                <span>Jan</span>
-            </div>
-            <div>
-                <span>00</span>
-            </div>
-        </div>
-    </div>
+			<div class="datebox blue">
+    <div class="month">jan</div>
+    <div class="day">10</div>
 </div>
 			</div><!--end pl-js-pattern-example-->
 		
-			<script type="text/json" id="pl-pattern-data-components-single-day-blue" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dates"},"patternExtension":"twig","patternName":"Single Day Blue","patternPartial":"components-single-day-blue","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
+			<script type="text/json" id="pl-pattern-data-components-datebox-static-blue" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>Static blue option datebox.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dates"},"patternExtension":"twig","patternName":"Blue Static Datebox","patternPartial":"components-datebox-static-blue","patternState":"","patternEngineName":"twig-php","extraOutput":{"order":5}}
 			</script>
 		
-		</div><!--end pl-c-pattern-->		<div id="components-single-day-grey" class="pl-c-pattern">
+		</div><!--end pl-c-pattern-->		<div id="components-multiday-datebox" class="pl-c-pattern">
 		
 			<div class="pl-c-pattern__header">
 		
 				<h3 class="pl-c-pattern__title">
 		
-					<a href="../../patterns/components-dates-single-day-grey&#x2F;components-dates-single-day-grey.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-single-day-grey" title="Link to Pattern">
-						Single Day Grey
+					<a href="../../patterns/components-dates-multiday-datebox&#x2F;components-dates-multiday-datebox.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-multiday-datebox" title="Link to Pattern">
+						Multi-day Datebox
 		
 		
 					</a><!--end pl-c-pattern__title-link-->
 		
 				</h3><!--end pl-c-pattern__title-->
 		
-				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-single-day-grey" data-patternpartial="components-single-day-grey" title="View Pattern Info">
+				<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-multiday-datebox" data-patternpartial="components-multiday-datebox" title="View Pattern Info">
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--expand">Expand</span>
 					<span class="pl-c-pattern__extra-toggle-text pl-c-pattern__extra-toggle-text--collapse">Collapse</span>
 					<div class="pl-c-pattern__toggle-icon-wrapper" aria-hidden="true">
@@ -285,26 +315,18 @@
 		
 			</div><!--end pl-c-pattern__header-->
 		
-			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-single-day-grey">
+			<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-multiday-datebox">
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<div class="grid-x grid-margin-x">
-    <div class="cell large-2">
-        <div class="datebox grey">
-            <div>
-                <span>Jan</span>
-            </div>
-            <div>
-                <span>00</span>
-            </div>
-        </div>
-    </div>
+			<div class="datebox">
+    <div class="month">jan</div>
+    <div class="day multi">09-10</div>
 </div>
 			</div><!--end pl-js-pattern-example-->
 		
-			<script type="text/json" id="pl-pattern-data-components-single-day-grey" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dates"},"patternExtension":"twig","patternName":"Single Day Grey","patternPartial":"components-single-day-grey","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
+			<script type="text/json" id="pl-pattern-data-components-multiday-datebox" class="pl-js-pattern-data">
+			{"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>Datebox for mult-day events. The multi-day feature is available for the interactive datebox as well as both static (blue and grey) dateboxes.</p>\n","patternBreadcrumb":{"patternGroup":"components","patternSubgroup":"dates"},"patternExtension":"twig","patternName":"Multi-day Datebox","patternPartial":"components-multiday-datebox","patternState":"","patternEngineName":"twig-php","extraOutput":{"order":6}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -353,10 +375,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1627579879055">
+<script id="pl-js-polyfill-insert-1628286348828">
   (function() {
     if (self != top) {
-      var cb = '1627579879055';
+      var cb = '1628286348828';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -369,7 +391,7 @@
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1627579879055" nomodule>
+<script id="pl-js-insert-1628286348828" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
@@ -377,5 +399,10 @@
   loadJS('../../styleguide/js/patternlab-pattern.js');
 </script>
 
+
+    <script type="text/javascript" src="../../js/vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/vendor/foundation/foundation.min.js"></script>
+    <script type="text/javascript" src="../../js/shield.min.js"></script>
+    <script type="text/javascript" src="../../js/vendor/what-input/what-input.min.js"></script>
   </body>
 </html>

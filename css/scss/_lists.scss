@@ -2,21 +2,21 @@
     LISTS
 ============================================================ */
 
-ul.arrow,
-ul.check {
+div.arrow ul,
+div.check ul {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-ul.arrow li,
-ul.check li {
+div.arrow ul li,
+div.check ul li {
     text-indent: -0.875rem;
     padding-left: 1em;
 }
 
-ul.arrow li:before {
-    font-family: "Font Awesome 5 Free solid";
+div.arrow ul li:before {
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f105";
     color: $orange;
@@ -24,7 +24,7 @@ ul.arrow li:before {
 }
 
 .color {
-    ul.arrow li:before {
+    div.arrow li:before {
         color: $off-white;
     }
 
@@ -37,17 +37,18 @@ ul.arrow li:before {
     }
 }
 
-ul.check li:before {
-    font-family: "Font Awesome 5 Free solid";
+div.check ul li:before {
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: .85em;
     content: "\f00c";
     padding-right: .313rem;
 }
 
-ul.lines,
-ol.lines {
-    list-style-type: none;
+div.lines {
+    ul, ol {
+        list-style-type: none;
+    }
 
     li {
         padding: 0.938em 0;
@@ -59,13 +60,11 @@ ol.lines {
     }
 }
 
-ul.indent-list,
-ol.indent-list {
+div.indent-list {
     margin-left: 2.5rem;
 }
 
-ul.loose-list,
-ol.loose-list {
+div.loose-list {
     li {
         margin-bottom: 0.625rem;
     }

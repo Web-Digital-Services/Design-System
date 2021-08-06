@@ -1,26 +1,28 @@
 <div class="top-bar global-bar">
     <div class="top-bar-left"></div>  
     <div class="top-bar-right">
-        <p><a><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
+        <p><a href="#"><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
     </div>
 </div><header class="regular">
     <div class="logo">
-        <a><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
+        <a href="#"><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
         <p>Site Name</p>
     </div>
     <div class="right">
         <form class="search">
-            <input type="search" placeholder="Search">
-        </form>
-        <div class="right">
-            <a>
+    <input type="search" class="search-box" placeholder="Search">
+    <button type="submit">
+        <i class="fa fa-search"></i>
+    </button>
+</form>        <div class="right">
+            <a href="#">
                 <span class="fa-stack outline">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-notes-medical fa-stack-1x fa-inverse"></i>
                 </span>
                 <span>MyChart</span>
             </a> 
-            <a>
+            <a href="#">
                 <span class="fa-stack outline">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
@@ -31,9 +33,11 @@
     </div>
 </header>
 
-<header class="title-bar">
-    <a><img src="../../images/whiteUTHSA_logo.svg"></a>
-</header><!--<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+<header class="title-bar" data-responsive-toggle>
+    <a href="#"><img src="../../images/whiteUTHSA_logo.svg"></a>
+    <button class="menu-icon" type="button" data-toggle>Menu</button>
+</header>
+<!--<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
     <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
     <div class="title-bar-title">Menu</div>
 </div>-->
@@ -56,11 +60,12 @@
             </ul>
         </div>
     </div>
-</nav><section class="hero bleed img-fill full">
+</nav>
+<section class="hero bleed img-fill full">
     <img src="https://placedog.net/1500/750" alt="adorable pup">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
-            <div class="cell small-12 medium-5">
+            <div class="cell small-12 medium-10 large-5">
                 <div class="callout white">
                     <h1>Wilderness and Survival Medicine Fellowship</h1>
                     <a href="#" class="button ghost">Application Process</a>
@@ -69,21 +74,17 @@
         </div>
     </div>
 </section>
+<nav aria-label="You are here:" role="navigation">
+    <ul class="breadcrumbs">
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Emergency Medicine Fellowships</a></li>
+        <li>
+            <span class="show-for-sr">Current: </span> Wilderness and Survival Medicine Fellowship
+        </li>
+    </ul>
+</nav>
 <section class="bleed">
     <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-            <div class="cell small-12 medium-8">
-                <nav aria-label="You are here:" role="navigation">
-                    <ul class="breadcrumbs">
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Emergency Medicine Fellowships</a></li>
-                        <li>
-                            <span class="show-for-sr">Current: </span> Wilderness and Survival Medicine Fellowship
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
         <div class="grid-x grid-margin-x">
             <main class="cell small-12 medium-8">
                 <p>The UT Health San Antonio Department of Emergency Medicine is honored to have the first
@@ -115,16 +116,17 @@
                     Celegian sola amidala b'omarr defel luke lumiya taung jaina.Drovian olié gerb anzati kashyyyk
                     anakin. </p>
             </main>
-            <aside class="cell small-12 medium-4" role="complementary" aria-labelledby="subnav contact">
-                <ul class="vertical menu accordion-menu subnav" data-accordion-menu>
-                    <li><a href="#" class="is-active">Overview</a></li>
+            <aside class="cell small-12 medium-4">
+                <ul class="vertical menu accordion-menu" data-accordion-menu id="subnav">
                     <li>
-                        <a href="#">Curriculum
-                            <ul class="menu vertical nested">
-                                <li><a href="#">Item 1A</a></li>
-                                <li><a href="#">Item 1B</a></li>
-                            </ul>
-                        </a>
+                        <a href="#" class="is-active">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#">Curriculum</a>
+                        <ul class="nested vertical menu">
+                            <li><a href="#">Item 1A</a></li>
+                            <li><a href="#">Item 1B</a></li>
+                        </ul>
                     </li>
                     <li><a href="#">Application Process</a></li>
                     <li><a href="#">Salary & Benefits</a></li>
@@ -132,7 +134,7 @@
                     <li><a href="#">Current Residents</a></li>
                     <li><a href="#">Alumni</a></li>
                 </ul>
-                <div class="callout contact medium-beige margin-top">
+                <div class="callout contact beige margin-top">
                     <h3 id="contact">Contact Us</h3>
                     <p><strong>Lashun R. Matthews<br>Academic Programs Coordinator</strong></p>
                     <p>UT Health San Antonio<br>Department of Orthopaedics MC-7774<br>7703 Floyd Curl Drive, MC
@@ -174,27 +176,23 @@
                 </div>
             </aside>
         </div>
-    </div> 
+    </div>
 </section>
 <section class="bleed light-grey">
     <div class="grid-container">
-        <div class="grid-x grid-margin-x align-center">
-            <div class="cell small-2">
-                <img src="http://placekitten.com/210/260" alt="KITTEH">
-            </div>
-            <div class="cell small-6 medium-8">
-                <blockquote class="">
-                    <p><strong>This could be a location for the message from the department chair</strong>. Otherwise it
-                        is identical to the previous example. Lucas ipsum dolor sit amet nadon kamino ponda raioballo
-                        vader polis nomi ziro farlax tibor. Drovian olié gerb anzati kashyyyk anakin. Kenobi kushiban
-                        polis tano jan baba grievous nagai. Celegian sola amidala b'omarr defel luke lumiya taung jaina.
-                    </p>
-                    <cite>Full Name, Department Chair</cite>
-                    <p><a href="#" class="arrow">Read full message</a></p>
-                </blockquote>
-            </div>
-        </div>
-    </div>
+		<div class="grid-x grid-margin-x align-center">
+			<div class="cell small-12 medium-4 large-2">
+				<img src="http://placekitten.com/300/400" alt="kitty">
+			</div>
+			<div class="cell small-12 medium-6 large-8">
+				<blockquote>
+					<p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation. Blockquotes have no margin/padding of their own and should be placed within another element like a bleed.</p>
+					<cite>Obi-Wan Kenobi, Jedi Master</cite>
+					<p><a href="#" class="arrow">I even have a link!</a></p>
+				</blockquote>
+			</div>
+		</div>
+	</div>
 </section>
 
 <footer class="flat">
@@ -212,7 +210,7 @@
                                     <span class="fa-stack">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
-                                    </span> 
+                                    </span>
                                     </span> <span >210-567-0000 </span>
                                 </a>
                             </li>
@@ -223,11 +221,11 @@
                                     <span class="fa-stack">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
-                                    </span> 
                                     </span>
-                                </a> 
-                                <span>7703 Floyd Curl Drive<br>San Antonio, TX 78229<br><a>Map and directions</a></span>
-                                
+                                    </span>
+                                </a>
+                                <span>7703 Floyd Curl Drive<br>San Antonio, TX 78229<br></span><a><span>Map and directions</span></a>
+
                             </li>
                         </ul>
                     </div>

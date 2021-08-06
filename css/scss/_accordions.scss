@@ -4,7 +4,7 @@
 
 .accordion {
   margin-left: 0;
-  background: $pure-white;
+  background: transparent;
   list-style-type: none;
 }
 
@@ -46,7 +46,7 @@
   right: rem-calc(12px);
   margin-top: rem-calc(-27px);
   content: "\f107";
-  font-family: 'Font Awesome 5 Free solid';
+  font-family: 'Font Awesome 5 Free';
   font-size: rem-calc(60px);
   font-weight: 900;
   color: $orange;
@@ -54,7 +54,7 @@
 
 .is-active>.accordion-title::before {
   content: "\f106";
-  font-family: 'Font Awesome 5 Free solid';
+  font-family: 'Font Awesome 5 Free';
   font-size: rem-calc(60px);
   font-weight: 900;
   color: $orange;

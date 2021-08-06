@@ -1,40 +1,43 @@
 <div class="top-bar global-bar">    
     <div class="top-bar-left">
-        <p><a><i class="fas fa-bars"></i> Quicklinks</a></p>
+        <p><a href="#"><i class="fas fa-bars"></i> Quicklinks</a></p>
     </div>
     <div class="top-bar-right">
-        <p><a><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
+        <p><a href="#"><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
     </div>
 </div><div class="top-bar mission-bar">
     <div class="top-bar-left">
         <ul class="menu">
-            <li><a>210-567-7000</a></li>
-            <li><a>Events</a></li>
-            <li><a>Newsroom</a></li>
-            <li><a>Faculty Directory</a></li>
-            <li><a>Alumni</a></li>
-            <li><a>Give</a></li>
+            <li><a href="#">210-567-7000</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Faculty Directory</a></li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="#">Give</a></li>
         </ul>
     </div>
     <div class="top-bar-right">
         <form class="search">
-            <input type="search" placeholder="Search">
-        </form>
-    </div>
+    <input type="search" class="search-box" placeholder="Search">
+    <button type="submit">
+        <i class="fa fa-search"></i>
+    </button>
+</form>    </div>
 </div><header class="mission">
-    <a><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
+    <a href="#"><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
     <nav>
         <ul class="menu">
-            <li><a>Academics</a></li>
-            <li><a>Research</a></li>
-            <li><a>Patient Care</a></li>
-            <li><a>Community</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Patient Care</a></li>
+            <li><a href="#">Community</a></li>
         </ul>
     </nav>
 </header>
 
-<header class="title-bar">
-    <a><img src="../../images/whiteUTHSA_logo.svg"></a>
+<header class="title-bar" data-responsive-toggle>
+    <a href="#"><img src="../../images/whiteUTHSA_logo.svg"></a>
+    <button class="menu-icon" type="button" data-toggle>Menu</button>
 </header><section class="hero bleed img-fill full">
 	<img src="https://placedog.net/1500/750" alt="adorable pup">
 	<div class="grid-container">
@@ -43,6 +46,7 @@
                 <div class="callout orange">
                     <h1>Test</h1>
                     <p>Lemon drops sugar plum bonbon cookie gummies candy canes. Icing chocolate cake dragée. Muffin macaroon muffin. Liquorice liquorice powder pie marzipan brownie. Dragée lollipop toffee wafer. Wafer croissant chocolate bar danish tiramisu cheesecake cotton candy. Pudding apple pie gummies sweet.</p>
+                    <p><a href="#" class="button">Button CTA</a></p>
                 </div>
             </div>
         </div>
@@ -51,7 +55,7 @@
 <main class="grid-container">
     <section class="grid-x grid-margin-x">
         <section class="cell large-4 medium-6 small-12">
-           <a> 
+           <a href="#"> 
                 <img src="https://www.uthscsa.edu/sites/default/files/images/academics-medicine_0.jpg">
                 <h2 class="h3">Joe R. & Teresa Lozano Long School of Medicine</h2>
             </a>
@@ -59,7 +63,7 @@
         </section>
 
         <section class="cell large-4 medium-6 small-12">
-            <a>
+            <a href="#">
                 <img src="https://www.uthscsa.edu/sites/default/files/images/academics_nursing_1.jpg">
                 <h2 class="h3">School of Nursing</h2>
             </a>
@@ -67,7 +71,7 @@
         </section>
 
         <section class="cell large-4 medium-6 small-12">
-            <a>
+            <a href="#">
                 <img src="https://www.uthscsa.edu/sites/default/files/images/academics_dental_0_0.jpg">
                 <h2 class="h3">School of Dentistry</h2>
             </a>
@@ -75,7 +79,7 @@
         </section>
 
         <section class="cell large-4 medium-6 small-12">
-            <a>
+            <a href="#">
                 <img src="https://www.uthscsa.edu/sites/default/files/images/academics_gradschool_1.jpg">
                 <h2 class="h3"><a>Graduate School of Biomedical Sciences</h2>
             </a>
@@ -83,7 +87,7 @@
         </section>
 
         <section class="cell large-4 medium-6 small-12">
-            <a>
+            <a href="#">
                 <img src="https://www.uthscsa.edu/sites/default/files/images/school_of_professions_409.jpg">
                 <h2 class="h3">School of Health Professions</h2>
             </a>
@@ -102,13 +106,13 @@
 <section class="bleed color grey">
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x align-center">
-			<div class="cell small-12 medium-6">
+			<div class="cell small-12 medium-7 large-6">
 				<blockquote>
 					<p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation. Blockquotes have no margin/padding of their own and should be placed within another element like a bleed.</p>
 					<cite>Obi-Wan Kenobi, Jedi Master</cite>
 				</blockquote>
 			</div>
-             <div class="cell small-12 medium-2">
+             <div class="cell small-12 medium-3 large-2">
 				<img src="http://placekitten.com/300/400" alt="kitty">
 			</div>
 		</div>
@@ -117,28 +121,35 @@
 
 <div class="grid-container">
     <div class="grid-x grid-padding-x">
-        <section class="cell large-7 small-12">
+        <section class="cell large-7 medium-7 small-12">
             <h2>Happening now at UT Health San Antonio</h2>
             <p>Breakthroughs are happening everyday at UT Health San Antonio. Stay informed on the latest news and events. Marketing copy similar to Cancer Center.</p>
             <p><a class="arrow">Newsroom</a></p>
         </section>
-        <aside class="cell large-5 small-12">
-            <a class="event">
+        <aside class="cell large-5 medium-5 small-12">
+            <div class="grid-y grid-y-padding">
+                <div class="cell"> 
+                    <a href="#" class="event long">
     <div class="date">
-        <div>Jan</div>
-        <div>00</div>
+        <div class="month">jan</div>
+        <div class="day">10</div>
     </div>
-    <p>Dessert candy canes powder croissant</p>
-</a>
-            <br>
-            <a class="event">
+    <div class="details">
+        <p class="name">Event name here</p>
+    </div>
+    <div class="arrow"></div>
+</a>                </div>
+                <div class="cell"> 
+                    <a href="#" class="event long">
     <div class="date">
-        <div>Jan</div>
-        <div>00</div>
+        <div class="month">jan</div>
+        <div class="day">10</div>
     </div>
-    <p>Dessert candy canes powder croissant</p>
-</a>
-            <br>
+    <div class="details">
+        <p class="name">Event name here</p>
+    </div>
+    <div class="arrow"></div>
+</a>                </div>
             <p><a class="arrow">All events</a></p>
         </aside>
     </div>

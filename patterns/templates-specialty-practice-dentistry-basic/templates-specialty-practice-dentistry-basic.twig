@@ -1,10 +1,10 @@
-{% include "@components/header/global-bar.twig" %}
-{% include "@components/header/level-2.twig" %}
+{% include "@blocks/header/global-bar.twig" %}
+{% include "@blocks/header/level-2.twig" %}
 {% include "@components/navigation/navbar.twig" %}
 <section class="hero bleed">
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x">
-			<div class="cell medium-12 large-7">
+			<div class="cell small-12 medium-12 large-7">
 				<h1>Oral and Maxillofacial Surgery Faculty &#38; Resident Clinic</h1>
 				<p>The post-doctoral students who staff our practice provide advanced imaging services to patients and
 					providers in Southwest Texas. Our practice is equipped with the latest cone beam computed tomography
@@ -24,34 +24,22 @@
 						with you when you come for your appointment.</p>
 					<p>Referral from primary care physicians are needed for all medical and Medicaid appointments.</p>
 			</div>
-			<div class="cell medium-12 large-5">
+			<div class="cell small-12 medium-12 large-5">
 				<img src="https://placedog.net/570/379" alt="adorable pup">
 			</div>
 		</div>
 	</div>
 </section>
+{% include "@components/navigation/breadcrumbs.twig" %}
 <section class="bleed">
 	<div class="grid-container">
-		<div class="grid-x grid-margin-x ">
-			<div class="cell medium-12 large-12">
-				<nav aria-label="You are here:" role="navigation">
-					<ul class="breadcrumbs">
-						<li><a href="#">Specialty Practices</a></li>
-						<li>
-							<span class="show-for-sr">Current: </span> Oral and Maxillofacial Surgery Faculty &
-							Resident Clinic
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
 		<div class="grid-x grid-margin-x ">
 			<div class="cell medium-12 large-12">
 				<h2 class="text-center">Services Provided</h2>
 			</div>
 		</div>
 		<div class="grid-x grid-margin-x align-center">
-			<div class="cell medium-4 large-4">
+			<div class="cell medium-6 large-4">
 				<ul class="lines">
 					<li><a href="#">3D Imaging</a></li>
 					<li><a href="#">Anesthesia</a></li>
@@ -64,7 +52,7 @@
 					<li><a href="#">Distraction Osteogenesis</li>
 					<li><a href="#">Extraction</li>
 			</div>
-			<div class="cell medium-4 large-4">
+			<div class="cell medium-6 large-4">
 				<ul class="lines">
 					<li><a href="#">Facial Reconstruction Surgery</a></li>
 					<li><a href="#">Facial Trauma (Injuries)</a></li>
@@ -116,10 +104,10 @@
 			</div>
 		</div>
 		<div class="grid-x grid-margin-x  ">
-			<div class="cell medium-12 large-6">
+			<div class="cell small-12 medium-6 large-6 small-order-2 medium-order-1">
 				<img src="https://placedog.net/570/379" alt="adorable pup">
 			</div>
-			<div class="cell medium-12 large-6 align-self-middle">
+			<div class="cell small-12 medium-6 large-6 align-self-middle small-order-1 medium-order-2">
 				<p>1st Floor, Center for Oral Health Care &#38; Research <br>
 					8210 Floyd Curl Drive<br>
 					San Antonio, Texas 78229</p>
@@ -129,4 +117,4 @@
 		</div>
 	</div>
 </section>
-{% include "@components/footer/alamo.twig" %}
+{% include "@blocks/footer/alamo.twig" %}

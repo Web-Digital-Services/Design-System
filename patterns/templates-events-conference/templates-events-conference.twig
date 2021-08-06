@@ -1,10 +1,10 @@
-{% include "@components/header/global-bar.twig" %}
-{% include "@components/header/level-3.twig" %}
+{% include "@blocks/header/global-bar.twig" %}
+{% include "@blocks/header/level-3.twig" %}
 {% include "@components/navigation/navbar.twig" %}
 <section class="bleed hero">
 	<div class="grid-container">
-		<div class="grid-x margin-x">
-			<div class="cell medium-12 large-7">
+		<div class="grid-x grid-margin-x">
+			<div class="cell small-12 medium-7 large-7">
 				<h1 class="close">Arbitrary Conference</h1>
 				<h2 class="h5 margin-bottom"> February 25-26, 2021</h2>
 				<p class=" "> Tea garden puerh black tea baihao yinzhen infuser rose hips nepal chamomile energy.
@@ -12,28 +12,17 @@
 					caffeine. Zen fermentation baihao yinzhen zen scented turmeric. </p>
 				<p><a href="#" class="button">Register</a></p>
 			</div>
-			<div class="cell medium-12 large-5">
+			<div class="cell small-12 medium-5 large-5 align-self-middle">
 				<img src="https://placedog.net/600/400" alt="adorable pup">
 			</div>
 		</div>
 	</div>
 </section>
+{% include "@components/navigation/breadcrumbs.twig" %}
 <section class="bleed">
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x ">
-			<div class="cell medium-12 large-12  ">
-				<nav aria-label="You are here:" role="navigation">
-					<ul class="breadcrumbs">
-						<li><a href="#">Events</a></li>
-						<li>
-							<span class="show-for-sr">Current: </span> Arbitrary Conference
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<div class="grid-x grid-margin-x ">
-			<main class="cell medium-12 large-8  ">
+			<main class="cell small-12 medium-8 large-8">
 				<p>
 					Tea garden puerh black tea baihao yinzhen infuser rose hips nepal chamomile energy. Boba tea
 					time yerba maté kombucha loose leaf baihao yinzhen nokcha keemun turmeric earl grey caffeine.
@@ -56,7 +45,7 @@
 					whisk teahouse genmai sencha focus loose leaf tea time caffeine london fog bamboo whisk infuser.
 				</p>
 			</main>
-			<aside class="cell medium-12 large-4  ">
+			<aside class="cell small-12 medium-4 large-4">
 				<ul class="vertical menu accordion-menu" data-accordion-menu>
 					<li>
 						<a href="#" class="is-active">Arbitrary Conference Home</a>
@@ -71,4 +60,4 @@
 	</div>
 </section>
 
-{% include "@components/footer/alamo.twig" %}
+{% include "@blocks/footer/alamo.twig" %}

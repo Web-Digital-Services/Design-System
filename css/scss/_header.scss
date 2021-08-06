@@ -6,13 +6,20 @@
 .top-bar.global-bar {
     background-color: $dark-grey;
     padding: rem-calc(5px 10px);
+
     p {
         margin-bottom: 0;
     }
 
     a {
-        color: $off-white;
         font-weight: 900;
+
+        background-image: none;
+        color: $off-white;
+
+        &:hover {
+            color: $grey-link;
+        }
     }
 }
 
@@ -25,23 +32,27 @@
 // ======= Mission Bar
 .top-bar.mission-bar {
     background-color: $light-grey;
-    a { 
+
+    a {
         color: $dark-grey;
         text-decoration: underline;
         font-weight: 700;
     }
+
     li {
         border-right: rem-calc(1px) solid $dark-grey;
     }
 }
 
 // ======= Header
-header.regular, header.mission {
+header.regular,
+header.mission {
     max-width: rem-calc(1440px);
     margin-right: auto;
     margin-left: auto;
 
-    @media print, screen and (min-width: 40em) {
+    @media print,
+    screen and (min-width: 40em) {
         padding-right: 0.9375rem;
         padding-left: 0.9375rem;
     }
@@ -61,10 +72,11 @@ header img {
 
 .mission nav {
     display: inline-block;
+
     & .menu a {
-    font-weight: 300;
-    font-size: rem-calc(30px);
-    padding: rem-calc(0px 40px);
+        font-weight: 300;
+        font-size: rem-calc(30px);
+        padding: rem-calc(0px 40px);
     }
 }
 
@@ -78,7 +90,7 @@ header img {
 
     .logo {
         display: flex;
-        align-items: center;
+        align-items: baseline;
 
         img {
             padding-right: rem-calc(30px);
@@ -109,13 +121,18 @@ header .search {
 // ======= Mobile Header
 
 @media screen and (max-width:770px) {
-    .top-bar.global-bar, .top-bar.mission-bar, header.regular, header.mission {
+
+    .top-bar.global-bar,
+    .top-bar.mission-bar,
+    header.regular,
+    header.mission {
         display: none !important;
     }
 
-    header.title-bar{
+    header.title-bar {
         display: flex !important;
-        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         position: sticky;
         position: -webkit-sticky;
         top: 0;
@@ -123,18 +140,43 @@ header .search {
         color: $off-white;
         padding: rem-calc(15px 12px);
         box-shadow: rem-calc(0px 2px 5px 0) rgba(23, 23, 23, 0.5);
+        z-index: 1;
 
         img {
             width: rem-calc(145px);
-            align-content: flex-start;
+            margin-bottom: 0;
+        }
+
+        .menu-icon {
+            color: $off-white;
+            font-weight: 900;
+            width: unset;
+        }
+
+        .menu-icon::before {
+            font-family: "Font Awesome 5 Free solid";
+            content: "\f0c9";
+            margin-right: rem-calc(7px);
+        }
+
+        .menu-icon::after {
+            content: unset;
         }
 
     }
+
+    #level-1, #level-2, #level-3 {
+        background: $orange;
+        color: $off-white;
+        margin: rem-calc(15px) rem-calc(8px) rem-calc(24);
+        display: flex;
+    }
+
 }
 
 @media screen and (min-width:771px) {
 
-    header.title-bar{
+    header.title-bar, #level-1, #level-2, #level-3 {
         display: none !important;
     }
 }

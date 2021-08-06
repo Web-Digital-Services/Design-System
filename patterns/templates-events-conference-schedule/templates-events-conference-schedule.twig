@@ -1,23 +1,11 @@
-{% include "@components/header/global-bar.twig" %}
-{% include "@components/header/level-3.twig" %}
+{% include "@blocks/header/global-bar.twig" %}
+{% include "@blocks/header/level-3.twig" %}
 {% include "@components/navigation/navbar.twig" %}
+{% include "@components/navigation/breadcrumbs.twig" %}
 <section class="bleed">
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x">
-			<div class="cell medium-12 large-8">
-				<nav aria-label="You are here:" role="navigation">
-					<ul class="breadcrumbs">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Events</a></li>
-						<li>
-							<span class="show-for-sr">Current: </span> Arbitrary Conference
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<div class="grid-x grid-margin-x">
-			<main class="cell medium-12 large-8">
+			<main class="cell small-12 medium-8 large-8">
 				<h1>Schedule</h1>
 				<p class="margin-bottom">
 					Tea garden puerh black tea baihao yinzhen infuser rose hips nepal chamomile energy. Boba tea
@@ -26,8 +14,8 @@
 					zen tea garden black mint nilgiri turmeric iced kukicha fermentation black london fog. Bamboo
 					whisk teahouse genmai sencha focus loose leaf tea time caffeine london fog bamboo whisk infuser.
 				</p>
-				<div class="grid-x">
-					<div class="cell tab-container large-12">
+				<div class="grid-x margin-bottom">
+					<div class="cell tab-container small-12 medium-12 large-12">
 						<ul class="tabs manilla" data-tabs id="example-tabs">
 							<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Day 1</a></li>
 							<li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Day 2</a></li>
@@ -36,24 +24,51 @@
 						<div class="tabs-content" data-tabs-content="example-tabs">
 							<div class="tabs-panel is-active" id="panel1">
 								<div class="grid-x">
-									<div class="cell large-2 medium-4">
-										<ul class="no-bullet">
-											<li>7:15</li>
-											<li>8:00</li>
-											<li>9:30 </li>
-											<li>10:00 </li>
-											<li>11:00</li>
+									<div class="cell small-3 medium-3 large-2">
+										<p>7:15 </p>
+									</div>
+									<div class="cell small-9 medium-9 large-10">
+										<p>Free Breakfast</p>
+									</div>
+								</div>
+								<div class="grid-x">
+									<div class="cell small-3 medium-3 large-2">
+										<p>8:00 </p>
 										</ul>
 									</div>
-									<div class="cell large-10 medium-8">
+									<div class="cell small-9 medium-9 large-10">
 										<ul class="no-bullet">
-											<li>Free Breakfast</li>
-											<li>Opening Remarks and Roast Session</li>
-											<li>Rap Battle and Croissants</li>
+											<li>Opening Remarks Breakfast</li>
+									</div>
+								</div>
+								<div class="grid-x">
+									<div class="cell small-3 medium-3 large-2">
+										<p>9:30 </p>
+									</div>
+									<div class="cell small-9 medium-9 large-10">
+										<p>Rap Battle and Croissants</p>
+									</div>
+								</div>
+								<div class="grid-x">
+									<div class="cell small-3 medium-3 large-2">
+										<p>10:00 </p>
+										</ul>
+									</div>
+									<div class="cell small-9 medium-9 large-10">
+										<ul class="no-bullet">
 											<li>Panel 1: Why Indeed Does the Duck Cross the Road? A Deep Look</li>
-											<li>Second Breakfast/Lunch Pre-Game</li>
+									</div>
+								</div>
+								<div class="grid-x">
+									<div class="cell small-3 medium-3 large-2">
+										<p>11:00 </p>
 										</ul>
 									</div>
+									<div class="cell small-9 medium-9 large-10">
+										<ul class="no-bullet">
+											<li>Second Breakfast/Lunch Pre-Game</li>
+									</div>
+
 								</div>
 							</div>
 							<div class="tabs-panel" id="panel2">
@@ -66,7 +81,7 @@
 					</div>
 				</div>
 			</main>
-			<aside class="cell medium-12 large-4  ">
+			<aside class="cell small-12 medium-4 large-4">
 				<ul class="vertical menu accordion-menu margin-bottom" data-accordion-menu>
 					<li>
 						<a href="#">Arbitrary Conference Home</a>
@@ -89,5 +104,4 @@
 		</div>
 	</div>
 </section>
-
-{% include "@components/footer/alamo.twig" %}
+{% include "@blocks/footer/alamo.twig" %}

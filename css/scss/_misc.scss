@@ -1,4 +1,11 @@
 /* ==============================
+    Grid Adjustments
+============================== */
+
+.grid-container {
+    max-width: $global-width;
+}
+/* ==============================
     Padding Helpers
 ============================== */
 // Add -# to muliple the padding size from the default (e.g. padding-2 is 60 because 30x2 = 60)
@@ -162,3 +169,4 @@
 .gradient {
     background: linear-gradient(to right, $gold 10%, $orange 50%, $dark-orange 75%);;
 }
+

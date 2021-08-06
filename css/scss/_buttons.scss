@@ -9,12 +9,12 @@
     font-size: rem-calc(18px);
     font-weight: 500;
     box-shadow: $shadow-2;
-    
+
     &.white {
         background-color: $off-white;
         color: $orange;
     }
-    
+
     &.ghost {
         border: rem-calc(1px) solid $orange;
         background-color: $off-white;
@@ -44,14 +44,36 @@
 .hero {
     .button {
         font-weight: 700;
-        padding-top: rem-calc(20px);
-        padding-bottom: rem-calc(20px);
+        padding-top: rem-calc(22px);
+        padding-bottom: rem-calc(22px);
     }
 
     &.button-group {
         &.button {
             font-weight: 700;
             font-size: rem-calc(18px);
+        }
+    }
+
+    .orange {
+        .button {
+            background-color: $off-white;
+            color: $orange;
+        }
+
+        .button:hover {
+            background-color: darken($pure-white, 20%);
+        }
+        
+        .button-group {
+            .button {
+                background-color: $off-white;
+                color: $orange;
+            }
+
+            .button:hover {
+                background-color: darken($pure-white, 20%);
+            }
         }
     }
 }
@@ -69,7 +91,7 @@
             }
             &.ghost:hover {
                 background-color: rgba(23, 23, 23, 0.5);
-            }            
+            }
         }
 
         .button:hover {
@@ -85,7 +107,7 @@
                     color: $orange;
                 }
             }
-        } 
+        }
 
         .white {
             .button {
@@ -95,7 +117,7 @@
                     color: $orange;
                 }
             }
-            
+
         }
 
         .light-grey {
@@ -108,7 +130,7 @@
             }
         }
 
-        .medium-beige {
+        .beige {
             .button {
                 &.ghost {
                     border: rem-calc(1px) solid $orange;
@@ -151,6 +173,7 @@
         flex-direction: column;
         .button {
             width:100%;
+            margin-bottom: rem-calc(20px);
         }
     }
 }

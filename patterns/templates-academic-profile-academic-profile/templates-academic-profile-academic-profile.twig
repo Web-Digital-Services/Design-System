@@ -1,24 +1,19 @@
-{% include "@components/header/global-bar.twig" %}
-{% include "@components/header/level-2.twig" %}
+{% include "@blocks/header/global-bar.twig" %}
+{% include "@blocks/header/level-2.twig" %}
 {% include "@components/navigation/navbar.twig" %}
-
+<nav aria-label="You are here:" role="navigation">
+    <ul class="breadcrumbs">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Faculty Directory</a></li>
+        <li>
+            <span class="show-for-sr">Current: </span> Paul B. Allen, Sr., DSc, MPAS, PA-C
+        </li>
+    </ul>
+</nav>
 <section class="bleed">
     <div class="grid-container">
         <div class="grid-x grid-margin-x ">
-            <div class="cell medium-12 large-12">
-                <nav aria-label="You are here:" role="navigation">
-                    <ul class="breadcrumbs">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Faculty Directory</a></li>
-                        <li>
-                            <span class="show-for-sr">Current: </span> Paul B. Allen, Sr., DSc, MPAS, PA-C
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="grid-x grid-margin-x ">
-            <aside class="cell medium-12 large-4 small-order-1 medium-order-1">
+            <aside class="cell medium-6 large-4 small-order-2 medium-order-1">
                 <img src="https://placedog.net/450/675" alt="adorable pup" class="margin-bottom">
                 <h2 class="sans-serif h5 bold">Contact</h2>
                 <ul class="no-bullet">
@@ -44,7 +39,7 @@
 
                 <p class="font-italic">Currently seeking Ph.D. students</p>
             </aside>
-            <main class="cell medium-12 large-8 small-order-1 medium-order-2">
+            <main class="cell medium-6 large-8 small-order-1 medium-order-1">
                 <h1 class="close"> Paul B. Allen, Sr., DSc, MPAS, PA-C</h1>
                 <h2 class="sans-serif h4">Associate Professor</h2>
                 <h2 class="sans-serif h4">Program Director and Chair</h2>
@@ -149,18 +144,18 @@
                     </div>
                 </div>
 
-                <div class="grid-x">
-                    <h3>Related Media</h3>
-                <div class="grid-x">
+                <h3>Related Media</h3>
+                <div class="grid-x grid-margin-x">
                     <div class="cell large-6 medium-12">
-                        <video controls>
-                            <source src="mov_bbb.mp4" type="video/mp4">
-                            <source src="mov_bbb.ogg" type="video/ogg">
-                            Your browser does not support HTML video.
-                        </video>
+                        <div class="responsive-embed">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/cVsQLlk-T0s"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
                     </div>
-                    <div class="cell large-6 medium-12">
-                        <ul class="arrow">
+                    <div class="cell large-6 medium-12 arrow">
+                        <ul>
                             <li><a>Prow scuttle parrel provost</a></li>
                             <li><a>Sail ho shrouds spirits boom mizzenmast yardarm.</a></li>
                             <li><a>Pinnace holystone mizzenmast quarter crow's nest</a></li>
@@ -169,9 +164,8 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </main>
-    </div>
+            </main>
+        </div>
 </section>
 
-{% include "@components/footer/alamo.twig" %}
+{% include "@blocks/footer/alamo.twig" %}

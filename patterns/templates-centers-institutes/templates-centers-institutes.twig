@@ -1,5 +1,5 @@
-{% include "@components/header/global-bar.twig" %}
-{% include "@components/header/level-2.twig" %}
+{% include "@blocks/header/global-bar.twig" %}
+{% include "@blocks/header/level-2.twig" %}
 {% include "@components/navigation/navbar.twig" %}
 <section class="hero full bleed img-fill">
     <img src="https://placedog.net/1500/750" alt="adorable pup">
@@ -35,32 +35,32 @@
                 <div class="cell text-center padding-bottom">
                     <h2>Top Stories</h2>
                 </div>
-                <div class="small-12 medium-3 cell">
-                    <a class="card cell light-grey">
+                <div class="small-12 medium-3 cell flex-container">
+                    <a class="card cell light-grey flex-child-auto">
                         <img src="https://picsum.photos/330/220">
                         <div class="card-section">
                             <p>Stand Up to Cancer: Alexander J. R. Bishop, DPhil to Lead One of Three Trans-Atlantic Teams to Study Hard-to-Treat Childhood Cancers</p>
                         </div>
                     </a>
                 </div>
-                <div class="small-12 medium-3 cell">
-                    <a class="card cell light-grey">
+                <div class="small-12 medium-3 cell flex-container">
+                    <a class="card cell light-grey flex-child-auto">
                         <img src="https://picsum.photos/330/220">
                         <div class="card-section">
                             <p>Raushan Kurmasheva, Ph.D., Part of Dmitri Ivanov, Ph.D., CPRIT Grant Team “Identifying and Optimizing Small Molecules for Drug Development”</p>
                         </div>
                     </a>
                 </div>
-                <div class="small-12 medium-3 cell">
-                    <a class="card cell light-grey">
+                <div class="small-12 medium-3 cell flex-container">
+                    <a class="card cell light-grey flex-child-auto">
                         <img src="https://picsum.photos/330/220">
                         <div class="card-section">
                             <p>Stand Up to Cancer: Alexander J. R. Bishop, DPhil to Lead One of Three Trans-Atlantic Teams to Study Hard-to-Treat Childhood Cancers</p>
                         </div>
                     </a>
                 </div>
-                <div class="small-12 medium-3 cell">
-                    <a class="card cell light-grey">
+                <div class="small-12 medium-3 cell flex-container">
+                    <a class="card cell light-grey flex-child-auto">
                         <img src="https://picsum.photos/330/220">
                         <div class="card-section">
                             <p>Raushan Kurmasheva, Ph.D., Part of Dmitri Ivanov, Ph.D., CPRIT Grant Team “Identifying and Optimizing Small Molecules for Drug Development”</p>
@@ -70,6 +70,6 @@
             </div>
         </div>
     </section>
-    {% include "@components/feeds/news-events.twig" %}
+    {% include "@blocks/feeds/news-events.twig" %}
 </main>
-{% include "@components/footer/alamo.twig" %}
+{% include "@blocks/footer/alamo.twig" %}

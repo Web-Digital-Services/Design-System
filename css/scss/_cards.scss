@@ -57,7 +57,7 @@ a.card {
         &:after {
             position: absolute;
             display: block;
-            font-family: "Font Awesome 5 Free solid";
+            font-family: "Font Awesome 5 Free";
             font-weight: 900;
             font-size: rem-calc(60px);
             content: "\f105";
@@ -101,7 +101,7 @@ a.card {
         &:after {
             position: absolute;
             display: block;
-            font-family: "Font Awesome 5 Free solid";
+            font-family: "Font Awesome 5 Free";
             font-weight: 900;
             font-size: rem-calc(60px);
             content: "\f105";
@@ -136,9 +136,10 @@ a.card {
             h3,
             h4,
             p {
-                margin-right: 3rem;
                 transition: .4s ease-in-out;
             }
+
+
 
             &:after {
                 color: $light-grey;
@@ -163,6 +164,15 @@ a.card {
             img {
                 transform: scale(1.05);
             }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    a.card.postcard {
+        p {
+            display: none;
         }
     }
 }
@@ -198,13 +208,20 @@ a.card {
     }
 }
 
-@media screen and (max-width:465px) {
+.hero {
+    &.card {
+        background-color: $blue;
+        color: $off-white;
+        margin-bottom: rem-calc(-60px);
 
-    a.card.postcard {
+        img {
+            margin-bottom: 0;
+            width:100%;
+            height: auto;
+        }
+
         .card-section {
-            p {
-                display: none;
-            }
+            padding: rem-calc(20px);
         }
     }
 }

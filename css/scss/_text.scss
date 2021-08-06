@@ -37,6 +37,7 @@ h5,
 .h5,
 h6,
 .h6 {
+    font-family: $serif-font;
     margin-bottom: rem-calc(18px);
     line-height: 1.5;
 }
@@ -46,9 +47,14 @@ label {
     font-size: rem-calc(18px);
 }
 
+address {
+    font-style: normal;
+}
+
 strong {
     font-weight: 900;
 }
+
 
 .black {
     font-weight: $black-font-weight;
@@ -79,6 +85,17 @@ strong {
 
 .sub {
     font-size: rem-calc(32px);
+}
+
+.subheader {
+    font-family: $sans-serif-font;
+    color: $off-black;
+    font-size: rem-calc(32px);
+    margin-top: rem-calc(-27px);
+    margin-bottom: 0;
+    @media screen and (max-width: 569px) {
+        font-size: rem-calc(24px);
+    }
 }
 
 // ======= Colorized headings and paragraph text
@@ -199,7 +216,7 @@ a {
         color: $dark-orange;
         text-decoration: none;
     }
-    &:visited,
+    &:visited:not(.button),
     &:focus {
         color: $dark-orange;
     }
@@ -225,7 +242,7 @@ p {
 a.arrow {
     &:after {
         display: inline-block;
-        font-family: "Font Awesome 5 Free solid";
+        font-family: "Font Awesome 5 Free";
         font-weight: 900;
         content: "\f105";
         color: $orange;
@@ -377,16 +394,6 @@ a.highlight {
     }
 }
 
-//Apply underline effect to paragraph text
-
-/*p>a:not(.button, .no-underline):before {
-    @extend %link-underline;
-}
-
-p>a:not(.button, .no-underline):before:hover {
-    @extend %link-underline-hover;
-}*/
-
 ul:not(.accordion, .menu) a {
     font-weight: 600;
 }
@@ -400,24 +407,25 @@ ul:not(.accordion, .menu) a {
 Date
 =================*/
 
-.date {
-    text-align: center;
-    span:first-child {
-        font-weight: 800;
-        font-size: rem-calc(22px);
-        text-transform: capitalize;
-        line-height: .75;
-    }
-    span:last-child {
-        font-weight: 900;
-        font-size: rem-calc(40px);
-        line-height: .75;
-    }
-}
-
 .help-text {
     font-size: rem-calc(16px);
     font-weight: 200;
     color: $off-black;
     font-style: normal;
+}
+
+a:focus-visible {
+    outline-color: $blue;
+    outline-width: rem-calc(8px);
+    outline-offset: rem-calc(10px);
+}
+
+/* =========================
+Tooltip
+=================*/
+
+.has-tip {
+    color: $dark-grey;
+    border-bottom: solid 1px $dark-grey;
+
 }

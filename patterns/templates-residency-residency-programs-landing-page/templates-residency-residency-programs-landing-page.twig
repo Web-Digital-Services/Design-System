@@ -1,5 +1,5 @@
-{% include "@components/header/global-bar.twig" %}
-{% include "@components/header/level-3.twig" %}
+{% include "@blocks/header/global-bar.twig" %}
+{% include "@blocks/header/level-3.twig" %}
 {% include "@components/navigation/navbar.twig" %}
 <section class="hero bleed img-fill full">
     <img src="https://placedog.net/1500/750" alt="adorable pup">
@@ -17,19 +17,9 @@
         </div>
     </div>
 </section>
-
+{% include "@components/navigation/breadcrumbs.twig" %}
 <section class="bleed">
     <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-            <nav aria-label="You are here:" role="navigation">
-                <ul class="breadcrumbs">
-                    <li><a href="#">Education</a></li>
-                    <li>
-                        <span class="show-for-sr">Current: </span> Radiology Residency Programs
-                    </li>
-                </ul>
-            </nav>
-        </div>
         <div class="grid-x grid-margin-x">
             <div class="cell small-12 medium-7">
                 <h2 class="h3"><a href="#">Vascular & Interventional Radiology Residency</a></h2>
@@ -45,7 +35,7 @@
         </div>
     </div>
 </section>
-<section class="bleed medium-beige">
+<section class="bleed beige">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell small-12 medium-6 large-5">
@@ -81,4 +71,4 @@
         </div>
     </div>
 </section>
-{% include "@components/footer/alamo.twig" %}
+{% include "@blocks/footer/alamo.twig" %}

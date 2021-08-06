@@ -1,23 +1,11 @@
-{% include "@components/header/global-bar-quicklinks.twig" %}
-{% include "@components/header/level-2.twig" %}
+{% include "@blocks/header/global-bar-quicklinks.twig" %}
+{% include "@blocks/header/level-2.twig" %}
 {% include "@components/navigation/navbar.twig" %}
+{% include "@components/navigation/breadcrumbs.twig" %}
 <section class="bleed">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
-            <div class="cell">
-                <nav aria-label="You are here:" role="navigation">
-                    <ul class="breadcrumbs">
-                        <li><a href="#">Parent</a></li>
-                        <li><a href="#">Child</a></li>
-                        <li>
-                            <span class="show-for-sr">Current: </span> Child
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="grid-x grid-margin-x">
-            <main class="cell large-8 small-12">
+            <main class="cell large-8 medium-8 small-12">
                 <h1 class="close">Cranial Remolding Therapy</h1>
                 <p class="sub">Cranial Remolding Program</p>
                 <p class="light"><strong>Related to:</strong> Cranial remolding helmets, Cranial remolding orthosis,
@@ -50,7 +38,7 @@
                     surgery. The exact parameters of the treatment plan will be dependent on the patient’s needs as well
                     as the severity of their condition.</p>
             </main>
-            <aside class="cell large-4 small-12">
+            <aside class="cell large-4 medium-4 small-12">
                 <div class="callout outline">
                     <h2>Appointments</h2>
                     <p>Appoinments are by physician referral. Call <a>210-450-9064</a> for more information.</p>
@@ -82,4 +70,4 @@
         </div>
     </div>
 </section>
-{% include "@components/footer/alamo.twig" %}
+{% include "@blocks/footer/alamo.twig" %}

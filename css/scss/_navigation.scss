@@ -5,7 +5,12 @@
 // ======= Breadcrumbs
 
 .breadcrumbs {
-    margin-top: 0 !important;
+    max-width: $global-width;
+    display: flex;
+    align-items: center;
+    margin: rem-calc(30px) auto rem-calc(-30px) auto;
+    padding-left: rem-calc(15px);
+    padding-right: rem-calc(15px);
 }
 
 .breadcrumbs a {
@@ -16,7 +21,7 @@
 }
 
 .breadcrumbs li:not(:last-child)::after {
-    font-family: "Font Awesome 5 Free solid";
+    font-family: "Font Awesome 5 Free";
     content: "\f105";
     font-weight: 900;
     color: $orange;
@@ -31,12 +36,27 @@
 }
 
 @media screen and (max-width:639px) {
-    .breadcrumbs li:first-child::before {
-        font-family: "Font Awesome 5 Free solid";
+    .breadcrumbs {
+        padding-left: rem-calc(10px);
+        padding-right: rem-calc(10px);
+        margin-bottom: rem-calc(-48px);
+    }
+
+    .breadcrumbs li:nth-last-child(2)::before {
+        font-family: "Font Awesome 5 Free";
         content: "\f104";
         font-weight: 900;
         color: $orange;
         font-size: rem-calc(18px);
+        margin: 0 rem-calc(12px) 0 0;
+    }
+
+    .breadcrumbs li:not(:nth-last-child(2)) {
+        display: none;
+    }
+
+    .breadcrumbs li:nth-last-child(2)::after {
+        display: none;
     }
 }
 
@@ -61,15 +81,17 @@
 }
 
 .pagination-previous a::before {
-    font-family: "Font Awesome 5 Free solid";
+    font-family: "Font Awesome 5 Free";
     content: "\f104";
     font-weight: 900;
+    font-size: rem-calc(24px);
 }
 
 .pagination-next a::after {
-    font-family: "Font Awesome 5 Free solid";
+    font-family: "Font Awesome 5 Free";
     content: "\f105";
     font-weight: 900;
+    font-size: rem-calc(24px);
 }
 
 .pagination .ellipsis::after {
@@ -77,49 +99,76 @@
     font-size: rem-calc(18px);
 }
 
+
+
+
 // ======= Subnav
+
+#subnav {
+    margin-bottom: rem-calc(30px);
+    .nested.vertical.submenu {
+        border-left: rem-calc(4px) solid $gold;
+        margin-top: rem-calc(6px);
+        margin-bottom: rem-calc(18px);
+
+        li.is-nested {
+            font-weight: 900 !important;
+            color: $dark-orange;
+        }
+    }
+}
 .accordion-menu li:not(.nested li) {
-    border-bottom: rem-calc(1px) #99A3A8 solid;
+    border-bottom: rem-calc(1px) $grey-40 solid;
 }
 
-.accordion-menu .is-active {
+.accordion-menu .is-active:not(.nested) {
     font-weight: 900 !important;
-    font-style: italic;
     color: $dark-orange;
 }
 
 .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a::after {
-    font-family: "Font Awesome 5 Free solid";
+    font-family: "Font Awesome 5 Free";
     content: "\f107";
     font-weight: 900;
     color: $orange;
-    font-size: rem-calc(18px);
+    font-size: rem-calc(20px);
+    border: none;
+    font-style: normal;
 }
 
 .accordion-menu .is-accordion-submenu-parent[aria-expanded='true']>a::after {
-    transform: rotate(180deg);
-    transform-origin: 50% 50%;
+    font-family: "Font Awesome 5 Free solid";
+    content: "\f106";
+    font-weight: 900;
+    color: $orange;
+    font-size: rem-calc(18px);
+    transform: none;
+    transform-origin: unset;
 }
+
+
+
 
 // ======= Navbar
 
 .nav-bar {
-    background-image: linear-gradient(to right,$orange, $orange 40%, $dark-orange 70%, $dark-orange);
+    background-image: linear-gradient(to right, $orange, $orange 40%, $dark-orange 70%, $dark-orange);
     display: flex;
     justify-content: space-between;
     justify-content: center;
+
     .top-bar {
         padding: 0;
         overflow: hidden;
         position: relative;
-        width: 1440px;
+        width: $global-width;
 
         .top-bar-left {
             ul {
                 background: $orange;
 
                 li {
-                    transition: .2s ease-in-out;
+                    transition: .3s ease-in-out;
                 }
 
                 li:hover {
@@ -134,14 +183,14 @@
 
         .top-bar-right {
 
-            border-left: rem-calc(3px) solid $gold;
+            border-left: rem-calc(4px) solid $gold;
             background: $dark-orange;
 
             ul {
                 background: $dark-orange;
 
                 li {
-                    transition: .2s ease-in-out;
+                    transition: .3s ease-in-out;
                 }
 
                 li:hover {
@@ -196,19 +245,17 @@
     }
 }
 
-@media screen and (max-width:465px) {
+@media screen and (max-width:770px) {
 
     .top-bar {
 
         border-top: rem-calc(4px) solid $gold;
-
+        display: block;
         ul {
             display: block;
             background: $dark-grey !important;
 
             li {
-
-                display: block !important;
 
                 &:hover {
                     background: $off-white !important;
@@ -216,8 +263,7 @@
 
                 a {
                     &:hover {
-                        color: $orange;
-                        //font-weight: 900;
+                        color: $orange !important;
                     }
                 }
 

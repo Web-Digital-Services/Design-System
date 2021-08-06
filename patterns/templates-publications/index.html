@@ -5,19 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
 
-    <link rel="stylesheet" href="../../css/main.css?1627579879055" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1627579879055" media="all" />
-    <script type="text/javascript" src="../../js/vendor/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="../../js/shield.min.js"></script>
-    <script type="text/javascript" src="../../js/vendor/what-input/what-input.min.js"></script>
-    <script type="module" src="../../js/vendor/foundation/foundation.min.js"></script>
+    <link rel="stylesheet" href="../../css/main.css?1628286348828" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1628286348828" media="all" />
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1627579879055" media="all">
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1628286348828" media="all">
     <!-- End Pattern Lab -->
   </head>
   <body class=""><!-- View All Patterns in a Pattern Sub-Type -->
@@ -77,26 +73,28 @@
 			<div class="top-bar global-bar">
     <div class="top-bar-left"></div>  
     <div class="top-bar-right">
-        <p><a><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
+        <p><a href="#"><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
     </div>
 </div><header class="regular">
     <div class="logo">
-        <a><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
+        <a href="#"><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
         <p>Site Name</p>
     </div>
     <div class="right">
         <form class="search">
-            <input type="search" placeholder="Search">
-        </form>
-        <div class="right">
-            <a>
+    <input type="search" class="search-box" placeholder="Search">
+    <button type="submit">
+        <i class="fa fa-search"></i>
+    </button>
+</form>        <div class="right">
+            <a href="#">
                 <span class="fa-stack outline">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-notes-medical fa-stack-1x fa-inverse"></i>
                 </span>
                 <span>MyChart</span>
             </a> 
-            <a>
+            <a href="#">
                 <span class="fa-stack outline">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
@@ -107,9 +105,11 @@
     </div>
 </header>
 
-<header class="title-bar">
-    <a><img src="../../images/whiteUTHSA_logo.svg"></a>
-</header><!--<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+<header class="title-bar" data-responsive-toggle>
+    <a href="#"><img src="../../images/whiteUTHSA_logo.svg"></a>
+    <button class="menu-icon" type="button" data-toggle>Menu</button>
+</header>
+<!--<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
     <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
     <div class="title-bar-title">Menu</div>
 </div>-->
@@ -180,64 +180,63 @@
         <div class="grid-x margin-x">
             <div class="cell large-10">
                 <p class="results">Results: 20 publications and presentations</p>
+                <div class="lines">
+                    <ul>
+                        <li>
+                            <p><a class="no-underline" href="#"><strong>Single-Cell Proteomic Profiling Identifies Combined AXL and JAK1 Inhibition as a Novel Therapeutic Strategy for Lung Cancer</strong></a></p>
+                            <p>Taverna JA, Hung CN, DeArmond DT, Chen M, Lin CL, Osmulski PA, Gaczynska ME, Wang CM, Lucio
+                                ND, Chou CW, Chen CL, Nazarullah A, Lampkin SR, Qiu L, Bearss DJ, Warner S, Whatcott CJ,
+                                Mouritsen L, Wade M, Weitman S, Mesa RA, Kirma NB, Chao WT, Huang TH</p>
+                            <p>Cancer Res. 2020 Apr 1;80(7):1551-1563. doi: 10.1158/0008-5472.CAN-19-3183. Epub 2020 Jan 28.
+                            </p>
+                            <ul class="tags">
+                                <li><a href="#">Tag 1</a></li>
+                                <li><a href="#">Tag 2</a></li>
+                                <li><a href="#">Tag 3</a></li>
+                            </ul>
 
-                <ul class="lines">
-                    <li>
-                        <p><a><strong>Single-Cell Proteomic Profiling Identifies Combined AXL and JAK1 Inhibition as a
-                                    Novel Therapeutic Strategy for Lung Cancer</strong></a></p>
-                        <p>Taverna JA, Hung CN, DeArmond DT, Chen M, Lin CL, Osmulski PA, Gaczynska ME, Wang CM, Lucio
-                            ND, Chou CW, Chen CL, Nazarullah A, Lampkin SR, Qiu L, Bearss DJ, Warner S, Whatcott CJ,
-                            Mouritsen L, Wade M, Weitman S, Mesa RA, Kirma NB, Chao WT, Huang TH</p>
-                        <p>Cancer Res. 2020 Apr 1;80(7):1551-1563. doi: 10.1158/0008-5472.CAN-19-3183. Epub 2020 Jan 28.
-                        </p>
-                        <ul class="tags">
-                            <li><a>Tag 1</a></li>
-                            <li><a>Tag 2</a></li>
-                            <li><a>Tag 3</a></li>
-                        </ul>
+                        </li>
+                        <li>
+                            <p><a class="no-underline" href="#"><strong>MALDI-MSI and METASPACE annotation of normal human renal cortical tissue reveals onsistent lipid remodeling</strong></a></p>
+                            <p>Guanshi Zhang</p>
+                            <p>Session Title: Diabetic Kidney Disease: Basic – I [PO0601-1]</p>
+                            <p>Date: October 25, 2018 from 10:00 AM to 12:00 PM</p>
+                            <p>Abstract #: 3024773; Poster Board #: TH-PO871 </p>
+                            <ul class="tags">
+                                <li><a href="#">Tag 1</a></li>
+                                <li><a href="#">Tag 2</a></li>
+                                <li><a href="#">Tag 3</a></li>
+                            </ul>
 
-                    </li>
-                    <li>
-                        <p><a><strong>MALDI-MSI and METASPACE annotation of normal human renal cortical tissue reveals
-                                    consistent lipid remodeling</strong></a></p>
-                        <p>Guanshi Zhang</p>
-                        <p>Session Title: Diabetic Kidney Disease: Basic – I [PO0601-1]</p>
-                        <p>Date: October 25, 2018 from 10:00 AM to 12:00 PM</p>
-                        <p>Abstract #: 3024773; Poster Board #: TH-PO871 </p>
-                        <ul class="tags">
-                            <li><a>Tag 1</a></li>
-                            <li><a>Tag 2</a></li>
-                            <li><a>Tag 3</a></li>
-                        </ul>
+                        </li>
+                        <li>
+                            <p><a class="no-underline" href="#"><strong>Prevalence and Severity of Fluorosis among Girls in Nanyuki, Kenya.</strong></a>
+                            </p>
+                            <p>Buischi, Y.P.; Campos, N.; Mwongera, K.; Loomer, P.M.</p>
+                            <p>97th General Session & Exhibition of the International Association for Dental Research</p>
+                            <p>(IADR), Vancouver, Canada. Journal of Dental Research, v. 98A, Abstract #1360, 2019.</p>
 
-                    </li>
-                    <li>
-                        <p><a><strong>Prevalence and Severity of Fluorosis among Girls in Nanyuki, Kenya.</strong></a>
-                        </p>
-                        <p>Buischi, Y.P.; Campos, N.; Mwongera, K.; Loomer, P.M.</p>
-                        <p>97th General Session & Exhibition of the International Association for Dental Research</p>
-                        <p>(IADR), Vancouver, Canada. Journal of Dental Research, v. 98A, Abstract #1360, 2019.</p>
+                            <p>Conference Title: CUGH Conference, Boston</p>
+                            <p>Date: 2015</p>
+                            <p>Abstract #: 3024773; Poster Board #: TH-PO871 </p>
 
-                        <p>Conference Title: CUGH Conference, Boston</p>
-                        <p>Date: 2015</p>
-                        <p>Abstract #: 3024773; Poster Board #: TH-PO871 </p>
-
-                        <ul class="tags">
-                            <li><a>Tag 1</a></li>
-                            <li><a>Tag 2</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p><strong>BARI 2D Study Group. BARI 2D: A Reanalysis Focusing on Cardiovascular Events</strong>
-                        </p>
-                        <p>Genuth SM, Vlachos H, Brooks MM, Bantle JP, Chaitman BR, Green J, Kelsey SF, King SB 3rd,
-                            McBane R, Sako EY, Schneider DJ, Steffes M, Frye RL. </p>
-                        <p>Mayo Clin Proc 2019 Nov;94(11):2249-2262.</p>
-                        <ul class="tags">
-                            <li><a>Tag 1</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                            <ul class="tags">
+                                <li><a href="#">Tag 1</a></li>
+                                <li><a href="#">Tag 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>BARI 2D Study Group. BARI 2D: A Reanalysis Focusing on Cardiovascular Events</strong>
+                            </p>
+                            <p>Genuth SM, Vlachos H, Brooks MM, Bantle JP, Chaitman BR, Green J, Kelsey SF, King SB 3rd,
+                                McBane R, Sako EY, Schneider DJ, Steffes M, Frye RL. </p>
+                            <p>Mayo Clin Proc 2019 Nov;94(11):2249-2262.</p>
+                            <ul class="tags">
+                                <li><a href="#">Tag 1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -246,7 +245,7 @@
     <div class="alamo">
         <!--<img src="../../images/logo-alamo-only.svg">-->
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 116.256 47.344" enable-background="new 0 0 116.256 47.344" xml:space="preserve">
-        <path d="M0.116,47.344l116.069-0.002V44.05v-10.1v-4.303h-14.539v-5.724h-3.418c0,0-7.529,0.29-13.178-3.052 c-5.586-3.306-6.625-6.449-6.641-6.464V9.806h-7.446C69.692,4.193,64.675,0,58.674,0c-6.003,0-11.02,4.193-12.29,9.806h-7.579v4.601c-0.029,0.03-1.068,3.165-6.639,6.464c-5.649,3.342-13.179,3.052-13.179,3.052h-4.449v5.724H0v4.303v10.1v3.228"></path>
+        <path id="never-forget" d="M0.116,47.344l116.069-0.002V44.05v-10.1v-4.303h-14.539v-5.724h-3.418c0,0-7.529,0.29-13.178-3.052 c-5.586-3.306-6.625-6.449-6.641-6.464V9.806h-7.446C69.692,4.193,64.675,0,58.674,0c-6.003,0-11.02,4.193-12.29,9.806h-7.579v4.601c-0.029,0.03-1.068,3.165-6.639,6.464c-5.649,3.342-13.179,3.052-13.179,3.052h-4.449v5.724H0v4.303v10.1v3.228"></path>
         </svg>
     </div>
     <div class="grid-container">
@@ -258,39 +257,39 @@
                     <div class="cell medium-6 large-6">
                         <ul class="fa-ul stacked loose-list">
                             <li>
-                                <a>
+                                <a href="#">
                                     <span class="fa-li">
                                     <span class="fa-stack">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
-                                    </span> 
+                                    </span>
                                     </span> <span >210-567-0000 </span>
                                 </a>
                             </li>
 
                             <li>
-                                <a>
+                                <a href="#">
                                     <span class="fa-li">
                                     <span class="fa-stack">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
-                                    </span> 
                                     </span>
-                                </a> 
-                                <span>7703 Floyd Curl Drive<br>San Antonio, TX 78229<br><a>Map and directions</a></span>
-                                
+                                    </span>
+                                </a>
+                                <span>7703 Floyd Curl Drive<br>San Antonio, TX 78229<br></span><a href="#"><span>Map and directions</span></a>
+
                             </li>
                         </ul>
                     </div>
                     <div class="cell medium-6 large-6">
-                        <p><a class="arrow">Careers</a></p>
-                        <p><a class="arrow">Contact Us</a></p>
+                        <p><a href="#" class="arrow">Careers</a></p>
+                        <p><a href="#" class="arrow">Contact Us</a></p>
                         <span>
-                            <a><i class="fab fa-facebook-square fa-2x"></i></a>
-                            <a><i class="fab fa-linkedin fa-2x"></i></a>
-                            <a><i class="fab fa-twitter-square fa-2x"></i></a>
-                            <a><i class="fab fa-instagram-square fa-2x"></i></a>
-                            <a><i class="fab fa-youtube-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-youtube-square fa-2x"></i></a>
                         </span>
                     </div>
                 </div>
@@ -298,14 +297,14 @@
             </div>
             <div class="cell medium-6 large-6 vr">
                 <p class="large-text">We make lives better ®</p>
-                <p>The University of Texas Health Science Center at San Antonio, also called <a>UT Health San Antonio</a>, is a leading academic health center with a mission to make lives better through excellence in <a>advanced academics</a>, <a>life-saving research</a> and comprehensive clinical care including <a>health</a>, <a>dental</a> and <a>cancer services</a>.</p>
+                <p>The University of Texas Health Science Center at San Antonio, also called <a href="#">UT Health San Antonio</a>, is a leading academic health center with a mission to make lives better through excellence in <a href="#">advanced academics</a>, <a href="#">life-saving research</a> and comprehensive clinical care including <a href="#">health</a>, <a href="#">dental</a> and <a href="#">cancer services</a>.</p>
             </div>
         </div>
     </div>
     <div class="bleed">
         <div class="grid-container">
             <div class="cell">
-                <p><a>Web Privacy</a> | Links from websites affiliated with UT Health's website (uthscsa.edu) to other websites do not constitute or imply university endorsement of those sites, their content, or products and services associated with those sites. The content on this website is intended to be used for informational purposes only. Health information on this site is not meant to be used to diagnose or treat conditions. Consult a health care provider if you are in need of treatment.</p>
+                <p><a href="#">Web Privacy</a> | Links from websites affiliated with UT Health's website (uthscsa.edu) to other websites do not constitute or imply university endorsement of those sites, their content, or products and services associated with those sites. The content on this website is intended to be used for informational purposes only. Health information on this site is not meant to be used to diagnose or treat conditions. Consult a health care provider if you are in need of treatment.</p>
             </div>
         </div>
     </div>
@@ -313,7 +312,7 @@
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-templates-publications" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-global-bar","lineagePath":"../../patterns/components-header-global-bar/components-header-global-bar.rendered.html"},{"lineagePattern":"components-level-3","lineagePath":"../../patterns/components-header-level-3/components-header-level-3.rendered.html"},{"lineagePattern":"components-navbar","lineagePath":"../../patterns/components-navigation-navbar/components-navigation-navbar.rendered.html"},{"lineagePattern":"components-alamo","lineagePath":"../../patterns/components-footer-alamo/components-footer-alamo.rendered.html"}],"lineage":[{"lineagePattern":"components-global-bar","lineagePath":"../../patterns/components-header-global-bar/components-header-global-bar.rendered.html"},{"lineagePattern":"components-level-3","lineagePath":"../../patterns/components-header-level-3/components-header-level-3.rendered.html"},{"lineagePattern":"components-navbar","lineagePath":"../../patterns/components-navigation-navbar/components-navigation-navbar.rendered.html"},{"lineagePattern":"components-alamo","lineagePath":"../../patterns/components-footer-alamo/components-footer-alamo.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"templates","patternSubgroup":"publications"},"patternExtension":"twig","patternName":"Publications","patternPartial":"templates-publications","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"blocks-global-bar","lineagePath":"../../patterns/blocks-header-global-bar/blocks-header-global-bar.rendered.html"},{"lineagePattern":"blocks-level-3","lineagePath":"../../patterns/blocks-header-level-3/blocks-header-level-3.rendered.html"},{"lineagePattern":"components-navbar","lineagePath":"../../patterns/components-navigation-navbar/components-navigation-navbar.rendered.html"},{"lineagePattern":"blocks-alamo","lineagePath":"../../patterns/blocks-footer-alamo/blocks-footer-alamo.rendered.html"}],"lineage":[{"lineagePattern":"blocks-global-bar","lineagePath":"../../patterns/blocks-header-global-bar/blocks-header-global-bar.rendered.html"},{"lineagePattern":"blocks-level-3","lineagePath":"../../patterns/blocks-header-level-3/blocks-header-level-3.rendered.html"},{"lineagePattern":"components-navbar","lineagePath":"../../patterns/components-navigation-navbar/components-navigation-navbar.rendered.html"},{"lineagePattern":"blocks-alamo","lineagePath":"../../patterns/blocks-footer-alamo/blocks-footer-alamo.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"templates","patternSubgroup":"publications"},"patternExtension":"twig","patternName":"Publications","patternPartial":"templates-publications","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->
@@ -362,10 +361,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1627579879055">
+<script id="pl-js-polyfill-insert-1628286348828">
   (function() {
     if (self != top) {
-      var cb = '1627579879055';
+      var cb = '1628286348828';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -378,7 +377,7 @@
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1627579879055" nomodule>
+<script id="pl-js-insert-1628286348828" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
@@ -386,5 +385,10 @@
   loadJS('../../styleguide/js/patternlab-pattern.js');
 </script>
 
+
+    <script type="text/javascript" src="../../js/vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/vendor/foundation/foundation.min.js"></script>
+    <script type="text/javascript" src="../../js/shield.min.js"></script>
+    <script type="text/javascript" src="../../js/vendor/what-input/what-input.min.js"></script>
   </body>
 </html>

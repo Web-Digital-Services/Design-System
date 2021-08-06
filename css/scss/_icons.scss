@@ -7,7 +7,6 @@ i.fa-inverse {
     color: $off-white;
 }
 
-
 // ======= Linked icons
 a:not(.callout) {
     &.fa-stack,
@@ -29,6 +28,13 @@ a:not(.callout) {
 
 a.fa-stack.fa-5x {
     margin-bottom: 30px
+}
+
+// ====== Inline Icon List (e.g. Provider Profile & staff alt profile)
+ul.inline {
+    li {
+        margin-right: 1.5rem;
+    }
 }
 
 // ======= Bleed icons
@@ -97,7 +103,6 @@ a.fa-stack.fa-5x {
     }
 }
 
-
 // ======= Outline circles
 .fa-ul {
     &.outline {
@@ -162,11 +167,9 @@ ul.fa-ul {
             span:last-of-type {
                 margin-left: 0;
             }
-
             vertical-align: middle;
         }
     }
-
     // Special jump link styles
     &.jump-links {
         margin: 0;

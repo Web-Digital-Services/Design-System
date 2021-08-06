@@ -1,22 +1,22 @@
-{% include "@components/header/global-bar.twig" %}
-{% include "@components/header/level-2.twig" %}
+{% include "@blocks/header/global-bar.twig" %}
+{% include "@blocks/header/level-2.twig" %}
 {% include "@components/navigation/navbar.twig" %}
 <section class="hero bleed">
 	<div class="grid-container">
 		<div class="grid-x ">
-			<div class="cell medium-12 large-9">
+			<div class="cell small-12 medium-8 large-9">
 				<h1>Beverly Crusher, M.D.</h1>
 				<p class="text-accent bold"> <i class="fas fa-notes-medical"></i> <em>Accepting New Patients</em></p>
 				<div class="grid-x grid-margin-x">
-					<div class="cell medium-4 large-4">
-						<h2 class="h5"> Practice Locations</h2>
+					<div class="cell small-12 medium-6 large-4 small-order-3 medium-order-3 large-order-1">
+						<h2 class="h4"> Practice Locations</h2>
 						<ul class="no-bullet">
 							<li><a>Neurosurgery - Medical Arts and Research Center - MARC</a></li>
 							<li><a>210-450-9060</a></li>
 						</ul>
 					</div>
-					<div class="cell medium-4 large-4">
-						<h2 class="h5"> Specialities</h2>
+					<div class="cell small-12 medium-6 large-4 small-order-1 medium-order-1 large-order-2">
+						<h2 class="h4"> Specialities</h2>
 						<ul>
 							<li>Primary care</li>
 							<li>Emergency medicine</li>
@@ -24,8 +24,8 @@
 							<li>Transporter psychosis</li>
 						</ul>
 					</div>
-					<div class="cell medium-4 large-4">
-						<h2 class="h5"> Languages</h2>
+					<div class="cell small-12 medium-6 large-4 small-order-2 medium-order-2 large-order-3">
+						<h2 class="h4"> Languages</h2>
 						<ul>
 							<li>English</li>
 							<li>Spanish</li>
@@ -33,29 +33,31 @@
 					</div>
 				</div>
 				<p class="black">If you are a patient of Beverly Crusher, you can:</p>
-				<div class="grid-x grid-margin-x margin-bottom">
-					<div class="cell medium-12 large-4">
-						<a>
-							<span class="fa-stack">
-								<i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fas fa-comments  fa-stack-1x fa-inverse"></i>
-							</span>
-							<span>Message via MyChart</span>
-						</a>
-					</div>
-					<div class="cell auto">
-						<a>
-							<span class="fa-stack">
-								<i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fas fa-calendar-alt  fa-stack-1x fa-inverse"></i>
-							</span>
-							<span>Appointment via MyChart</span>
-						</a>
-					</div>
+				<div class="loose-list">
+					<ul class="no-bullet inline">
+						<li>
+							<a>
+								<span class="fa-stack">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+								</span>
+								<span>longemail@uthscsa.edu</span>
+							</a>
+						</li>
+						<li>
+							<a>
+								<span class="fa-stack">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-phone-alt  fa-stack-1x fa-inverse"></i>
+								</span>
+								<span>###-###-####</span>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="cell medium-12 large-3">
-				<img src="https://placedog.net/330/462" alt="adorable pup">
+			<div class="cell small-6 medium-4 large-3">
+				<img src="../../images/portrait-dog.jpeg" alt="adorable corgi" class="img-margin">
 			</div>
 		</div>
 	</div>
@@ -63,28 +65,28 @@
 <section class="bleed">
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x ">
-			<div class="cell medium-12 large-12">
-				<h2 class="h5"> Qualifications</h2>
+			<div class="cell small-12 medium-12 large-12">
+				<h2 class="h4"> Qualifications</h2>
 				<div class="grid-x grid-margin-x margin-bottom ">
-					<div class="cell medium-12 large-3">
+					<div class="cell small-12 medium-6 large-3">
 						<ul class="no-bullet">
 							<li class="bold">Medical School</li>
 							<li>Starfleet Medical Academy</li>
 						</ul>
 					</div>
-					<div class="cell medium-12 large-3">
+					<div class="cell small-12 medium-6 large-3">
 						<ul class="no-bullet">
 							<li class="bold">Residency</li>
 							<li>University of Texas Health Science Center at San Antonio</li>
 						</ul>
 					</div>
-					<div class="cell medium-12 large-3">
+					<div class="cell small-12 medium-6 large-3">
 						<ul class="no-bullet">
 							<li class="bold">Fellowships</li>
 							<li>University of Texas Health Science Center at San Antonio</li>
 						</ul>
 					</div>
-					<div class="cell medium-12 large-3">
+					<div class="cell small-12 medium-6 large-3">
 						<ul class="no-bullet">
 							<li class="bold">Board Certification:</li>
 							<li> Federation Board of Family Medicine</li>
@@ -92,25 +94,21 @@
 						</ul>
 					</div>
 				</div>
-				<h2 class="h5"> About Provider</h2>
+				<h2 class="h4"> About Provider</h2>
 				<p>
 					Commander Beverly C. Crusher, MD (née Howard) was the chief medical officer aboard the USS
-					Enterprise-D and its successor, the USS Enterprise-E, both under the command of Captain
-					Jean-Luc
+					Enterprise-D and its successor, the USS Enterprise-E, both under the command of Captain Jean-Luc
 					Picard. She briefly left her post as CMO of the Enterprise-D to become head of Starfleet
 					Medical, only to return shortly after. She was a Fellow of the Academy of Starfleet Surgeons
 					(Sol Chapter). (TNG: "Encounter at Farpoint", "Attached", "The Child", "Evolution"; TNG-R:
 					"Conundrum"; Star Trek: First Contact).
 				</p>
 				<p>
-					As a fully-certified bridge officer, Crusher commanded the Enterprise-D on several
-					occasions,
+					As a fully-certified bridge officer, Crusher commanded the Enterprise-D on several occasions,
 					most notably in 2370 while nearly the entire crew was searching for Data on a renegade Borg
-					planet. The ship was attacked by a Borg vessel, but her quick thinking allowed the
-					Enterprise to
+					planet. The ship was attacked by a Borg vessel, but her quick thinking allowed the Enterprise to
 					escape and destroy the Borg ship. (TNG: "Descent", "Descent, Part II") She also occasionally
-					commanded night watch shifts in order to stay on top of starship operations. (TNG: "Thine
-					Own
+					commanded night watch shifts in order to stay on top of starship operations. (TNG: "Thine Own
 					Self").
 				</p>
 				<p><a class="arrow">Academic Profile</a>
@@ -125,7 +123,7 @@
 			<div class="cell medium-12 large-12">
 				<h3>
 					Beverly Crusher practices at
-					</h3>
+				</h3>
 			</div>
 		</div>
 		<div class="grid-x grid-margin-x small-up-1 medium-up-3">
@@ -149,4 +147,4 @@
 			</div>
 		</div>
 </section>
-{% include "@components/footer/no-alamo.twig" %}
+{% include "@blocks/footer/no-alamo.twig" %}

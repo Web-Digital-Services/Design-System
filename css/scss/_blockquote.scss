@@ -15,19 +15,19 @@ blockquote {
             margin-top:-0.5rem;
         }
     }
-
-    cite {
-        color: $dark-grey;
-        font-style:italic;
-        font-weight: 600;
-        font-size:inherit;
-    }
-    cite:before {
-        content: "\2014";
-        margin-right: .25rem;
-    }
-
 }
+cite {
+    color: $dark-grey;
+    font-style:italic;
+    font-weight: 600;
+    font-size:inherit;
+    }
+cite:before {
+    content: "\2014";
+    margin-right: .25rem;
+}
+
+
 
 .bleed.color blockquote {
     color: $off-white;

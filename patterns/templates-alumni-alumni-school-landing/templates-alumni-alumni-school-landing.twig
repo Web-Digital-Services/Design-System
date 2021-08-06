@@ -1,5 +1,5 @@
-{% include "@components/header/global-bar-quicklinks.twig" %}
-{% include "@components/header/level-2.twig" %}
+{% include "@blocks/header/global-bar-quicklinks.twig" %}
+{% include "@blocks/header/level-2.twig" %}
 {% include "@components/navigation/navbar.twig" %}
 <section class="hero full bleed img-fill">
     <img src="https://placedog.net/1500/750" alt="adorable pup">
@@ -107,16 +107,20 @@
 <section class="bleed">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
-            <div class="cell small-12 medium-8 light-grey padding flex-container flex-dir-row">
-                <div class="flex-child-grow"><img src="http://placekitten.com/275/150" alt="KITTEH" class="float-left"></div>
-                <div class="flex-child-auto">
-                    <blockquote>
-                        <p>Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.</p>
-                        <cite>Old Fashioned</cite>
-                    </blockquote>
-                </div>
+            <div class="cell small-12 medium-6 large-8 light-grey padding">
+                <div class="grid-x grid-margin-x align-center">
+                    <div class="cell small-12 medium-4 large-2">
+                        <img src="http://placekitten.com/300/400" alt="kitty">
+                    </div>
+                    <div class="cell small-12 medium-8 large-10">
+                        <blockquote>
+                            <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation. Blockquotes have no margin/padding of their own and should be placed within another element like a bleed.</p>
+                            <cite>Obi-Wan Kenobi, Jedi Master</cite>
+                        </blockquote>
+			</div>
+		</div>
             </div>
-            <div class="cell small-12 medium-4 contact">
+            <div class="cell small-12 medium-6 large-4 contact">
                 <div class="callout contact outline">
 					<h2>Contact Us</h2>
 					<p>UT Health SA Alumni Relations office is located in the Academic and Administration Building on our main campus.</p>
@@ -226,4 +230,4 @@
         </div>
     </div>
 </section>
-{% include "@components/footer/no-alamo.twig" %}
+{% include "@blocks/footer/no-alamo.twig" %}

@@ -15,20 +15,24 @@ footer {
         top: rem-calc(-60px);
         width: 100%;
         text-align: center;
+
         svg {
             width: rem-calc(200px);
             fill: $dark-grey;
         }
+
         /* object svg {
             width: 200px;
             fill: $dark-grey;
-        }*/ 
+        }*/
     }
+
     h2 {
         font-size: rem-calc(26px);
         font-weight: 700;
         margin-bottom: 0;
     }
+
     h3 {
         font-size: rem-calc(24px);
         font-weight: 400;
@@ -44,12 +48,43 @@ footer {
     a {
         color: $off-white;
 
-        &.arrow:after {
-            color: $off-white;
+        span {
+            color: $grey-link;
+
+        }
+
+        &:hover {
+            color: $grey-link;
         }
     }
 
-    .vr  {
+    p>a {
+        background-image: linear-gradient($grey-link, $grey-link) !important;
+        color: $grey-link !important;
+
+        &:hover {
+            background-color: $grey-link;
+            color: $grey-90 !important;
+        }
+
+        &.arrow {
+            background-color: transparent !important;
+
+            &:after {
+                color: $grey-link;
+            }
+
+            &:hover {
+                color: $grey-link !important;
+
+                &:after {
+                    color: $grey-link;
+                }
+            }
+        }
+    }
+
+    .vr {
         border-left: $off-white rem-calc(1.5px) solid;
     }
 
@@ -70,15 +105,20 @@ footer.flat {
 footer.mission {
     background-color: $pure-white;
     color: $off-black;
-    margin-top: rem-calc(25px);
+    margin-top: 0;
+
+    .grid-container {
+        padding-top: 0;
+    }
 
     a {
         color: $orange;
-
-        &.arrow:after {
-            color: $orange;
+        &:hover {
+            color: $dark-orange !important;
         }
     }
+
+
 
     & hr {
         border-top: solid #A9A9A9 rem-calc(.75px);
@@ -88,7 +128,7 @@ footer.mission {
     }
 
     & hr:after {
-        content: url( '../../images/orange-shield.svg');
+        content: url('../../images/orange-shield.svg');
         left: 50%;
         position: absolute;
         transform: translateY(-50%) translateX(-50%);

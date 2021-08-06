@@ -15,8 +15,23 @@ img.float-right {
 
 .img-margin {
     margin: .25rem;
+    @media screen and (max-width: 910px) {
+        margin: 1rem .25rem;
+    }
 }
 
+// Profile Thumbnails
+.profile-thumbnail {
+    height: 100% !important;
+    object-fit: cover;
+    margin: .25rem;
+    /*padding: 2%;*/
+    @media screen and (max-width: 568px) {
+        margin: 15px .25rem;
+        padding: 0;
+        width: 100%; 
+    }
+}
 
 // ======= Responsive embed for videos
 .responsive-embed {
@@ -32,4 +47,23 @@ img.float-right {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+// ======= Mobile image styles
+
+@media screen and (max-width:465px) {
+
+    img:not(.card > img) {
+        margin-bottom: rem-calc(10px);
+    }
+}
+
+// logo
+
+img.logo {
+    width: rem-calc(300px);
+
+    @media screen and (max-width:770px) {
+        width: rem-calc(145px);
+    }
 }

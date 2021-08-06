@@ -5,6 +5,7 @@
 ============================================================ */
 
 div.tab-container {
+
     ul.tabs {
         // ======= Floating style
         background: $orange;
@@ -78,6 +79,8 @@ div.tab-container {
         &.manila {
             text-align: left;
             background: transparent;
+            overflow: auto;
+            white-space: nowrap;
 
             li.tabs-title {
                 margin-right: .5rem;
@@ -127,6 +130,9 @@ div.tab-container {
         &.pill {
             // ======= Pill style
             background: transparent;
+            overflow: auto;
+            white-space: nowrap;
+
 
             li.tabs-title {
                 margin-right: rem-calc(-5px);

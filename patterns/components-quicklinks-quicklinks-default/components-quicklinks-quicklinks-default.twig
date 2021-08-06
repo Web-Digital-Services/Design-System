@@ -1,11 +1,6 @@
 <div class="off-canvas  position-left quicklinks" id="offCanvasLeft" data-off-canvas>
   <!-- Your menu or Off-canvas content goes here -->
-  <form class="search">
-    <input type="text" class="searchTerm" placeholder="Search">
-    <button type="submit" class="searchButton">
-      <i class="fa fa-search"></i>
-    </button>
-  </form>
+  {% include "@components/formElements/search-box.twig" %}
   <h3>I am a long Heading</h3>
   <ul class="menu vertical">
     <li><a href="#">Link </a></li>

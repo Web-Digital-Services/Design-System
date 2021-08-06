@@ -1,23 +1,31 @@
 <div class="top-bar global-bar">
     <div class="top-bar-left"></div>  
     <div class="top-bar-right">
-        <p><a><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
+        <p><a href="#"><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
     </div>
 </div><header class="regular">
-    <a><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
+    <a href="#"><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
     <div>
+        <!--<div class="search-bar">
+            <form class="search">
+                <input type="search" placeholder="Search">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>-->
         <form class="search">
-            <input type="search" placeholder="Search">
-        </form>
-        <div class="right">
-            <a>
+    <input type="search" class="search-box" placeholder="Search">
+    <button type="submit">
+        <i class="fa fa-search"></i>
+    </button>
+</form>        <div class="right">
+            <a href="#">
                 <span class="fa-stack outline">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-notes-medical fa-stack-1x fa-inverse"></i>
                 </span>
                 <span>MyChart</span>
             </a> 
-            <a>
+            <a href="#">
                 <span class="fa-stack outline">
                     <i class="far fa-circle fa-stack-2x"></i>
                     <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
@@ -28,8 +36,9 @@
     </div>
 </header>
 
-<header class="title-bar">
-    <a><img src="../../images/whiteUTHSA_logo.svg"></a>
+<header class="title-bar" data-responsive-toggle>
+    <a href="#"><img src="../../images/whiteUTHSA_logo.svg"></a>
+    <button class="menu-icon" type="button" data-toggle>Menu</button>
 </header><!--<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
     <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
     <div class="title-bar-title">Menu</div>
@@ -106,65 +115,60 @@
 				
 <div class="grid-container">
     <div class="grid-x grid-margin-x grid-padding-y align-center">
-        <div class="small-12 medium-6 off-white cell card">
+        <div class="small-12 medium-6 white cell callout">
             <h2 class="text-center">News</h2>
-            <ul class="lines">
-                <li><a href="#">Here’s our Covid-19/Thanksgiving Safety Video/Infectious Disease Doctor Tess Barton Speaks Directly to Children </a></li>
-                <li><a href="#">Our Department of Pediatrics Reaches out to Schools in Thanksgiving Covid-19 Safety Video to Schools with Dr. Tess Barton, Story Featured in the top of KSAT-12 Newscast</a></li>
-                <li><a href="#">The Department of Pediatrics Featured on KSAT-12: Infectious Disease Doctor Tess Barton Gives Halloween/Covid-19 Safety Tips to Schools Skywalker yoda </a></li>
-            </ul>
-            <p class="text-center"><a href="#" class="button ghost">View All News</a></p>
+            <div class="lines">
+                <ul>
+                    <li><a href="#">Here’s our Covid-19/Thanksgiving Safety Video/Infectious Disease Doctor Tess Barton Speaks Directly to Children </a></li>
+                    <li><a href="#">Our Department of Pediatrics Reaches out to Schools in Thanksgiving Covid-19 Safety Video to Schools with Dr. Tess Barton, Story Featured in the top of KSAT-12 Newscast</a></li>
+                    <li><a href="#">The Department of Pediatrics Featured on KSAT-12: Infectious Disease Doctor Tess Barton Gives Halloween/Covid-19 Safety Tips to Schools Skywalker yoda </a></li>
+                </ul>
+            </div>
+            <p class="text-center"><a href="#" class="button">View All News</a></p>
         </div>
-        <div class="small-12 medium-6 off-white cell card">
+        <div class="small-12 medium-6 white cell callout">
             <h2 class="text-center">Events</h2>
-            <ul class="lines">
-                <li class="flex-container flex-dir-row align-middle">
-                    <div class="flex-child-auto">
-                        <a class="datebox">
-                            <div>
-                                <span>Jan</span>
-                            </div>
-                            <div>
-                                <span>01</span>
+            <div class="lines">
+                <ul>
+                    <li class="flex-container flex-dir-row align-middle">
+                        <a href="#">
+                            <div class="datebox">
+                                <div class="month">jan</div>
+                                <div class="day">10</div>
                             </div>
                         </a>
-                    </div>
-                    <div class="flex-child-auto">
                         <a href="#">Here’s our Covid-19/Thanksgiving Safety Video/Infectious Disease Doctor Tess Barton Speaks Directly to Children </a>
-                    </div>
-                </li>
-                <li class="flex-container flex-dir-row align-middle">
-                    <div class="flex-child-auto">
-                        <a class="datebox">
-                            <div>
-                                <span>Jan</span>
-                            </div>
-                            <div>
-                                <span>14</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="flex-child-auto">
-                        <a href="#">Here’s our Covid-19/Thanksgiving Safety Video/Infectious Disease Doctor Tess Barton Speaks Directly to Children </a>
-                    </div>
-                </li>
-                <li class="flex-container flex-dir-row align-middle">
-                    <div class="flex-child-auto">
-                        <a class="datebox">
-                            <div>
-                                <span>Jan</span>
-                            </div>
-                            <div>
-                                <span>31</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="flex-child-auto">
-                        <a href="#">Here’s our Covid-19/Thanksgiving Safety Video/Infectious Disease Doctor Tess Barton Speaks Directly to Children </a>
-                    </div>
-                </li>
-            </ul>
-            <p class="text-center"><a href="#" class="button ghost">View All Events</a></p>
+                    </li>
+                    <li class="flex-container flex-dir-row align-middle">
+                        <div class="flex-child-auto">
+                            <a href="#">
+                                <div class="datebox">
+                                    <div class="month">jan</div>
+                                    <div class="day">10</div>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="flex-child-auto">
+                            <a href="#">Here’s our Covid-19/Thanksgiving Safety Video/Infectious Disease Doctor Tess Barton Speaks Directly to Children </a>
+                        </div>
+                    </li>
+                    <li class="flex-container flex-dir-row align-middle">
+                        <div class="flex-child-auto">
+                            <a href="#">
+                                <div class="datebox">
+                                    <div class="month">jan</div>
+                                    <div class="day">10</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex-child-auto">
+                            <a href="#">Here’s our Covid-19/Thanksgiving Safety Video/Infectious Disease Doctor Tess Barton Speaks Directly to Children </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <p class="text-center"><a href="#" class="button">View All Events</a></p>
         </div>
     </div>
 </div>
@@ -187,7 +191,7 @@
                                     <span class="fa-stack">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
-                                    </span> 
+                                    </span>
                                     </span> <span >210-567-0000 </span>
                                 </a>
                             </li>
@@ -198,11 +202,11 @@
                                     <span class="fa-stack">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
-                                    </span> 
                                     </span>
-                                </a> 
-                                <span>7703 Floyd Curl Drive<br>San Antonio, TX 78229<br><a>Map and directions</a></span>
-                                
+                                    </span>
+                                </a>
+                                <span>7703 Floyd Curl Drive<br>San Antonio, TX 78229<br></span><a><span>Map and directions</span></a>
+
                             </li>
                         </ul>
                     </div>

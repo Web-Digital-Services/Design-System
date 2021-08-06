@@ -57,37 +57,10 @@
         padding-left: 0rem;
     }
 
-    .search {
-        width: 100%;
-        position: relative;
-        display: flex;
-    }
-
-    .searchTerm {
-        width: 100%;
-        border-right: none;
-        padding: rem-calc(5px);
-        outline: none;
-        color: $off-black;
-        border-top-left-radius: rem-calc(8px);
-        border-bottom-left-radius: rem-calc(8px);
-    }
-
-    .searchButton {
-        width: rem-calc(40px);
-        height: rem-calc(39px);
-        /*border: 1px solid $off-black;*/
-        background: $off-white;
-        text-align: center;
-        color: $off-black;
-        border-radius: rem-calc(0 8px 8px 0);
-        cursor: pointer;
-    }
-
     li {
         >a {
             &:after {
-                font-family: "Font Awesome 5 Free solid";
+                font-family: "Font Awesome 5 Free";
                 font-weight: 900;
                 content: "\f105";
                 color: $off-white;

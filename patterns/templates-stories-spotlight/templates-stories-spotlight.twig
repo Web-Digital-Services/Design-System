@@ -1,25 +1,15 @@
-{% include "@components/header/global-bar.twig" %}
-{% include "@components/header/level-2.twig" %}
+{% include "@blocks/header/global-bar.twig" %}
+{% include "@blocks/header/level-2.twig" %}
 {% include "@components/navigation/navbar.twig" %}
+{% include "@components/navigation/breadcrumbs.twig" %}
 <section class="bleed">
     <div class="grid-container">
         <div class="grid-x grid-margin-x ">
             <div class="cell medium-12 large-12">
-                <nav aria-label="You are here:" role="navigation">
-                    <ul class="breadcrumbs">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li>
-                            <span class="show-for-sr">Current: </span> Thania Leal
-                        </li>
-                    </ul>
-                </nav>
-                <div class="cell medium-12 large-12">
-                    <h1>Thania Leal</h1>
-                    <p class="close light">Class of 2016</p>
-                    <p class="close light">Program/Major: Bachelor of Science in Respiratory Care</p>
-                    <p class="light">Department: Division of Respiratory Care</p>
-                </div>
+                <h1>Thania Leal</h1>
+                <p class="close light">Class of 2016</p>
+                <p class="close light">Program/Major: Bachelor of Science in Respiratory Care</p>
+                <p class="light">Department: Division of Respiratory Care</p>
             </div>
         </div>
         <div class="grid-x grid-margin-x ">
@@ -94,11 +84,13 @@
             </main>
             <aside class="cell medium-12 large-4">
                 <blockquote class="fancy">
-					<p>Add <code>.fancy</code> to a blockquote to invoke this blockquote. Your quotation must be in a <code>p</code> and the citation needs to be nested inside the blockquote for it to work.</p>
-					<cite>Obi-Wan Kenobi, Jedi Master</cite>
-				</blockquote>
+                    <p>Oat cake pie muffin bonbon powder macaroon cotton candy toffee. Danish candy cake lollipop
+                        caramels cupcake cake chupa chups. Lemon drops jujubes jelly. Sweet donut marzipan cupcake
+                        candy canes.</p>
+                    <cite>Obi-Wan Kenobi, Jedi Master</cite>
+                </blockquote>
             </aside>
         </div>
     </div>
 </section>
-{% include "@components/footer/alamo.twig" %}
+{% include "@blocks/footer/alamo.twig" %}

@@ -1,180 +1,166 @@
-{% include "@components/header/global-bar.twig" %}
-{% include "@components/header/level-2.twig" %}
+{% include "@blocks/header/global-bar.twig" %}
+{% include "@blocks/header/level-2.twig" %}
 {% include "@components/navigation/navbar.twig" %}
- <section class="bleed">
- 	<div class="grid-container">
- 		<div class="grid-x grid-margin-x">
- 			<div class="cell">
- 				<nav aria-label="You are here:" role="navigation">
- 					<ul class="breadcrumbs">
- 						<li><a href="#">Event</a></li>
- 						<li>
- 							<span class="show-for-sr">Current: </span> Arbitrary Event
- 						</li>
- 					</ul>
- 				</nav>
- 			</div>
- 		</div>
- 		<div class="grid-x grid-margin-x">
- 			<main class="cell medium-12 large-8  ">
- 				<h1>
- 					Event Name
- 				</h1>
- 				<p>
- 					Tea garden puerh black tea baihao yinzhen infuser rose hips nepal chamomile energy. Boba tea
- 					time yerba maté kombucha loose leaf baihao yinzhen nokcha keemun turmeric earl grey caffeine.
- 					Zen fermentation baihao yinzhen zen scented turmeric. Infuser camellia sinensis puerh gyokuro
- 					zen tea garden black mint nilgiri turmeric iced kukicha fermentation black london fog. Bamboo
- 					whisk teahouse genmai sencha focus loose leaf tea time caffeine london fog bamboo whisk infuser.
- 				</p>
- 				<p>
- 					Tea garden puerh black tea baihao yinzhen infuser rose hips nepal chamomile energy. Boba tea
- 					time yerba maté kombucha loose leaf baihao yinzhen nokcha keemun turmeric earl grey caffeine.
- 					Zen fermentation baihao yinzhen zen scented turmeric. Infuser camellia sinensis puerh gyokuro
- 					zen tea garden black mint nilgiri turmeric iced kukicha fermentation black london fog. Bamboo
- 					whisk teahouse genmai sencha focus loose leaf tea time caffeine london fog bamboo whisk infuser.
- 				</p>
- 				<p class="margin-bottom">
- 					Tea garden puerh black tea baihao yinzhen infuser rose hips nepal chamomile energy. Boba tea
- 					time yerba maté kombucha loose leaf baihao yinzhen nokcha keemun turmeric earl grey caffeine.
- 					Zen fermentation baihao yinzhen zen scented turmeric. Infuser camellia sinensis puerh gyokuro
- 					zen tea garden black mint nilgiri turmeric iced kukicha fermentation black london fog. Bamboo
- 					whisk teahouse genmai sencha focus loose leaf tea time caffeine london fog bamboo whisk infuser.
- 				</p>
- 				<div class="button-group">
- 					<a href="#" class="button">Register</a>
- 					<a href="#" class="button ghost">Flyer</a>
- 				</div>
- 				<!--<p>
-						<a href="#" class="button">Register</a>
-						<a href="#" class="button ghost">Flyer</a>
-					</p>-->
- 				<p class="bold margin-top">Share This Event</p>
- 				<ul class="social">
- 					<li>
- 						<a>
- 							<span class="fa-stack fa-2x">
- 								<i class="fas fa-square fa-stack-2x"></i>
- 								<i class="fas fa-envelope fa-stack-1x "></i>
- 							</span>
- 						</a>
- 					</li>
- 					<li>
- 						<a>
- 							<span class="fa-stack fa-2x">
- 								<i class="fas fa-square fa-stack-2x"></i>
- 								<i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
- 						</a>
- 						</span>
- 					</li>
- 					<li>
- 						<a>
- 							<span class="fa-stack fa-2x">
- 								<i class="fas fa-square fa-stack-2x"></i>
- 								<i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
- 							</span></a>
- 					</li>
- 					<li><a>
- 							<span class="fa-stack fa-2x">
- 								<i class="fas fa-square fa-stack-2x"></i>
- 								<i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
- 							</span></a>
- 					</li>
- 					<li><a>
- 							<span class="fa-stack fa-2x">
- 								<i class="fas fa-square fa-stack-2x"></i>
- 								<i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
- 							</span></a>
- 					</li>
- 					<li><a>
- 							<span class="fa-stack fa-2x">
- 								<i class="fas fa-square fa-stack-2x"></i>
- 								<i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
- 							</span></a>
- 					</li>
- 				</ul>
- 			</main>
- 			<aside class="cell medium-12 large-4 flex-container  ">
- 				<div class="grid-container ">
- 					<div class="callout light-beige">
- 						<h2 class="h3">Event Info</h2>
- 						<p>
- 							<ul class="fa-ul outline">
- 								<li>
- 									<span class="fa-li">
- 										<span class="fa-stack fa-1x">
- 											<i class="far fa-circle fa-stack-2x"></i>
- 											<i class="fas fa-calendar fa-stack-1x fa-inverse grey"></i>
- 										</span>
- 									</span>
- 									<span class="">Wednesday, February 17, 2021 </span>
- 								</li>
- 								<li>
- 									<span class="fa-li">
- 										<span class="fa-stack fa-1x">
- 											<i class="far fa-circle fa-stack-2x"></i>
- 											<i class="fas fa-map-marker-alt fa-stack-1x fa-inverse grey"></i>
- 										</span>
- 									</span> <span class="">Zoom </span>
- 								</li>
- 								<li>
- 									<span class="fa-li">
- 										<span class="fa-stack fa-1x">
- 											<i class="far fa-circle fa-stack-2x"></i>
- 											<i class="fas fa-info fa-stack-1x fa-inverse grey"></i>
- 										</span>
- 									</span> <span class="">The Conference will take place over zoom. Register to
- 										recieve room code. Please be there or be square. Thanks </span>
- 								</li>
- 							</ul>
- 							<p>
- 								<a class="arrow"> Add to Calendar</a>
- 							</p>
- 					</div>
+{% include "@components/navigation/breadcrumbs.twig" %}
+<section class="bleed">
+	<div class="grid-container">
+		<div class="grid-x grid-margin-x">
+			<main class="cell small-12 medium-7 large-8">
+				<h1>
+					Event Name
+				</h1>
+				<p>
+					Tea garden puerh black tea baihao yinzhen infuser rose hips nepal chamomile energy. Boba tea
+					time yerba maté kombucha loose leaf baihao yinzhen nokcha keemun turmeric earl grey caffeine.
+					Zen fermentation baihao yinzhen zen scented turmeric. Infuser camellia sinensis puerh gyokuro
+					zen tea garden black mint nilgiri turmeric iced kukicha fermentation black london fog. Bamboo
+					whisk teahouse genmai sencha focus loose leaf tea time caffeine london fog bamboo whisk infuser.
+				</p>
+				<p>
+					Tea garden puerh black tea baihao yinzhen infuser rose hips nepal chamomile energy. Boba tea
+					time yerba maté kombucha loose leaf baihao yinzhen nokcha keemun turmeric earl grey caffeine.
+					Zen fermentation baihao yinzhen zen scented turmeric. Infuser camellia sinensis puerh gyokuro
+					zen tea garden black mint nilgiri turmeric iced kukicha fermentation black london fog. Bamboo
+					whisk teahouse genmai sencha focus loose leaf tea time caffeine london fog bamboo whisk infuser.
+				</p>
+				<p class="margin-bottom">
+					Tea garden puerh black tea baihao yinzhen infuser rose hips nepal chamomile energy. Boba tea
+					time yerba maté kombucha loose leaf baihao yinzhen nokcha keemun turmeric earl grey caffeine.
+					Zen fermentation baihao yinzhen zen scented turmeric. Infuser camellia sinensis puerh gyokuro
+					zen tea garden black mint nilgiri turmeric iced kukicha fermentation black london fog. Bamboo
+					whisk teahouse genmai sencha focus loose leaf tea time caffeine london fog bamboo whisk infuser.
+				</p>
+				<div class="button-group">
+					<a href="#" class="button">Register</a>
+					<a href="#" class="button ghost">Flyer</a>
+				</div> 
+				<p class="bold margin-top">Share This Event</p>
+				<ul class="social">
+					<li>
+						<a>
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-square fa-stack-2x"></i>
+								<i class="fas fa-envelope fa-stack-1x "></i>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a>
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-square fa-stack-2x"></i>
+								<i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+						</a>
+						</span>
+					</li>
+					<li>
+						<a>
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-square fa-stack-2x"></i>
+								<i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+							</span></a>
+					</li>
+					<li><a>
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-square fa-stack-2x"></i>
+								<i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+							</span></a>
+					</li>
+					<li><a>
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-square fa-stack-2x"></i>
+								<i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+							</span></a>
+					</li>
+					<li><a>
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-square fa-stack-2x"></i>
+								<i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+							</span></a>
+					</li>
+				</ul>
+			</main>
+			<aside class="cell small-12 medium-5 large-4 flex-container small-">
+				<div class="grid-container ">
+					<div class="callout light-beige">
+						<h2 class="h3">Event Info</h2>
+						<p>
+							<ul class="fa-ul outline">
+								<li>
+									<span class="fa-li">
+										<span class="fa-stack fa-1x">
+											<i class="far fa-circle fa-stack-2x"></i>
+											<i class="fas fa-calendar fa-stack-1x fa-inverse grey"></i>
+										</span>
+									</span>
+									<span class="">Wednesday, February 17, 2021 </span>
+								</li>
+								<li>
+									<span class="fa-li">
+										<span class="fa-stack fa-1x">
+											<i class="far fa-circle fa-stack-2x"></i>
+											<i class="fas fa-map-marker-alt fa-stack-1x fa-inverse grey"></i>
+										</span>
+									</span> 
+									<span class="">Zoom </span>
+								</li>
+								<li>
+									<span class="fa-li">
+										<span class="fa-stack fa-1x">
+											<i class="far fa-circle fa-stack-2x"></i>
+											<i class="fas fa-info fa-stack-1x fa-inverse grey"></i>
+										</span>
+									</span> 
+									<span class="">The Conference will take place over zoom. Register to
+										recieve room code.  </span>
+								</li>
+							</ul>
+							<p>
+								<a class="arrow"> Add to Calendar</a>
+							</p>
+					</div>
+					<img src="https://placedog.net/600/400" alt="adorable pup">
+				</div>
+			</aside>
+		</div>
+</section>
+<section class="bleed light-grey">
+	<div class="grid-container">
+		<div class="grid-x grid-margin-x">
+			<div class="cell medium-12 large-12">
+				<h2>
+					About the Speaker(s)
+				</h2>
+			</div>
+		</div>
+		<div class="grid-x grid-margin-x">
+			<div class="cell small-12 medium-7 large-4">
+				<ul class="no-bullet">
+					<li><strong>Melissa Jokerst, Sales Specialist </strong> </li>
+					<li>Inside Account Development Manager</li>
+					<li>10x Genomics</li>
+					<li><a>(314) 922-3188</a></li>
+					<li><a>Melissa.Jokerst@10xgenomics.com</a></li>
+				</ul>
+			</div>
+			<div class="cell small-12 medium-5 large-4">
+				<ul class="no-bullet">
 
- 					<img src="https://placedog.net/600/400" alt="adorable pup">
- 				</div>
- 			</aside>
- 		</div>
- </section>
- <section class="bleed light-grey">
- 	<div class="grid-container">
- 		<div class="grid-x grid-margin-x">
- 			<div class="cell medium-12 large-12  ">
- 				<h2>
- 					About the Speaker(s)
- 					</h2>
- 			</div>
- 		</div>
- 		<div class="grid-x grid-margin-x">
- 			<div class="cell medium-12 large-4  ">
- 				<ul class="no-bullet">
- 					<li><span class="bold">Michael Chase</span> </li>
- 					<li>Sales Executive, 10x Genomics</li>
- 					<li><a>(469) 352-4114</a></li>
- 				</ul>
- 			</div>
- 			<div class="cell medium-12 large-4  ">
- 				<ul class="no-bullet">
- 					<li><span class="bold">Melissa Jokerst, Sales Specialist </span> </li>
- 					<li>Inside Account Development Manager</li>
- 					<li>10x Genomics</li>
- 					<li><a>(314) 922-3188</a></li>
- 					<li><a>Melissa.Jokerst@10xgenomics.com</a></li>
- 				</ul>
- 			</div>
- 			<div class="cell medium-12 large-4  ">
- 				<ul class="no-bullet">
- 					<li><span class="bold">Zhao Lai, Ph.D</span> </li>
- 					<li>Director, Genome Sequencing Facility,</li>
- 					<li>Greehey CCRI - UT Health San Antonio</li>
- 					<li>8403 Floyd Curl Dr.</li>
- 					<li>San Antonio, TX 78229</li>
- 					<li><a>(210) 562-9246</a></li>
- 				</ul>
- 			</div>
- 		</div>
- 	</div>
- </section>
-
- {% include "@components/footer/no-alamo.twig" %}
+					<li><strong>Michael Chase</strong> </li>
+					<li>Sales Executive, 10x Genomics</li>
+					<li><a>(469) 352-4114</a></li>
+				</ul>
+			</div>
+			<div class="cell small-12 medium-7 large-4">
+				<ul class="no-bullet">
+					<li><strong>Zhao Lai, Ph.D</strong> </li>
+					<li>Director, Genome Sequencing Facility,</li>
+					<li>Greehey CCRI - UT Health San Antonio</li>
+					<li>8403 Floyd Curl Dr.</li>
+					<li>San Antonio, TX 78229</li>
+					<li><a>(210) 562-9246</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+{% include "@blocks/footer/no-alamo.twig" %}

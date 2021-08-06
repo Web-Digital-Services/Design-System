@@ -1,6 +1,6 @@
-{% include "@components/header/global-bar-quicklinks.twig" %}
-{% include "@components/header/mission-bar.twig" %}
-{% include "@components/header/level-1.twig" %}
+{% include "@blocks/header/global-bar-quicklinks.twig" %}
+{% include "@blocks/header/mission-bar.twig" %}
+{% include "@blocks/header/level-1.twig" %}
 <section class="bleed full img-fill">
     <img src="https://placedog.net/1500/750" alt="adorable pup">
     <div class="grid-container">
@@ -12,24 +12,11 @@
         </div>
     </div>
 </section>
-
+{% include "@components/navigation/breadcrumbs.twig" %}
 <section class="bleed">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
-            <div class="cell small-12">
-                <nav aria-label="You are here:" role="navigation">
-                    <ul class="breadcrumbs">
-                        <li><a href="#">Parent</a></li>
-                        <li><a href="#">Child</a></li>
-                        <li>
-                            <span class="show-for-sr">Current: </span> Child
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="grid-x grid-margin-x">
-            <main class="cell large-8 small-12">
+            <main class="cell large-8 medium-8 small-12 small-order-2">
                 <p>High-level marketing copy about this area that is understandable by users who aren’t scientists / are
                     from the general public. <strong>Example from Salk</strong> - One thing’s for certain: we get older.
                     But
@@ -46,7 +33,7 @@
 
                 <div class="grid-container">
                     <div class="grid-x grid-margin-x">
-                        <div class="cell large-6 small-12 flex-container ">
+                        <div class="cell large-6 medium-6 small-12 flex-container">
                             <div class="callout flex-child-auto">
                                 <p>Nilgiri nokcha energy matcha white loose leaf caffeine oolong focus nokcha yerba maté
                                     tea
@@ -55,7 +42,7 @@
                                     infusion.</p>
                             </div>
                         </div>
-                        <div class="cell large-6 small-12 flex-container ">
+                        <div class="cell large-6 medium-6 small-12 flex-container ">
                             <div class="callout flex-child-auto">
                                 <p>Nilgiri nokcha energy matcha white loose leaf caffeine oolong focus nokcha yerba maté
                                     tea
@@ -80,7 +67,7 @@
                     cheesecake tiramisu.</p>
             </main>
 
-            <aside class="cell large-4 small-12">
+            <aside class="cell large-4 larger-order-2 medium-4 medium-order-2 small-12 small-order-1">
                 {% include "@components/navigation/subnav.twig" %}
             </aside>
         </div>
@@ -89,8 +76,8 @@
 
 <section class="bleed color dark-grey">
     <div class="grid-container img-bleed-right">
-        <div class="grid-x">
-            <div class="cell large-6 align-self-middle">
+        <div class="grid-x align-middle">
+            <div class="cell large-6 large-order-1 medium-6 medium-order-1 small-12 small-order-2">
                 <div class="callout jump-right">
                     <blockquote>“Testimonial from a spotlighted researcher in this area; could also be a brief bio
                         overview of their accomplishments as it relates to the research area. Muffin apple pie cookie
@@ -98,7 +85,7 @@
                         pie gingerbread candy.”<cite>Sudha Seshadri, M.D.</cite></blockquote>
                 </div>
             </div>
-            <div class="cell large-6">
+            <div class="cell large-6 medium-6 small-12 small-order-1">
                 <img src="https://placedog.net/800/450" alt="adorable pup">
             </div>
         </div>
@@ -106,15 +93,15 @@
 </section>
 <section class="bleed color cyan">
     <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-            <div class="cell large-8">
+        <div class="grid-x grid-margin-x align-middle">
+            <div class="cell large-8 medium-8 small-12 small-order-2">
                 <h2>Help advance treatment as a healthy volunteer</h2>
                 <p>Copy explaining the importance of clinical trials and why health volunteers are needed (specific to
                     this area). Liquorice gingerbread chocolate bar lollipop macaroon pudding apple pie fruitcake wafer.
                     Pudding pastry pudding. Icing muffin dragée tiramisu cookie oat cake. </p>
                 <p><a class="button">Button</a></p>
             </div>
-            <div class="cell large-4">
+            <div class="cell large-4 large-order-2 medium-4 medium-order-2 small-12 small-order-1 text-center">
                 <i class="fas fa-heart fa-10x"></i>
             </div>
         </div>
@@ -123,21 +110,21 @@
 
 <section class="grid-container">
     <div class="grid-x grid-margin-x">
-        <a class="card cell small-12 medium-4 large-4 color dark-grey">
+        <a href="#" class="card cell small-12 medium-4 large-4 color dark-grey">
             <img src="https://picsum.photos/400/250">
             <div class="card-section">
                 <h4>Interactive Card</h4>
                 <p>This is a card with .dark-gray</p>
             </div>
         </a>
-        <a class="card cell small-12 medium-4 large-4 color dark-grey">
+        <a href="#" class="card cell small-12 medium-4 large-4 color dark-grey">
             <img src="https://picsum.photos/400/250">
             <div class="card-section">
                 <h4>Interactive Card</h4>
                 <p>This is a card with .dark-gray</p>
             </div>
         </a>
-        <a class="card cell small-12 medium-4 large-4 color dark-grey">
+        <a href="#" class="card cell small-12 medium-4 large-4 color dark-grey">
             <img src="https://picsum.photos/400/250">
             <div class="card-section">
                 <h4>Interactive Card</h4>
@@ -146,4 +133,4 @@
         </a>
     </div>
 </section>
-{% include "@components/footer/mission.twig" %}
+{% include "@blocks/footer/mission.twig" %}

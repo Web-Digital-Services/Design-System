@@ -6,6 +6,9 @@
 
 ============================================================ */
 
+// ======= Grid
+$global-width: rem-calc(1440px);
+
 // ======= Typography
 
 $serif-font: "Lora", serif;
@@ -74,7 +77,7 @@ $fa-fw-width: (20em / 18);
 // ======= Shadows
 
 $shadow: rem-calc(3px 3px 7px 0) rgba(23, 23, 23, 0.50); //apply box-shadow to base element (transition .3 ease-in-out)
-$shadow-hover: rem-calc(3px 8px 7px) 0 rgba(23, 23, 23, 0.50); //apply box-shadow to :hover
+$shadow-hover: rem-calc(3px 8px 7px 0) rgba(23, 23, 23, 0.50); //apply box-shadow to :hover
 $shadow-2: rem-calc(0px 2px 5px 0) rgba(23, 23, 23, 0.35);
 $shadow-3: rem-calc(3px 3px 7px 0) rgba(23, 23, 23, 0.35);
 //shadow effect for squircle

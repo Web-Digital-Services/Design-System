@@ -1,5 +1,5 @@
-{% include "@components/header/global-bar-quicklinks.twig" %}
-{% include "@components/header/level-2.twig" %}
+{% include "@blocks/header/global-bar-quicklinks.twig" %}
+{% include "@blocks/header/level-2.twig" %}
 {% include "@components/navigation/navbar.twig" %}
 <section class="hero bleed img-fill full">
     <img src="https://placedog.net/1500/750" alt="adorable pup">
@@ -59,23 +59,7 @@
         </div>
     </div>
 </section>
-<section class="bleed medium-beige">
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x align-center-middle">
-            <div class="cell small-2">
-                <img src="http://placekitten.com/210/260" alt="KITTEH">
-            </div>
-            <div class="cell small-10 medium-8">
-                <blockquote>
-                    <p>This blockquote places the photo on the left. Otherwise it is identical to the previous example.
-                        Lucas ipsum dolor sit amet nadon kamino ponda raioballo vader polis nomi ziro farlax tibor.
-                        Drovian olié gerb anzati kashyyyk anakin. Kenobi kushiban polis tano jan baba grievous nagai.
-                        Celegian sola amidala b'omarr defel luke lumiya taung jaina.</p>
-                    <cite>Obi-Wan Kenobi, Jedi Master and Professor of Negotiation</cite>
-                </blockquote>
-            </div>
-
-        </div>
-    </div>
+<section class="bleed beige">
+    {% include "@components/blockquotes/blockquote.twig" %}
 </section>
-{% include "@components/footer/no-alamo.twig" %}
+{% include "@blocks/footer/no-alamo.twig" %}

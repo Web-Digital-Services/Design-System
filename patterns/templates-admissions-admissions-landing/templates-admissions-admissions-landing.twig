@@ -1,11 +1,11 @@
-{% include "@components/header/global-bar-quicklinks.twig" %}
-{% include "@components/header/level-2.twig" %}
+{% include "@blocks/header/global-bar-quicklinks.twig" %}
+{% include "@blocks/header/level-2.twig" %}
 {% include "@components/navigation/navbar.twig" %}
 <section class="hero bleed img-fill full">
 	<img src="https://placedog.net/1500/750" alt="adorable pup">
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x">
-			<div class="cell small-12 medium-5">
+			<div class="cell small-12 medium-8 large-5">
 				<div class="callout">
 					<h1>Ready to apply?</h1>
 					<p>We look for top students who seek challenges and the resources of a big institution in a smaller
@@ -18,37 +18,42 @@
 </section>
 <section class="grid-container ">
 	<div class="grid-x grid-margin-x">
-		<div class="cell small-12 medium-4">
-			<ul class="lines">
-				<li><a href="#">Bachelor of Science in Emergency Health Science</a></li>
-				<li><a href="#">Bachelor of Science in Medical Laboratory Science</a></li>
-				<li><a href="#">Bachelor of Science in Respiratory Care</a></li>
-				<li><a href="#">Bachelor of Science in Respiratory Care (Online)</a></li>
-				<li><a href="#">Doctor of Occupational Therapy (OTD)</a></li>
-				<li><a href="#">Doctor of Physical Therapy</a></li>
-				<li><a href="#">Doctor of Physical Therapy Early Acceptance Program </a></li>
-				<li><a href="#">Doctor of Physical Therapy Early Acceptance Program </a></li>
-				<li><a href="#">Emergency Medical Technology Certification (EMT)</a></li>
-				<li><a href="#">Graduate Certificate in Communication Sciences and Disorders</a></li>
-			</ul>
+		<div class="cell small-12 medium-12 large-8">
+			<div class="grid-x grid-margin-x">
+				<div class="cell small-12 medium-6 large-6 lines">
+					<ul>
+						<li><a href="#">Bachelor of Science in Emergency Health Science</a></li>
+						<li><a href="#">Bachelor of Science in Medical Laboratory Science</a></li>
+						<li><a href="#">Bachelor of Science in Respiratory Care</a></li>
+						<li><a href="#">Bachelor of Science in Respiratory Care (Online)</a></li>
+						<li><a href="#">Doctor of Occupational Therapy (OTD)</a></li>
+						<li><a href="#">Doctor of Physical Therapy</a></li>
+						<li><a href="#">Doctor of Physical Therapy Early Acceptance Program </a></li>
+						<li><a href="#">Doctor of Physical Therapy Early Acceptance Program </a></li>
+						<li><a href="#">Emergency Medical Technology Certification (EMT)</a></li>
+						<li><a href="#">Graduate Certificate in Communication Sciences and Disorders</a></li>
+					</ul>
+				</div>
+				<div class="cell small-12 medium-6 large-6 lines">
+					<ul>
+						<li><a href="#">Master of Physician Assistant Studies</a></li>
+						<li><a href="#">Master of Science in Medical Laboratory Sciences</a></li>
+						<li><a href="#">Master of Science in Respiratory Care Master's</a></li>
+						<li><a href="#">Master of Science in Respiratory Care (Online)</a></li>
+						<li><a href="#">Master of Science in Speech Language Pathology</a></li>
+						<li><a href="#">Medical Laboratory Sciences Early Acceptance Program </a></li>
+						<li><a href="#">Paramedic Certification Certificate Department of Emergency Health Sciences</a>
+						</li>
+						<li><a href="#">Ph.D. in Health Sciences</a></li>
+						<li><a href="#">Respiratory Care Early Acceptance Program (RCEAP)</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<div class="cell small-12 medium-4">
-			<ul class="lines">
-				<li><a href="#">Master of Physician Assistant Studies</a></li>
-				<li><a href="#">Master of Science in Medical Laboratory Sciences</a></li>
-				<li><a href="#">Master of Science in Respiratory Care Master's</a></li>
-				<li><a href="#">Master of Science in Respiratory Care (Online)</a></li>
-				<li><a href="#">Master of Science in Speech Language Pathology</a></li>
-				<li><a href="#">Medical Laboratory Sciences Early Acceptance Program </a></li>
-				<li><a href="#">Paramedic Certification Certificate Department of Emergency Health Sciences</a></li>
-				<li><a href="#">Ph.D. in Health Sciences</a></li>
-				<li><a href="#">Respiratory Care Early Acceptance Program (RCEAP)</a></li>
-			</ul>
-		</div>
-		<div class="cell small-12 medium-4">
+		<div class="cell small-12 medium-6 large-4">
 			<div class="callout contact outline">
 				<h2>Contact Us</h2>
-				<ul class="no-bullet ">
+				<ul class="no-bullet">
 					<li>UT Health San Antonio</li>
 					<li> Department of Urology</li>
 					<li>7703 Floyd curl Drive, MC ####</li>
@@ -85,7 +90,7 @@
 <section class="bleed light-beige">
 	<div class="grid-container ">
 		<div class="grid-x grid-margin-x">
-			<div class="cell small-12 medium-6 large-4 flex-container">
+			<div class="cell small-12 medium-4 large-4 flex-container">
 				<a class="callout color orange flex-child-auto">
 					<span class="fa-stack fa-2x">
 						<i class="fas fa-circle fa-stack-2x"></i>
@@ -95,7 +100,7 @@
 					<p>Have questions? We’re here to help.</p>
 				</a>
 			</div>
-			<div class="cell small-12 medium-6 large-4 flex-container">
+			<div class="cell small-12 medium-4 large-4 flex-container">
 				<a class="callout color orange flex-child-auto">
 					<span class="fa-stack fa-2x">
 						<i class="fas fa-circle fa-stack-2x"></i>
@@ -105,7 +110,7 @@
 					<p>Here’s what’s next.</p>
 				</a>
 			</div>
-			<div class="cell small-12 medium-6 large-4 flex-container">
+			<div class="cell small-12 medium-4 large-4 flex-container">
 				<a class="callout color orange flex-child-auto">
 					<span class="fa-stack fa-2x">
 						<i class="fas fa-circle fa-stack-2x"></i>
@@ -121,52 +126,58 @@
 <section class="bleed">
 	<div class="grid-container ">
 		<div class="grid-x grid-margin-x">
-			<div class="cell small-12 medium-6 large-12 text-center">
+			<div class="cell small-12 medium-12 large-12 text-center">
 				<h2 class="margin-bottom">
 					Information Sessions
 				</h2>
 				<div class="grid-x grid-margin-x text-left margin-bottom">
-					<div class="cell large-1">
-						<a class="datebox">
-							<div>
-								<span>Jan</span>
+					<div class="cell small-12 medium-6 large-4 margin-bottom">
+						<div class="grid-x grid-margin-x">
+							<div class="cell small-4 medium-4 large-4">
+								<a href="#">
+									<div class="datebox">
+										<div class="month">jan</div>
+										<div class="day">10</div>
+									</div>
+								</a>
 							</div>
-							<div>
-								<span>01</span>
+							<div class="cell small-8 medium-8 large-8">
+								<p><a>Grand Rounds</a></p>
+								<p>Tuesday, November 17, 2020</p>
 							</div>
-						</a>
+						</div>
 					</div>
-					<div class="cell large-3">
-						<p><a>Grand Rounds</a></p>
-						<p>Tuesday, November 17, 2020</p>
-					</div>
-					<div class="cell large-1">
-						<a class="datebox">
-							<div>
-								<span>Jan</span>
+					<div class="cell small-12 medium-6 large-4 margin-bottom">
+						<div class="grid-x grid-margin-x">
+							<div class="cell small-4 medium-4 large-4">
+								<a href="#">
+									<div class="datebox">
+										<div class="month">jan</div>
+										<div class="day">10</div>
+									</div>
+								</a>
 							</div>
-							<div>
-								<span>01</span>
+							<div class="cell small-8 medium-8 large-8">
+								<p><a>Grand Rounds</a></p>
+								<p>Tuesday, November 17, 2020</p>
 							</div>
-						</a>
+						</div>
 					</div>
-					<div class="cell large-3">
-						<p><a>Grand Rounds</a></p>
-						<p>Tuesday, November 17, 2020</p>
-					</div>
-					<div class="cell large-1">
-						<a class="datebox">
-							<div>
-								<span>Jan</span>
+					<div class="cell small-12 medium-6 large-4 margin-bottom">
+						<div class="grid-x grid-margin-x">
+							<div class="cell small-4 medium-4 large-4">
+								<a href="#">
+									<div class="datebox">
+										<div class="month">jan</div>
+										<div class="day">10</div>
+									</div>
+								</a>
 							</div>
-							<div>
-								<span>01</span>
+							<div class="cell small-8 medium-8 large-8">
+								<p><a>Grand Rounds</a></p>
+								<p>Tuesday, November 17, 2020</p>
 							</div>
-						</a>
-					</div>
-					<div class="cell large-3">
-						<p><a>Grand Rounds</a></p>
-						<p>Tuesday, November 17, 2020</p>
+						</div>
 					</div>
 				</div>
 				<p><a href="#" class="button">View all information sessions</a></p>
@@ -177,7 +188,7 @@
 <section class="bleed light-beige">
 	<div class="grid-container ">
 		<div class="grid-x grid-margin-x align-spaced">
-			<div class="cell small-12 medium-8 large-8 small-order-2 medium-order-1">
+			<div class="cell small-12 medium-7 large-8 ">
 				<h2>
 					Newsletter
 				</h2>
@@ -185,7 +196,7 @@
 					tootsie roll pastry. Cookie fruitcake cheesecake donut jelly beans liquorice.
 					<p>
 						<div class="grid-x grid-margin-x">
-							<div class="cell small-12 medium-12 large-6">
+							<div class="cell small-12 medium-7 large-6">
 								<form>
 									<label>Email Address <span class="required">*</span>
 										<input type="text">
@@ -197,7 +208,7 @@
 							</div>
 						</div>
 			</div>
-			<div class="cell small-12 medium-3 large-2 align-self-middle small-order-1 medium-order-2">
+			<div class="cell small-12 medium-5 large-2 align-self-middle text-center">
 				<i class="fas fa-envelope-open-text fa-10x"></i>
 			</div>
 		</div>
@@ -206,10 +217,10 @@
 <section class="bleed">
 	<div class="grid-container ">
 		<div class="grid-x grid-margin-x align-center">
-			<div class="cell small-12 medium-2">
+			<div class="cell small-12 medium-4 large-2">
 				<img src="http://placekitten.com/300/400" alt="kitty">
 			</div>
-			<div class="cell small-12 medium-5">
+			<div class="cell small-12 medium-8 large-5">
 				<blockquote>
 					<p>A block quotation (also known as a long quotation or extract) is a quotation in a written
 						document, that is set off from the main text as a paragraph, or block of text, and typically
@@ -222,4 +233,4 @@
 		</div>
 	</div>
 </section>
-{% include "@components/footer/alamo.twig" %}
+{% include "@blocks/footer/alamo.twig" %}
