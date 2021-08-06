@@ -10131,16 +10131,18 @@ IMG Fill BLEEDS
     .sidecar .outline {
       margin-bottom: 0; } }
 
-.sidecar.beige .callout {
-  background-color: #f7f5f0;
-  color: #171717; }
-
-.sidecar.beige .outline {
-  border-color: #FFBC5B !important;
-  border-right: none !important; }
-  @media screen and (max-width: 1022px) {
-    .sidecar.beige .outline {
-      border: 0.0625rem solid #FFBC5B !important; } }
+.sidecar.light-beige {
+  background-color: #FFF !important; }
+  .sidecar.light-beige .callout {
+    background-color: #f7f5f0 !important;
+    color: #171717; }
+  .sidecar.light-beige .outline {
+    border-color: #FFBC5B !important;
+    border-right: none !important;
+    background-color: #FFF !important; }
+    @media screen and (max-width: 1022px) {
+      .sidecar.light-beige .outline {
+        border: 0.0625rem solid #FFBC5B !important; } }
 
 .sidecar.grey .callout {
   background-color: #E0E5E6;
@@ -10648,16 +10650,16 @@ a.card {
     COLORS
 ============================================================ */
 .light-beige {
-  background-color: #f7f5f0; }
+  background-color: #f7f5f0 !important; }
 
 .beige {
-  background-color: #F0ECE2; }
+  background-color: #F0ECE2 !important; }
 
 .dark-beige {
-  background-color: #EFE1CC; }
+  background-color: #EFE1CC !important; }
 
 .light-grey {
-  background-color: #E0E5E6; }
+  background-color: #E0E5E6 !important; }
 
 .off-white {
   background-color: #F1F5F7; }
@@ -11166,7 +11168,9 @@ footer.flat {
 footer.mission {
   background-color: #FFF;
   color: #171717;
-  margin-top: 1.5625rem; }
+  margin-top: 0; }
+  footer.mission .grid-container {
+    padding-top: 0; }
   footer.mission a {
     color: #AD4200; }
     footer.mission a:hover {
@@ -11845,7 +11849,7 @@ a.event:hover.long {
   box-shadow: 0.1875rem 0.5rem 0.4375rem 0 rgba(23, 23, 23, 0.35); }
 
 .datebox {
-  max-width: 5.3125rem;
+  width: 5.3125rem;
   margin-right: 1.25rem;
   color: #F1F5F7; }
   .datebox .month {
@@ -11875,7 +11879,7 @@ a.event:hover.long {
     background: #257994; }
 
 a .datebox {
-  max-width: 5.3125rem;
+  width: 5.3125rem;
   margin-right: 1.25rem; }
   a .datebox .month {
     background: #7A0F00;
