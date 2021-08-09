@@ -4,6 +4,19 @@
 
 .grid-container {
     max-width: $global-width;
+
+    &.stripped {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &.no-top {
+        padding-top: 0;
+    }
+
+    &.no-bottom {
+        padding-bottom: 0;
+    }
 }
 /* ==============================
     Padding Helpers

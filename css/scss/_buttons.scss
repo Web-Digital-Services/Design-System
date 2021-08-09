@@ -111,6 +111,9 @@
 
         .white {
             .button {
+                background-color: $orange;
+                color: $off-white;
+
                 &.ghost {
                     border: rem-calc(1px) solid $orange;
                     background-color: $off-white;

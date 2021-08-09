@@ -70,24 +70,21 @@
 	</div>
 </section>
 
-<div class="grid-container">
-    <div class="grid-x grid-padding-x">
-        <section class="cell large-7 medium-7 small-12">
+<section class="grid-container">
+    <div class="grid-x grid-padding-x grid-margin-x">
+        <section class="cell large-7 small-12 align-self-middle">
             <h2>Happening now at UT Health San Antonio</h2>
             <p>Breakthroughs are happening everyday at UT Health San Antonio. Stay informed on the latest news and events. Marketing copy similar to Cancer Center.</p>
             <p><a class="arrow">Newsroom</a></p>
         </section>
-        <aside class="cell large-5 medium-5 small-12">
-            <div class="grid-y grid-y-padding">
-                <div class="cell"> 
-                    {% include "@components/dates/long-event.twig" %}
-                </div>
-                <div class="cell"> 
-                    {% include "@components/dates/long-event.twig" %}
-                </div>
+        <aside class="cell large-5 small-12">
+            {% include "@components/dates/long-event.twig" %}
+            <br>
+            {% include "@components/dates/long-event.twig" %}
+            <br>
             <p><a class="arrow">All events</a></p>
         </aside>
-    </div>
-</div>
+    </div> 
+</section>
 
 {% include "@blocks/footer/mission.twig" %}

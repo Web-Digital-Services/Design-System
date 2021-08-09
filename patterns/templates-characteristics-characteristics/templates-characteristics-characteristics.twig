@@ -1,12 +1,12 @@
 {% include "@blocks/header/global-bar-quicklinks.twig" %}
 {% include "@blocks/header/level-2.twig" %}
-{% include "@components/navigation/navbar.twig" %}
 {% include "@components/navigation/breadcrumbs.twig" %}
 <section class="grid-container">
     <h1>Doctoral Program Characteristics</h1>
     <h2 class="subheader margin-bottom">Nursing Science, Ph.D.</h2>
-    <div class="grid-x grid-margin-x">
+    <div class="grid-x grid-padding-x">
         <main class="cell large-9 medium-7 small-12 medium-order-1 small-order-2">
+            <p id="start">
             <div class="grid-container callout outline">
                 <div class="grid-x grid-margin-x">
                     <div class="cell large-4 medium-12 text-center">
@@ -607,55 +607,60 @@
                     </div>
                 </div>
             </div>
+            <p id="stop">
         </main>
 
-        <aside class="cell large-3 medium-5 small-12 small-order-1 medium-order-2 margin-bottom">
-            <p>Use links to jump to characteristic information</p>
-            <ul class="fa-ul jump-links" id="links">
-                <li>
-                    <a class="arrow">
-                        <span class="fa-li fa-stack">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <span>Graduation Stats</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="arrow">
-                        <span class=" fa-li fa-stack">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-apple-alt fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <span>Student stats</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="arrow">
-                        <span class=" fa-li fa-stack">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-chalkboard-teacher fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <span>Faculty stats</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="arrow">
-                        <span class=" fa-li fa-stack">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-school fa-stack-1x fa-inverse"></i></span>
-                        </span>
-                        <span>Institutional stats</span>
-                    </a>
-                </li>
-            </ul>
-            <h5 id="subnav">Nursing Science, Ph.D.</h5>
-            <ul class="vertical menu accordion-menu" data-accordion-menu>
-                <li><a href="#">Overview</a></li>
-                <li><a href="#">Academics</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a class="is-active" href="#">Characteristics</a></li>
-            </ul>
+        <aside class="cell large-3 medium-5 small-12 small-order-1 medium-order-2 margin-bottom" data-sticky-container>
+            <div class="sticky" data-sticky data-top-anchor="start:top" data-btm-anchor="stop:bottom">
+                <p class="light">Use links to jump to characteristic information</p>
+                <ul class="fa-ul jump-links" id="links">
+                    <li>
+                        <a href="#" class="arrow">
+                            <span class="fa-li fa-stack">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span>Graduation Stats</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="arrow">
+                            <span class=" fa-li fa-stack">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-apple-alt fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span>Student stats</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="arrow">
+                            <span class=" fa-li fa-stack">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-chalkboard-teacher fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <span>Faculty stats</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="arrow">
+                            <span class=" fa-li fa-stack">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-school fa-stack-1x fa-inverse"></i></span>
+                            </span>
+                            <span>Institutional stats</span>
+                        </a>
+                    </li>
+                </ul>
+                <div id="subnav">
+                    <h2 class="h5 close">Nursing Science, Ph.D.</h2>
+                    <ul class="vertical menu accordion-menu" data-accordion-menu>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Academics</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a class="is-active" href="#">Characteristics</a></li>
+                    </ul>
+                </div>
+            </div>
             <a href="#top" class="top-page">
                 <i class="fas fa-arrow-up"></i>
                 <span>Top</span>

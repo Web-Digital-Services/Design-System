@@ -3,48 +3,46 @@
 {% include "@blocks/header/level-1.twig" %}
 {% include "@components/heroBanner/hero-image-orange.twig" %}
 
-<section class="bleed">
-	<div class="grid-container ">
-		<div class="grid-x text-center grid-margin-x margin-bottom">
-			<div class="cell small-12">
-				<h2>UTHealthier Tomorrows</h2>
-				<h3 class="sans-serif color">Advanced services and technologies for you and your family.
-				</h3>
-			</div>
+<section class="grid-container">
+	<div class="grid-x text-center grid-margin-x margin-bottom">
+		<div class="cell small-12">
+			<h2 class="close">UTHealthier Tomorrows</h2>
+			<h3 class="sans-serif color">Advanced services and technologies for you and your family.
+			</h3>
 		</div>
-		<div class="grid-x text-center grid-margin-x">
-			<div class="cell small-12 medium-4 large-4">
-				<a href="#">
-					<span class="fa-stack fa-5x">
-						<i class="fas fa-circle fa-stack-2x"></i>
-						<i class="fas fa-user-md fa-stack-1x fa-inverse"></i>
-					</span>
-					<h3>Find a doctor</h3>
-				</a>
-				<p>With over 800 providers, we offer the most comprehensive care in South Texas.</p>
-			</div>
-			<div class="cell small-12 medium-4 large-4">
-				<a href="#">
-					<span class="fa-stack fa-5x">
-						<i class="fas fa-circle fa-stack-2x"></i>
-						<i class="fas fa-tooth fa-stack-1x fa-inverse"></i>
-					</span>
-					<h3>Find dental care</h3>
-				</a>
+	</div>
+	<div class="grid-x text-center grid-margin-x">
+		<div class="cell small-12 medium-4 large-4">
+			<a href="#">
+				<span class="fa-stack fa-5x">
+					<i class="fas fa-circle fa-stack-2x"></i>
+					<i class="fas fa-user-md fa-stack-1x fa-inverse"></i>
+				</span>
+				<h3>Find a doctor</h3>
+			</a>
+			<p>With over 800 providers, we offer the most comprehensive care in South Texas.</p>
+		</div>
+		<div class="cell small-12 medium-4 large-4">
+			<a href="#">
+				<span class="fa-stack fa-5x">
+					<i class="fas fa-circle fa-stack-2x"></i>
+					<i class="fas fa-tooth fa-stack-1x fa-inverse"></i>
+				</span>
+				<h3>Find dental care</h3>
+			</a>
 
-				<p>A wide range of oral health care services is offered, from wisdom teeth and braces to complex
-					procedures.</p>
-			</div>
-			<div class="cell small-12 medium-4 large-4">
-				<a href="#">
-					<span class="fa-stack fa-5x">
-						<i class="fas fa-circle fa-stack-2x"></i>
-						<i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4>Find a location</h4>
-				</a>
-				<p>Over 1.2 million people are seen at more than 20 locations throughout South Texas.</p>
-			</div>
+			<p>A wide range of oral health care services is offered, from wisdom teeth and braces to complex
+				procedures.</p>
+		</div>
+		<div class="cell small-12 medium-4 large-4">
+			<a href="#">
+				<span class="fa-stack fa-5x">
+					<i class="fas fa-circle fa-stack-2x"></i>
+					<i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
+				</span>
+				<h4>Find a location</h4>
+			</a>
+			<p>Over 1.2 million people are seen at more than 20 locations throughout South Texas.</p>
 		</div>
 	</div>
 </section>
@@ -74,8 +72,8 @@
 	<div class="grid-container">
 		<div class="grid-x text-center align-center">
 			<div class="cells large-4 medium-4 small-12">
-				<p class="h2 sans-serif black">1 of 4<p>
-				<p>NCI-designated Cancer Centers in Texas/p>
+				<p class="h2 sans-serif black">1 of 4</p>
+				<p>NCI-designated Cancer Centers in Texas</p>
 			</div>
 			<div class="cells large-4 medium-4 small-12">
 				<p class="h2 sans-serif black ">65<p>
@@ -109,24 +107,21 @@
 	</div>
 </section>
 
-<div class="grid-container">
-    <div class="grid-x grid-padding-x">
-        <section class="cell large-7 medium-7 small-12">
+<section class="grid-container">
+    <div class="grid-x grid-padding-x grid-margin-x">
+        <section class="cell large-7 small-12 align-self-middle">
             <h2>Happening now at UT Health San Antonio</h2>
             <p>Breakthroughs are happening everyday at UT Health San Antonio. Stay informed on the latest news and events. Marketing copy similar to Cancer Center.</p>
             <p><a class="arrow">Newsroom</a></p>
         </section>
-        <aside class="cell large-5 medium-5 small-12">
-            <div class="grid-y grid-y-padding">
-                <div class="cell"> 
-                    {% include "@components/dates/long-event.twig" %}
-                </div>
-                <div class="cell"> 
-                    {% include "@components/dates/long-event.twig" %}
-                </div>
+        <aside class="cell large-5 small-12">
+            {% include "@components/dates/long-event.twig" %}
+            <br>
+            {% include "@components/dates/long-event.twig" %}
+            <br>
             <p><a class="arrow">All events</a></p>
         </aside>
-    </div>
-</div>
+    </div> 
+</section>
 
 {% include "@blocks/footer/mission.twig" %}

@@ -1,52 +1,105 @@
-<div class="top-bar global-bar">    
-    <div class="top-bar-left">
-        <p><a href="#"><i class="fas fa-bars"></i> Quicklinks</a></p>
-    </div>
-    <div class="top-bar-right">
-        <p><a href="#"><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
-    </div>
-</div><header class="regular">
-    <a href="#"><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
-    <div>
-        <!--<div class="search-bar">
+<div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+    <!-- Quicklinks Content -->
+    <div class="title-bar quicklinks">
+        <div class="title-bar-left">
+            <p><a href="#" data-close="offCanvasLeft"><i class="fas fa-times"></i> Quicklinks</a></p>
             <form class="search">
-                <input type="search" placeholder="Search">
-                <button><i class="fas fa-search"></i></button>
-            </form>
-        </div>-->
-        <form class="search">
     <input type="search" class="search-box" placeholder="Search">
     <button type="submit">
         <i class="fa fa-search"></i>
     </button>
-</form>        <div class="right">
-            <a href="#">
-                <span class="fa-stack outline">
-                    <i class="far fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-notes-medical fa-stack-1x fa-inverse"></i>
-                </span>
-                <span>MyChart</span>
-            </a> 
-            <a href="#">
-                <span class="fa-stack outline">
-                    <i class="far fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
-                </span>
-                <span>210-450-9000</span>
-            </a> 
+</form>            <h4>Find</h4>
+            <ul>
+                <li><a href="#">A to Z list</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="#">Calendars</a></li>
+                <li><a href="#">Directories</a></li>
+            </ul>
+            <h4>Media</h4>
+            <ul>
+                <li><a href="#">COVID-19</a></li>
+                <li><a href="#">IMPACT COVID Magazine</a></li>
+                <li><a href="#">MissionRX</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">ENGAGED</a></li>
+            </ul>
+            <h4>Logins</h4>
+            <ul>
+                <li><a href="#">Canvas</a></li>
+                <li><a href="#">Employee Email</a></li>
+                <li><a href="#">MyUTHealth</a></li>
+                <li><a href="#">LiveMail</a></li>
+                <li><a href="#">My Student Center</a></li>
+                <li><a href="#">UT Health Learns</a></li>
+            </ul>
+            <h4>Technology</h4>
+            <ul>
+                <li><a href="#">Service Desk</a></li>
+                <li><a href="#">Password Reset</a></li>
+                <li><a href="#">TechZone (Computer Store)</a></li>
+            </ul>
+            <h4>More</h4>
+            <ul>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Bookstore</a></li>
+                <li><a href="#">Course Catalog</a></li>
+                <li><a href="#">Human Resources</a></li>
+            </ul>
         </div>
     </div>
-</header>
-
-<header class="title-bar" data-responsive-toggle>
+</div>
+<div class="off-canvas-content" data-off-canvas-content>
+    <!--<div class="top-bar global-bar">    
+        <div class="top-bar-left">
+            <p><a href="#" data-toggle="offCanvas"><i class="fas fa-bars"></i> Quicklinks</a></p>
+        </div>
+        <div class="top-bar-right">
+            <p><a href="#"><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
+        </div>
+    </div>-->
+    <div class="title-bar global-bar">    
+        <div class="title-bar-left">
+            <p><a href="#" data-toggle="offCanvasLeft"><i class="fas fa-bars"></i> Quicklinks</a></p>
+        </div>
+        <div class="title-bar-right">
+            <p><a href="#"><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
+        </div>
+    </div>
+</div><header class="title-bar" data-responsive-toggle="regular">
     <a href="#"><img src="../../images/whiteUTHSA_logo.svg"></a>
-    <button class="menu-icon" type="button" data-toggle>Menu</button>
-</header><!--<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-    <div class="title-bar-title">Menu</div>
-</div>-->
-
-<nav class="nav-bar">
+    <button class="menu-icon" type="button" data-toggle="regular">Menu</button>
+</header>
+<header id="regular">
+    <div class="group">
+        <div class="logo">
+            <a href="#"><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
+        </div>
+        
+        <div class="right">
+            <form class="search">
+    <input type="search" class="search-box" placeholder="Search">
+    <button type="submit">
+        <i class="fa fa-search"></i>
+    </button>
+</form>            <div class="circle-icons">
+                <a href="#">
+                    <span class="fa-stack outline">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-notes-medical fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span>MyChart</span>
+                </a> 
+                <a href="#">
+                    <span class="fa-stack outline">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span>210-450-9000</span>
+                </a> 
+            </div>
+        </div>
+    </div>
+    <nav class="nav-bar">
     <div class="top-bar">
         <div class="top-bar-left">
             <ul class="menu">
@@ -64,7 +117,8 @@
             </ul>
         </div>
     </div>
-</nav><section class="hero bleed">
+</nav></header>
+<section class="hero bleed">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell small-12 medium-12 large-9">
@@ -74,12 +128,15 @@
         <div class="grid-x grid-margin-x">
             <div class="cell small-12 medium-7 large-8 small-order-2 medium-order-1">
                 <h2 class="h4"> Requirements</h2>
-                <ul>
-                    <li>Cumulative GPA: 2.5/ Prerequisite GPA: 3.0</li>
-                    <li>TEAS Score: 65</li>
-                    <li>In addition to meeting our GPA and TEAS score requirements, applicants must complete all math
-                        and science prerequisites before submitting an application.</li>
-                </ul>
+                <div>
+                    <ul>
+                        <li>Cumulative GPA: 2.5/ Prerequisite GPA: 3.0</li>
+                        <li>TEAS Score: 65</li>
+                        <li>In addition to meeting our GPA and TEAS score requirements, applicants must complete all
+                            math
+                            and science prerequisites before submitting an application.</li>
+                    </ul>
+                </div>
                 <p><a href="#" class="button">Apply Meow!</a></p>
             </div>
             <div class="cell small-12 medium-5 large-4 small-order-1 medium-order-2">
@@ -110,13 +167,15 @@
     </div>
 </section>
 <nav aria-label="You are here:" role="navigation">
-    <ul class="breadcrumbs">
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">Bachelor of Science in Nursing: Traditional Track</a></li>
-        <li>
-            <span class="show-for-sr">Current: </span> Admissions
-        </li>
-    </ul>
+    <div>
+        <ul class="breadcrumbs">
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Bachelor of Science in Nursing: Traditional Track</a></li>
+            <li>
+                <span class="show-for-sr">Current: </span> Admissions
+            </li>
+        </ul>
+    </div>
 </nav>
 <section class="bleed">
     <div class="grid-container">
@@ -138,11 +197,13 @@
                     is to determine if the TEAS exam will be required for applicants to our May 2022 Accelerated BSN
                     program and Fall 2022 Traditional BSN program by August 2021.</p>
                 <h3>Minimum GPAs & Test Scores</h3>
-                <ul class="margin-bottom">
-                    <li>Cumulative GPA: 2.5 </li>
-                    <li>Prerequisite GPA: 3.0 </li>
-                    <li>TEAS Score: 65 </li>
-                </ul>
+                <div>
+                    <ul class="margin-bottom">
+                        <li>Cumulative GPA: 2.5 </li>
+                        <li>Prerequisite GPA: 3.0 </li>
+                        <li>TEAS Score: 65 </li>
+                    </ul>
+                </div>
                 <h3>Admissions Requirements</h3>
                 <p>In addition to meeting our GPA and TEAS score requirements, applicants must complete all math and
                     science prerequisites before submitting an application. Applicants may be missing up to 9 hours
@@ -159,24 +220,28 @@
                 <p class="margin-bottom">A completed NursingCAS application must be submitted before the application
                     deadline. All fees are accessed through the NursingCAS application. The Office of Admissions fee
                     is $45 and is non-refundable. The NursingCAS fee is separate and is set by NursingCAS.</p>
-                <p>Admitted Student Profiles</p>
-                <ul>
-                    <li>Spring 2020</li>
-                    <li>Fall 2019</li>
-                    <li>Spring 2020</li>
-                    <li>Fall 2018</li>
-                </ul>
+                <div>
+                    <p>Admitted Student Profiles</p>
+                    <ul>
+                        <li>Spring 2020</li>
+                        <li>Fall 2019</li>
+                        <li>Spring 2020</li>
+                        <li>Fall 2018</li>
+                    </ul>
+                </div>
             </main>
             <aside class="cell small-12 medium-5 large-3">
-                <ul class="vertical menu accordion-menu margin-bottom" data-accordion-menu>
-                    <li><a href="# " class="is-active">Admissions</a></li>
-                    <li><a href="#">Cost of Attendance</a></li>
-                    <li><a href="#">Information Sessions</a></li>
-                    <li><a href="#">Learning Outcomes</a></li>
-                    <li><a href="#">Prerequisite Courses</a></li>
-                    <li><a href="#">Program Overview</a></li>
-                    <li><a href="#">Financial Aid</a></li>
-                </ul>
+                <div>
+                    <ul class="vertical menu accordion-menu margin-bottom" data-accordion-menu>
+                        <li><a href="# " class="is-active">Admissions</a></li>
+                        <li><a href="#">Cost of Attendance</a></li>
+                        <li><a href="#">Information Sessions</a></li>
+                        <li><a href="#">Learning Outcomes</a></li>
+                        <li><a href="#">Prerequisite Courses</a></li>
+                        <li><a href="#">Program Overview</a></li>
+                        <li><a href="#">Financial Aid</a></li>
+                    </ul>
+                </div>
                 <div class="cell small-12 medium-8 large-4 flex-container">
                     <a class="callout color dark-grey flex-child-auto">
                         <span class="fa-stack fa-2x">
@@ -188,8 +253,8 @@
                 </div>
                 <div class="callout">
                     <h3>Resources</h3>
-                    <div>
-                        <ul class="arrow">
+                    <div class="arrow">
+                        <ul>
                             <li><a href="#">Observation hours</a></li>
                             <li><a href="#">Applicant toolbox</a> </li>
                             <li><a href="#">Shadowing hours</a></li>
@@ -208,64 +273,75 @@
         <path id="never-forget" d="M0.116,47.344l116.069-0.002V44.05v-10.1v-4.303h-14.539v-5.724h-3.418c0,0-7.529,0.29-13.178-3.052 c-5.586-3.306-6.625-6.449-6.641-6.464V9.806h-7.446C69.692,4.193,64.675,0,58.674,0c-6.003,0-11.02,4.193-12.29,9.806h-7.579v4.601c-0.029,0.03-1.068,3.165-6.639,6.464c-5.649,3.342-13.179,3.052-13.179,3.052h-4.449v5.724H0v4.303v10.1v3.228"></path>
         </svg>
     </div>
-    <div class="grid-container">
-        <div class="grid-x grid-padding-x">
-            <div class="cell medium-6 large-6">
-                <h2>UT Health San Antonio</h2>
-                <h3>Site Name</h3>
-                <div class="grid-x">
-                    <div class="cell medium-6 large-6">
-                        <ul class="fa-ul stacked loose-list">
-                            <li>
-                                <a href="#">
-                                    <span class="fa-li">
-                                    <span class="fa-stack">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                    </span> <span >210-567-0000 </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    <span class="fa-li">
-                                    <span class="fa-stack">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                    </span>
-                                </a>
-                                <span>7703 Floyd Curl Drive<br>San Antonio, TX 78229<br></span><a href="#"><span>Map and directions</span></a>
-
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="cell medium-6 large-6">
-                        <p><a href="#" class="arrow">Careers</a></p>
-                        <p><a href="#" class="arrow">Contact Us</a></p>
-                        <span>
-                            <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-                            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-                            <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-                            <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
-                            <a href="#"><i class="fab fa-youtube-square fa-2x"></i></a>
-                        </span>
-                    </div>
+    <div class="shield">
+        <section class="grid-container">
+            <div class="grid-x grid-margin-x align-center">
+                <div class="cell large-12">
+                    <h2>UT Health San Antonio</h2>
+                    <h3>Teresa R. & Joe Lozano Long School of Medicine</h3>
                 </div>
+                <div class="cell large-3 medium-4 small-10">
+                    <div class="contact">
+                        <a href="#" class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+                        </a>
+                        <a href="#">210-450-0000</a> 
+                    </div>
+                    <div class="contact">
+                        <a href="#" class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
+                        </a> 
+                    
+                        <address>
+                            7703 Floyd Curl Drive<br>
+                            San Antonio, TX 78226<br>
+                            <a href="#" class="arrow">Map and directions</a>
+                        </address>
+                    </div>
 
-            </div>
-            <div class="cell medium-6 large-6 vr">
-                <p class="large-text">We make lives better ®</p>
-                <p>The University of Texas Health Science Center at San Antonio, also called <a href="#">UT Health San Antonio</a>, is a leading academic health center with a mission to make lives better through excellence in <a href="#">advanced academics</a>, <a href="#">life-saving research</a> and comprehensive clinical care including <a href="#">health</a>, <a href="#">dental</a> and <a href="#">cancer services</a>.</p>
-            </div>
-        </div>
+                    <div class="contact">
+                        <a href="#" class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                        </a>
+                        <a href="#">email@uthscsa.edu</a> 
+                    </div>
+                    
+                </div>
+                <div class="cell large-3 medium-4 small-10">
+                    <ul>
+                        <li><a href="#" class="arrow">About us</a></li>
+                        <li><a href="#" class="arrow">Contact us</a></li>
+                        <li><a href="#" class="arrow">Faculty directory</a></li>
+                        <li><a href="#" class="arrow">Job opernings</a></li>
+                        <li><a href="#" class="arrow">Newsroom</a></li>
+                    </ul>
+
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube-square fa-2x"></i></a></li>
+                    </ul>
+                </div>
+                <div class="cell large-5 medium-4 small-10">
+                    <p class="large-text">We make lives better ®</p>
+                    <p>The University of Texas Health Science Center at San Antonio, also called <a href="#">UT Health San Antonio</a>, is a leading academic health center with a mission to make lives better through excellence in <a href="#">advanced academics</a>, <a href="#">life-saving research</a> and comprehensive clinical care including <a href="#">health</a>, <a href="#">dental</a> and <a href="#">cancer services</a>.</p>
+                </div>
+                <div class="cell large-1 medium-0 small-0"></div>
+            </div>    
+        </section>
     </div>
-    <div class="bleed">
+    <section class="bleed">
         <div class="grid-container">
-            <div class="cell">
-                <p><a href="#">Web Privacy</a> | Links from websites affiliated with UT Health's website (uthscsa.edu) to other websites do not constitute or imply university endorsement of those sites, their content, or products and services associated with those sites. The content on this website is intended to be used for informational purposes only. Health information on this site is not meant to be used to diagnose or treat conditions. Consult a health care provider if you are in need of treatment.</p>
+            <div class="grid-x">
+                <div class="cell">
+                    <p><strong><a href="#">Web Privacy</a></strong> | Links from websites affiliated with UT Health's website (uthscsa.edu) to other websites do not constitute or imply university endorsement of those sites, their content, or products and services associated with those sites. The content on this website is intended to be used for informational purposes only. Health information on this site is not meant to be used to diagnose or treat conditions. Consult a health care provider if you are in need of treatment.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </footer>

@@ -40,6 +40,7 @@
         padding-left: rem-calc(10px);
         padding-right: rem-calc(10px);
         margin-bottom: rem-calc(-48px);
+        margin-top: rem-calc(60px);
     }
 
     .breadcrumbs li:nth-last-child(2)::before {
@@ -48,7 +49,7 @@
         font-weight: 900;
         color: $orange;
         font-size: rem-calc(18px);
-        margin: 0 rem-calc(12px) 0 0;
+        margin: 0 rem-calc(7px) 0 0;
     }
 
     .breadcrumbs li:not(:nth-last-child(2)) {
@@ -61,6 +62,10 @@
 }
 
 // ======= Pagination
+
+.pagination {
+    text-align: center;
+}
 
 .pagination a {
     color: $orange;
@@ -134,6 +139,7 @@
     font-size: rem-calc(20px);
     border: none;
     font-style: normal;
+    margin-top: rem-calc(-8px);
 }
 
 .accordion-menu .is-accordion-submenu-parent[aria-expanded='true']>a::after {
@@ -147,7 +153,45 @@
 }
 
 
+// ======= Mission Nav
+header#mission {
+    nav {
+        ul.menu > li {
+            a {
+                font-size: rem-calc(30px);
+            }
+        }
 
+        @media screen and (max-width:770px) {
+            background-color: $dark-grey !important;
+            border-top: rem-calc(6px) solid $gold;
+
+
+            ul.menu {
+                display: block;
+                background-color: $dark-grey !important;
+
+                li {
+                    border-bottom: rem-calc(1.75px) solid $grey-10;
+                    &:hover {
+                        background: $off-white !important;
+                    }
+
+                    a {
+                        color: $off-white;
+                        font-size: rem-calc(22px);
+                        &:hover {
+                            color: $orange !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:770px) {
+        display: block !important;
+    }
+}
 
 // ======= Navbar
 
@@ -156,6 +200,7 @@
     display: flex;
     justify-content: space-between;
     justify-content: center;
+    box-shadow: $shadow-2;
 
     .top-bar {
         padding: 0;
@@ -246,34 +291,38 @@
 }
 
 @media screen and (max-width:770px) {
-
-    .top-bar {
-
-        border-top: rem-calc(4px) solid $gold;
-        display: block;
-        ul {
+    .nav-bar {
+        .top-bar {
+            background-color: $dark-grey !important;
+            border-top: rem-calc(6px) solid $gold;
             display: block;
-            background: $dark-grey !important;
 
-            li {
+            ul {
+                display: block;
+                background-color: $dark-grey !important;
 
-                &:hover {
-                    background: $off-white !important;
-                }
-
-                a {
+                li {
+                    border-bottom: rem-calc(1.75px) solid $grey-10;
                     &:hover {
-                        color: $orange !important;
+                        background: $off-white !important;
+                    }
+
+                    a {
+                        &:hover {
+                            color: $orange !important;
+                        }
                     }
                 }
 
-                border-bottom: rem-calc(1.75px) solid $grey-10;
             }
-        }
 
-        .top-bar-right {
+            .top-bar-right {
+                border-left: none !important;
 
-            border-left: none !important;
+                ul > li:last-child {
+                    border-bottom: none;
+                }
+            }
         }
     }
 }

@@ -83,10 +83,6 @@ strong {
     text-align: center;
 }
 
-.sub {
-    font-size: rem-calc(32px);
-}
-
 .subheader {
     font-family: $sans-serif-font;
     color: $off-black;
@@ -94,7 +90,7 @@ strong {
     margin-top: rem-calc(-27px);
     margin-bottom: 0;
     @media screen and (max-width: 569px) {
-        font-size: rem-calc(24px);
+        font-size: rem-calc(22px);
     }
 }
 

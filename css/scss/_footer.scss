@@ -1,14 +1,14 @@
-/* ============================================================
-    STANDARD FOOTER
-============================================================ */
-
 footer {
+    color: $off-white;
+    background-color: $dark-grey;
     background-repeat: no-repeat;
     background-position: bottom center;
-    margin-top: rem-calc(100px);
-    color: $off-white;
     position: relative;
-    background-color: $dark-grey;
+    margin-top: rem-calc(60px);
+
+    &.flatten {
+        margin-top: 0;
+    }
 
     .alamo {
         position: absolute;
@@ -20,40 +20,42 @@ footer {
             width: rem-calc(200px);
             fill: $dark-grey;
         }
-
-        /* object svg {
-            width: 200px;
-            fill: $dark-grey;
-        }*/
     }
 
     h2 {
-        font-size: rem-calc(26px);
-        font-weight: 700;
-        margin-bottom: 0;
+        font-size: rem-calc(30px);
+        font-weight: 800;
     }
 
     h3 {
-        font-size: rem-calc(24px);
-        font-weight: 400;
-        padding-top: 0;
-        margin-bottom: rem-calc(30px);
+        font-size: rem-calc(22px);
+        margin-top: rem-calc(-25px);
+        margin-bottom: rem-calc(40px);
+        font-weight: 500;
+        font-family: $sans-serif-font;
     }
 
-    p.large-text {
-        font-family: "Lora";
-        font-size: rem-calc(20px);
+    p {
+        margin-bottom: rem-calc(12px);
+
+        &.large-text {
+            font-family: $serif-font;
+            font-size: rem-calc(20px);
+        }
     }
 
     a {
-        color: $off-white;
-
-        span {
-            color: $grey-link;
-
-        }
+        color: $grey-link;
+        font-weight: 900 !important;
 
         &:hover {
+            color: $grey-link;
+        }
+
+        &.arrow::after {
+            color: $grey-link;
+        }
+        &.arrow:hover:after {
             color: $grey-link;
         }
     }
@@ -66,87 +68,151 @@ footer {
             background-color: $grey-link;
             color: $grey-90 !important;
         }
+    }
 
-        &.arrow {
-            background-color: transparent !important;
+    ul {
+        list-style: none;
+        margin-left: 0;
 
-            &:after {
-                color: $grey-link;
-            }
+        li {
+            margin-bottom: 0.625rem;
+        }
+    }
 
-            &:hover {
-                color: $grey-link !important;
+    .social {
+        .fa-2x {
+            font-size: rem-calc(40px)
+        }
+        li {
+            margin-right: rem-calc(7px);
+            
+            a {
+                color: $off-white;
 
-                &:after {
+                &:hover {
                     color: $grey-link;
                 }
             }
         }
     }
 
-    .vr {
-        border-left: $off-white rem-calc(1.5px) solid;
+    .contact {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem-calc(30px);
+
+        .fa-stack {
+            margin-right: rem-calc(10px);
+
+            a:hover {
+                color: $off-white !important;
+            }
+        }
+    }
+
+    .status {
+        display: flex;
+        align-items: center;
+
+        i {
+            font-size: 36px;
+            color: $grey-30;
+            margin-right: rem-calc(10px);
+        }
+    }
+
+    .shield {
+        background-image: url('../../images/half-shield.svg');
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: right center;
+
+        @media screen and (max-width:1159px) { //temporary solution
+            background: none;
+        }
     }
 
     .bleed {
-        background-color: #1A2429;
+        background-color: $grey-90;
         color: $off-white;
     }
-}
 
-footer.flat {
-    margin-top: 0;
-}
+    &.mission {
+        background-color: $pure-white;
+        color: $off-black;
+        margin-top: rem-calc(-45px);
 
-/* ============================================================
-    MISSION FOOTER
-============================================================ */
-
-footer.mission {
-    background-color: $pure-white;
-    color: $off-black;
-    margin-top: 0;
-
-    .grid-container {
-        padding-top: 0;
-    }
-
-    a {
-        color: $orange;
-        &:hover {
-            color: $dark-orange !important;
+        & hr {
+            margin: rem-calc(50px 0);
+            max-width: none;
         }
-    }
-
-
-
-    & hr {
-        border-top: solid #A9A9A9 rem-calc(.75px);
-        border-bottom: solid #A9A9A9 rem-calc(.75px);
-        margin: rem-calc(50px 0);
-        max-width: none;
-    }
-
-    & hr:after {
-        content: url('../../images/orange-shield.svg');
-        left: 50%;
-        position: absolute;
-        transform: translateY(-50%) translateX(-50%);
-        padding: rem-calc(20px);
-        background: #fff;
-    }
-
-    h2 {
-        font-size: rem-calc(26px);
-        font-weight: 700;
-        margin-bottom: rem-calc(30px);
-    }
-
-    .bleed {
-        background-color: $orange;
-
+    
+        & hr:after {
+            content: url('../../images/orange-shield.svg');
+            left: 50%;
+            position: absolute;
+            transform: translateY(-50%) translateX(-50%);
+            padding: rem-calc(20px);
+            background: #fff;
+        }
+        
         a {
-            color: $off-white;
+            color: $orange;
+            &:hover {
+                color: $dark-orange !important;
+            }
         }
+
+        .social {
+            li {
+                a {
+                    color: $orange;
+                }
+            }
+        }
+        .columns {
+            -webkit-columns: 2 290px;
+            -moz-columns: 2 290px;
+            columns: 2 290px;
+        }
+
+        .bleed {
+            background-color: $orange;
+            color: $off-white;
+
+            a {
+                color: $off-white;
+            }
+        }
+    }
+
+    @media screen and (max-width:639px) { 
+        h2 {
+            font-size: 1.25rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.1875rem;
+            text-align: center;
+            margin-top: rem-calc(-20px);
+        }
+
+        .social {
+            text-align: center;
+            margin-top: rem-calc(45px);
+            margin-bottom: rem-calc(34px);
+
+            li {
+                margin-right: rem-calc(14px);
+            }
+        }
+
+        ul {
+            li {
+                margin-bottom: rem-calc(20px);
+            }
+        }
+
     }
 }
