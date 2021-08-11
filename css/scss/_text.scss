@@ -6,6 +6,103 @@ html {
     font-size: 18px;
 }
 
+/*============== RESPONSIVE HEADING SIZES ===================
+For the base heading sizes, rem-calc() is not calculating properly, so please leave the sizes in pixels.
+*/
+h1,
+.h1 {
+    font-size: 54px;
+
+    /*---- MEDIUM or TABLET----*/
+    @media screen and (max-width: 1023px) {
+        font-size: 45px;
+    }
+
+    /*---- SMALL or MOBILE----*/
+    @media screen and (max-width: 639px) {
+        font-size: 32px;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 48px;
+
+    /*---- MEDIUM or TABLET----*/
+    @media screen and (max-width: 1023px) {
+        font-size: 38px;
+    }
+
+    /*---- SMALL or MOBILE----*/
+    @media screen and (max-width: 639px) {
+        font-size: 28px;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 36px;
+
+    /*---- MEDIUM or TABLET----*/
+    @media screen and (max-width: 1023px) {
+        font-size: 32px;
+    }
+
+    /*---- SMALL or MOBILE----*/
+    @media screen and (max-width: 639px) {
+        font-size: 26px;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 32px;
+
+    /*---- MEDIUM or TABLET----*/
+    @media screen and (max-width: 1023px) {
+        font-size: 26px;
+    }
+
+    /*---- SMALL or MOBILE----*/
+    @media screen and (max-width: 639px) {
+        font-size: 23px;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 27px;
+
+    /*---- MEDIUM or TABLET----*/
+    @media screen and (max-width: 1023px) {
+        font-size: 20px;
+    }
+
+    /*---- SMALL or MOBILE----*/
+    @media screen and (max-width: 639px) {
+        font-size: 20px;
+    }
+}
+
+h6,
+.h6 {
+    font-size: 18px;
+}
+
+.supersize {
+    font-size: 80px;
+
+    /*---- MEDIUM or TABLET----*/
+    @media screen and (max-width: 1023px) {
+        font-size: 54px;
+    }
+
+    /*---- SMALL or MOBILE----*/
+    @media screen and (max-width: 639px) {
+        font-size: 38px;
+    }
+}
+
 // ======= Headings
 h1,
 h2,
@@ -49,6 +146,7 @@ label {
 
 address {
     font-style: normal;
+    margin-bottom: 1rem;
 }
 
 strong {
@@ -72,12 +170,7 @@ strong {
     font-family: $serif-font !important;
 }
 
-.supersize {
-    font-size: rem-calc(80px);
-    @media screen and (max-width: 1022px) {
-        font-size: rem-calc(38px);
-    }
-}
+
 
 .text-center {
     text-align: center;
@@ -89,6 +182,7 @@ strong {
     font-size: rem-calc(32px);
     margin-top: rem-calc(-27px);
     margin-bottom: 0;
+
     @media screen and (max-width: 569px) {
         font-size: rem-calc(22px);
     }
@@ -106,14 +200,17 @@ p {
         color: $blue-70;
         background-color: transparent !important;
     }
+
     &.filled {
         color: $off-white !important;
         background-color: $blue-70;
     }
+
     &.color {
         color: $blue;
         background-color: transparent;
     }
+
     &.filled {
         color: $off-white !important;
         background-color: $blue;
@@ -142,12 +239,15 @@ figcaption {
     padding: rem-calc(2px);
     text-align: center;
     text-align: left;
+
     &.small {
         font-size: rem-calc(14px);
     }
+
     &.large {
         font-size: rem-calc(22px);
     }
+
     &.grey {
         color: $dark-grey;
     }
@@ -208,10 +308,12 @@ a {
     color: $orange;
     text-decoration: none;
     transition: .5s ease-out;
+
     &:hover {
         color: $dark-orange;
         text-decoration: none;
     }
+
     &:visited:not(.button),
     &:focus {
         color: $dark-orange;
@@ -226,10 +328,12 @@ p {
         font-weight: $black-font-weight;
         font-size: 18.7px;
         @extend %link-underline;
+
         &:hover {
             @extend %link-underline-hover
         }
     }
+
     a.no-underline {
         background-image: none;
     }
@@ -245,9 +349,29 @@ a.arrow {
         margin-left: .3rem;
         transition: .5s ease-out;
     }
+
     &:hover:after {
         color: $dark-orange;
         transform: translatex(.2rem);
+    }
+}
+
+a.external {
+    &:after {
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f35d";
+        color: $orange;
+        margin-left: .3rem;
+        transition: .5s ease-out;
+        //transform: rotate(-45deg);
+    }
+
+    &:hover:after {
+        color: $dark-orange;
+        transform: translate(.1rem,-.1rem);
+
     }
 }
 
@@ -256,6 +380,7 @@ a.highlight {
     background-color: $orange;
     color: $off-white;
     background-image: linear-gradient(transparent, transparent), linear-gradient($dark-orange, $dark-orange) !important;
+
     &:hover {
         color: $dark-orange;
         background-color: inherit;
@@ -266,61 +391,76 @@ a.highlight {
 .color {
     a {
         color: $off-white;
+        padding-left: .5% !important;
+        padding-right: .5% !important;
+
         &:hover {
             color: $off-white;
         }
+
         &:visited {
             color: $light-grey;
         }
     }
+
     p>a:not(.button) {
         background-image: linear-gradient($blue-link, $blue-link);
         color: $blue-link;
-        padding-left: .5% !important;
-        padding-right: .5% !important;
+
+
         &:hover {
             background-color: $blue-link;
             color: $blue-90;
         }
-        &.arrow {
+
+        &.arrow,&.external {
             &:after {
                 color: $blue-link;
             }
+
             &:hover:after {
                 color: $blue-90;
             }
         }
+
         &.highlight {
             background-color: $blue-10;
             color: $blue-90 !important;
             background-image: linear-gradient(transparent, transparent), linear-gradient($blue-link, $blue-link) !important;
+
             &:hover {
                 color: $blue-link !important;
                 background-color: inherit !important;
             }
         }
     }
+
     &.orange,
     &.darken {
         p>a:not(.button) {
             background-image: linear-gradient($orange-link, $orange-link);
             color: $orange-link;
+
             &:hover {
                 background-color: $light-beige;
                 color: $orange-90;
             }
-            &.arrow {
+
+            &.arrow,&.external {
                 &:after {
                     color: $orange-link;
                 }
+
                 &:hover:after {
                     color: $orange-90;
                 }
             }
+
             &.highlight {
                 background-color: $light-beige;
                 color: $dark-orange !important;
                 background-image: linear-gradient(transparent, transparent), linear-gradient($orange-link, $orange-link) !important;
+
                 &:hover {
                     color: $orange-link !important;
                     background-color: inherit;
@@ -328,27 +468,33 @@ a.highlight {
             }
         }
     }
+
     &.grey,
     &.dark-grey {
         p>a:not(.button) {
             background-image: linear-gradient($grey-link, $grey-link);
             color: $grey-link;
+
             &:hover {
                 background-color: $grey-link;
                 color: $grey-90;
             }
-            &.arrow {
+
+            &.arrow,&.external {
                 &:after {
                     color: $grey-link;
                 }
+
                 &:hover:after {
                     color: $grey-90;
                 }
             }
+
             &.highlight {
                 background-color: $grey-link;
                 color: $grey-90 !important;
                 background-image: linear-gradient(transparent, transparent), linear-gradient($grey-link, $grey-link) !important;
+
                 &:hover {
                     color: $grey-link !important;
                     background-color: inherit;
@@ -356,13 +502,16 @@ a.highlight {
             }
         }
     }
+
     .card,
     .callout {
         a:not(.button) {
             color: $orange;
+
             &:hover {
                 color: $dark-orange;
             }
+
             &:visited {
                 color: $dark-orange;
             }
@@ -374,14 +523,17 @@ a.highlight {
     p>a:not(.button) {
         background-image: linear-gradient($grey-link, $grey-link);
         color: $grey-link;
+
         &:hover {
             background-color: $grey-link;
             color: $grey-90;
         }
+
         &.highlight {
             background-color: $grey-link;
             color: $grey-90 !important;
             background-image: linear-gradient(transparent, transparent), linear-gradient($grey-link, $grey-link) !important;
+
             &:hover {
                 color: $grey-link !important;
                 background-color: transparent !important;

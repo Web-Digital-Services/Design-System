@@ -183,3 +183,12 @@
     background: linear-gradient(to right, $gold 10%, $orange 50%, $dark-orange 75%);;
 }
 
+.columns {
+    -webkit-columns: 2 290px;
+    -moz-columns: 2 290px;
+    columns: 2 290px;
+
+    address {
+        break-inside: avoid;
+    }
+}

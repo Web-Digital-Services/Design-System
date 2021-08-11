@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
 
-    <link rel="stylesheet" href="../../css/main.css?1628522101601" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1628522101601" media="all" />
+    <link rel="stylesheet" href="../../css/main.css?1628694110922" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1628694110922" media="all" />
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1628522101601" media="all">
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1628694110922" media="all">
     <!-- End Pattern Lab -->
   </head>
   <body class=""><!-- View All Patterns in a Pattern Sub-Type -->
@@ -70,57 +70,83 @@
 		    </div><!--end pl-c-pattern__extra-->
 		
 			<div class="pl-js-pattern-example">
-			<div class="off-canvas  position-left quicklinks" id="offCanvasLeft" data-off-canvas>
-  <!-- Your menu or Off-canvas content goes here -->
-  <form class="search">
+			<div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+    <!-- Quicklinks Content -->
+    <div class="title-bar quicklinks">
+        <div class="title-bar-left">
+            <p><a href="#" data-close="offCanvasLeft"><i class="fas fa-times"></i> Quicklinks</a></p>
+            <form class="search">
     <input type="search" class="search-box" placeholder="Search">
     <button type="submit">
         <i class="fa fa-search"></i>
     </button>
-</form>  <h3>I am a long Heading</h3>
-  <ul class="menu vertical">
-    <li><a href="#">Link </a></li>
-    <li><a href="#">Link 2</a></li>
-    <li><a href="#">I'm a link</a></li>
-    <li><a href="#">Link Link</a></li>
-    <li><a href="#">Long Link Long Link Long Link Link Link</a>
-  </ul>
-  <h3>I am a long Heading</h3>
-  <ul class="menu vertical">
-    <li><a href="#">Link </a></li>
-    <li><a href="#">Link 2</a></li>
-    <li><a href="#">I'm a link</a></li>
-  </ul>
-  <h3>Heading</h3>
-  <ul class="menu vertical">
-    <li><a href="#">Link </a></li>
-    <li><a href="#">Link 2</a></li>
-    <li><a href="#">I'm a link</a></li>
-    <li><a href="#">Link Link</a></li>
-    <li>
-      <h3>Heading</h3>
-    </li>
-    <li><a href="#">Link </a></li>
-    <li><a href="#">Link 2</a></li>
-    <li><a href="#">I'm a link</a></li>
-    <li><a href="#">Link Link</a></li>
-  </ul>
+</form>            <h4>Find</h4>
+            <div>
+                <ul class="no-bullet">
+                    <li><a href="#">A to Z list</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Calendars</a></li>
+                    <li><a href="#">Directories</a></li>
+                </ul>
+            </div>
+            <h4>Media</h4>
+            <div>
+                <ul class="no-bullet">
+                    <li><a href="#">COVID-19</a></li>
+                    <li><a href="#">IMPACT COVID Magazine</a></li>
+                    <li><a href="#">MissionRX</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">ENGAGED</a></li>
+                </ul>
+            </div>
+            <h4>Logins</h4>
+            <div>
+                <ul class="no-bullet">
+                    <li><a href="#">Canvas</a></li>
+                    <li><a href="#">Employee Email</a></li>
+                    <li><a href="#">MyUTHealth</a></li>
+                    <li><a href="#">LiveMail</a></li>
+                    <li><a href="#">My Student Center</a></li>
+                    <li><a href="#">UT Health Learns</a></li>
+                </ul>
+            </div>
+            <h4>Technology</h4>
+            <div>
+                <ul class="no-bullet">
+                    <li><a href="#">Service Desk</a></li>
+                    <li><a href="#">Password Reset</a></li>
+                    <li><a href="#">TechZone (Computer Store)</a></li>
+                </ul>
+            </div>
+            <h4>More</h4>
+            <div>
+                <ul class="no-bullet">
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Bookstore</a></li>
+                    <li><a href="#">Course Catalog</a></li>
+                    <li><a href="#">Human Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="off-canvas-content" data-off-canvas-content>
-  <!-- Your page content lives here -->
-  <div class="title-bar">
-    <div class="title-bar-left">
-      <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-      <span class="title-bar-title">Quicklinks</span>
+    <!--<div class="top-bar global-bar">    
+        <div class="top-bar-left">
+            <p><a href="#" data-toggle="offCanvas"><i class="fas fa-bars"></i> Quicklinks</a></p>
+        </div>
+        <div class="top-bar-right">
+            <p><a href="#"><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
+        </div>
+    </div>-->
+    <div class="title-bar global-bar">
+        <div class="title-bar-left">
+            <p><a href="#" data-toggle="offCanvasLeft"><i class="fas fa-bars"></i> Quicklinks</a></p>
+        </div>
+        <div class="title-bar-right">
+            <p><a href="#"><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
+        </div>
     </div>
-    <div class="title-bar-right">
-      <i class="fas fa-star"></i> Part of the University of Texas System
-    </div>
-  </div>
-  <h2>Off-canvas</h2>
-  <p>The Off-canvas container also needs a positioning class to determine which side of the viewport it opens from:The
-    Off-canvas container also needs a positioning class to determine which side of the viewport it opens from:The
-    Off-canvas container also needs a positioning class to determine which side of the viewport it opens from:</p>
 </div>
 			</div><!--end pl-js-pattern-example-->
 		
@@ -272,10 +298,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1628522101601">
+<script id="pl-js-polyfill-insert-1628694110922">
   (function() {
     if (self != top) {
-      var cb = '1628522101601';
+      var cb = '1628694110922';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -288,7 +314,7 @@
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1628522101601" nomodule>
+<script id="pl-js-insert-1628694110922" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 

@@ -79,23 +79,6 @@ footer {
         }
     }
 
-    .social {
-        .fa-2x {
-            font-size: rem-calc(40px)
-        }
-        li {
-            margin-right: rem-calc(7px);
-            
-            a {
-                color: $off-white;
-
-                &:hover {
-                    color: $grey-link;
-                }
-            }
-        }
-    }
-
     .contact {
         display: flex;
         align-items: center;

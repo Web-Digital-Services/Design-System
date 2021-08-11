@@ -183,35 +183,62 @@ ul.fa-ul {
 }
 
 // ======= Social media buttons
+
+
 .social {
-    margin: 0 1.25rem 1.25rem 0rem;
-    >li {
-        display: inline-block;
-        list-style-type: none;
-    }
-    a {
-        .fa-2x {
-            font-size: 1.5em
-        }
-        .fa-stack-2x {
-            color: $off-white;
-            border-radius: rem-calc(6px);
-            transition: .2s ease-in-out;
-        }
-        .fa-stack-1x {
-            color: $orange;
-            transition: .3s ease-in-out;
-        }
-        .fa-square {
-            /*Needs text shadow not box because it's an icon*/
-            text-shadow: rem-calc(3px 3px 7px) rgba(23, 23, 23, 0.50);
-        }
-        &:hover {
-            .fa-stack-2x {
-                color: $orange;
+    ul {
+        margin: 0 1.25rem 1.25rem 0rem;
+
+        >li {
+            display: inline-block;
+            list-style-type: none;
+            a {
+                .fa-2x {
+                    font-size: 1.5em
+                }
+                .fa-stack-2x {
+                    color: $off-white;
+                    border-radius: rem-calc(6px);
+                    transition: .2s ease-in-out;
+                }
+                .fa-stack-1x {
+                    color: $orange;
+                    transition: .3s ease-in-out;
+                }
+                .fa-square {
+                    /*Needs text shadow not box because it's an icon*/
+                    text-shadow: rem-calc(3px 3px 7px) rgba(23, 23, 23, 0.50);
+                }
+                &:hover {
+                    .fa-stack-2x {
+                        color: $orange;
+                    }
+                    .fa-stack-1x {
+                        color: $off-white;
+                    }
+                }
             }
-            .fa-stack-1x {
-                color: $off-white;
+        }
+    }
+}
+
+footer {
+    .social {
+        ul {
+            li {
+                margin-right: rem-calc(7px);
+                
+                a {
+                    color: $off-white;
+
+                    &:hover {
+                        color: $grey-link;
+                    }
+
+                    .fa-2x {
+                        font-size: rem-calc(40px)
+                    }
+                }
             }
         }
     }

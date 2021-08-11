@@ -46,13 +46,21 @@ div.check ul li:before {
 }
 
 div.lines {
-    ul, ol {
+
+    ul,
+    ol {
         list-style-type: none;
     }
 
-    li {
-        padding: 0.938em 0;
-        border-bottom: solid rem-calc(1px) #667075;
+    ul:not(.tags) {    
+        >li {
+            padding: 0.938em 0;
+            border-bottom: solid rem-calc(1px) #667075;
+        }
+    }
+
+    ul.tags {
+        padding-bottom: 0;
     }
 
     & a {
@@ -83,7 +91,7 @@ ol {
     margin: 0 1.25rem 1.25rem 1.25rem;
 }
 
-ul.decoration {
+div.decoration {
     li>a {
         text-decoration-line: underline;
         text-decoration-style: solid;
@@ -99,13 +107,15 @@ ul.decoration {
 }
 
 .color {
-    ul.decoration {
-        li>a {
-            text-decoration-color: $off-white;
-            transition: opacity .3s;
-
-            &:hover {
+    div.decoration {
+        ul {
+            li>a {
                 text-decoration-color: $off-white;
+                transition: opacity .3s;
+
+                &:hover {
+                    text-decoration-color: $off-white;
+                }
             }
         }
     }

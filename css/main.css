@@ -9399,6 +9399,78 @@ readers do not read off random characters that represent icons */
 html {
   font-size: 18px; }
 
+/*============== RESPONSIVE HEADING SIZES ===================
+For the base heading sizes, rem-calc() is not calculating properly, so please leave the sizes in pixels.
+*/
+h1, .h1 {
+  font-size: 54px;
+  /*---- MEDIUM or TABLET----*/
+  /*---- SMALL or MOBILE----*/ }
+  @media screen and (max-width: 1023px) {
+    h1, .h1 {
+      font-size: 45px; } }
+  @media screen and (max-width: 639px) {
+    h1, .h1 {
+      font-size: 32px; } }
+
+h2, .h2 {
+  font-size: 48px;
+  /*---- MEDIUM or TABLET----*/
+  /*---- SMALL or MOBILE----*/ }
+  @media screen and (max-width: 1023px) {
+    h2, .h2 {
+      font-size: 38px; } }
+  @media screen and (max-width: 639px) {
+    h2, .h2 {
+      font-size: 28px; } }
+
+h3, .h3 {
+  font-size: 36px;
+  /*---- MEDIUM or TABLET----*/
+  /*---- SMALL or MOBILE----*/ }
+  @media screen and (max-width: 1023px) {
+    h3, .h3 {
+      font-size: 32px; } }
+  @media screen and (max-width: 639px) {
+    h3, .h3 {
+      font-size: 26px; } }
+
+h4, .h4 {
+  font-size: 32px;
+  /*---- MEDIUM or TABLET----*/
+  /*---- SMALL or MOBILE----*/ }
+  @media screen and (max-width: 1023px) {
+    h4, .h4 {
+      font-size: 26px; } }
+  @media screen and (max-width: 639px) {
+    h4, .h4 {
+      font-size: 23px; } }
+
+h5, .h5 {
+  font-size: 27px;
+  /*---- MEDIUM or TABLET----*/
+  /*---- SMALL or MOBILE----*/ }
+  @media screen and (max-width: 1023px) {
+    h5, .h5 {
+      font-size: 20px; } }
+  @media screen and (max-width: 639px) {
+    h5, .h5 {
+      font-size: 20px; } }
+
+h6, .h6 {
+  font-size: 18px; }
+
+.supersize {
+  font-size: 80px;
+  /*---- MEDIUM or TABLET----*/
+  /*---- SMALL or MOBILE----*/ }
+  @media screen and (max-width: 1023px) {
+    .supersize {
+      font-size: 54px; } }
+  @media screen and (max-width: 639px) {
+    .supersize {
+      font-size: 38px; } }
+
 h1,
 h2,
 h3,
@@ -9434,7 +9506,8 @@ label {
   font-size: 1.125rem; }
 
 address {
-  font-style: normal; }
+  font-style: normal;
+  margin-bottom: 1rem; }
 
 strong {
   font-weight: 900; }
@@ -9450,12 +9523,6 @@ strong {
 
 .serif {
   font-family: "Lora", serif !important; }
-
-.supersize {
-  font-size: 5rem; }
-  @media screen and (max-width: 1022px) {
-    .supersize {
-      font-size: 2.375rem; } }
 
 .text-center {
   text-align: center; }
@@ -9610,6 +9677,19 @@ a.arrow:hover:after {
   color: #7A0F00;
   transform: translatex(0.2rem); }
 
+a.external:after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f35d";
+  color: #AD4200;
+  margin-left: .3rem;
+  transition: .5s ease-out; }
+
+a.external:hover:after {
+  color: #7A0F00;
+  transform: translate(0.1rem, -0.1rem); }
+
 a.highlight {
   background-color: #AD4200;
   color: #F1F5F7;
@@ -9619,7 +9699,9 @@ a.highlight {
     background-color: inherit; }
 
 .color a {
-  color: #F1F5F7; }
+  color: #F1F5F7;
+  padding-left: .5% !important;
+  padding-right: .5% !important; }
   .color a:hover {
     color: #F1F5F7; }
   .color a:visited {
@@ -9627,15 +9709,13 @@ a.highlight {
 
 .color p > a:not(.button) {
   background-image: linear-gradient(#A6FFFF, #A6FFFF);
-  color: #A6FFFF;
-  padding-left: .5% !important;
-  padding-right: .5% !important; }
+  color: #A6FFFF; }
   .color p > a:not(.button):hover {
     background-color: #A6FFFF;
     color: #002D48; }
-  .color p > a:not(.button).arrow:after {
+  .color p > a:not(.button).arrow:after, .color p > a:not(.button).external:after {
     color: #A6FFFF; }
-  .color p > a:not(.button).arrow:hover:after {
+  .color p > a:not(.button).arrow:hover:after, .color p > a:not(.button).external:hover:after {
     color: #002D48; }
   .color p > a:not(.button).highlight {
     background-color: #A4F8FF;
@@ -9651,9 +9731,9 @@ a.highlight {
   .color.orange p > a:not(.button):hover, .color.darken p > a:not(.button):hover {
     background-color: #f7f5f0;
     color: #470000; }
-  .color.orange p > a:not(.button).arrow:after, .color.darken p > a:not(.button).arrow:after {
+  .color.orange p > a:not(.button).arrow:after, .color.orange p > a:not(.button).external:after, .color.darken p > a:not(.button).arrow:after, .color.darken p > a:not(.button).external:after {
     color: #FFDEBD; }
-  .color.orange p > a:not(.button).arrow:hover:after, .color.darken p > a:not(.button).arrow:hover:after {
+  .color.orange p > a:not(.button).arrow:hover:after, .color.orange p > a:not(.button).external:hover:after, .color.darken p > a:not(.button).arrow:hover:after, .color.darken p > a:not(.button).external:hover:after {
     color: #470000; }
   .color.orange p > a:not(.button).highlight, .color.darken p > a:not(.button).highlight {
     background-color: #f7f5f0;
@@ -9669,9 +9749,9 @@ a.highlight {
   .color.grey p > a:not(.button):hover, .color.dark-grey p > a:not(.button):hover {
     background-color: #FFF1DB;
     color: #1A2429; }
-  .color.grey p > a:not(.button).arrow:after, .color.dark-grey p > a:not(.button).arrow:after {
+  .color.grey p > a:not(.button).arrow:after, .color.grey p > a:not(.button).external:after, .color.dark-grey p > a:not(.button).arrow:after, .color.dark-grey p > a:not(.button).external:after {
     color: #FFF1DB; }
-  .color.grey p > a:not(.button).arrow:hover:after, .color.dark-grey p > a:not(.button).arrow:hover:after {
+  .color.grey p > a:not(.button).arrow:hover:after, .color.grey p > a:not(.button).external:hover:after, .color.dark-grey p > a:not(.button).arrow:hover:after, .color.dark-grey p > a:not(.button).external:hover:after {
     color: #1A2429; }
   .color.grey p > a:not(.button).highlight, .color.dark-grey p > a:not(.button).highlight {
     background-color: #FFF1DB;
@@ -10074,7 +10154,6 @@ IMG Fill BLEEDS
   border: none;
   background-color: #f7f5f0;
   padding: 1.875rem;
-  display: block;
   overflow-wrap: break-word;
   word-wrap: break-word; }
   .callout.roomy {
@@ -10280,12 +10359,16 @@ div.check ul li:before {
   content: "\f00c";
   padding-right: .313rem; }
 
-div.lines ul, div.lines ol {
+div.lines ul,
+div.lines ol {
   list-style-type: none; }
 
-div.lines li {
+div.lines ul:not(.tags) > li {
   padding: 0.938em 0;
   border-bottom: solid 0.0625rem #667075; }
+
+div.lines ul.tags {
+  padding-bottom: 0; }
 
 div.lines a {
   display: block; }
@@ -10305,19 +10388,19 @@ ul,
 ol {
   margin: 0 1.25rem 1.25rem 1.25rem; }
 
-ul.decoration li > a {
+div.decoration li > a {
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: #AD4200;
   text-decoration-thickness: 0.0625rem; }
-  ul.decoration li > a:hover {
+  div.decoration li > a:hover {
     text-decoration-line: underline;
     text-decoration-color: #7A0F00; }
 
-.color ul.decoration li > a {
+.color div.decoration ul li > a {
   text-decoration-color: #F1F5F7;
   transition: opacity .3s; }
-  .color ul.decoration li > a:hover {
+  .color div.decoration ul li > a:hover {
     text-decoration-color: #F1F5F7; }
 
 ul.byline {
@@ -10437,27 +10520,36 @@ ul.fa-ul.jump-links {
     ul.fa-ul.jump-links li .fa-li {
       left: 0; }
 
-.social {
+.social ul {
   margin: 0 1.25rem 1.25rem 0rem; }
-  .social > li {
+  .social ul > li {
     display: inline-block;
     list-style-type: none; }
-  .social a .fa-2x {
-    font-size: 1.5em; }
-  .social a .fa-stack-2x {
-    color: #F1F5F7;
-    border-radius: 0.375rem;
-    transition: .2s ease-in-out; }
-  .social a .fa-stack-1x {
-    color: #AD4200;
-    transition: .3s ease-in-out; }
-  .social a .fa-square {
-    /*Needs text shadow not box because it's an icon*/
-    text-shadow: 0.1875rem 0.1875rem 0.4375rem rgba(23, 23, 23, 0.5); }
-  .social a:hover .fa-stack-2x {
-    color: #AD4200; }
-  .social a:hover .fa-stack-1x {
+    .social ul > li a .fa-2x {
+      font-size: 1.5em; }
+    .social ul > li a .fa-stack-2x {
+      color: #F1F5F7;
+      border-radius: 0.375rem;
+      transition: .2s ease-in-out; }
+    .social ul > li a .fa-stack-1x {
+      color: #AD4200;
+      transition: .3s ease-in-out; }
+    .social ul > li a .fa-square {
+      /*Needs text shadow not box because it's an icon*/
+      text-shadow: 0.1875rem 0.1875rem 0.4375rem rgba(23, 23, 23, 0.5); }
+    .social ul > li a:hover .fa-stack-2x {
+      color: #AD4200; }
+    .social ul > li a:hover .fa-stack-1x {
+      color: #F1F5F7; }
+
+footer .social ul li {
+  margin-right: 0.4375rem; }
+  footer .social ul li a {
     color: #F1F5F7; }
+    footer .social ul li a:hover {
+      color: #FFF1DB; }
+    footer .social ul li a .fa-2x {
+      font-size: 2.5rem; }
 
 .top-page {
   background: #F1F5F7;
@@ -11183,14 +11275,6 @@ footer {
     margin-left: 0; }
     footer ul li {
       margin-bottom: 0.625rem; }
-  footer .social .fa-2x {
-    font-size: 2.5rem; }
-  footer .social li {
-    margin-right: 0.4375rem; }
-    footer .social li a {
-      color: #F1F5F7; }
-      footer .social li a:hover {
-        color: #FFF1DB; }
   footer .contact {
     display: flex;
     align-items: center;
@@ -11490,6 +11574,13 @@ a.callout:hover, a.card:hover, .tags a:hover, a.event.long:hover, a .datebox:hov
 
 .gradient {
   background: linear-gradient(to right, #FFBC5B 10%, #AD4200 50%, #7A0F00 75%); }
+
+.columns {
+  -webkit-columns: 2 290px;
+  -moz-columns: 2 290px;
+  columns: 2 290px; }
+  .columns address {
+    break-inside: avoid; }
 
 /* ============================================================
     TABS
