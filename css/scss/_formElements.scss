@@ -16,6 +16,7 @@ fieldset {
     }
 }
 input[type=text],
+input[type=password],
 input[type=checkbox],
 input[type=radio],
 textarea,
@@ -32,6 +33,7 @@ input[type=radio] {
 }
 
 input[type=text]:focus-visible,
+input[type=password]:focus-visible,
 input[type=checkbox]:focus-visible,
 input[type=radio]:focus-visible,
 textarea:focus-visible,
@@ -42,6 +44,7 @@ select:focus-visible {
 }
 
 input[type=text]:focus,
+input[type=password]:focus,
 textarea:focus,
 input[type=checkbox]:focus,
 select:focus {

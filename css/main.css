@@ -9527,15 +9527,29 @@ strong {
 .text-center {
   text-align: center; }
 
-.subheader {
+h1 + .subheader, h1 + .subheader + .subheader, h1 + .subheader + .subheader + .subheader {
   font-family: "Nunito Sans", sans-serif;
   color: #171717;
   font-size: 2rem;
-  margin-top: -1.6875rem;
-  margin-bottom: 0; }
+  margin-top: -1.6875rem; }
   @media screen and (max-width: 569px) {
-    .subheader {
+    h1 + .subheader, h1 + .subheader + .subheader, h1 + .subheader + .subheader + .subheader {
       font-size: 1.375rem; } }
+
+.subheader + .subheader {
+  margin-top: -1.125rem !important; }
+
+h2 + .subheader {
+  font-size: 1.5625rem;
+  font-family: "Nunito Sans", sans-serif;
+  color: #171717;
+  margin-top: -1.5rem; }
+  @media screen and (max-width: 569px) {
+    h2 + .subheader {
+      font-size: 1.25rem; } }
+
+.subheader + .subtext {
+  margin-top: -0.3125rem; }
 
 h1.color,
 h2.color,
@@ -9699,9 +9713,7 @@ a.highlight {
     background-color: inherit; }
 
 .color a {
-  color: #F1F5F7;
-  padding-left: .5% !important;
-  padding-right: .5% !important; }
+  color: #F1F5F7; }
   .color a:hover {
     color: #F1F5F7; }
   .color a:visited {
@@ -9709,7 +9721,9 @@ a.highlight {
 
 .color p > a:not(.button) {
   background-image: linear-gradient(#A6FFFF, #A6FFFF);
-  color: #A6FFFF; }
+  color: #A6FFFF;
+  padding-left: .5% !important;
+  padding-right: .5% !important; }
   .color p > a:not(.button):hover {
     background-color: #A6FFFF;
     color: #002D48; }
@@ -11103,6 +11117,7 @@ fieldset label {
   font-weight: 500; }
 
 input[type=text],
+input[type=password],
 input[type=checkbox],
 input[type=radio],
 textarea,
@@ -11117,6 +11132,7 @@ input[type=radio] {
   cursor: pointer; }
 
 input[type=text]:focus-visible,
+input[type=password]:focus-visible,
 input[type=checkbox]:focus-visible,
 input[type=radio]:focus-visible,
 textarea:focus-visible,
@@ -11126,6 +11142,7 @@ select:focus-visible {
   outline-offset: 0.625rem; }
 
 input[type=text]:focus,
+input[type=password]:focus,
 textarea:focus,
 input[type=checkbox]:focus,
 select:focus {

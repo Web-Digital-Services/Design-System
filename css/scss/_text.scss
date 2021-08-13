@@ -176,16 +176,35 @@ strong {
     text-align: center;
 }
 
-.subheader {
+h1 + .subheader, h1 + .subheader + .subheader, h1 + .subheader + .subheader + .subheader {
     font-family: $sans-serif-font;
     color: $off-black;
     font-size: rem-calc(32px);
     margin-top: rem-calc(-27px);
-    margin-bottom: 0;
+    //margin-bottom: 0;
 
     @media screen and (max-width: 569px) {
         font-size: rem-calc(22px);
     }
+}
+
+.subheader + .subheader {
+    margin-top: rem-calc(-18px) !important;
+}
+
+h2 + .subheader {
+    font-size: rem-calc(25px);
+    font-family: $sans-serif-font;
+    color: $off-black;
+    margin-top: rem-calc(-24px);
+
+    @media screen and (max-width: 569px) {
+        font-size: rem-calc(20px);
+    }
+}
+
+.subheader + .subtext {
+    margin-top: rem-calc(-5px);
 }
 
 // ======= Colorized headings and paragraph text
@@ -391,8 +410,7 @@ a.highlight {
 .color {
     a {
         color: $off-white;
-        padding-left: .5% !important;
-        padding-right: .5% !important;
+
 
         &:hover {
             color: $off-white;
@@ -406,6 +424,8 @@ a.highlight {
     p>a:not(.button) {
         background-image: linear-gradient($blue-link, $blue-link);
         color: $blue-link;
+        padding-left: .5% !important;
+        padding-right: .5% !important;
 
 
         &:hover {
