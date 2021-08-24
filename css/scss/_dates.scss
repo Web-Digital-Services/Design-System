@@ -12,7 +12,7 @@
     .date {
         max-width: rem-calc(60px);
         margin-right: rem-calc(20px);
-        
+
         .month {
             font-weight: 800;
             font-size: rem-calc(22px);
@@ -26,7 +26,7 @@
             line-height: 1;
             text-align: center;
         }
-        
+
     }
 
     .details {
@@ -42,7 +42,7 @@
 }
 
 a.event {
-    &.long { // Long event 
+    &.long { // Long event
         max-width: rem-calc(450px);
         background: $beige;
         //padding: rem-calc(10px) rem-calc(20px);
@@ -59,6 +59,8 @@ a.event {
             max-width: unset;
             border-bottom-left-radius: $rounded-corners;
             border-top-left-radius: $rounded-corners;
+            transition: .4s ease-in-out;
+
             //flex-grow: 1;
         }
 
@@ -71,6 +73,7 @@ a.event {
                 color: $orange;
                 font-weight: 700;
                 margin-bottom: 0;
+                transition: .4s ease-in-out;
             }
         }
 
@@ -91,9 +94,18 @@ a.event {
 }
 
 a.event:hover {
-    &.long { // Long event 
+    &.long { // Long event
         box-shadow: rem-calc(3px 8px 7px 0) rgba(23, 23, 23, 0.35);
         @extend %jump-hover;
+        .date {
+            background: $dark-orange;
+        }
+
+        .details {
+            .name {
+                color: $dark-orange;
+            }
+        }
     }
 }
 
@@ -101,7 +113,7 @@ a.event:hover {
     width: rem-calc(85px);
     margin-right: rem-calc(20px);
     color: $off-white;
-    
+
     .month {
         font-weight: 800;
         font-size: rem-calc(20px);
@@ -127,7 +139,7 @@ a.event:hover {
             padding-bottom: rem-calc(15px);
         }
     }
-    
+
     &.blue {
         .month {
             background: $blue-80;
@@ -141,6 +153,7 @@ a.event:hover {
 a .datebox { // Interactive datebox
     width: rem-calc(85px);
     margin-right: rem-calc(20px);
+    border-radius: $rounded-corners;
     @extend %jump-base;
 
     .month {

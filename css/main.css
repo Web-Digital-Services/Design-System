@@ -9397,6 +9397,9 @@ readers do not read off random characters that represent icons */
     TEXT STYLES
 ============================================================ */
 html {
+  font-size: 16px; }
+
+body {
   font-size: 18px; }
 
 /*============== RESPONSIVE HEADING SIZES ===================
@@ -9650,7 +9653,7 @@ figcaption {
     right: 0;
 }*/
 p > a:not(.button), ul.underline {
-  background-image: linear-gradient(#FFBC5B, #FFBC5B), linear-gradient(#7A0F00, #7A0F00);
+  background-image: linear-gradient(#ffd1a3, #ffd1a3), linear-gradient(#7A0F00, #7A0F00);
   background-size: 100% 2px, 0 2px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -9667,7 +9670,7 @@ a {
     color: #7A0F00;
     text-decoration: none; }
   a:visited:not(.button), a:focus {
-    color: #7A0F00; }
+    color: #470000; }
 
 p > a:not(.button) {
   position: relative;
@@ -10362,8 +10365,8 @@ div.arrow ul li:before {
 .color div.arrow li:before {
   color: #F1F5F7; }
 
-.color .card ul.arrow li:before,
-.color .callout ul.arrow li:before {
+.color .card div.arrow li:before,
+.color .callout div.arrow li:before {
   color: #AD4200; }
 
 div.check ul li:before {
@@ -10490,6 +10493,13 @@ ul.inline li {
 
 .contact ul.fa-ul li {
   margin-bottom: 1.125rem; }
+
+.contact address ul {
+  margin: 0 !important; }
+  .contact address ul li {
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important; }
 
 .fa-ul.outline .far.fa-circle {
   color: #667075; }
@@ -11135,6 +11145,7 @@ input[type=text]:focus-visible,
 input[type=password]:focus-visible,
 input[type=checkbox]:focus-visible,
 input[type=radio]:focus-visible,
+input[type=search]:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
   outline-color: #257994;
@@ -11143,13 +11154,14 @@ select:focus-visible {
 
 input[type=text]:focus,
 input[type=password]:focus,
+input[type=search]:focus,
 textarea:focus,
 input[type=checkbox]:focus,
 select:focus {
-  border: 0.0625rem solid #AD4200;
-  background-color: rgba(173, 66, 0, 0.05);
+  border: 0.0625rem solid #257994;
+  background-color: rgba(37, 121, 148, 0.05);
   transition: none;
-  box-shadow: 0 0 0 5px rgba(212, 93, 0, 0.2); }
+  box-shadow: 0 0 0 5px rgba(63, 147, 174, 0.25); }
 
 input[type=checkbox] {
   width: 1.5625rem;
@@ -11179,7 +11191,7 @@ input[type=radio] {
 
 .is-invalid-input[type=text]:focus {
   background-color: #f9ecea;
-  box-shadow: 0 0 0 5px rgba(174, 0, 20, 0.2); }
+  box-shadow: 0 0 0 5px rgba(174, 0, 20, 0.3); }
 
 legend {
   margin-bottom: auto; }
@@ -11229,17 +11241,6 @@ select {
     color: #171717;
     border-radius: 0 8px 8px 0;
     cursor: pointer; }
-
-.search:focus {
-  border: 0.0625rem solid #AD4200;
-  background-color: rgba(173, 66, 0, 0.05);
-  transition: none;
-  box-shadow: 0 0 0 5px rgba(212, 93, 0, 0.2); }
-
-.search:focus-visible {
-  outline-color: #257994;
-  outline-width: 0.5rem;
-  outline-offset: 0.625rem; }
 
 footer {
   color: #F1F5F7;
@@ -11406,59 +11407,53 @@ table.sortable tbody tr:nth-child(even) {
   background-color: #EFE1CC; }
 
 /* ============================================================
-    QUICKFACTS
+HORIZONTAL
 ============================================================ */
-.factoid {
+.grid-x.factoids {
   padding: .5rem; }
-  .factoid i {
+  .grid-x.factoids i {
     color: #257994; }
-  .factoid .supersize,
-  .factoid .h1,
-  .factoid .h2,
-  .factoid .h3 {
+  .grid-x.factoids .supersize,
+  .grid-x.factoids .h1,
+  .grid-x.factoids .h2,
+  .grid-x.factoids .h3 {
     font-weight: 900;
     font-family: "Nunito Sans", sans-serif; }
   @media screen and (max-width: 639px) {
-    .factoid .fa-5x {
+    .grid-x.factoids .fa-5x {
       font-size: 3.5rem; } }
 
-.bleed.color .factoid i {
+.bleed.color .factoids i {
   color: #F1F5F7; }
 
-.cell.quickfact {
-  background-color: #F0ECE2;
-  padding: 1.875rem; }
-  .cell.quickfact h3 {
-    padding-top: 0;
-    padding-bottom: 0.12rem;
-    border-bottom: #808a8f 0.0625rem solid; }
-  .cell.quickfact h4 {
-    font-weight: 900;
-    font-family: "Nunito Sans", sans-serif;
-    color: #7A0F00;
-    margin-bottom: .25rem; }
-  .cell.quickfact.grey {
-    background-color: #E0E5E6 !important; }
-    .cell.quickfact.grey h4 {
-      color: #333d42; }
-  .cell.quickfact.color {
-    color: #F1F5F7 !important;
-    background-color: #257994; }
-    .cell.quickfact.color h4 {
-      color: #E0E5E6 !important; }
-    .cell.quickfact.color h3 {
-      border-bottom: #F1F5F7 0.0625rem solid; }
-    .cell.quickfact.color.darken {
-      background-color: #7A0F00; }
-      .cell.quickfact.color.darken h4 {
-        color: #EFE1CC !important; }
-      .cell.quickfact.color.darken h3 {
-        color: #EFE1CC !important;
-        border-bottom: #F0ECE2 0.0625rem solid; }
-    .cell.quickfact.color.dark-grey {
-      background-color: #333d42; }
-      .cell.quickfact.color.dark-grey h4 {
-        color: #E0E5E6 !important; }
+/* ============================================================
+VERTICAL
+============================================================ */
+.callout .grid-y.factoids h4,
+.callout .grid-y.factoids h5,
+.callout .grid-y.factoids .h4,
+.callout .grid-y.factoids .h5 {
+  font-weight: 900;
+  font-family: "Nunito Sans", sans-serif;
+  color: #7A0F00;
+  margin-bottom: .12rem; }
+
+.callout .grid-y .cell h3,
+.callout .grid-y .cell .h3,
+.callout .grid-y .cell .h4 {
+  padding-top: 0;
+  padding-bottom: 0.12rem;
+  border-bottom: #808a8f 0.0625rem solid; }
+
+.callout.color .grid-y.factoids h4,
+.callout.color .grid-y.factoids h5,
+.callout.color .grid-y.factoids .h4,
+.callout.color .grid-y.factoids .h5 {
+  color: #F1F5F7;
+  margin-bottom: .12rem; }
+
+.callout.color .grid-y .cell h3 {
+  border-bottom: #F1F5F7 0.0625rem solid; }
 
 /* ==============================
     Grid Adjustments
@@ -11585,7 +11580,7 @@ a.callout, a.card, .tags a, a.event.long, a .datebox {
   transition: .3s ease-in-out;
   box-shadow: 0.1875rem 0.1875rem 0.4375rem 0 rgba(23, 23, 23, 0.5); }
 
-a.callout:hover, a.card:hover, .tags a:hover, a.event.long:hover, a .datebox:hover {
+a.callout:hover, a.card:hover, .tags li:hover, a.event.long:hover, a .datebox:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0.1875rem 0.5rem 0.4375rem 0 rgba(23, 23, 23, 0.5); }
 
@@ -11994,13 +11989,15 @@ header#regular .circle-icons {
   .tags a {
     background-color: #f7f5f0;
     padding: .5rem 1rem;
-    border-radius: 0.3125rem;
-    margin: 0 1.25rem 1.25rem 0rem; }
+    border-radius: 0.3125rem; }
   .tags li {
+    background-color: transparent;
     font-weight: 700;
     list-style-position: outside;
     list-style-type: none;
-    display: inline-block; }
+    display: inline-block;
+    margin: 0 1.25rem 1.25rem 0;
+    transition: .3s ease-in-out; }
     @media screen and (max-width: 360px) {
       .tags li {
         padding-bottom: 1.875rem; } }
@@ -12008,12 +12005,12 @@ header#regular .circle-icons {
 ul ul.tags {
   margin-left: 0; }
 
-ul.lines li .tags > li,
-ol.lines li .tags > li {
+div.lines ul li .tags > li,
+div.lines ol li .tags > li {
   border-bottom: none; }
   @media screen and (max-width: 355px) {
-    ul.lines li .tags > li,
-    ol.lines li .tags > li {
+    div.lines ul li .tags > li,
+    div.lines ol li .tags > li {
       padding: 0; } }
 
 /* ============================================================
@@ -12059,14 +12056,16 @@ a.event.long {
     padding: 0.9375rem 1.5625rem;
     max-width: unset;
     border-bottom-left-radius: 0.3125rem;
-    border-top-left-radius: 0.3125rem; }
+    border-top-left-radius: 0.3125rem;
+    transition: .4s ease-in-out; }
   a.event.long .details {
     padding-right: 0.9375rem;
     flex-grow: 1; }
     a.event.long .details .name {
       color: #AD4200;
       font-weight: 700;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      transition: .4s ease-in-out; }
   a.event.long .arrow {
     flex-grow: 2; }
   a.event.long .arrow::after {
@@ -12081,6 +12080,10 @@ a.event.long {
 
 a.event:hover.long {
   box-shadow: 0.1875rem 0.5rem 0.4375rem 0 rgba(23, 23, 23, 0.35); }
+  a.event:hover.long .date {
+    background: #7A0F00; }
+  a.event:hover.long .details .name {
+    color: #7A0F00; }
 
 .datebox {
   width: 5.3125rem;
@@ -12114,7 +12117,8 @@ a.event:hover.long {
 
 a .datebox {
   width: 5.3125rem;
-  margin-right: 1.25rem; }
+  margin-right: 1.25rem;
+  border-radius: 0.3125rem; }
   a .datebox .month {
     background: #7A0F00;
     border-top-left-radius: 0.3125rem;

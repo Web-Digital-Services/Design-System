@@ -30,7 +30,7 @@ div.arrow ul li:before {
 
     .card,
     .callout {
-        ul.arrow li:before {
+        div.arrow li:before {
             color: $orange;
 
         }
@@ -52,7 +52,7 @@ div.lines {
         list-style-type: none;
     }
 
-    ul:not(.tags) {    
+    ul:not(.tags) {
         >li {
             padding: 0.938em 0;
             border-bottom: solid rem-calc(1px) #667075;

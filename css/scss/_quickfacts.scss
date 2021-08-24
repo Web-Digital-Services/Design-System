@@ -1,77 +1,90 @@
 /* ============================================================
-    QUICKFACTS
+HORIZONTAL
 ============================================================ */
+.grid-x {
+    &.factoids {
+        padding: .5rem;
 
-.factoid {
-    padding: .5rem;
-    i {
-        color: $blue;
-    }
-    .supersize,
-    .h1,
-    .h2,
-    .h3 {
-        font-weight: 900;
-        font-family: $sans-serif-font;
-    }
-    .fa-5x {
-        @media screen and (max-width: 639px) {
-            font-size: 3.5rem;
+        i {
+            color: $blue;
+        }
+
+        .supersize,
+        .h1,
+        .h2,
+        .h3 {
+            font-weight: 900;
+            font-family: $sans-serif-font;
+        }
+
+        .fa-5x {
+            @media screen and (max-width: 639px) {
+                font-size: 3.5rem;
+            }
         }
     }
 }
 
 .bleed.color {
-    .factoid {
+    .factoids {
         i {
             color: $off-white;
         }
     }
 }
 
-.cell.quickfact {
-    background-color: $beige;
-    padding: rem-calc(30px);
-    h3 {
-        padding-top: 0;
-        padding-bottom: 0.12rem;
-        border-bottom: #808a8f rem-calc(1px) solid;
-    }
-    h4 {
-        font-weight: 900;
-        font-family: $sans-serif-font;
-        color: $dark-orange;
-        margin-bottom: .25rem;
-    }
-    &.grey {
-        background-color: $light-grey !important;
-        h4 {
-            color: $dark-grey;
+/* ============================================================
+VERTICAL
+============================================================ */
+
+.callout {
+    .grid-y {
+        &.factoids {
+
+            h4,
+            h5,
+            .h4,
+            .h5 {
+                font-weight: 900;
+                font-family: $sans-serif-font;
+                color: $dark-orange;
+                margin-bottom: .12rem;
+            }
         }
+        .cell {
+
+            h3,
+            .h3,
+            .h4 {
+                padding-top: 0;
+                padding-bottom: 0.12rem;
+                border-bottom: #808a8f rem-calc(1px) solid;
+            }
+
+
+        }
+
     }
+
     &.color {
-        color: $off-white !important;
-        background-color: $blue;
-        h4 {
-            color: $light-grey !important;
-        }
-        h3 {
-            border-bottom: $off-white rem-calc(1px) solid;
-        }
-        &.darken {
-            background-color: $dark-orange;
-            h4 {
-                color: $dark-beige !important;
-            }
-            h3 {
-                color: $dark-beige !important;
-                border-bottom: $beige rem-calc(1px) solid;
+        .grid-y {
+            &.factoids {
+
+            h4,
+            h5,
+            .h4,
+            .h5 {
+                color: $off-white;
+                margin-bottom: .12rem;
             }
         }
-        &.dark-grey {
-            background-color: $dark-grey;
-            h4 {
-                color: $light-grey !important;
+            .cell {
+
+                h3 {
+                    border-bottom: $off-white rem-calc(1px) solid;
+                }
+
+                
             }
         }
     }

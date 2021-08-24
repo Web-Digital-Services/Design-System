@@ -2,7 +2,13 @@
     TEXT STYLES
 ============================================================ */
 
+//Setting rem size to 16px by default
 html {
+    font-size: 16px;
+}
+
+//Setting text size to 18px
+body {
     font-size: 18px;
 }
 
@@ -311,7 +317,7 @@ figcaption {
 
 %link-underline {
     //background-image: linear-gradient($gold, $gold),linear-gradient(to right, $gold, $gold 10%, $orange 25%, $dark-orange);
-    background-image: linear-gradient($gold, $gold), linear-gradient($dark-orange, $dark-orange);
+    background-image: linear-gradient($orange-underline, $orange-underline), linear-gradient($dark-orange, $dark-orange);
     background-size: 100% 2px, 0 2px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
@@ -335,7 +341,7 @@ a {
 
     &:visited:not(.button),
     &:focus {
-        color: $dark-orange;
+        color: $orange-90;
     }
 }
 

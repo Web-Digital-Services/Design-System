@@ -36,6 +36,7 @@ input[type=text]:focus-visible,
 input[type=password]:focus-visible,
 input[type=checkbox]:focus-visible,
 input[type=radio]:focus-visible,
+input[type=search]:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
     outline-color: $blue;
@@ -45,13 +46,14 @@ select:focus-visible {
 
 input[type=text]:focus,
 input[type=password]:focus,
+input[type=search]:focus,
 textarea:focus,
 input[type=checkbox]:focus,
 select:focus {
-    border: rem-calc(1px) solid $orange;
-    background-color: rgba($orange, 0.05);
+    border: rem-calc(1px) solid $blue;
+    background-color: rgba($blue, 0.05);
     transition: none;
-    box-shadow:  0 0 0 5px rgba(212, 93, 0, .20);
+    box-shadow:  0 0 0 5px rgba($blue-50, .25);
 }
 
 input[type=checkbox] {
@@ -88,7 +90,7 @@ input[type=radio] {
 
 .is-invalid-input[type=text]:focus {
     background-color: #f9ecea;
-    box-shadow:  0 0 0 5px rgba(174, 0, 20, .20);
+    box-shadow:  0 0 0 5px rgba(174, 0, 20, .30);
 }
 
 legend {
@@ -148,17 +150,4 @@ select {
         border-radius: 0 8px 8px 0;
         cursor: pointer;
     }
-  }
-
-.search:focus {
-    border: rem-calc(1px) solid $orange;
-    background-color: rgba($orange, 0.05);
-    transition: none;
-    box-shadow:  0 0 0 5px rgba(212, 93, 0, .20);
-  }
-
-.search:focus-visible {
-    outline-color: $blue;
-    outline-width: rem-calc(8px);
-    outline-offset: rem-calc(10px);
   }
