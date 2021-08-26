@@ -22,14 +22,16 @@
                 color: $grey-link;
             }
         }
-    }
-
+    } 
     &.quicklinks {
         background-color: $dark-grey;
         color: $off-white;
-
+        .arrow ul li:before{
+            color: $off-white;
+        }
+        
         a {
-            color: $grey-link;
+            color: $off-white;
         }
         h2,h3,h4,h5,h6 {
             overflow-wrap: break-word;

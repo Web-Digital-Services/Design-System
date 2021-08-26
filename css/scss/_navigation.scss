@@ -154,7 +154,7 @@
 
 
 // ======= Mission Nav
-header#mission {
+div#level-1 {
     nav {
         ul.menu > li {
             a {
@@ -190,6 +190,7 @@ header#mission {
     }
     @media screen and (max-width:770px) {
         display: block !important;
+        width:100%;
     }
 }
 

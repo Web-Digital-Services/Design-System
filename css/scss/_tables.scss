@@ -2,7 +2,7 @@
     TABLES
 ============================================================ */
 
-table {
+table:not(.charts-css) {
     thead {
         background-color: $grey;
         color: $off-white;

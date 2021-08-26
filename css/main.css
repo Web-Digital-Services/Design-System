@@ -11022,29 +11022,30 @@ a.card {
   transform: none;
   transform-origin: unset; }
 
-header#mission nav ul.menu > li a {
+div#level-1 nav ul.menu > li a {
   font-size: 1.875rem; }
 
 @media screen and (max-width: 770px) {
-  header#mission nav {
+  div#level-1 nav {
     background-color: #333d42 !important;
     border-top: 0.375rem solid #FFBC5B; }
-    header#mission nav ul.menu {
+    div#level-1 nav ul.menu {
       display: block;
       background-color: #333d42 !important; }
-      header#mission nav ul.menu li {
+      div#level-1 nav ul.menu li {
         border-bottom: 0.10938rem solid #E5EFF4; }
-        header#mission nav ul.menu li:hover {
+        div#level-1 nav ul.menu li:hover {
           background: #F1F5F7 !important; }
-        header#mission nav ul.menu li a {
+        div#level-1 nav ul.menu li a {
           color: #F1F5F7;
           font-size: 1.375rem; }
-          header#mission nav ul.menu li a:hover {
+          div#level-1 nav ul.menu li a:hover {
             color: #AD4200 !important; } }
 
 @media screen and (max-width: 770px) {
-  header#mission {
-    display: block !important; } }
+  div#level-1 {
+    display: block !important;
+    width: 100%; } }
 
 .nav-bar {
   background-image: linear-gradient(to right, #AD4200, #AD4200 40%, #7A0F00 70%, #7A0F00);
@@ -11368,42 +11369,42 @@ footer {
 /* ============================================================
     TABLES
 ============================================================ */
-table thead {
+table:not(.charts-css) thead {
   background-color: #667075;
   color: #F1F5F7; }
-  table thead th {
+  table:not(.charts-css) thead th {
     font-size: 1.25rem;
     font-weight: 900; }
 
-table tbody tr:nth-child(even) {
+table:not(.charts-css) tbody tr:nth-child(even) {
   background-color: #E0E5E6; }
 
-table tfoot {
+table:not(.charts-css) tfoot {
   background-color: #333d42;
   color: #FFBC5B; }
 
-table.unstriped tbody tr:nth-child(even) {
+table:not(.charts-css).unstriped tbody tr:nth-child(even) {
   background-color: #FFF; }
 
-table.unstriped td {
+table:not(.charts-css).unstriped td {
   border: 0.0625rem solid #E0E5E6; }
 
-table.hover thead tr:hover {
+table:not(.charts-css).hover thead tr:hover {
   background-color: #333d42; }
 
-table.sortable thead {
+table:not(.charts-css).sortable thead {
   background-color: #AD4200; }
-  table.sortable thead th.sort::after {
+  table:not(.charts-css).sortable thead th.sort::after {
     font-family: "Font Awesome 5 Free solid";
     font-weight: 900;
     font-size: 1.125rem;
     content: "\f0dc";
     padding-left: 0.9375rem; }
-  table.sortable thead th.sort:hover {
+  table:not(.charts-css).sortable thead th.sort:hover {
     background-color: #7A0F00;
     cursor: pointer; }
 
-table.sortable tbody tr:nth-child(even) {
+table:not(.charts-css).sortable tbody tr:nth-child(even) {
   background-color: #EFE1CC; }
 
 /* ============================================================
@@ -11824,8 +11825,10 @@ img.logo {
 .title-bar.quicklinks {
   background-color: #333d42;
   color: #F1F5F7; }
+  .title-bar.quicklinks .arrow ul li:before {
+    color: #F1F5F7; }
   .title-bar.quicklinks a {
-    color: #FFF1DB; }
+    color: #F1F5F7; }
   .title-bar.quicklinks h2, .title-bar.quicklinks h3, .title-bar.quicklinks h4, .title-bar.quicklinks h5, .title-bar.quicklinks h6 {
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -12221,3 +12224,54 @@ nav.orbit-bullets button {
   font-weight: 900;
   font-size: 3.75rem;
   content: "\f105"; }
+
+.blue .charts-css {
+  --color-1: #004661 !important;
+  /*$blue-80*/
+  --color-2: #0C607B !important;
+  /*$blue-70*/
+  --color-3: #257994 !important;
+  /*$blue*/
+  --color-4: #3F93AE !important;
+  /*$blue-50*/
+  --color-5: #58ACC7 !important;
+  /*$blue-40*/
+  --color-6: #004661 !important;
+  /*$blue-80*/
+  --color-7: #0C607B !important;
+  /*$blue-70*/
+  --color-8: #257994 !important;
+  /*$blue*/
+  --color-9: #3F93AE !important;
+  /*$blue-50*/
+  --color-10: #58ACC7 !important;
+  /*$blue-40*/ }
+
+.orange .charts-css {
+  --color-1: #E07533 !important;
+  /*$orange-40*/
+  --color-2: #C75C1A !important;
+  /*$orange-50*/
+  --color-3: #AD4200 !important;
+  /*$orange*/
+  --color-4: #942900 !important;
+  /*$orange-70*/
+  --color-5: #7A0F00 !important;
+  /*$dark-orange*/
+  --color-6: #E07533 !important;
+  /*$orange-40*/
+  --color-7: #C75C1A !important;
+  /*$orange-50*/
+  --color-8: #AD4200 !important;
+  /*$orange*/
+  --color-9: #942900 !important;
+  /*$orange-70*/
+  --color-10: #7A0F00 !important;
+  /*$dark-orange*/ }
+
+table.charts-css.column {
+  height: 18.75rem; }
+
+ul.charts-css.legend {
+  justify-content: center;
+  margin-top: 0.625rem; }
