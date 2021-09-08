@@ -9515,6 +9515,9 @@ address {
 strong {
   font-weight: 900; }
 
+.lead {
+  font-size: 32px; }
+
 .black {
   font-weight: 900; }
 
