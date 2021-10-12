@@ -9533,13 +9533,17 @@ strong {
 .text-center {
   text-align: center; }
 
-h1 + .subheader, h1 + .subheader + .subheader, h1 + .subheader + .subheader + .subheader {
+h1 + .subheader,
+h1 + .subheader + .subheader,
+h1 + .subheader + .subheader + .subheader {
   font-family: "Nunito Sans", sans-serif;
   color: #171717;
   font-size: 2rem;
   margin-top: -1.6875rem; }
   @media screen and (max-width: 569px) {
-    h1 + .subheader, h1 + .subheader + .subheader, h1 + .subheader + .subheader + .subheader {
+    h1 + .subheader,
+    h1 + .subheader + .subheader,
+    h1 + .subheader + .subheader + .subheader {
       font-size: 1.375rem; } }
 
 .subheader + .subheader {
@@ -9832,6 +9836,19 @@ Tooltip
   color: #333d42;
   border-bottom: solid 1px #333d42; }
 
+.tooltip {
+  border: solid #257994 1px;
+  background-color: #F1F5F7;
+  color: #171717; }
+  .tooltip.right:before {
+    border-color: transparent #257994 transparent transparent; }
+  .tooltip.left:before {
+    border-color: transparent transparent transparent #257994; }
+  .tooltip.top:before {
+    border-color: #257994 transparent transparent; }
+  .tooltip.bottom:before {
+    border-color: transparent transparent #257994; }
+
 /* ============================================================
     BLOCKQUOTES
 ============================================================ */
@@ -10067,6 +10084,14 @@ blockquote.fancy cite {
     .extra-roomy {
       padding-top: 0.9375rem;
       padding-bottom: 0.9375rem; } }
+
+.chonky {
+  padding-top: 15rem;
+  padding-bottom: 15rem; }
+  @media screen and (max-width: 640px) {
+    .chonky {
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem; } }
 
 .bleed {
   color: #171717; }
@@ -11056,6 +11081,8 @@ div#level-1 nav ul.menu > li a {
   justify-content: space-between;
   justify-content: center;
   box-shadow: 0 0.125rem 0.3125rem 0 rgba(23, 23, 23, 0.35); }
+  .nav-bar .top-bar, .nav-bar .top-bar ul {
+    background-color: transparent; }
   .nav-bar .top-bar {
     padding: 0;
     overflow: hidden;

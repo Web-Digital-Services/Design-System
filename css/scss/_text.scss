@@ -185,7 +185,9 @@ strong {
     text-align: center;
 }
 
-h1 + .subheader, h1 + .subheader + .subheader, h1 + .subheader + .subheader + .subheader {
+h1+.subheader,
+h1+.subheader+.subheader,
+h1+.subheader+.subheader+.subheader {
     font-family: $sans-serif-font;
     color: $off-black;
     font-size: rem-calc(32px);
@@ -197,11 +199,11 @@ h1 + .subheader, h1 + .subheader + .subheader, h1 + .subheader + .subheader + .s
     }
 }
 
-.subheader + .subheader {
+.subheader+.subheader {
     margin-top: rem-calc(-18px) !important;
 }
 
-h2 + .subheader {
+h2+.subheader {
     font-size: rem-calc(25px);
     font-family: $sans-serif-font;
     color: $off-black;
@@ -212,7 +214,7 @@ h2 + .subheader {
     }
 }
 
-.subheader + .subtext {
+.subheader+.subtext {
     margin-top: rem-calc(-5px);
 }
 
@@ -398,7 +400,7 @@ a.external {
 
     &:hover:after {
         color: $dark-orange;
-        transform: translate(.1rem,-.1rem);
+        transform: translate(.1rem, -.1rem);
 
     }
 }
@@ -442,7 +444,8 @@ a.highlight {
             color: $blue-90;
         }
 
-        &.arrow,&.external {
+        &.arrow,
+        &.external {
             &:after {
                 color: $blue-link;
             }
@@ -475,7 +478,8 @@ a.highlight {
                 color: $orange-90;
             }
 
-            &.arrow,&.external {
+            &.arrow,
+            &.external {
                 &:after {
                     color: $orange-link;
                 }
@@ -509,7 +513,8 @@ a.highlight {
                 color: $grey-90;
             }
 
-            &.arrow,&.external {
+            &.arrow,
+            &.external {
                 &:after {
                     color: $grey-link;
                 }
@@ -605,4 +610,34 @@ Tooltip
     color: $dark-grey;
     border-bottom: solid 1px $dark-grey;
 
+}
+
+.tooltip {
+    border: solid $blue 1px;
+    background-color: $off-white;
+    color: $off-black;
+
+    &.right {
+        &:before {
+            border-color: transparent $blue transparent transparent;
+        }
+    }
+
+    &.left {
+        &:before {
+            border-color: transparent transparent transparent $blue;
+        }
+    }
+
+    &.top {
+        &:before {
+            border-color: $blue transparent transparent;
+        }
+    }
+
+    &.bottom {
+        &:before {
+            border-color: transparent transparent $blue;
+        }
+    }
 }
