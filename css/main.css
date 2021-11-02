@@ -9994,6 +9994,9 @@ blockquote.fancy cite {
 :last-child > .accordion-content:last-child {
   border-bottom: 0.0625rem solid #E0E5E6; }
 
+.accordion-item:last-child > :last-child {
+  border-radius: 0 0 0.375rem 0.375rem; }
+
 .is-active > .accordion-content {
   display: block; }
 
