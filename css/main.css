@@ -9676,7 +9676,7 @@ a {
   a:hover {
     color: #7A0F00;
     text-decoration: none; }
-  a:visited:not(.button), a:focus {
+  a:visited , a:focus {
     color: #7A0F00; }
 
 p > a:not(.button) {
@@ -9790,9 +9790,6 @@ a.highlight {
   color: #AD4200; }
   .color .card a:not(.button):hover,
   .color .callout a:not(.button):hover {
-    color: #7A0F00; }
-  .color .card a:not(.button):visited,
-  .color .callout a:not(.button):visited {
     color: #7A0F00; }
 
 .img-fill p > a:not(.button) {
