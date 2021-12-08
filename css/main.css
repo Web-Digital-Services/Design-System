@@ -12276,6 +12276,10 @@ nav.orbit-bullets button {
   /*$blue-50*/
   --color-10: #58ACC7 !important;
   /*$blue-40*/ }
+  .blue .charts-css .data {
+    color: #F1F5F7;
+    font-weight: 900;
+    text-shadow: 1px 1px #171717; }
 
 .orange .charts-css {
   --color-1: #E07533 !important;
@@ -12298,6 +12302,10 @@ nav.orbit-bullets button {
   /*$orange-70*/
   --color-10: #7A0F00 !important;
   /*$dark-orange*/ }
+  .orange .charts-css .data {
+    color: #F1F5F7;
+    font-weight: 900;
+    text-shadow: 1px 1px #171717; }
   .orange .charts-css.stacked {
     --color-1: #FFBC5B !important;
     /*$gold*/
