@@ -9486,9 +9486,21 @@ body {
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.5; }
 
+h1.eyebrow,
+h2.eyebrow,
+h3.eyebrow,
+h4.eyebrow,
+h5.eyebrow,
+h6.eyebrow,
+p.eyebrow {
+  font-size: 18px;
+  margin-bottom: 0 !important;
+  font-family: "Lora", serif; }
+
 h1, .h1 {
   margin-bottom: 1.6875rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-family: "Lora", serif; }
 
 h2,
 .h2,
@@ -9672,11 +9684,14 @@ p > a:not(.button):hover, ul.underline:hover {
 a {
   color: #AD4200;
   text-decoration: none;
-  transition: .5s ease-out; }
+  transition: .5s ease-out;
+  /*&:visited:not(.button, .callout, .card) {
+        color: $orange;
+    }*/ }
   a:hover {
     color: #7A0F00;
     text-decoration: none; }
-  a:visited , a:focus {
+  a:focus {
     color: #7A0F00; }
 
 p > a:not(.button) {
