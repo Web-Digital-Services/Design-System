@@ -269,8 +269,14 @@ p {
     }
 }
 
-p.light {
-    font-weight: 100;
+p {
+
+    &.light {
+        font-weight: 100;
+    }
+    &.large {
+        font-size: 24px;;
+    }
 }
 
 .ruled {
