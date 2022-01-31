@@ -228,6 +228,7 @@ div#level-1 {
 
                 ul {
                     background: transparent; //This is so the color doesn't get overrided by the old nav styles. DELETE LATER
+                    justify-content: space-evenly;
 
                     li {
 
@@ -457,6 +458,30 @@ div#level-1 {
         //Hide full nav on mobile
         &#new-full {
             display: none;
+        }
+    }
+}
+
+@media screen and (min-width:770px) {
+
+    //Hide mobile nav on large screens
+    nav#new {
+        display: none;
+    }
+}
+
+header.super-hero+.hero+nav#new-full {
+
+    ul.menu {
+
+        justify-content: space-evenly;
+        li {
+            font-size: rem-calc(24px);
+            margin-right: rem-calc(60px);
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 }

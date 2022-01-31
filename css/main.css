@@ -11114,7 +11114,8 @@ div#level-1 nav ul.menu > li a {
       position: relative;
       width: 90rem; }
       .nav-bar#new-full .top-bar .top-bar-left ul {
-        background: transparent; }
+        background: transparent;
+        justify-content: space-evenly; }
         .nav-bar#new-full .top-bar .top-bar-left ul li:hover {
           background: transparent; }
         .nav-bar#new-full .top-bar .top-bar-left ul li a,
@@ -11222,6 +11223,18 @@ div#level-1 nav ul.menu > li a {
         border-bottom: none; }
   .nav-bar#new-full {
     display: none; } }
+
+@media screen and (min-width: 770px) {
+  nav#new {
+    display: none; } }
+
+header.super-hero + .hero + nav#new-full ul.menu {
+  justify-content: space-evenly; }
+  header.super-hero + .hero + nav#new-full ul.menu li {
+    font-size: 1.5rem;
+    margin-right: 3.75rem; }
+    header.super-hero + .hero + nav#new-full ul.menu li:last-child {
+      margin-right: 0; }
 
 /* ============================================================
     FORM ELEMENTS
@@ -12092,11 +12105,37 @@ header#regular {
             color: #F1F5F7; } }
 
 header#new {
-  /**position: sticky; //Will return to a full sticky header but will temporarily switch to sticky nav only
-        top: 0;
-        z-index: 6;**/
   border-top: 3px solid #AD4200;
   padding-bottom: 0.9375rem; }
+  header#new .group {
+    display: flex;
+    justify-content: space-around;
+    max-width: 90rem;
+    max-height: 9.6875rem;
+    margin-right: auto;
+    margin-left: auto; }
+    header#new .group .logo {
+      margin-top: 0.9375rem;
+      display: flex;
+      align-items: baseline; }
+      header#new .group .logo.pipe img {
+        padding-right: 1.25rem;
+        border-right: 0.125rem solid #333d42; }
+      header#new .group .logo.pipe p {
+        padding-left: 1.25rem;
+        font-weight: 700;
+        font-size: 24px; }
+    header#new .group .right {
+      display: flex;
+      margin-top: 0.9375rem;
+      align-items: center; }
+      header#new .group .right .circle-icons {
+        text-align: center;
+        display: flex; }
+        header#new .group .right .circle-icons a {
+          margin-right: 0.9375rem; }
+        header#new .group .right .circle-icons .fa-search {
+          color: #F1F5F7; }
   @media screen and (max-width: 770px) {
     header#new {
       display: none;
@@ -12106,65 +12145,28 @@ header#new {
       background: #AD4200;
       top: 70px;
       position: sticky;
-      z-index: 1; } }
-  header#new .group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 90rem;
-    max-height: 9.6875rem;
-    margin-right: auto;
-    margin-left: auto; }
-    header#new .group .right {
-      display: flex;
-      margin-top: 0.9375rem; }
-      @media screen and (max-width: 770px) {
-        header#new .group .right {
-          padding: 0.9375rem 0;
-          flex-wrap: wrap-reverse;
-          justify-content: center;
-          margin-top: 0; } }
-  header#new .logo {
-    margin-top: 0.9375rem;
-    display: flex;
-    align-items: baseline; }
-    header#new .logo.pipe img {
-      padding-right: 1.25rem;
-      border-right: 0.125rem solid #333d42; }
-    header#new .logo.pipe p {
-      padding-left: 1.25rem;
-      font-weight: 700;
-      font-size: 24px; }
-    @media screen and (max-width: 770px) {
-      header#new .logo {
-        display: none; } }
-  @media screen and (max-width: 770px) {
-    header#new .search {
-      margin: 0 0 1.25rem 0; } }
-  header#new .circle-icons {
-    text-align: center;
-    display: flex; }
-    header#new .circle-icons a {
-      margin-right: 0.9375rem; }
-    header#new .circle-icons .fa-search {
-      color: #F1F5F7; }
-    @media screen and (max-width: 770px) {
-      header#new .circle-icons {
-        text-align: center;
-        align-items: center; }
-        header#new .circle-icons a:first-child {
-          margin-right: 0.9375rem; }
-        header#new .circle-icons a {
-          color: #F1F5F7; }
-          header#new .circle-icons a span.fa-stack .fa-stack-2x,
-          header#new .circle-icons a span.fa-stack .fa-stack-1x {
+      z-index: 1; }
+      header#new .group .logo {
+        display: none; }
+      header#new .group .right {
+        padding: 0.9375rem 0;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        margin-top: 0; }
+        header#new .group .right .circle-icons {
+          justify-content: space-evenly; }
+          header#new .group .right .circle-icons a:first-child {
+            margin-right: 0.9375rem; }
+          header#new .group .right .circle-icons a {
             color: #F1F5F7; }
-            header#new .circle-icons a span.fa-stack .fa-stack-2x.fa-search,
-            header#new .circle-icons a span.fa-stack .fa-stack-1x.fa-search {
-              color: #AD4200; } }
-  @media screen and (min-width: 770px) {
-    header#new nav#new {
-      display: none; } }
+            header#new .group .right .circle-icons a span.fa-stack .fa-stack-2x,
+            header#new .group .right .circle-icons a span.fa-stack .fa-stack-1x {
+              color: #F1F5F7; }
+              header#new .group .right .circle-icons a span.fa-stack .fa-stack-2x.fa-search,
+              header#new .group .right .circle-icons a span.fa-stack .fa-stack-1x.fa-search {
+                color: #AD4200; }
+      header#new .group .search {
+        margin: 0 0 1.25rem 0; } }
   @media screen and (min-width: 850px) {
     header#new.super-hero {
       position: absolute;

@@ -277,15 +277,64 @@ header {
         }
     }
 
+    //DSP Revise Jan 2022
     &#new {
-        /**position: sticky; //Will return to a full sticky header but will temporarily switch to sticky nav only
-        top: 0;
-        z-index: 6;**/
-        //background: $pure-white;
-        //background: transparent;
+
         border-top: 3px solid $orange;
         padding-bottom: rem-calc(15px);
-        //margin: rem-calc(0 15px 0 15px); //Meant to add the 15px margins to the sides but hard to implement
+        //margin: rem-calc(0 15px 0 15px); //Meant to add the 15px margins to the sides but hard to implement. Used justify-content: space-around
+
+        .group {
+
+            display: flex;
+            justify-content: space-around;
+            max-width: rem-calc(1440px); //%
+            max-height: rem-calc(155px);
+            margin-right: auto;
+            margin-left: auto;
+
+            .logo {
+                margin-top: rem-calc(15px);
+                display: flex;
+                align-items: baseline;
+
+                &.pipe {
+                    img {
+                        padding-right: rem-calc(20px);
+                        border-right: rem-calc(2px) solid $dark-grey;
+                    }
+
+                    p {
+                        padding-left: rem-calc(20px);
+                        font-weight: 700;
+                        font-size: 24px;
+                    }
+                }
+            }
+
+
+            .right {
+                display: flex;
+                margin-top: rem-calc(15px);
+                align-items: center;
+
+                .circle-icons {
+                    text-align: center;
+                    display: flex;
+
+                    a {
+                        margin-right: rem-calc(15px);
+                    }
+
+                    .fa-search {
+                        color: $off-white;
+                    }
+
+                }
+
+            }
+        }
+
 
 
         @media screen and (max-width:770px) {
@@ -298,108 +347,51 @@ header {
             position: sticky;
             z-index: 1;
 
-        }
+            .group {
+                .logo {
+                    display: none;
+                }
 
-        .group {
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: rem-calc(1440px); //%
-            max-height: rem-calc(155px);
-            margin-right: auto;
-            margin-left: auto;
-
-
-            .right {
-                display: flex;
-                margin-top: rem-calc(15px);
-
-                @media screen and (max-width:770px) {
+                .right {
                     padding: rem-calc(15px) 0;
                     flex-wrap: wrap-reverse;
                     justify-content: center;
                     margin-top: 0;
 
-                }
-            }
-        }
+                    .circle-icons {
+                        justify-content: space-evenly;
 
-        .logo {
-            margin-top: rem-calc(15px);
-            display: flex;
-            align-items: baseline;
+                        a:first-child {
+                            margin-right: rem-calc(15px);
+                        }
 
-            &.pipe {
-                img {
-                    padding-right: rem-calc(20px);
-                    border-right: rem-calc(2px) solid $dark-grey;
-                }
-
-                p {
-                    padding-left: rem-calc(20px);
-                    font-weight: 700;
-                    font-size: 24px;
-                }
-            }
-
-            @media screen and (max-width:770px) {
-                display: none;
-            }
-        }
-
-        .search {
-
-            @media screen and (max-width:770px) {
-                margin: 0 0 rem-calc(20px) 0;
-            }
-        }
-
-        .circle-icons {
-            text-align: center;
-            display: flex;
-
-            a {
-                margin-right: rem-calc(15px);
-            }
-
-            .fa-search {
-                color: $off-white;
-            }
-
-            @media screen and (max-width:770px) {
-                text-align: center;
-                align-items: center;
-
-                a:first-child {
-                    margin-right: rem-calc(15px);
-                }
-
-                a {
-                    color: $off-white;
-
-                    span.fa-stack {
-
-                        .fa-stack-2x,
-                        .fa-stack-1x {
+                        a {
                             color: $off-white;
 
-                            &.fa-search {
-                                color: $orange
+                            span.fa-stack {
+
+                                .fa-stack-2x,
+                                .fa-stack-1x {
+                                    color: $off-white;
+
+                                    &.fa-search {
+                                        color: $orange
+                                    }
+                                }
                             }
                         }
                     }
                 }
+
+                .search {
+                    margin: 0 0 rem-calc(20px) 0;
+                }
+
             }
+
         }
 
-        @media screen and (min-width:770px) {
 
-            //Hide mobile nav on large screens
-            nav#new {
-                display: none;
-            }
-        }
 
         &.super-hero {
 
@@ -412,7 +404,5 @@ header {
             }
 
         }
-
-
     }
 }
