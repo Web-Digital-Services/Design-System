@@ -363,6 +363,10 @@ header {
                 margin-right: rem-calc(15px);
             }
 
+            .fa-search {
+                color: $off-white;
+            }
+
             @media screen and (max-width:770px) {
                 text-align: center;
                 align-items: center;
@@ -379,6 +383,10 @@ header {
                         .fa-stack-2x,
                         .fa-stack-1x {
                             color: $off-white;
+
+                            &.fa-search {
+                                color: $orange
+                            }
                         }
                     }
                 }
@@ -386,10 +394,23 @@ header {
         }
 
         @media screen and (min-width:770px) {
+
             //Hide mobile nav on large screens
             nav#new {
                 display: none;
             }
+        }
+
+        &.super-hero {
+
+            @media screen and (min-width:850px) {
+                position: absolute;
+                top: 0;
+                background: rgba(255, 255, 255, 0.8); //set opacity
+                width: 100%;
+
+            }
+
         }
 
 

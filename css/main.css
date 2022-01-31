@@ -12146,6 +12146,8 @@ header#new {
     display: flex; }
     header#new .circle-icons a {
       margin-right: 0.9375rem; }
+    header#new .circle-icons .fa-search {
+      color: #F1F5F7; }
     @media screen and (max-width: 770px) {
       header#new .circle-icons {
         text-align: center;
@@ -12156,10 +12158,19 @@ header#new {
           color: #F1F5F7; }
           header#new .circle-icons a span.fa-stack .fa-stack-2x,
           header#new .circle-icons a span.fa-stack .fa-stack-1x {
-            color: #F1F5F7; } }
+            color: #F1F5F7; }
+            header#new .circle-icons a span.fa-stack .fa-stack-2x.fa-search,
+            header#new .circle-icons a span.fa-stack .fa-stack-1x.fa-search {
+              color: #AD4200; } }
   @media screen and (min-width: 770px) {
     header#new nav#new {
       display: none; } }
+  @media screen and (min-width: 850px) {
+    header#new.super-hero {
+      position: absolute;
+      top: 0;
+      background: rgba(255, 255, 255, 0.8);
+      width: 100%; } }
 
 /* ============================================================
     TAGS
@@ -12358,6 +12369,29 @@ a .datebox:hover {
 /* ============================================================
     HERO BANNERS
 ============================================================ */
+@media screen and (min-width: 850px) {
+  header.super-hero + .hero {
+    z-index: -1;
+    height: auto; }
+    header.super-hero + .hero.img-fill img {
+      position: relative; }
+    header.super-hero + .hero .callout {
+      padding: 1.125rem;
+      position: absolute;
+      top: 50%; }
+      header.super-hero + .hero .callout h1 {
+        font-size: 80px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700; } }
+
+@media screen and (max-width: 850px) {
+  header.super-hero + .hero.img-fill img {
+    position: relative; }
+  header.super-hero + .hero .callout {
+    padding: 1.125rem;
+    position: absolute;
+    top: 50%; } }
+
 .hero.img-fill {
   background-color: transparent !important;
   overflow: clip; }
