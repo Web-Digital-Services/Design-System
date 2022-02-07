@@ -280,6 +280,7 @@ header {
     //DSP Revise Jan 2022
     &#new {
 
+        z-index: 6;
         border-top: 3px solid $orange;
         padding-bottom: rem-calc(15px);
         //margin: rem-calc(0 15px 0 15px); //Meant to add the 15px margins to the sides but hard to implement. Used justify-content: space-around

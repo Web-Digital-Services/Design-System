@@ -9570,28 +9570,11 @@ h2 + .subheader {
     h2 + .subheader {
       font-size: 1.25rem; } }
 
+.callout.orange .subheader, .callout.grey .subheader {
+  color: #F1F5F7; }
+
 .subheader + .subtext {
   margin-top: -0.3125rem; }
-
-h1.color,
-h2.color,
-h3.color,
-h4.color,
-h5.color,
-h6.color,
-p.color {
-  color: #0C607B;
-  background-color: transparent !important; }
-
-h1.filled,
-h2.filled,
-h3.filled,
-h4.filled,
-h5.filled,
-h6.filled,
-p.filled {
-  color: #F1F5F7 !important;
-  background-color: #0C607B; }
 
 h1.color,
 h2.color,
@@ -9785,6 +9768,11 @@ a.highlight {
       color: #FFDEBD !important;
       background-color: inherit; }
 
+.color.orange cite > a, .color.darken cite > a {
+  color: #FFDEBD; }
+  .color.orange cite > a:hover, .color.darken cite > a:hover {
+    color: #f7f5f0; }
+
 .color.grey p > a:not(.button), .color.dark-grey p > a:not(.button) {
   background-image: linear-gradient(#FFF1DB, #FFF1DB);
   color: #FFF1DB; }
@@ -9802,6 +9790,11 @@ a.highlight {
     .color.grey p > a:not(.button).highlight:hover, .color.dark-grey p > a:not(.button).highlight:hover {
       color: #FFF1DB !important;
       background-color: inherit; }
+
+.color.grey cite > a, .color.dark-grey cite > a {
+  color: #FFF1DB; }
+  .color.grey cite > a:hover, .color.dark-grey cite > a:hover {
+    color: #F1F5F7; }
 
 .color .card a:not(.button),
 .color .callout a:not(.button) {
@@ -9884,6 +9877,8 @@ cite {
   font-style: italic;
   font-weight: 600;
   font-size: inherit; }
+  cite a {
+    font-weight: 700; }
 
 cite:before {
   content: "\2014";
@@ -12105,6 +12100,7 @@ header#regular {
             color: #F1F5F7; } }
 
 header#new {
+  z-index: 6;
   border-top: 3px solid #AD4200;
   padding-bottom: 0.9375rem; }
   header#new .group {
@@ -12373,13 +12369,9 @@ a .datebox:hover {
 ============================================================ */
 @media screen and (min-width: 850px) {
   header.super-hero + .hero {
-    z-index: -1;
     height: auto; }
     header.super-hero + .hero.img-fill img {
       position: relative; }
-    header.super-hero + .hero.img-fill video {
-      width: 100%;
-      height: 100%; }
     header.super-hero + .hero .callout {
       padding: 1.125rem;
       position: absolute;
@@ -12399,6 +12391,16 @@ a .datebox:hover {
     padding: 1.125rem;
     position: absolute;
     top: 50%; } }
+
+header.super-hero + .hero video {
+  width: 100%;
+  /**transition: .5s ease-out;
+
+        &:hover {
+            ~.callout {
+                display: none;
+            }
+        }**/ }
 
 .hero.img-fill {
   background-color: transparent !important;
