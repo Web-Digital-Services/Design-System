@@ -12377,6 +12377,9 @@ a .datebox:hover {
     height: auto; }
     header.super-hero + .hero.img-fill img {
       position: relative; }
+    header.super-hero + .hero.img-fill video {
+      width: 100%;
+      height: 100%; }
     header.super-hero + .hero .callout {
       padding: 1.125rem;
       position: absolute;
@@ -12389,6 +12392,9 @@ a .datebox:hover {
 @media screen and (max-width: 850px) {
   header.super-hero + .hero.img-fill img {
     position: relative; }
+  header.super-hero + .hero.img-fill video {
+    width: 100%;
+    height: 100%; }
   header.super-hero + .hero .callout {
     padding: 1.125rem;
     position: absolute;
