@@ -11457,9 +11457,9 @@ footer {
     footer.mission .social li a {
       color: #AD4200; }
     footer.mission .columns {
-      -webkit-columns: 2 290px;
-      -moz-columns: 2 290px;
-      columns: 2 290px; }
+      -webkit-columns: 2 auto;
+      -moz-columns: 2 auto;
+      columns: 2 auto; }
     footer.mission .bleed {
       background-color: #AD4200;
       color: #F1F5F7; }

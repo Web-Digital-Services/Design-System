@@ -154,9 +154,9 @@ footer {
             }
         }
         .columns {
-            -webkit-columns: 2 290px;
-            -moz-columns: 2 290px;
-            columns: 2 290px;
+            -webkit-columns: 2 auto;
+            -moz-columns: 2 auto;
+            columns: 2 auto;
         }
 
         .bleed {
