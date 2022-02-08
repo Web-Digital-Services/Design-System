@@ -9486,16 +9486,17 @@ body {
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.5; }
 
-h1.eyebrow,
-h2.eyebrow,
-h3.eyebrow,
-h4.eyebrow,
-h5.eyebrow,
-h6.eyebrow,
 p.eyebrow {
   font-size: 18px;
-  margin-bottom: 0 !important;
   font-family: "Lora", serif; }
+  p.eyebrow + h2,
+  p.eyebrow + h3,
+  p.eyebrow + h4,
+  p.eyebrow + h5 {
+    margin-top: -1.125rem; }
+  @media screen and (max-width: 639px) {
+    p.eyebrow {
+      font-size: 16px; } }
 
 h1, .h1 {
   margin-bottom: 1.6875rem;
@@ -11444,7 +11445,7 @@ footer {
       margin: 3.125rem 0;
       max-width: none; }
     footer.mission hr:after {
-      content: url("../../images/orange-shield.svg");
+      content: url("../images/orange-shield.svg");
       left: 50%;
       position: absolute;
       transform: translateY(-50%) translateX(-50%);
