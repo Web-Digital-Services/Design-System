@@ -12369,26 +12369,32 @@ a .datebox:hover {
     HERO BANNERS
 ============================================================ */
 @media screen and (min-width: 850px) {
-  header.super-hero + .hero {
-    height: auto; }
-    header.super-hero + .hero.img-fill img {
-      position: relative; }
-    header.super-hero + .hero .callout {
-      padding: 1.125rem;
-      position: absolute;
-      top: 50%; }
-      header.super-hero + .hero .callout h1 {
-        font-size: 80px;
-        font-family: "Nunito Sans", sans-serif;
-        font-weight: 700; } }
+  header.super-hero + .hero .grid-container {
+    margin-top: 8.375rem; }
+  header.super-hero + .hero .callout {
+    margin-bottom: 0; } }
+
+@media screen and (min-width: 850px) {
+  header.super-hero + .hero.godly .grid-container {
+    margin-top: unset; }
+  header.super-hero + .hero.godly.img-fill img {
+    position: relative; }
+  header.super-hero + .hero.godly .callout {
+    padding: 1.125rem;
+    position: absolute;
+    top: 50%; }
+    header.super-hero + .hero.godly .callout h1 {
+      font-size: 80px;
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: 700; } }
 
 @media screen and (max-width: 850px) {
-  header.super-hero + .hero.img-fill img {
+  header.super-hero + .hero.godly.img-fill img {
     position: relative; }
-  header.super-hero + .hero.img-fill video {
+  header.super-hero + .hero.godly.img-fill video {
     width: 100%;
     height: 100%; }
-  header.super-hero + .hero .callout {
+  header.super-hero + .hero.godly .callout {
     padding: 1.125rem;
     position: absolute;
     top: 50%; } }
