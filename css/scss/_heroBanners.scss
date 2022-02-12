@@ -6,35 +6,14 @@ header.super-hero+.hero {
     @media screen and (min-width:850px) {
         .grid-container {
             margin-top: rem-calc(134px);
+
         }
 
         .callout {
             margin-bottom: 0;
 
-        }
-    }
-
-    &.godly {
-
-        @media screen and (min-width:850px) {
-
-            .grid-container {
-                margin-top: unset;
-            }
-
-            &.img-fill {
-
-                img {
-                    position: relative;
-                }
-
-            }
-
-            .callout {
-                padding: rem-calc(18px);
-                position: absolute;
-                top: 50%;
-
+            &.mission {
+                margin-left: 0;
 
                 h1 {
                     font-size: 80px;
@@ -45,42 +24,51 @@ header.super-hero+.hero {
             }
 
         }
+    }
 
-        @media screen and (max-width:850px) {
-            &.img-fill {
+//========== Gradient hero
 
-                img {
-                    position: relative;
+    @media screen and (min-width:770px) {
+        &.gradient {
+
+            &.grey {
+
+                &.left {
+                    background: $grey-gradient-left;
                 }
 
-                video {
-                    width: 100%;
-                    height: 100%;
+                &.right {
+                    background: $grey-gradient-right;
+                }
+            }
+
+            &.orange {
+
+                &.left {
+                    background: $orange-gradient-left;
+                }
+
+                &.right {
+                    background: $orange-gradient-right;
+                }
+            }
+
+            &.white {
+
+                &.left {
+                    background: $white-gradient-left;
+                }
+
+                &.right {
+                    background: $white-gradient-right;
                 }
             }
 
             .callout {
-                padding: rem-calc(18px);
-                position: absolute;
-                top: 50%;
-
+                background: transparent;
             }
-
         }
-
     }
-
-    video {
-        width: 100%;
-        /**transition: .5s ease-out;
-
-        &:hover {
-            ~.callout {
-                display: none;
-            }
-        }**/
-    }
-
 
 }
 

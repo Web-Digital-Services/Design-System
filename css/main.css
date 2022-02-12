@@ -10107,6 +10107,14 @@ blockquote.fancy cite {
       padding-top: 3.75rem;
       padding-bottom: 3.75rem; } }
 
+.godly {
+  padding-top: 26.25rem;
+  padding-bottom: 26.25rem; }
+  @media screen and (max-width: 640px) {
+    .godly {
+      padding-top: 5.625rem;
+      padding-bottom: 5.625rem; } }
+
 .bleed {
   color: #171717; }
   .bleed.light-beige {
@@ -10190,6 +10198,9 @@ IMG Fill BLEEDS
     z-index: -1;
     background-color: rgba(23, 2, 0, 0.5);
     object-fit: cover; }
+  .img-fill video {
+    position: absolute;
+    width: 100%; }
   .img-fill > .grid-x {
     padding-top: 3.75rem; }
   .img-fill .bottom {
@@ -11702,9 +11713,10 @@ a.callout:hover, a.card:hover, .tags li:hover, a.event.long:hover, a .datebox:ho
   transform: translateY(-0.3rem);
   box-shadow: 0.1875rem 0.5rem 0.4375rem 0 rgba(23, 23, 23, 0.5); }
 
-.gradient {
-  background: linear-gradient(to right, #FFBC5B 10%, #AD4200 50%, #7A0F00 75%); }
-
+/*.gradient {
+    background: linear-gradient(to right, $gold 10%, $orange 50%, $dark-orange 75%);
+    ;
+}*/
 .columns {
   -webkit-columns: 2 290px;
   -moz-columns: 2 290px;
@@ -12106,11 +12118,11 @@ header#new {
   padding-bottom: 0.9375rem; }
   header#new .group {
     display: flex;
-    justify-content: space-around;
-    max-width: 90rem;
+    justify-content: space-between;
     max-height: 9.6875rem;
-    margin-right: auto;
-    margin-left: auto; }
+    padding-left: 0.9375rem; }
+    header#new .group:last-child {
+      padding-right: 0.9375rem; }
     header#new .group .logo {
       margin-top: 0.9375rem;
       display: flex;
@@ -12372,42 +12384,29 @@ a .datebox:hover {
   header.super-hero + .hero .grid-container {
     margin-top: 8.375rem; }
   header.super-hero + .hero .callout {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+    header.super-hero + .hero .callout.mission {
+      margin-left: 0; }
+      header.super-hero + .hero .callout.mission h1 {
+        font-size: 80px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700; } }
 
-@media screen and (min-width: 850px) {
-  header.super-hero + .hero.godly .grid-container {
-    margin-top: unset; }
-  header.super-hero + .hero.godly.img-fill img {
-    position: relative; }
-  header.super-hero + .hero.godly .callout {
-    padding: 1.125rem;
-    position: absolute;
-    top: 50%; }
-    header.super-hero + .hero.godly .callout h1 {
-      font-size: 80px;
-      font-family: "Nunito Sans", sans-serif;
-      font-weight: 700; } }
-
-@media screen and (max-width: 850px) {
-  header.super-hero + .hero.godly.img-fill img {
-    position: relative; }
-  header.super-hero + .hero.godly.img-fill video {
-    width: 100%;
-    height: 100%; }
-  header.super-hero + .hero.godly .callout {
-    padding: 1.125rem;
-    position: absolute;
-    top: 50%; } }
-
-header.super-hero + .hero video {
-  width: 100%;
-  /**transition: .5s ease-out;
-
-        &:hover {
-            ~.callout {
-                display: none;
-            }
-        }**/ }
+@media screen and (min-width: 770px) {
+  header.super-hero + .hero.gradient.grey.left {
+    background: linear-gradient(-75deg, rgba(26, 36, 41, 0) 20%, rgba(26, 36, 41, 0.75), #1a2429); }
+  header.super-hero + .hero.gradient.grey.right {
+    background: linear-gradient(75deg, rgba(26, 36, 41, 0) 20%, rgba(26, 36, 41, 0.75), #1a2429); }
+  header.super-hero + .hero.gradient.orange.left {
+    background: linear-gradient(-75deg, rgba(148, 41, 0, 0) 20%, rgba(148, 41, 0, 0.75), #942900); }
+  header.super-hero + .hero.gradient.orange.right {
+    background: linear-gradient(75deg, rgba(148, 41, 0, 0) 20%, rgba(148, 41, 0, 0.75), #942900); }
+  header.super-hero + .hero.gradient.white.left {
+    background: linear-gradient(-75deg, rgba(241, 245, 247, 0) 20%, rgba(241, 245, 247, 0.75), #f1f5f7); }
+  header.super-hero + .hero.gradient.white.right {
+    background: linear-gradient(75deg, rgba(241, 245, 247, 0) 20%, rgba(241, 245, 247, 0.75), #f1f5f7); }
+  header.super-hero + .hero.gradient .callout {
+    background: transparent; } }
 
 .hero.img-fill {
   background-color: transparent !important;

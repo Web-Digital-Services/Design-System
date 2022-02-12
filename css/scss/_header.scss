@@ -288,11 +288,13 @@ header {
         .group {
 
             display: flex;
-            justify-content: space-around;
-            max-width: rem-calc(1440px); //%
+            justify-content: space-between;
             max-height: rem-calc(155px);
-            margin-right: auto;
-            margin-left: auto;
+            padding-left: rem-calc(15px);
+
+            &:last-child {
+                padding-right: rem-calc(15px);
+            }
 
             .logo {
                 margin-top: rem-calc(15px);
