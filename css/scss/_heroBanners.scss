@@ -24,9 +24,10 @@ header.super-hero+.hero {
             }
 
         }
+
     }
 
-//========== Gradient hero
+    //========== Gradient hero
 
     @media screen and (min-width:770px) {
         &.gradient {
@@ -96,6 +97,16 @@ header.super-hero+.hero {
         &.orange {
             background: rgba(148, 41, 0, 0.85);
             color: $off-white !important;
+        }
+    }
+
+    video {
+        width: 100%;
+        margin-bottom: -8px;
+
+        ~.callout {
+            position: absolute;
+            top: 50%;
         }
     }
 }

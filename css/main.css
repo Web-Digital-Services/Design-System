@@ -10100,12 +10100,12 @@ blockquote.fancy cite {
       padding-bottom: 0.9375rem; } }
 
 .chonky {
-  padding-top: 15rem;
-  padding-bottom: 15rem; }
+  padding-top: 11.25rem;
+  padding-bottom: 11.25rem; }
   @media screen and (max-width: 640px) {
     .chonky {
-      padding-top: 3.75rem;
-      padding-bottom: 3.75rem; } }
+      padding-top: 1.875rem;
+      padding-bottom: 1.875rem; } }
 
 .godly {
   padding-top: 26.25rem;
@@ -10187,7 +10187,11 @@ IMG Fill BLEEDS
   width: 100%;
   background-color: rgba(23, 23, 23, 0.77);
   color: #F1F5F7;
-  padding-top: 0; }
+  padding-top: 0;
+  /*video {
+            position: absolute;
+            width: 100%;
+        }*/ }
   .img-fill.full .cell {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem; }
@@ -10198,9 +10202,6 @@ IMG Fill BLEEDS
     z-index: -1;
     background-color: rgba(23, 2, 0, 0.5);
     object-fit: cover; }
-  .img-fill video {
-    position: absolute;
-    width: 100%; }
   .img-fill > .grid-x {
     padding-top: 3.75rem; }
   .img-fill .bottom {
@@ -12425,6 +12426,13 @@ a .datebox:hover {
   .hero .callout.orange {
     background: rgba(148, 41, 0, 0.85);
     color: #F1F5F7 !important; }
+
+.hero video {
+  width: 100%;
+  margin-bottom: -8px; }
+  .hero video ~ .callout {
+    position: absolute;
+    top: 50%; }
 
 nav.orbit-bullets button {
   background-color: #F1F5F7;

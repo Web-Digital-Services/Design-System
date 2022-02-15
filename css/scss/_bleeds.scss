@@ -34,11 +34,11 @@
         }
     }
     .chonky {
-        padding-top: rem-calc(240px);
-        padding-bottom: rem-calc(240px);
+        padding-top: rem-calc(180px);
+        padding-bottom: rem-calc(180px);
         @media screen and (max-width: 640px) {
-            padding-top: rem-calc(60px);
-            padding-bottom: rem-calc(60px);
+            padding-top: rem-calc(30px);
+            padding-bottom: rem-calc(30px);
         }
     }
     .godly {
@@ -163,10 +163,10 @@ IMG Fill BLEEDS
             background-color: rgba(23, 2, 0, 0.5);
             object-fit: cover;
         }
-        video {
+        /*video {
             position: absolute;
             width: 100%;
-        }
+        }*/
         >.grid-x {
             padding-top: rem-calc(60px);
         }
