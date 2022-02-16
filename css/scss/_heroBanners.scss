@@ -3,6 +3,61 @@
 ============================================================ */
 header.super-hero+.hero {
 
+    &.mission {
+
+        @media screen and (min-width:850px) {
+            //height: rem-calc(1440px);
+
+            z-index: -1;
+            height: auto;
+
+            &.img-fill {
+
+                img,
+                video {
+                    position: relative;
+                }
+            }
+
+            & .callout {
+                padding: rem-calc(18px);
+                position: absolute;
+                top: 50%;
+
+                h1 {
+                    font-size: 80px;
+                    font-family: $sans-serif-font;
+                    font-weight: 700;
+
+                }
+            }
+
+        }
+
+        @media screen and (max-width:850px) {
+            &.img-fill {
+
+                img, video {
+                    position: relative;
+                }
+            }
+
+            & .callout {
+                padding: rem-calc(18px);
+                position: absolute;
+                top: 50%;
+
+                h1 {
+                    font-family: $sans-serif-font;
+                    font-weight: 700;
+
+                }
+
+            }
+
+        }
+    }
+
     @media screen and (min-width:850px) {
         .grid-container {
             margin-top: rem-calc(134px);
@@ -27,9 +82,39 @@ header.super-hero+.hero {
 
     }
 
+
+}
+
+.hero {
+    &.img-fill {
+        background-color: transparent !important;
+        overflow: clip; //Hidden produces a strange margin between hero area and new nav design. Clip accomplishes the same effect with no extra margins
+    }
+
+    & .callout {
+        padding: rem-calc(30px);
+        background: rgba(26, 36, 41, 0.85);
+        color: $off-white;
+
+        &.grey {
+            background-color: rgba(26, 36, 41, 0.85);
+            color: $off-white !important;
+        }
+
+        &.white {
+            background: rgba(241, 245, 247, 0.85);
+            color: $off-black !important;
+        }
+
+        &.orange {
+            background: rgba(148, 41, 0, 0.85);
+            color: $off-white !important;
+        }
+    }
+
     //========== Gradient hero
 
-    @media screen and (min-width:770px) {
+    @media screen and (min-width:870px) {
         &.gradient {
 
             &.grey {
@@ -68,45 +153,6 @@ header.super-hero+.hero {
             .callout {
                 background: transparent;
             }
-        }
-    }
-
-}
-
-.hero {
-    &.img-fill {
-        background-color: transparent !important;
-        overflow: clip; //Hidden produces a strange margin between hero area and new nav design. Clip accomplishes the same effect with no extra margins
-    }
-
-    & .callout {
-        padding: rem-calc(30px);
-        background: rgba(26, 36, 41, 0.85);
-        color: $off-white;
-
-        &.grey {
-            background-color: rgba(26, 36, 41, 0.85);
-            color: $off-white !important;
-        }
-
-        &.white {
-            background: rgba(241, 245, 247, 0.85);
-            color: $off-black !important;
-        }
-
-        &.orange {
-            background: rgba(148, 41, 0, 0.85);
-            color: $off-white !important;
-        }
-    }
-
-    video {
-        width: 100%;
-        margin-bottom: -8px;
-
-        ~.callout {
-            position: absolute;
-            top: 50%;
         }
     }
 }

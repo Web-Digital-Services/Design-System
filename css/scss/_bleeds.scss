@@ -155,7 +155,7 @@ IMG Fill BLEEDS
                 padding-right: rem-calc(15px);
             }
         }
-        img {
+        img, video {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -163,10 +163,10 @@ IMG Fill BLEEDS
             background-color: rgba(23, 2, 0, 0.5);
             object-fit: cover;
         }
-        /*video {
-            position: absolute;
-            width: 100%;
-        }*/
+
+        video {
+            margin-bottom: rem-calc(-9px);
+        }
         >.grid-x {
             padding-top: rem-calc(60px);
         }
