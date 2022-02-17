@@ -12014,7 +12014,7 @@ header img {
       font-weight: 900;
       width: unset; }
     header.title-bar .menu-icon::before {
-      font-family: "Font Awesome 5 Free solid";
+      font-family: "Font Awesome 5 Free";
       content: "\f0c9";
       margin-right: 0.4375rem; }
     header.title-bar .menu-icon::after {

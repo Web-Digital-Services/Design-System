@@ -253,6 +253,16 @@ h2+.subheader {
     margin-top: rem-calc(-5px);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    &.circle {
+
+    }
+}
+
 // ======= Colorized headings and paragraph text
 h1,
 h2,
