@@ -11299,7 +11299,7 @@ input[type=checkbox] {
   margin-bottom: -0.3125rem; }
 
 input[type=checkbox]:checked {
-  background: url(../../images/check-solid.svg);
+  background: url(../images/check-solid.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 1.125rem; }
@@ -11325,7 +11325,7 @@ legend {
   margin-bottom: auto; }
 
 select {
-  background-image: url(../../images/angle-down-solid.svg);
+  background-image: url(../images/angle-down-solid.svg);
   background-size: 0.8125rem 1rem; }
 
 /*label.search {
