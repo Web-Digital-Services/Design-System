@@ -11455,7 +11455,7 @@ footer {
       margin: 3.125rem 0;
       max-width: none; }
     footer.mission hr:after {
-      content: url("../../images/orange-shield.svg");
+      content: url("../images/orange-shield.svg");
       left: 50%;
       position: absolute;
       transform: translateY(-50%) translateX(-50%);
