@@ -3,12 +3,8 @@
     <div class="title-bar quicklinks">
         <div class="title-bar-left">
             <p><a href="#" data-close="offCanvasRight"><i class="fas fa-times"></i> Quicklinks</a></p>
-            <form class="search">
-    <input type="search" class="search-box" placeholder="Search">
-    <button type="submit">
-        <i class="fa fa-search"></i>
-    </button>
-</form>            <h4>Find</h4>
+            {% include "@components/formElements/search-box.twig" %}
+            <h4>Find</h4>
             <div class="no-bullet arrow">
                 <ul>
                     <li><a href="#">A to Z list</a></li>
@@ -62,10 +58,11 @@
     <a href="#"><img src="../../images/whiteUTHSA_logo.svg"></a>
     <button class="menu-icon" type="button" data-toggle="new">Menu</button>
 </header>
-<header class="off-canvas-content super-hero" id="new" data-off-canvas-content>
+<header class="off-canvas-content" id="new" data-off-canvas-content>
     <div class="group">
-        <div class="logo">
+        <div class="logo pipe">
             <a href="#"><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
+            <p>Center for Mucosal & Microbiome Biology</p>
         </div>
 
         <div class="right">
@@ -98,35 +95,35 @@
         <div class="top-bar">
             <div class="top-bar-left">
                 <ul class="menu">
-                    <li><a href="#">Academics</a></li>
-                    <li><a href="#">Patient Care</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
                     <li><a href="#">Research</a></li>
-                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Annual Events</a></li>
+                    <li><a href="#">Publications</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
-<section class="hero mission bleed img-fill">
+<section class=" hero full bleed img-fill">
     <video autoplay muted loop>
 
         <source src="../../videos/Dog.webm" type="video/webm">
         <source src="../../videos/Dog.mp4" type="video/mp4">
         This is a cute doggo
     </video>
-    <div class="callout orange">
-        <h1>We make lives better.</h1>
-    </div>
-</section>
-<nav class="nav-bar" id="new-full">
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li><a href="#">Academics</a></li>
-                <li><a href="#">Patient Care</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Community</a></li>
-            </ul>
+    <div class="grid-container extra-roomy">
+        <div class="grid-x grid-margin-x align-left">
+            <div class="small-12 medium-5 cell callout">
+                <h1>Welcome to the Department of Pediatrics</h1>
+                <p>We Make Children's Lives Better</p>
+                <div class="button-group">
+                    <p><a href="#" class="button">Button CTA</a></p>
+                    <p><a href="#" class="button ghost">Button CTA</a></p>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
+</section>

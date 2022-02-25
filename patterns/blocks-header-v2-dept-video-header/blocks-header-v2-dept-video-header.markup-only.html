@@ -3,8 +3,12 @@
     <div class="title-bar quicklinks">
         <div class="title-bar-left">
             <p><a href="#" data-close="offCanvasRight"><i class="fas fa-times"></i> Quicklinks</a></p>
-            {% include "@components/formElements/search-box.twig" %}
-            <h4>Find</h4>
+            <form class="search">
+    <input type="search" class="search-box" placeholder="Search">
+    <button type="submit">
+        <i class="fa fa-search"></i>
+    </button>
+</form>            <h4>Find</h4>
             <div class="no-bullet arrow">
                 <ul>
                     <li><a href="#">A to Z list</a></li>
@@ -127,19 +131,3 @@
         </div>
     </div>
 </section>
-
-<nav class="nav-bar" id="new-full">
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Annual Events</a></li>
-                <li><a href="#">Publications</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
