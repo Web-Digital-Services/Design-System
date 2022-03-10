@@ -11338,7 +11338,7 @@ select {
         transition: none;
     }
 }*/
-.search {
+form.search {
   width: 100%;
   position: relative;
   display: flex;
@@ -11347,7 +11347,7 @@ select {
   background-color: #F1F5F7;
   font-size: 1.125rem;
   align-items: center; }
-  .search .search-box {
+  form.search .search-box {
     width: 100%;
     border-right: none;
     padding: 5px;
@@ -11358,9 +11358,9 @@ select {
     margin: 0;
     box-shadow: unset;
     background-color: #F1F5F7; }
-  .search input[type=search] {
+  form.search input[type=search] {
     border: unset; }
-  .search button {
+  form.search button {
     width: 40px;
     height: 39px;
     /*border: 1px solid $off-black;*/
@@ -11437,7 +11437,7 @@ footer {
       color: #B3BDC2;
       margin-right: 0.625rem; }
   footer .shield {
-    background-image: url("../../images/half-shield.svg");
+    background-image: url("../images/half-shield.svg");
     background-repeat: no-repeat;
     position: relative;
     background-position: right center; }
@@ -11723,6 +11723,27 @@ a.callout:hover, a.card:hover, .tags li:hover, a.event.long:hover, a .datebox:ho
   .columns address {
     break-inside: avoid; }
 
+.brush-circle mask path {
+  fill: none;
+  stroke: white;
+  stroke-width: 40;
+  stroke-dasharray: 325 325;
+  stroke-dashoffset: 325;
+  animation: brush .5s linear forwards; }
+
+@keyframes brush {
+  0% {
+    stroke-dashoffset: 325; }
+  20% {
+    stroke-dashoffset: 325; }
+  80% {
+    stroke-dashoffset: 0; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+.brush-circle .circle-red {
+  fill: #7A0F00; }
+
 /* ============================================================
     TABS
 
@@ -11966,7 +11987,7 @@ img.logo {
     word-wrap: break-word;
     hyphens: auto;
     color: #FFBC5B; }
-  .title-bar.quicklinks .search {
+  .title-bar.quicklinks form.search {
     margin-bottom: 0.9375rem; }
 
 .off-canvas {
@@ -12087,10 +12108,10 @@ header#regular {
     @media screen and (max-width: 770px) {
       header#regular .logo {
         display: none; } }
-  header#regular .search {
+  header#regular form.search {
     margin: 1.875rem 0; }
     @media screen and (max-width: 770px) {
-      header#regular .search {
+      header#regular form.search {
         margin: 0 0 1.25rem 0; } }
   header#regular .circle-icons {
     text-align: right; }
@@ -12171,7 +12192,7 @@ header#new {
               header#new .group .right .circle-icons a span.fa-stack .fa-stack-2x.fa-search,
               header#new .group .right .circle-icons a span.fa-stack .fa-stack-1x.fa-search {
                 color: #AD4200; }
-      header#new .group .search {
+      header#new .group form.search {
         margin: 0 0 1.25rem 0; } }
   @media screen and (min-width: 850px) {
     header#new.super-hero {
