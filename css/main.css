@@ -12446,7 +12446,7 @@ a .datebox:hover {
 
 .hero.img-fill {
   background-color: transparent !important;
-  overflow: clip; }
+  overflow: initial; }
 
 .hero .callout {
   padding: 1.875rem;
