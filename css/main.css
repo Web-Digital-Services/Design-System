@@ -11152,6 +11152,12 @@ div#level-1 nav ul.menu > li a {
             color: #F1F5F7; }
             .nav-bar#new-full .top-bar .top-bar-left ul li a:hover:after {
               height: 100%; }
+          .nav-bar#new-full .top-bar .top-bar-left ul li a:active {
+            background: #AD4200;
+            color: #F1F5F7; }
+          .nav-bar#new-full .top-bar .top-bar-left ul li a:focus {
+            background: #667075;
+            color: #F1F5F7; }
   .nav-bar .top-bar {
     padding: 0;
     overflow: hidden;
