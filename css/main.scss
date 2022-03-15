@@ -20,6 +20,15 @@
 
 @import "node_modules/chart.css";
 
+
+/* ==============================
+    MOTION UI
+============================== */
+
+@import 'node_modules/motion-ui/motion-ui';
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
 /* ============================== */
 
 @import "scss/variables";
