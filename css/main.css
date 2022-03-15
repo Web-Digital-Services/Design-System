@@ -9716,6 +9716,19 @@ a.external:hover:after {
   color: #7A0F00;
   transform: translate(0.1rem, -0.1rem); }
 
+a.file:after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f56d";
+  color: #AD4200;
+  margin-left: .3rem;
+  transition: .5s ease-out; }
+
+a.file:hover:after {
+  color: #7A0F00;
+  transform: translate(0.1rem, -0.1rem); }
+
 a.highlight {
   background-color: #AD4200;
   color: #F1F5F7;
