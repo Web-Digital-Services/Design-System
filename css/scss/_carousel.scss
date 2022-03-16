@@ -1,20 +1,23 @@
-
-
 nav.orbit-bullets {
 
-    button {
-        background-color: $off-white;
-        border: 2px solid $orange;
-        transition: .1s ease-in-out;
+    ul {
 
-        &:hover {
-            background-color: $dark-orange;
-            border: none;
-        }
+        list-style-type: none;
 
-        &.is-active {
-            background-color: $orange;
+        button {
+            background-color: $off-white;
+            border: 2px solid $orange;
+            transition: .1s ease-in-out;
 
+            &:hover {
+                background-color: $dark-orange;
+                border: none;
+            }
+
+            &.is-active {
+                background-color: $orange;
+
+            }
         }
     }
 

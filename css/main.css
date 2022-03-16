@@ -13392,15 +13392,17 @@ a .datebox:hover {
   .hero.gradient .callout {
     background: transparent; } }
 
-nav.orbit-bullets button {
-  background-color: #F1F5F7;
-  border: 2px solid #AD4200;
-  transition: .1s ease-in-out; }
-  nav.orbit-bullets button:hover {
-    background-color: #7A0F00;
-    border: none; }
-  nav.orbit-bullets button.is-active {
-    background-color: #AD4200; }
+nav.orbit-bullets ul {
+  list-style-type: none; }
+  nav.orbit-bullets ul button {
+    background-color: #F1F5F7;
+    border: 2px solid #AD4200;
+    transition: .1s ease-in-out; }
+    nav.orbit-bullets ul button:hover {
+      background-color: #7A0F00;
+      border: none; }
+    nav.orbit-bullets ul button.is-active {
+      background-color: #AD4200; }
 
 .orbit-controls button.orbit-previous span:after {
   position: absolute;
