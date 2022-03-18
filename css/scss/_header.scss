@@ -28,12 +28,21 @@
         background-color: $dark-grey;
         color: $off-white;
 
+        p a {
+            background-image: none; //removes underline from menu close
+        }
+
         .arrow ul li:before {
             color: $off-white;
         }
 
         a {
             color: $off-white;
+
+            &:hover {
+                color: $grey-link;
+                //text-indent: .5rem;
+            }
         }
 
         h2,
