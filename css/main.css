@@ -12036,6 +12036,9 @@ div#level-1 nav ul.menu > li a {
       .nav-bar#new-full .top-bar .top-bar-left ul {
         background: transparent;
         justify-content: space-evenly; }
+        .nav-bar#new-full .top-bar .top-bar-left ul .is-active > a {
+          background: #AD4200;
+          color: #F1F5F7; }
         .nav-bar#new-full .top-bar .top-bar-left ul li:hover {
           background: transparent; }
         .nav-bar#new-full .top-bar .top-bar-left ul li a,
