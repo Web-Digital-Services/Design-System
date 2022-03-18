@@ -13392,15 +13392,40 @@ a .datebox:hover {
   .hero.gradient .callout {
     background: transparent; } }
 
-nav.orbit-bullets button {
-  background-color: #F1F5F7;
-  border: 2px solid #AD4200;
-  transition: .1s ease-in-out; }
-  nav.orbit-bullets button:hover {
-    background-color: #7A0F00;
+nav.orbit-bullets ul {
+  list-style-type: none; }
+  nav.orbit-bullets ul button {
+    background-color: #F1F5F7;
+    border: 2px solid #AD4200;
+    transition: .1s ease-in-out; }
+    nav.orbit-bullets ul button:hover {
+      background-color: #7A0F00;
+      border: none; }
+    nav.orbit-bullets ul button.is-active {
+      background-color: #AD4200; }
+
+.color nav.orbit-bullets button {
+  border: none; }
+  .color nav.orbit-bullets button:hover {
+    background-color: #004661;
     border: none; }
-  nav.orbit-bullets button.is-active {
-    background-color: #AD4200; }
+  .color nav.orbit-bullets button.is-active {
+    background-color: #A6FFFF; }
+
+.color.grey nav.orbit-bullets button {
+  border: none; }
+  .color.grey nav.orbit-bullets button:hover {
+    background-color: #1A2429; }
+  .color.grey nav.orbit-bullets button.is-active {
+    background-color: #FFF1DB; }
+
+.color.orange nav.orbit-bullets button {
+  background-color: #F1F5F7;
+  border: none; }
+  .color.orange nav.orbit-bullets button:hover {
+    background-color: #7A0F00; }
+  .color.orange nav.orbit-bullets button.is-active {
+    background-color: #FFC17F; }
 
 .orbit-controls button.orbit-previous span:after {
   position: absolute;
