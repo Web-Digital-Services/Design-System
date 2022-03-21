@@ -11050,9 +11050,9 @@ blockquote.fancy cite {
     .bleed.color.orange {
       background-color: #AD4200 !important; }
   .bleed.noise {
-    background: url(../../images/noise-texture.png); }
+    background: url(../images/noise-texture.png); }
   .bleed.rocky {
-    background: url(../../images/rockywall-texture.png); }
+    background: url(../images/rockywall-texture.png); }
 
 /* ============================================================
  BLEEDING IMAGES
@@ -11266,9 +11266,9 @@ a.callout:hover {
   a.callout:hover .fa-circle {
     color: rgba(241, 245, 247, 0.35); }
   a.callout:hover.noise {
-    background: #7A0F00 url(../../images/noise-texture.png) !important; }
+    background: #7A0F00 url(../images/noise-texture.png) !important; }
   a.callout:hover.rocky {
-    background: #7A0F00 url(../../images/rockywall-texture.png) !important; }
+    background: #7A0F00 url(../images/rockywall-texture.png) !important; }
   a.callout:hover.darken {
     background-color: #AD4200 !important; }
   a.callout:hover.blue {

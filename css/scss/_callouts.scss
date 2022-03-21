@@ -183,11 +183,11 @@ a.callout:hover {
         color: rgba(241, 245, 247, 0.35);
     }
     &.noise {
-        background: $dark-orange url(../../images/noise-texture.png) !important;
+        background: $dark-orange url(../images/noise-texture.png) !important;
     }
       
     &.rocky {
-        background: $dark-orange url(../../images/rockywall-texture.png) !important;
+        background: $dark-orange url(../images/rockywall-texture.png) !important;
     }
     &.darken {
         background-color: $orange !important;
