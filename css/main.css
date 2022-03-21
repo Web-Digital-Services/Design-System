@@ -11239,9 +11239,9 @@ a.callout {
   a.callout.dark-grey .fa-circle {
     color: rgba(241, 245, 247, 0.35); }
   a.callout.noise {
-    background: #AD4200 url(../../images/noise-texture.png); }
+    background: #AD4200 url(../images/noise-texture.png); }
   a.callout.rocky {
-    background: #AD4200 url(../../images/rockywall-texture.png); }
+    background: #AD4200 url(../images/rockywall-texture.png); }
   a.callout.special {
     text-align: left;
     background: linear-gradient(to bottom, #F1F5F7 0%, #F1F5F7 25%, #F1F5F7 50%, #F1F5F7 75%, #FFBC5B 75.1%, #FFBC5B 78%, #333d42 78.1%, #333d42 100%); }
