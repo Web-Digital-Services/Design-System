@@ -12411,11 +12411,6 @@ footer {
           -webkit-columns: 1 auto;
           -moz-columns: 1 auto;
           columns: 1 auto; } }
-    footer.mission .bleed {
-      background-color: #AD4200;
-      color: #F1F5F7; }
-      footer.mission .bleed a, footer.mission .bleed a:hover, footer.mission .bleed a:focus, footer.mission .bleed a:active {
-        color: #FFF1DB !important; }
   @media screen and (max-width: 639px) {
     footer h2 {
       font-size: 1.25rem;
