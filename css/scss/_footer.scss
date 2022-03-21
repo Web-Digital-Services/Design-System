@@ -48,7 +48,7 @@ footer {
         color: $grey-link;
         font-weight: 900 !important;
 
-        &:hover {
+        &:hover, &:focus, &:active {
             color: $grey-link;
         }
 
@@ -142,7 +142,7 @@ footer {
         a {
             color: $orange;
             &:hover {
-                color: $dark-orange !important;
+                color: $dark-orange;
             }
         }
 
@@ -168,8 +168,8 @@ footer {
             background-color: $orange;
             color: $off-white;
 
-            a {
-                color: $off-white;
+            a, a:hover, a:focus, a:active {
+                color: $grey-link !important;
             }
         }
     }

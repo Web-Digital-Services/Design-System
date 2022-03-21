@@ -12339,7 +12339,7 @@ footer {
   footer a {
     color: #FFF1DB;
     font-weight: 900 !important; }
-    footer a:hover {
+    footer a:hover, footer a:focus, footer a:active {
       color: #FFF1DB; }
     footer a.arrow::after {
       color: #FFF1DB; }
@@ -12399,7 +12399,7 @@ footer {
     footer.mission a {
       color: #AD4200; }
       footer.mission a:hover {
-        color: #7A0F00 !important; }
+        color: #7A0F00; }
     footer.mission .social li a {
       color: #AD4200; }
     footer.mission .columns {
@@ -12414,8 +12414,8 @@ footer {
     footer.mission .bleed {
       background-color: #AD4200;
       color: #F1F5F7; }
-      footer.mission .bleed a {
-        color: #F1F5F7; }
+      footer.mission .bleed a, footer.mission .bleed a:hover, footer.mission .bleed a:focus, footer.mission .bleed a:active {
+        color: #FFF1DB !important; }
   @media screen and (max-width: 639px) {
     footer h2 {
       font-size: 1.25rem;
