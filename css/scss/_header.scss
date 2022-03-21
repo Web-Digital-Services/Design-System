@@ -39,10 +39,11 @@
         a {
             color: $off-white;
 
-            &:hover {
+            &:hover, &:focus, &:active {
                 color: $grey-link;
                 //text-indent: .5rem;
             }
+
         }
 
         h2,

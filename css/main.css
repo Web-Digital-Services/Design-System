@@ -11049,6 +11049,10 @@ blockquote.fancy cite {
       background-color: #333d42 !important; }
     .bleed.color.orange {
       background-color: #AD4200 !important; }
+  .bleed.noise {
+    background: url(../../images/noise-texture.png); }
+  .bleed.rocky {
+    background: url(../../images/rockywall-texture.png); }
 
 /* ============================================================
  BLEEDING IMAGES
@@ -11234,6 +11238,10 @@ a.callout {
     color: rgba(241, 245, 247, 0.35); }
   a.callout.dark-grey .fa-circle {
     color: rgba(241, 245, 247, 0.35); }
+  a.callout.noise {
+    background: #AD4200 url(../../images/noise-texture.png); }
+  a.callout.rocky {
+    background: #AD4200 url(../../images/rockywall-texture.png); }
   a.callout.special {
     text-align: left;
     background: linear-gradient(to bottom, #F1F5F7 0%, #F1F5F7 25%, #F1F5F7 50%, #F1F5F7 75%, #FFBC5B 75.1%, #FFBC5B 78%, #333d42 78.1%, #333d42 100%); }
@@ -11257,16 +11265,20 @@ a.callout:hover {
   color: #F1F5F7 !important; }
   a.callout:hover .fa-circle {
     color: rgba(241, 245, 247, 0.35); }
+  a.callout:hover.noise {
+    background: #7A0F00 url(../../images/noise-texture.png) !important; }
+  a.callout:hover.rocky {
+    background: #7A0F00 url(../../images/rockywall-texture.png) !important; }
   a.callout:hover.darken {
-    background-color: #AD4200; }
+    background-color: #AD4200 !important; }
   a.callout:hover.blue {
-    background-color: #004661; }
+    background-color: #004661 !important; }
   a.callout:hover.grey {
-    background-color: #333d42; }
+    background-color: #333d42 !important; }
     a.callout:hover.grey .fa-circle {
       color: rgba(241, 245, 247, 0.35); }
   a.callout:hover.dark-grey {
-    background-color: #667075; }
+    background-color: #667075 !important; }
   a.callout:hover.special {
     background: none;
     background-color: #333d42;
@@ -11747,15 +11759,15 @@ a.card {
   color: #F1F5F7;
   background-color: #257994; }
   .color.orange {
-    background-color: #AD4200; }
+    background-color: #AD4200 !important; }
   .color.darken {
-    background-color: #7A0F00; }
+    background-color: #7A0F00 !important; }
   .color.grey {
-    background-color: #667075; }
+    background-color: #667075 !important; }
   .color.dark-grey {
-    background-color: #333d42; }
+    background-color: #333d42 !important; }
   .color.blue {
-    background-color: #257994; }
+    background-color: #257994 !important; }
 
 .text-accent {
   color: #257994; }
@@ -12375,7 +12387,7 @@ footer {
     color: #171717;
     margin-top: -2.8125rem; }
     footer.mission hr {
-      margin: 3.125rem 0;
+      margin: 3.75rem 0;
       max-width: none; }
     footer.mission hr:after {
       content: url("../images/orange-shield.svg");
@@ -12394,6 +12406,11 @@ footer {
       -webkit-columns: 2 auto;
       -moz-columns: 2 auto;
       columns: 2 auto; }
+      @media screen and (max-width: 1024px) {
+        footer.mission .columns {
+          -webkit-columns: 1 auto;
+          -moz-columns: 1 auto;
+          columns: 1 auto; } }
     footer.mission .bleed {
       background-color: #AD4200;
       color: #F1F5F7; }
@@ -12903,7 +12920,7 @@ img.logo {
     color: #F1F5F7; }
   .title-bar.quicklinks a {
     color: #F1F5F7; }
-    .title-bar.quicklinks a:hover {
+    .title-bar.quicklinks a:hover, .title-bar.quicklinks a:focus, .title-bar.quicklinks a:active {
       color: #FFF1DB; }
   .title-bar.quicklinks h2,
   .title-bar.quicklinks h3,

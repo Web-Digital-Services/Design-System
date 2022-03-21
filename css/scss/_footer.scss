@@ -126,7 +126,7 @@ footer {
         margin-top: rem-calc(-45px);
 
         & hr {
-            margin: rem-calc(50px 0);
+            margin: rem-calc(60px 0);
             max-width: none;
         }
     
@@ -157,6 +157,11 @@ footer {
             -webkit-columns: 2 auto;
             -moz-columns: 2 auto;
             columns: 2 auto;
+            @media screen and (max-width:1024px) {
+                -webkit-columns: 1 auto;
+                -moz-columns: 1 auto;
+                columns: 1 auto;
+            }
         }
 
         .bleed {
