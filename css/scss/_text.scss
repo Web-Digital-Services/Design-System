@@ -26,14 +26,14 @@ h1,
 
     /*---- SMALL or MOBILE----*/
     @media screen and (max-width: 639px) {
-        font-size: 32px;
+        font-size: 34px;
     }
 
 }
 
 h2,
 .h2 {
-    font-size: 46px;
+    font-size: 45px;
 
     /*---- MEDIUM or TABLET----*/
     @media screen and (max-width: 1023px) {
@@ -126,7 +126,7 @@ h6 {
 
 body {
     font-family: $sans-serif-font;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 
@@ -149,8 +149,8 @@ p.eyebrow {
 
 h1,
 .h1 {
-    margin-bottom: rem-calc(26px);
-    line-height: 1.3;
+    margin-bottom: rem-calc(15px);
+    line-height: 1.2;
     font-family: $serif-font;
 }
 
