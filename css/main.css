@@ -10453,7 +10453,7 @@ h1 + .subheader + .subheader + .subheader {
   font-family: "Nunito Sans", sans-serif;
   color: #171717;
   font-size: 2rem;
-  margin-top: -1.6875rem; }
+  margin-top: -0.9375rem; }
   @media screen and (max-width: 569px) {
     h1 + .subheader,
     h1 + .subheader + .subheader,
@@ -12909,15 +12909,13 @@ img.logo {
 .title-bar.quicklinks {
   background-color: #333d42;
   color: #F1F5F7; }
+  .title-bar.quicklinks p a {
+    background-image: none; }
   .title-bar.quicklinks .arrow ul li:before {
     color: #F1F5F7; }
-  .title-bar.quicklinks p > a {
-    background-image: none; }
   .title-bar.quicklinks a {
     color: #F1F5F7; }
-    .title-bar.quicklinks a:hover {
-      color: #FFF1DB; }
-    .title-bar.quicklinks a:focus, .title-bar.quicklinks a:active {
+    .title-bar.quicklinks a:hover, .title-bar.quicklinks a:focus, .title-bar.quicklinks a:active {
       color: #FFF1DB; }
   .title-bar.quicklinks h2,
   .title-bar.quicklinks h3,
