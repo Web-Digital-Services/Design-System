@@ -10453,7 +10453,7 @@ h1 + .subheader + .subheader + .subheader {
   font-family: "Nunito Sans", sans-serif;
   color: #171717;
   font-size: 2rem;
-  margin-top: -1.6875rem; }
+  margin-top: -0.9375rem; }
   @media screen and (max-width: 569px) {
     h1 + .subheader,
     h1 + .subheader + .subheader,
