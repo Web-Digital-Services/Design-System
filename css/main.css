@@ -13078,7 +13078,6 @@ header#new {
   header#new .group {
     display: flex;
     justify-content: space-between;
-    max-height: 9.6875rem;
     padding-left: 0.9375rem; }
     header#new .group:last-child {
       padding-right: 0.9375rem; }
