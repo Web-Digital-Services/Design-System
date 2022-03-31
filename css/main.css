@@ -11180,7 +11180,12 @@ IMG Fill BLEEDS
     margin: 0 auto 1.11111rem auto; }
 
 .bleed.color .callout {
-  background-color: #FFF !important; }
+  background-color: #FFF !important;
+  color: #171717 !important; }
+  .bleed.color .callout .fa-circle {
+    color: #808A8F; }
+  .bleed.color .callout:hover .fa-circle {
+    color: #333d42; }
 
 .sidecar .callout {
   background-color: #333d42;
