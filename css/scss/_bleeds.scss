@@ -42,11 +42,11 @@
         }
     }
     .godly {
-        padding-top: rem-calc(420px);
-        padding-bottom: rem-calc(420px);
+        padding-top: rem-calc(210px);
+        padding-bottom: rem-calc(210px);
         @media screen and (max-width: 640px) {
-            padding-top: rem-calc(90px);
-            padding-bottom: rem-calc(90px);
+            padding-top: rem-calc(40px);
+            padding-bottom: rem-calc(40px);
         }
     }
 
@@ -83,7 +83,7 @@
         &.noise {
             background: url(../images/noise-texture.png);
         }
-          
+
         &.rocky {
             background: url(../images/rockywall-texture.png);
         }
