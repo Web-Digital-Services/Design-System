@@ -11022,12 +11022,12 @@ blockquote.fancy cite {
       padding-bottom: 1.875rem; } }
 
 .godly {
-  padding-top: 26.25rem;
-  padding-bottom: 26.25rem; }
+  padding-top: 13.125rem;
+  padding-bottom: 13.125rem; }
   @media screen and (max-width: 640px) {
     .godly {
-      padding-top: 5.625rem;
-      padding-bottom: 5.625rem; } }
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem; } }
 
 .bleed {
   color: #171717; }
