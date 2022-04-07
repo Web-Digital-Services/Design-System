@@ -12407,6 +12407,8 @@ footer {
         color: #7A0F00; }
     footer.mission .social li a {
       color: #AD4200; }
+      footer.mission .social li a:hover {
+        color: #7A0F00; }
     footer.mission .columns {
       -webkit-columns: 2 auto;
       -moz-columns: 2 auto;
