@@ -162,7 +162,7 @@ footer {
             -webkit-columns: 2 auto;
             -moz-columns: 2 auto;
             columns: 2 auto;
-            @media screen and (max-width:1024px) {
+            @media screen and (max-width:$medium-screen) {
                 -webkit-columns: 1 auto;
                 -moz-columns: 1 auto;
                 columns: 1 auto;
@@ -171,7 +171,7 @@ footer {
 
     }
 
-    @media screen and (max-width:639px) {
+    @media screen and (max-width:$small-screen) {
         h2 {
             font-size: 1.25rem;
             text-align: center;

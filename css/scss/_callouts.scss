@@ -54,7 +54,7 @@
         margin-right: rem-calc(-2.75em);
         margin-bottom: 0;
 
-        @media screen and (max-width: 639px) {
+        @media screen and (max-width: $small-screen) {
             margin-right: 0;
         }
     }
@@ -63,7 +63,7 @@
         margin-left: rem-calc(-2.75em);
         margin-bottom: 0;
 
-        @media screen and (max-width: 639px) {
+        @media screen and (max-width: $small-screen) {
             margin-left: 0;
         }
     }
@@ -102,7 +102,7 @@
         background-color: $pure-white;
         color: $off-black;
 
-        @media screen and (max-width: 1022px) {
+        @media screen and (max-width: $medium-screen) {
             margin-bottom: 0;
         }
     }
@@ -120,7 +120,7 @@
             border-right: none !important;
             background-color: $pure-white !important;
 
-            @media screen and (max-width: 1022px) {
+            @media screen and (max-width: $medium-screen) {
                 border: rem-calc(1px) solid $gold !important;
             }
         }
@@ -136,7 +136,7 @@
             border-color: $dark-grey !important;
             border-right: none !important;
 
-            @media screen and (max-width: 1022px) {
+            @media screen and (max-width: $medium-screen) {
                 border: rem-calc(1px) solid $dark-grey !important;
             }
         }
