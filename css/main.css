@@ -13146,7 +13146,7 @@ header#header {
     TAGS
 ============================================================ */
 .tags {
-  padding-bottom: 1.875rem; }
+  margin-top: 1.875rem; }
   @media screen and (max-width: 355px) {
     .tags {
       margin-bottom: 1.875rem; } }
