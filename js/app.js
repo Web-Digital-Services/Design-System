@@ -4,5 +4,3 @@
 
 $(document).foundation();
 
-
-//Accordions

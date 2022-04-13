@@ -146,8 +146,13 @@ header {
 
             .menu-icon::before {
                 font-family: "Font Awesome 5 Free";
-                content: "\f0c9";
                 margin-right: rem-calc(7px);
+                content: attr(data-content) "\f0c9";
+
+            }
+
+            .menu-icon.menu-open::before {
+                content: attr(data-content) "\f00d";
             }
 
             .menu-icon::after {
