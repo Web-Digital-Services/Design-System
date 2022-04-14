@@ -12977,8 +12977,10 @@ header img {
       width: unset; }
     header.title-bar .menu-icon::before {
       font-family: "Font Awesome 5 Free";
-      content: "\f0c9";
-      margin-right: 0.4375rem; }
+      margin-right: 0.4375rem;
+      content: attr(data-content) ""; }
+    header.title-bar .menu-icon.menu-open::before {
+      content: attr(data-content) ""; }
     header.title-bar .menu-icon::after {
       content: unset; } }
 
