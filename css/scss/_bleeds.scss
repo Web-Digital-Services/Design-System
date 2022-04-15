@@ -88,6 +88,14 @@
             background: url(../images/rockywall-texture.png);
         }
 
+        .shield {
+            background-image: url(../images/shield-transparent.svg);
+            background-repeat: no-repeat;
+            background-position: left;
+            position: relative;
+            padding: rem-calc(215px) 0;
+        }
+
     }
     /* ============================================================
  BLEEDING IMAGES
