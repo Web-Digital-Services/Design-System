@@ -1,8 +1,8 @@
-<div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
     <!-- Quicklinks Content -->
     <div class="title-bar quicklinks">
         <div class="title-bar-left">
-            <p><a href="#" data-close="offCanvasLeft"><i class="fas fa-times"></i> Quicklinks</a></p>
+            <p><a href="#" data-close="offCanvasRight"><i class="fas fa-times"></i> Quicklinks</a></p>
             <form class="search">
     <input type="search" class="search-box" placeholder="Search">
     <button type="submit">
@@ -28,81 +28,72 @@
                 <ul>
                     <li><a href="#">Clinical Studies</a></li>
                     <li><a href="#">Research Match</a></li>
-                    <li><a href="#">Information for Research 
-                    Participants</a></li>
-                    <li><a href="#">Institute for Health Promotion 
-                    Research (IHPR)</a></li>
+                    <li><a href="#">Information for Research Participants</a></li>
+                    <li><a href="#">Institute for Health Promotion Research (IHPR)</a></li>
                     <li><a href="#">Research to Advance Community Health (ReACH) Center</a></li>
                 </ul>
             </div>
         </div>
     </div>
-</div>
-<div class="off-canvas-content" data-off-canvas-content>
-    <!--<div class="top-bar global-bar">    
-        <div class="top-bar-left">
-            <p><a href="#" data-toggle="offCanvas"><i class="fas fa-bars"></i> Quicklinks</a></p>
-        </div>
-        <div class="top-bar-right">
-            <p><a href="#"><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
-        </div>
-    </div>-->
-    <div class="title-bar global-bar">
-        <div class="title-bar-left">
-            <p><a href="#" data-toggle="offCanvasLeft"><i class="fas fa-bars"></i> Quicklinks</a></p>
-        </div>
-        <div class="title-bar-right">
-            <p><a href="#"><i class="fas fa-star"></i> Part of UT Health San Antonio</a></p>
-        </div>
-    </div>
-</div>
-<header class="title-bar" data-responsive-toggle="regular">
-  <a href="#"><img src="../../images/whiteUTHSA_logo.svg"></a>
-  <button class="menu-icon" type="button" data-toggle="regular">Menu</button>
+</div><header class="title-bar" data-responsive-toggle="header">
+    <a href="#"><img src="../../images/whiteUTHSA_logo.svg"></a>
+    <button class="menu-icon" type="button" data-toggle="header">Menu</button>
 </header>
-<header id="regular">
-  <div class="group">
-      <div class="logo">
-          <a href="#"><img src="../../images/UTHSA_IFIOMS_H.svg" alt="UT Health San Antonio IIMS Logo"></a>
-      </div>
-    <div class="right">
-      <form class="search">
-        <input type="search" class="search-box" placeholder="Search">
-        <button type="submit">
-          <i class="fa fa-search"></i>
-        </button>
-      </form>
-     
-    </div>
-  </div>
-  <nav class="nav-bar">
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Research</a></li>
-          <li><a href="#">Seminars</a></li>
-          <li><a href="#">Funding Opportunities</a></li>
-          <li><a href="#">Awarded Research</a></li>
-        </ul>
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+<header class="off-canvas-content" id="header" data-off-canvas-content>
+    <div class="group">
+        <div class="logo">
+            <a href="#"><img src="../../images/UTHSA_IFIOMS_H.svg" alt="Institute for Integration of Medicine & Science"></a>
+        </div>
 
+        <div class="right">
+            <div class="circle-icons">
+                <a href="#" data-toggle="offCanvasRight">
+                    <span class="fa-stack outline">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-search fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span>Search/Quicklinks</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-bar" id="nav-bar-mobile">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Community Engagement</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Request Services Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header><nav class="nav-bar" id="nav-bar-full">
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Community Engagement</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Request Services Now</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <section class="hero bleed img-fill full">
   <img src=" https://placedog.net/1500/750" alt="Dog">
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x">
 			<div class="cell small-12 medium-8 large-5">
 				<div class="callout">
-					<h1 class="h2">Perry & Ruby Stevens Parkinson’s Disease Center of Excellence  </h1>
+					<h1>Perry & Ruby Stevens Parkinson’s Disease Center of Excellence</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus turpis massa tincidunt dui ut ornare lectus. Mattis molestie a iaculis at erat pellentesque. Ut tellus elementum sagittis vitae. Duis ultricies lacus sed turpis tincidunt id. Mi in nulla posuere sollicitudin aliquam.</p>
 					<a href="#" class="button">About Us</a>
 				</div>
@@ -110,11 +101,38 @@
 		</div>
 	</div>
 </section>
+
+
 <section class="bleed">
-    <div class="grid-x grid-margin-x text-center margin-top">
-    <div class="cell small-12 medium-12">
-<img src="../../images/Parkinsons-DiseaseCOE_WEB_HORIZ-Color.jpg" alt="The Perry & Ruby Stevens Parkinson's Disease Center of Excellence Logo"></div></div></div></section>
-<section class="bleed">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <main class="cell medium-8 small-12 small-order-2">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis elementum nibh tellus molestie nunc non blandit massa. Gravida cum sociis natoque penatibus et magnis dis parturient montes. Integer quis auctor elit sed vulputate mi sit amet mauris. Eget nunc scelerisque viverra mauris in aliquam sem fringilla. Ut pharetra sit amet aliquam id. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Gravida rutrum quisque non tellus orci ac. Sed risus ultricies tristique nulla aliquet enim tortor at. Dictum fusce ut placerat orci nulla pellentesque dignissim. Massa massa ultricies mi quis hendrerit. Nunc sed blandit libero volutpat sed cras ornare arcu. Bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim. Neque gravida in fermentum et. Enim blandit volutpat maecenas volutpat blandit.</p>  
+
+<p>Pulvinar mattis nunc sed blandit libero volutpat sed. Lectus proin nibh nisl condimentum id. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Convallis a cras semper auctor. Risus at ultrices mi tempus. Mauris vitae ultricies leo integer malesuada nunc vel risus commodo. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Non blandit massa enim nec dui nunc mattis enim. Enim lobortis scelerisque fermentum dui faucibus in ornare. Scelerisque viverra mauris in aliquam sem. Consectetur a erat nam at lectus urna duis convallis. At ultrices mi tempus imperdiet nulla malesuada pellentesque.</p>  
+            </main>
+   
+   <aside class="cell medium-4 medium-order-2 small-12 small-order-1">
+    <ul class="vertical menu accordion-menu" data-accordion-menu>
+    <li>
+    <a href="#">Home</a>
+  </li>
+  <li><a href="#">About Us</a></li>
+  <li>
+    <a href="#">Research</a>
+  </li>
+  <li><a href="#">Seminars</a></li>
+  <li><a href="#">Funding Opportunities</a></li>
+  <li><a href="#">Awarded Research</a></li>
+  <li><a href="#">Contact Us</a></li>
+</ul>
+<img class="margin-top" src="../../images/Parkinsons-DiseaseCOE_WEB_HORIZ-Color.jpg" alt="The Perry & Ruby Stevens Parkinson's Disease Center of Excellence Logo">
+</aside>
+        </div>
+    </div>
+</section>
+
+<section class="bleed beige">
 	<div class="grid-container">
     <div class="grid-x grid-margin-x align-center-middle">
 <div class="grid-x grid-margin-x">
@@ -158,7 +176,8 @@
   </div>
 </section>   
 
-<section class="bleed beige">
+
+<section class="bleed">
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-middle">
             <div class="cell small-12 medium-6 large-6">
