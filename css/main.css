@@ -10453,7 +10453,7 @@ h1 + .subheader + .subheader + .subheader {
   font-family: "Nunito Sans", sans-serif;
   color: #171717;
   font-size: 2rem;
-  margin-top: -0.9375rem; }
+  margin-top: -0.625rem; }
   @media screen and (max-width: 569px) {
     h1 + .subheader,
     h1 + .subheader + .subheader,
@@ -11034,7 +11034,7 @@ blockquote.fancy cite {
   .bleed.light-beige {
     background-color: #f7f5f0 !important; }
   .bleed.hero:not(.img-fill) {
-    background-color: #f7f5f0 !important; }
+    background-color: #F0ECE2 !important; }
   .bleed.beige {
     background-color: #F0ECE2 !important; }
   .bleed.dark-beige {
@@ -11053,6 +11053,12 @@ blockquote.fancy cite {
     background: url(../images/noise-texture.png); }
   .bleed.rocky {
     background: url(../images/rockywall-texture.png); }
+  .bleed .shield {
+    background-image: url(../images/shield-transparent.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+    padding: 13.4375rem 0; }
 
 /* ============================================================
  BLEEDING IMAGES
@@ -11180,6 +11186,8 @@ IMG Fill BLEEDS
     color: #808A8F; }
   .bleed.color .callout:hover .fa-circle {
     color: #333d42; }
+  .bleed.color .callout p, .bleed.color .callout figcaption, .bleed.color .callout blockquote {
+    color: #171717 !important; }
 
 .sidecar .callout {
   background-color: #333d42;
@@ -11260,7 +11268,7 @@ a.callout {
         transition: none; }
 
 a.callout:hover {
-  background-color: #7A0F00;
+  background-color: #7A0F00 !important;
   color: #F1F5F7 !important; }
   a.callout:hover .fa-circle {
     color: rgba(241, 245, 247, 0.35); }
@@ -12485,6 +12493,9 @@ HORIZONTAL
   @media screen and (max-width: 639px) {
     .grid-x.factoids .fa-5x {
       font-size: 3.5rem; } }
+  .grid-x.factoids p.supersize {
+    margin-bottom: 0;
+    line-height: 1.3; }
 
 .bleed.color .factoids i {
   color: #F1F5F7; }
@@ -13143,6 +13154,9 @@ header#header {
       background: rgba(255, 255, 255, 0.8);
       width: 100%; } }
 
+.mission-header {
+  padding: 0; }
+
 /* ============================================================
     TAGS
 ============================================================ */
@@ -13396,6 +13410,8 @@ a .datebox:hover {
     color: #171717 !important; }
   .hero .callout.orange {
     background: rgba(148, 41, 0, 0.85);
+    color: #F1F5F7 !important; }
+  .hero .callout .subheader {
     color: #F1F5F7 !important; }
 
 @media screen and (min-width: 639px) {
