@@ -335,6 +335,16 @@ header {
                 }
             }
 
+            .nav {
+                margin-top: rem-calc(15px);
+                display: flex;
+                align-items: center;
+
+                a {
+                    font-weight: 800;
+                }
+            }
+
 
             .right {
                 display: flex;
@@ -349,8 +359,50 @@ header {
                         margin-right: rem-calc(15px);
                     }
 
-                    .fa-search {
-                        color: $off-white;
+                    .expand-search {
+
+                        //margin-right: rem-calc(15px);
+                        display: flex;
+                        justify-content: center;
+
+                        input {
+                            margin-top:2px;
+                            width: 30px;
+                            height: 30px;
+                            border-style: none;
+                            border-radius: 20px;
+                            padding: 10px;
+                            background-color: unset;
+                            outline: 4px solid $orange;
+                            transition-duration: 500ms;
+                            cursor: pointer;
+                            color: unset;
+                            z-index: 1;
+
+                        }
+
+                        input:focus,
+                        input:hover {
+                            width: 200px;
+                            cursor: text;
+                            padding-left: 15px;
+                            color: $off-black;
+                        }
+
+                        button {
+                            z-index: 0;
+                        }
+
+                        button:before {
+                            position: relative;
+                            right: 25px;
+                            content: "\f002";
+                            font-family: 'Font Awesome 5 Free';
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: $orange;
+                        }
+
                     }
 
                 }
@@ -371,7 +423,12 @@ header {
             z-index: 1;
 
             .group {
+                justify-content: center;
                 .logo {
+                    display: none;
+                }
+
+                .nav {
                     display: none;
                 }
 
@@ -383,6 +440,17 @@ header {
 
                     .circle-icons {
                         justify-content: space-evenly;
+
+                        .expand-search {
+                            input {
+                                background-color: $pure-white;
+                                width: 200px;
+                            }
+
+                            button:before {
+                                z-index: 2;
+                            }
+                        }
 
                         a:first-child {
                             margin-right: rem-calc(15px);
@@ -429,6 +497,7 @@ header {
         }
     }
 }
+
 .mission-header {
     padding: 0;
 }
