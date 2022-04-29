@@ -365,8 +365,19 @@ header {
                         display: flex;
                         justify-content: center;
 
+                        &:hover {
+                            input {
+                                width: 200px;
+                                cursor: text;
+                                padding-left: 15px;
+                                color: $off-black;
+                                border: none;
+                                box-shadow: none;
+                            }
+                        }
+
                         input {
-                            margin-top:2px;
+                            margin-top: 2px;
                             width: 30px;
                             height: 30px;
                             border-style: none;
@@ -374,7 +385,8 @@ header {
                             padding: 10px;
                             background-color: unset;
                             outline: 4px solid $orange;
-                            transition-duration: 500ms;
+                            //transition-duration: 500ms;
+                            transition: 400ms ease-in-out;
                             cursor: pointer;
                             color: unset;
                             z-index: 1;
@@ -382,18 +394,33 @@ header {
                         }
 
                         input:focus,
+                        input:active,
                         input:hover {
                             width: 200px;
                             cursor: text;
                             padding-left: 15px;
                             color: $off-black;
+                            border: none;
+                            box-shadow: none;
+                        }
+
+                        input:focus-visible {
+                            outline-offset: unset;
                         }
 
                         button {
-                            z-index: 0;
+                            cursor: pointer;
+                            z-index: 1;
+                            position: relative;
+                            right: 23px;
+                            bottom: 5px;
+
+                            i {
+                                color: $orange;
+                            }
                         }
 
-                        button:before {
+                        /*button:before {
                             position: relative;
                             right: 25px;
                             content: "\f002";
@@ -401,7 +428,7 @@ header {
                             font-size: 20px;
                             font-weight: 900;
                             color: $orange;
-                        }
+                        }*/
 
                     }
 
@@ -424,6 +451,7 @@ header {
 
             .group {
                 justify-content: center;
+
                 .logo {
                     display: none;
                 }
@@ -445,11 +473,9 @@ header {
                             input {
                                 background-color: $pure-white;
                                 width: 200px;
+                                height: 32px;
                             }
 
-                            button:before {
-                                z-index: 2;
-                            }
                         }
 
                         a:first-child {
