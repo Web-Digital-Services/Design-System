@@ -11634,6 +11634,8 @@ a.card {
   color: #171717 !important; }
   a.card:hover {
     color: #171717 !important; }
+  a.card img {
+    object-fit: cover; }
   a.card .card-section {
     margin-bottom: 3.75rem; }
     a.card .card-section:after {

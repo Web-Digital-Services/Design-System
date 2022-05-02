@@ -50,6 +50,10 @@ a.card {
         color: $off-black !important;
     }
 
+    img{
+        object-fit: cover;
+    }
+
     .card-section {
         margin-bottom: rem-calc(60px);
 
