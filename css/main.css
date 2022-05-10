@@ -12000,7 +12000,7 @@ a.card {
   margin-top: -0.5rem; }
 
 .accordion-menu .is-accordion-submenu-parent[aria-expanded='true'] > a::after {
-  font-family: "Font Awesome 5 Free solid";
+  font-family: "Font Awesome 5 Free";
   content: "\f106";
   font-weight: 900;
   color: #AD4200;
