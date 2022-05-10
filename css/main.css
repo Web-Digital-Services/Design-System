@@ -12942,6 +12942,16 @@ img.logo {
     img.logo {
       width: 9.0625rem; } }
 
+figcaption.camera::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f030";
+  font-weight: 900;
+  font-style: normal;
+  display: inline-block;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased; }
+
 /* ============================================================
     HEADER COMPONENTS
 ============================================================ */
