@@ -12522,8 +12522,10 @@ HORIZONTAL
 ============================================================ */
 .grid-x.factoids {
   padding: .5rem; }
-  .grid-x.factoids i {
+  .grid-x.factoids p > i {
     color: #257994; }
+  .grid-x.factoids.grey p > i {
+    color: #333d42; }
   .grid-x.factoids .supersize,
   .grid-x.factoids .h1,
   .grid-x.factoids .h2,
@@ -12537,7 +12539,7 @@ HORIZONTAL
     margin-bottom: 0;
     line-height: 1.3; }
 
-.bleed.color .factoids i {
+.bleed.color .factoids p > i {
   color: #F1F5F7; }
 
 /* ============================================================
