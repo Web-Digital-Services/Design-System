@@ -13172,6 +13172,8 @@ header#header {
         display: flex; }
         header#header .group .right .circle-icons a {
           margin-right: 0.9375rem; }
+        header#header .group .right .circle-icons .fa-stack.outline .fa-search {
+          color: #F1F5F7; }
         header#header .group .right .circle-icons .expand-search {
           display: flex;
           justify-content: center;
