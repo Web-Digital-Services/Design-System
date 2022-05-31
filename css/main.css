@@ -10454,6 +10454,15 @@ h1 + .subheader + .subheader + .subheader {
   color: #171717;
   font-size: 2rem;
   margin-top: -0.625rem; }
+  h1 + .subheader.small,
+  h1 + .subheader + .subheader.small,
+  h1 + .subheader + .subheader + .subheader.small {
+    font-size: 1.5625rem; }
+    @media screen and (max-width: 569px) {
+      h1 + .subheader.small,
+      h1 + .subheader + .subheader.small,
+      h1 + .subheader + .subheader + .subheader.small {
+        font-size: 1.375rem; } }
   @media screen and (max-width: 569px) {
     h1 + .subheader,
     h1 + .subheader + .subheader,
@@ -10468,6 +10477,11 @@ h2 + .subheader {
   font-family: "Nunito Sans", sans-serif;
   color: #171717;
   margin-top: -1.5rem; }
+  h2 + .subheader.small {
+    font-size: 1.5625rem; }
+    @media screen and (max-width: 569px) {
+      h2 + .subheader.small {
+        font-size: 1.25rem; } }
   @media screen and (max-width: 569px) {
     h2 + .subheader {
       font-size: 1.25rem; } }

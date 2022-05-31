@@ -215,7 +215,14 @@ h1+.subheader+.subheader+.subheader {
     color: $off-black;
     font-size: rem-calc(32px);
     margin-top: rem-calc(-10px);
-    //margin-bottom: 0;
+
+    &.small {
+        font-size: rem-calc(25px);
+
+        @media screen and (max-width: 569px) {
+            font-size: rem-calc(22px);
+        }
+    }
 
     @media screen and (max-width: 569px) {
         font-size: rem-calc(22px);
@@ -231,6 +238,14 @@ h2+.subheader {
     font-family: $sans-serif-font;
     color: $off-black;
     margin-top: rem-calc(-24px);
+
+    &.small {
+        font-size: rem-calc(25px);
+
+        @media screen and (max-width: 569px) {
+            font-size: rem-calc(20px);
+        }
+    }
 
     @media screen and (max-width: 569px) {
         font-size: rem-calc(20px);
