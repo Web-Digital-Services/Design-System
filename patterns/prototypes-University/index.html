@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="theme-color" content="#D45D00">
 
-    <link rel="stylesheet" href="../../css/main.css?1654176367476" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1654176367476" media="all" />
+    <link rel="stylesheet" href="../../css/main.css?1654203671841" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1654203671841" media="all" />
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
 
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1654176367476" media="all">
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1654203671841" media="all">
     <!-- End Pattern Lab -->
   </head>
   <body class=""><!-- View All Patterns in a Pattern Sub-Type -->
@@ -498,29 +498,44 @@
         <div class="logo">
             <a href="#"><img src="../../images/UTHSA_logo.svg" alt="UT Health San Antonio"></a>
         </div>
-
+        <div class="nav">
+            <nav class="nav-bar" id="mission-nav">
+                <div class="top-bar">
+                    <div class="top-bar-left">
+                        <ul class="menu">
+                            <li><a href="#">Academics</a></li>
+                            <li><a href="#">Research</a></li>
+                            <li><a href="#">Patient Care</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <div class="right">
             <div class="circle-icons">
-                <a href="#">
+                <!--<a class="expand-search" href="#">
                     <span class="fa-stack outline">
                         <i class="far fa-circle fa-stack-2x"></i>
-                        <i class="fas fa-notes-medical fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span>MyChart</span>
-                </a>
-                <a href="#">
-                    <span class="fa-stack outline">
-                        <i class="far fa-circle fa-stack-2x"></i>
-                        <i class="fas fa-phone-alt fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span>210-450-9000</span>
-                </a>
-                <a href="#" data-toggle="offCanvasRight">
-                    <span class="fa-stack outline">
-                        <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fas fa-search fa-stack-1x fa-inverse"></i>
                     </span>
-                    <span>Search/Quicklinks</span>
+                </a>-->
+                <!--<div class="expand-search">
+                    <input>
+                    <button type="submit">
+                    </button>
+                </div>-->
+                <form class="expand-search">
+                    <input type="search" class="search-box">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <a href="#" data-toggle="offCanvasRight">
+                    <span class="fa-stack outline">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-bars fa-stack-1x fa-inverse"></i>
+                    </span>
                 </a>
             </div>
         </div>
@@ -529,19 +544,15 @@
         <div class="top-bar">
             <div class="top-bar-left">
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Patient Care</a></li>
                     <li><a href="#">Research</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Membership</a></li>
-                    <li><a href="#">Annual Events</a></li>
-                    <li><a href="#">Publications</a></li>
+                    <li><a href="#">Community</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-</header>
-<section class=" hero gradient right white bleed img-fill">
+</header><section class=" hero gradient right white bleed img-fill">
     <img src="../../images/gradient-2.jpg" alt="SCIENCE">
     <div class="grid-container roomy">
         <div class="grid-x grid-margin-x align-right">
@@ -557,18 +568,8 @@
     </div>
 </section>
 
-<nav class="nav-bar" id="nav-bar-full">
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li><a href="#">Academics</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Patient Care</a></li>
-                <li><a href="#">Community</a></li>
-            </ul>
-        </div>
-    </div>
-</nav><section class="bleed beige">
+
+<section class="bleed beige">
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <a class="card cell large-4 medium-4 small-12" href="#">
@@ -761,7 +762,7 @@
 			</div><!--end pl-js-pattern-example-->
 		
 			<script type="text/json" id="pl-pattern-data-prototypes-home-test-2" class="pl-js-pattern-data">
-			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-search-box","lineagePath":"../../patterns/components-formElements-search-box/components-formElements-search-box.rendered.html"},{"lineagePattern":"components-mission-nav","lineagePath":"../../patterns/components-navigation-mission-nav/components-navigation-mission-nav.rendered.html"},{"lineagePattern":"components-long-event","lineagePath":"../../patterns/components-dates-long-event/components-dates-long-event.rendered.html"},{"lineagePattern":"blocks-mission","lineagePath":"../../patterns/blocks-footer-mission/blocks-footer-mission.rendered.html"}],"lineage":[{"lineagePattern":"components-search-box","lineagePath":"../../patterns/components-formElements-search-box/components-formElements-search-box.rendered.html"},{"lineagePattern":"components-mission-nav","lineagePath":"../../patterns/components-navigation-mission-nav/components-navigation-mission-nav.rendered.html"},{"lineagePattern":"components-long-event","lineagePath":"../../patterns/components-dates-long-event/components-dates-long-event.rendered.html"},{"lineagePattern":"blocks-mission","lineagePath":"../../patterns/blocks-footer-mission/blocks-footer-mission.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"prototypes","patternSubgroup":"University"},"patternExtension":"twig","patternName":"Home Test 2","patternPartial":"prototypes-home-test-2","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
+			{"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-header-mission","lineagePath":"../../patterns/components-header v2-header-mission/components-header v2-header-mission.rendered.html"},{"lineagePattern":"components-long-event","lineagePath":"../../patterns/components-dates-long-event/components-dates-long-event.rendered.html"},{"lineagePattern":"blocks-mission","lineagePath":"../../patterns/blocks-footer-mission/blocks-footer-mission.rendered.html"}],"lineage":[{"lineagePattern":"components-header-mission","lineagePath":"../../patterns/components-header v2-header-mission/components-header v2-header-mission.rendered.html"},{"lineagePattern":"components-long-event","lineagePath":"../../patterns/components-dates-long-event/components-dates-long-event.rendered.html"},{"lineagePattern":"blocks-mission","lineagePath":"../../patterns/blocks-footer-mission/blocks-footer-mission.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"prototypes","patternSubgroup":"University"},"patternExtension":"twig","patternName":"Home Test 2","patternPartial":"prototypes-home-test-2","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
 			</script>
 		
 		</div><!--end pl-c-pattern-->		<div id="prototypes-home-test-3" class="pl-c-pattern">
@@ -3452,10 +3453,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1654176367476">
+<script id="pl-js-polyfill-insert-1654203671841">
   (function() {
     if (self != top) {
-      var cb = '1654176367476';
+      var cb = '1654203671841';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -3468,7 +3469,7 @@
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1654176367476" nomodule>
+<script id="pl-js-insert-1654203671841" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
