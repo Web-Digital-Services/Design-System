@@ -755,6 +755,7 @@ a.highlight {
         //Use default link styles on white backgrounds like callouts or cards
         p {
             >a:not(.button) {
+                color: $orange;
                 position: relative;
                 text-decoration: none;
                 font-weight: $black-font-weight;
@@ -763,6 +764,7 @@ a.highlight {
 
                 &:hover {
                     @extend %link-underline-hover;
+                    color: $dark-orange;
                     background-color: unset;
                 }
             }
