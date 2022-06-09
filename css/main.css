@@ -10805,13 +10805,11 @@ a.highlight {
       background-color: transparent !important; }
 
 .img-fill .white p > a:not(.button) {
-  color: #AD4200;
   position: relative;
   text-decoration: none;
   font-weight: 900;
   font-size: 18.7px; }
   .img-fill .white p > a:not(.button):hover {
-    color: #7A0F00;
     background-color: unset; }
 
 .img-fill .white p a.no-underline {
