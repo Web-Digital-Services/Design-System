@@ -12377,6 +12377,15 @@ select {
   border-radius: 0.3125rem;
   background-color: #F1F5F7;
   font-size: 1.125rem; }
+  @media (prefers-color-scheme: dark) {
+    input[type=text]:focus,
+    input[type=password]:focus,
+    input[type=checkbox]:focus,
+    input[type=radio]:focus,
+    textarea:focus,
+    select:focus {
+      background-color: #F1F5F7 !important;
+      color: #171717; } }
 
 input[type=checkbox],
 input[type=radio] {
