@@ -12173,7 +12173,7 @@ div#level-1 nav ul.menu > li a {
   .nav-bar#nav-bar-full {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 6;
     display: flex;
     justify-content: center;
     border-top: 2px solid #99A3A8;
@@ -12852,6 +12852,15 @@ a.callout:hover, a.card:hover, .tags li:hover, a.event.long:hover, a .datebox:ho
   .columns address {
     break-inside: avoid; }
 
+@media screen and (min-width: 1024px) {
+  div.multi-column-list-2 ul {
+    column-count: 2; }
+  div.multi-column-list-3 ul {
+    column-count: 3; }
+  div.multi-column-list-2 ul > li,
+  .multi-column-list-3 ul > li {
+    break-inside: avoid; } }
+
 .brush-circle mask path {
   fill: none;
   stroke: white;
@@ -13407,6 +13416,8 @@ header#header {
                   color: #AD4200; }
         header#header .group form.search {
           margin: 0 0 1.25rem 0; } }
+  header#header.super-hero .logo.mission img {
+    width: 12rem; }
   @media screen and (min-width: 639px) {
     header#header.super-hero {
       position: absolute;
