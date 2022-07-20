@@ -76,6 +76,10 @@
     &.position-left {
         width: rem-calc(300px);
     }
+
+    &.position-right {
+        width: rem-calc(350px);
+    }
 }
 
 .js-off-canvas-overlay {

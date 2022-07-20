@@ -13148,6 +13148,8 @@ figcaption.camera::before {
   background-color: #333d42; }
   .off-canvas.position-left {
     width: 18.75rem; }
+  .off-canvas.position-right {
+    width: 21.875rem; }
 
 .js-off-canvas-overlay {
   background: rgba(23, 23, 23, 0.8); }
