@@ -12585,7 +12585,11 @@ footer {
       background: #fff; }
     footer.mission a {
       color: #AD4200; }
-      footer.mission a:hover {
+      footer.mission a:hover, footer.mission a:focus, footer.mission a:active {
+        color: #7A0F00; }
+      footer.mission a.arrow::after {
+        color: #AD4200; }
+      footer.mission a.arrow:hover:after {
         color: #7A0F00; }
     footer.mission .social li a {
       color: #AD4200; }
@@ -13148,6 +13152,8 @@ figcaption.camera::before {
   background-color: #333d42; }
   .off-canvas.position-left {
     width: 18.75rem; }
+  .off-canvas.position-right {
+    width: 21.875rem; }
 
 .js-off-canvas-overlay {
   background: rgba(23, 23, 23, 0.8); }

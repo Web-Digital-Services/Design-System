@@ -1,1 +1,1 @@
-var comments = { "comments" : [{"el":".callout","title":"Callout","comment":"<p>This is a test annotation</p>\n"}]};
+var comments = { "comments" : [{"comment":""}]};
