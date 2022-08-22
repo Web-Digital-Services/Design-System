@@ -11241,14 +11241,14 @@ IMG Fill BLEEDS
   .img-fill.full .cell {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem; }
-  .img-fill img, .img-fill video {
+  .img-fill > img, .img-fill > video {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
     background-color: rgba(23, 2, 0, 0.5);
     object-fit: cover; }
-  .img-fill video {
+  .img-fill > video {
     margin-bottom: -0.5625rem; }
   .img-fill > .grid-x {
     padding-top: 3.75rem; }
@@ -13672,8 +13672,12 @@ a .datebox:hover {
         font-weight: 700; } }
 
 .hero.img-fill {
-  background-color: transparent !important;
+  background-color: transparent;
   overflow: initial; }
+  .hero.img-fill.blur {
+    background-color: rgba(23, 23, 23, 0.7); }
+    .hero.img-fill.blur > img {
+      filter: blur(6px) opacity(80%); }
 
 .hero .callout {
   padding: 1.875rem;
@@ -13708,7 +13712,8 @@ a .datebox:hover {
     background: transparent; } }
 
 @media screen and (max-width: 639px) {
-  .img-fill img, .img-fill video {
+  .img-fill img,
+  .img-fill video {
     position: relative; } }
 
 nav.orbit-bullets ul {
