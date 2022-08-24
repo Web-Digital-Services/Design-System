@@ -93,6 +93,7 @@ header.super-hero+.hero {
 
         &.blur {
             background-color: rgba(23, 23, 23, 0.7);
+            overflow: clip;
 
             >img {
                 filter: blur(6px) opacity(80%);
@@ -172,7 +173,7 @@ header.super-hero+.hero {
 }
 
 @media screen and (max-width:$small-screen) {
-    &.img-fill {
+    .img-fill {
 
         img,
         video {
