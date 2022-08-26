@@ -2,30 +2,30 @@
     FOUNDATION
 ============================== */
 
-@import "../../node_modules/foundation-sites/scss/foundation";
+@import "node_modules/foundation-sites/scss/foundation";
 @include foundation-everything;
 
 /* ==============================
     FONTAWESOME
 ============================== */
 
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "node_modules/@fortawesome/fontawesome-free/scss/regular";
 
 /* ==============================
     CHART.CSS
 ============================== */
 
-@import "../../node_modules/chart.css";
+@import "node_modules/chart.css";
 
 
 /* ==============================
     MOTION UI
 ============================== */
 
-@import '../../node_modules/motion-ui/motion-ui';
+@import 'node_modules/motion-ui/motion-ui';
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
