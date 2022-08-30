@@ -1,0 +1,107 @@
+{% include "@components/header v2/header-SHP.twig" %}
+<section class="hero bleed">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="large-7 medium-7 small-12">
+        <h1>Post an Opportunity</h1>
+        <p>Cotton candy shortbread tiramisu carrot cake jelly-o toffee. Cake sugar plum ice cream cotton candy gummies bonbon. Cupcake jujubes danish tiramisu bear claw ice cream pie cotton candy. Cupcake donut chupa chups ice cream chocolate bar. Soufflé pudding dragée toffee gummies soufflé. Soufflé gummi bears marzipan candy toffee lollipop wafer cheesecake. Wafer jelly halvah chocolate bar gingerbread. Candy tart liquorice caramels dragée. Candy canes cake gummies brownie caramels lollipop sugar plum halvah danish.</p>
+    </div>
+	</div>
+</section>
+{% include "@components/navigation/navbar-SHPjob.twig" %}
+<main class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <section class="cell large-8 medium-8 small-12">
+      <form>
+        <h2>Placement Form</h2>
+        <h3 class="filled">Opportunity Information</h3>
+        <label>
+          Opportunity Title
+          <input type="text">
+        </label>
+        <label>
+          Opportunity Description
+          <textarea rows="5">This will be an actual WYSIWYG Editor when it's built in the CMS</textarea>
+        </label>
+        <fieldset>
+          <legend>Opportunity Type</legend>
+          <input type="radio" id="1" name="type" value="1">
+          <label for="1">Associate Buy-In, Buy-Out</label><br>
+          <input type="radio" id="2" name="type" value="2">
+          <label for="2">Associate Wanted</label><br>  
+          <input type="radio" id="3" name="type" value="3">
+          <label for="3">Graduate Programs</label><br>
+          <input type="radio" id="4" name="type" value="4">
+          <label for="4">Institutional or Public Health Opportunity</label><br>
+          <input type="radio" id="5" name="type" value="5">
+          <label for="5">Lease Space / Equipment Available</label><br>  
+          <input type="radio" id="6" name="type" value="6">
+          <label for="6">Practice for Sale</label><br><br>
+        </fieldset >
+
+        <h3 class="filled">Location Details</h3>
+        <label>
+          Location Address
+          <textarea rows="5"></textarea>
+        </label>
+        <fieldset>
+          <legend>City</legend>
+          <input type="checkbox" id="Abilene" name="city" value="Abilene">
+          <label for="Abilene">Abilene</label><br>
+          <input type="checkbox" id="Amarillo" name="city" value="Amarillo">
+          <label for="Amarillo">Amarillo</label><br>  
+          <input type="checkbox" id="Brownsville" name="city" value="Brownsville">
+          <label for="Brownsville">Brownsville</label><br>
+          <input type="checkbox" id="Corpus" name="city" value="Corpus">
+          <label for="Corpus">Corpus Christi</label><br>
+          <input type="checkbox" id="Antonio" name="city" value="Antonio">
+          <label for="Antonio">San Antonio</label><br>  
+          <input type="checkbox" id="Columbia" name="city" value="Columbia">
+          <label for="Columbia">West Columbia</label><br><br>
+        </fieldset>
+        <p><a><i class="fas fa-pluse-circle"> Add New</a></p>
+        <fieldset>
+          <legend>States</legend>
+          <input type="checkbox" id="Arkansas" name="state" value="Arkansas">
+          <label for="Arkansas">Arkansas</label><br>
+          <input type="checkbox" id="Iowa" name="state" value="Iowa">
+          <label for="Iowa">Iowa</label><br>  
+          <input type="checkbox" id="Louisiana" name="state" value="Louisiana">
+          <label for="Louisiana">Louisiana</label><br>
+          <input type="checkbox" id="Missouri" name="state" value="Missouri">
+          <label for="Missouri">Missouri</label><br>
+          <input type="checkbox" id="Oklahoma" name="state" value="Oklahoma">
+          <label for="Oklahoma">Oklahoma</label><br>  
+          <input type="checkbox" id="Texas" name="state" value="Texas">
+          <label for="Texas">Texas</label><br><br>
+        </fieldset>
+        <p><a><i class="fas fa-pluse-circle"> Add New</a></p>
+
+        <h3 class="filled">Contact Information</h3>
+        <label>Contact Name
+          <input type="text">
+        </label>
+        <p class="help-text">Name <em>must</em> match payment name</p>
+        <label>Phone Number
+          <input type="text">
+        </label>
+        <label>Email
+          <input type="text">
+        </label>
+        <label>Preferred Time for Follow Up
+          <input type="text">
+        </label>
+        <p><a class="button">Submit</a></p>
+      </form>
+    </section>
+    <aside class="cell large-4 medium-4 small-12">
+      <div class="callout">
+        <h2>How to make a payment</h2>
+        <p>Toffee biscuit dessert chocolate cupcake jelly-o cookie sugar plum. Pastry ice cream jelly liquorice muffin sugar plum lollipop topping. Croissant chocolate cake dessert gummies dessert. Shortbread tart wafer toffee brownie chupa chups tart dragée. Jujubes wafer pudding cupcake pudding. Pudding pudding sugar plum fruitcake macaroon bear claw lemon drops liquorice pastry. </p>
+        <p><a class="button ghost">Make online payment</a></p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+{% include "@blocks/footer/no-alamo.twig" %}
