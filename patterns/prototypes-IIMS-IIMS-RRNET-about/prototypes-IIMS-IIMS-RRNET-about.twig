@@ -1,5 +1,4 @@
 {% include "@components/header-prototypes/header-IIMS.twig" %}
-
 <section class="bleed hero">
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x">
@@ -19,6 +18,12 @@
 
 {% include "@components/navigation-prototypes/navbar-IIMS.twig" %}
 
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="#">RRNET</a></li>
+    <li><a href="#">About Us</a></li>
+  </ul>
+</nav>
 
 <section class="bleed">
     <div class="grid-container">
@@ -65,11 +70,25 @@
    <aside class="cell medium-4 medium-order-2 small-12 small-order-1">
     <ul class="vertical menu accordion-menu" data-accordion-menu>
     <li>
-    <a href="#">Our Members</a>
+    <a href="#">Home</a>
   </li>
-  <li><a href="#">Partnering Institutions</a></li>
-  <li><a href="#">Community Partnerships</a></li>
-  <li><a href="#">How to Join</a></li>
+  <li><a href="#">About Us</a>
+  <ul class="nested vertical menu">
+    <li><a href="#">About Home</a></li>
+    <li><a href="#">Our Members</a></li>
+    <li><a href="#">Partnering Institutions</a></li>
+    <li><a href="#">Community Partnerships</a></li>
+    <li><a href="#">How to Join</a></li></ul>
+  </li>
+    <li><a href="#">Research</a>
+  <ul class="nested vertical menu">
+    <li><a href="#">Research Home</a></li>
+    <li><a href="#">Research Studies</a></li>
+    <li><a href="#">Publications & Presentations</a></li>
+    <li><a href="#">Resources</a></li></ul>
+  </li>
+  <li><a href="#">Student Involvement</a></li>
+  <li><a href="#">Member Area</a></li>
 </ul>
 </aside>
         </div>
