@@ -14722,6 +14722,9 @@ IMG Fill BLEEDS
 .bleed.color .callout blockquote {
   color: #171717 !important;
 }
+.bleed.color .callout p.color {
+  color: #257994 !important;
+}
 
 .sidecar .callout {
   background-color: #333d42;
@@ -15008,6 +15011,10 @@ ul.byline li {
 ============================================================ */
 i.fa-inverse {
   color: #F1F5F7;
+}
+
+i.orange {
+  color: #AD4200;
 }
 
 a:not(.callout).fa-stack,
