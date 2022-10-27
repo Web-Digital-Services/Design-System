@@ -1,4 +1,13 @@
 {% include "@components/quicklinks-prototypes/quicklinks-missionmag.twig" %}
+<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
+    <!-- Quicklinks Content -->
+    <div class="title-bar quicklinks">
+        <div class="title-bar-left">
+            <p><a href="#" data-close="offCanvasRight"><i class="fas fa-times"></i> Quicklinks</a></p>
+            {% include "@components/formElements/search-box.twig" %}
+        </div>
+    </div>
+</div>
 <header class="title-bar" data-responsive-toggle="header">
     <a href="#"><img src="../../images/whiteUTHSA_logo.svg"></a>
     <button class="menu-icon" type="button" data-toggle="header">Menu</button>
@@ -11,7 +20,7 @@
 
         <div class="right">
             <div class="circle-icons">
-            <a href="#" data-toggle="offCanvasRight">
+            <a href="#">
                     <span class="fa-stack outline">
                         <i class="far fa-circle fa-stack-2x"></i>
                         <i class="fas fa-book-open fa-stack-1x fa-inverse"></i>
