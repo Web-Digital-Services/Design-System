@@ -13882,46 +13882,6 @@ figcaption.grey {
   color: #F1F5F7 !important;
 }
 
-.coward {
-  font-weight: 600 !important;
-}
-
-/* =========================
-Date
-=================*/
-.help-text {
-  font-size: 1rem;
-  font-weight: 200;
-  color: #171717;
-  font-style: normal;
-}
-
-/* =========================
-Tooltip
-=================*/
-.has-tip {
-  color: #333d42;
-  border-bottom: solid 1px #333d42;
-}
-
-.tooltip {
-  border: solid #257994 1px;
-  background-color: #F1F5F7;
-  color: #171717;
-}
-.tooltip.right:before {
-  border-color: transparent #257994 transparent transparent;
-}
-.tooltip.left:before {
-  border-color: transparent transparent transparent #257994;
-}
-.tooltip.top:before {
-  border-color: #257994 transparent transparent;
-}
-.tooltip.bottom:before {
-  border-color: transparent transparent #257994;
-}
-
 /*%old-underline {
     border-radius: 1rem;
     border-top: .15rem solid $orange;
@@ -13952,8 +13912,7 @@ Tooltip
 %old-underline-color-hover {
     right: 0;
 }*/
-ul.underline, .color .white p > a:not(.button),
-.img-fill .white p > a:not(.button), p > a:not(.button) {
+ul.underline, .img-fill .white p > a:not(.button), .color .white p > a:not(.button), p > a:not(.button) {
   background-image: linear-gradient(#ffd1a3, #ffd1a3), linear-gradient(#7A0F00, #7A0F00);
   background-size: 100% 2px, 0 2px;
   background-position: 100% 100%, 0 100%;
@@ -13961,8 +13920,7 @@ ul.underline, .color .white p > a:not(.button),
   transition: 0.5s cubic-bezier(0.37, 0.01, 0.2, 1);
 }
 
-ul.underline:hover, .color .white p > a:not(.button):hover,
-.img-fill .white p > a:not(.button):hover, p > a:not(.button):hover {
+ul.underline:hover, .img-fill .white p > a:not(.button):hover, .color .white p > a:not(.button):hover, p > a:not(.button):hover {
   background-size: 0 2px, 100% 2px;
 }
 
@@ -13970,15 +13928,16 @@ a {
   color: #AD4200;
   text-decoration: none;
   transition: 0.5s ease-out;
+  /*&:visited:not(.button, .callout, .card) {
+      color: $orange;
+  }*/
 }
-a:hover, a:focus {
+a:hover {
   color: #7A0F00;
   text-decoration: none;
 }
-a:focus-visible {
-  outline-color: #257994;
-  outline-width: 0.5rem;
-  outline-offset: 0.625rem;
+a:focus {
+  color: #7A0F00;
 }
 
 p > a:not(.button) {
@@ -13996,12 +13955,12 @@ a.arrow:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f105";
-  color: inherit;
+  color: #AD4200;
   margin-left: 0.3rem;
   transition: 0.5s ease-out;
 }
 a.arrow:hover:after {
-  color: inherit;
+  color: #7A0F00;
   transform: translatex(0.2rem);
 }
 
@@ -14010,10 +13969,12 @@ a.external:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f35d";
+  color: #AD4200;
   margin-left: 0.3rem;
   transition: 0.5s ease-out;
 }
 a.external:hover:after {
+  color: #7A0F00;
   transform: translate(0.1rem, -0.1rem);
 }
 
@@ -14022,10 +13983,12 @@ a.file:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f56d";
+  color: #AD4200;
   margin-left: 0.3rem;
   transition: 0.5s ease-out;
 }
 a.file:hover:after {
+  color: #7A0F00;
   transform: translate(0.1rem, -0.1rem);
 }
 
@@ -14053,19 +14016,15 @@ a.highlight:hover {
   color: #A6FFFF;
   padding-left: 0.5% !important;
   padding-right: 0.5% !important;
-  /*&.arrow,
-  &.external {
-      &:after {
-          color: $blue-link;
-      }
-
-      &:hover:after {
-          color: $blue-90;
-      }
-  }*/
 }
 .color p > a:not(.button):hover {
   background-color: #A6FFFF;
+  color: #002D48;
+}
+.color p > a:not(.button).arrow:after, .color p > a:not(.button).external:after {
+  color: #A6FFFF;
+}
+.color p > a:not(.button).arrow:hover:after, .color p > a:not(.button).external:hover:after {
   color: #002D48;
 }
 .color p > a:not(.button).highlight {
@@ -14075,24 +14034,20 @@ a.highlight:hover {
 }
 .color p > a:not(.button).highlight:hover {
   color: #A6FFFF !important;
-  background-color: inherit;
+  background-color: inherit !important;
 }
 .color.orange p > a:not(.button), .color.darken p > a:not(.button) {
   background-image: linear-gradient(#FFDEBD, #FFDEBD);
   color: #FFDEBD;
-  /*&.arrow,
-  &.external {
-      &:after {
-          color: $orange-link;
-      }
-
-      &:hover:after {
-          color: $orange-90;
-      }
-  }*/
 }
 .color.orange p > a:not(.button):hover, .color.darken p > a:not(.button):hover {
   background-color: #f7f5f0;
+  color: #470000;
+}
+.color.orange p > a:not(.button).arrow:after, .color.orange p > a:not(.button).external:after, .color.darken p > a:not(.button).arrow:after, .color.darken p > a:not(.button).external:after {
+  color: #FFDEBD;
+}
+.color.orange p > a:not(.button).arrow:hover:after, .color.orange p > a:not(.button).external:hover:after, .color.darken p > a:not(.button).arrow:hover:after, .color.darken p > a:not(.button).external:hover:after {
   color: #470000;
 }
 .color.orange p > a:not(.button).highlight, .color.darken p > a:not(.button).highlight {
@@ -14147,6 +14102,66 @@ a.highlight:hover {
 .color .callout a:not(.button):hover {
   color: #7A0F00;
 }
+.color .white p > a:not(.button) {
+  position: relative;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18.7px;
+}
+.color .white p > a:not(.button):hover {
+  background-color: unset;
+}
+.color .white p a.no-underline {
+  background-image: none;
+}
+.color .white a.arrow:after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  color: #AD4200 !important;
+  margin-left: 0.3rem;
+  transition: 0.5s ease-out;
+}
+.color .white a.arrow:hover:after {
+  color: #7A0F00 !important;
+  transform: translatex(0.2rem);
+}
+.color .white a.external:after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f35d";
+  color: #AD4200;
+  margin-left: 0.3rem;
+  transition: 0.5s ease-out;
+}
+.color .white a.external:hover:after {
+  color: #7A0F00;
+  transform: translate(0.1rem, -0.1rem);
+}
+.color .white a.file:after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f56d";
+  color: #AD4200;
+  margin-left: 0.3rem;
+  transition: 0.5s ease-out;
+}
+.color .white a.file:hover:after {
+  color: #7A0F00;
+  transform: translate(0.1rem, -0.1rem);
+}
+.color .white a.highlight {
+  background-color: #AD4200;
+  color: #F1F5F7;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#7A0F00, #7A0F00) !important;
+}
+.color .white a.highlight:hover {
+  color: #7A0F00;
+  background-color: inherit;
+}
 
 .img-fill p > a:not(.button) {
   background-image: linear-gradient(#FFF1DB, #FFF1DB);
@@ -14165,23 +14180,20 @@ a.highlight:hover {
   color: #FFF1DB !important;
   background-color: transparent !important;
 }
-
-.color .white p > a:not(.button),
 .img-fill .white p > a:not(.button) {
+  color: #AD4200;
   position: relative;
   text-decoration: none;
   font-weight: 900;
   font-size: 18.7px;
 }
-.color .white p > a:not(.button):hover,
 .img-fill .white p > a:not(.button):hover {
+  color: #7A0F00;
   background-color: unset;
 }
-.color .white p a.no-underline,
 .img-fill .white p a.no-underline {
   background-image: none;
 }
-.color .white a.arrow:after,
 .img-fill .white a.arrow:after {
   display: inline-block;
   font-family: "Font Awesome 5 Free";
@@ -14191,51 +14203,96 @@ a.highlight:hover {
   margin-left: 0.3rem;
   transition: 0.5s ease-out;
 }
-.color .white a.arrow:hover:after,
 .img-fill .white a.arrow:hover:after {
+  color: #7A0F00 !important;
   transform: translatex(0.2rem);
 }
-.color .white a.external:after,
 .img-fill .white a.external:after {
   display: inline-block;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f35d";
+  color: #AD4200;
   margin-left: 0.3rem;
   transition: 0.5s ease-out;
 }
-.color .white a.external:hover:after,
 .img-fill .white a.external:hover:after {
+  color: #7A0F00;
   transform: translate(0.1rem, -0.1rem);
 }
-.color .white a.file:after,
 .img-fill .white a.file:after {
   display: inline-block;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f56d";
+  color: #AD4200;
   margin-left: 0.3rem;
   transition: 0.5s ease-out;
 }
-.color .white a.file:hover:after,
 .img-fill .white a.file:hover:after {
+  color: #7A0F00;
   transform: translate(0.1rem, -0.1rem);
 }
-.color .white a.highlight,
 .img-fill .white a.highlight {
   background-color: #AD4200;
   color: #F1F5F7;
   background-image: linear-gradient(transparent, transparent), linear-gradient(#7A0F00, #7A0F00) !important;
 }
-.color .white a.highlight:hover,
 .img-fill .white a.highlight:hover {
   color: #7A0F00;
   background-color: inherit;
 }
 
-/*ul:not(.accordion, .menu) a {
-    font-weight: 600;
-}*/
+ul:not(.accordion, .menu) a {
+  font-weight: 600;
+}
+
+.coward {
+  font-weight: 600 !important;
+}
+
+/* =========================
+Date
+=================*/
+.help-text {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #171717;
+  font-style: normal;
+}
+
+a:focus-visible {
+  outline-color: #257994;
+  outline-width: 0.5rem;
+  outline-offset: 0.625rem;
+}
+
+/* =========================
+Tooltip
+=================*/
+.has-tip {
+  color: #333d42;
+  border-bottom: solid 1px #333d42;
+}
+
+.tooltip {
+  border: solid #257994 1px;
+  background-color: #F1F5F7;
+  color: #171717;
+}
+.tooltip.right:before {
+  border-color: transparent #257994 transparent transparent;
+}
+.tooltip.left:before {
+  border-color: transparent transparent transparent #257994;
+}
+.tooltip.top:before {
+  border-color: #257994 transparent transparent;
+}
+.tooltip.bottom:before {
+  border-color: transparent transparent #257994;
+}
+
 /* ============================================================
     BLOCKQUOTES
 ============================================================ */
@@ -14961,18 +15018,20 @@ div.arrow ul li:before {
   padding-right: 0.313rem;
 }
 
+.color div.arrow li:before {
+  color: #F1F5F7;
+}
+.color .card div.arrow li:before,
+.color .callout div.arrow li:before {
+  color: #AD4200;
+}
+
 div.check ul li:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 0.85em;
   content: "\f00c";
   padding-right: 0.313rem;
-}
-
-ul li a,
-ol li a {
-  font-size: 18.7px;
-  font-weight: 600;
 }
 
 div.lines ul,
@@ -15026,57 +15085,6 @@ div.decoration li > a:hover {
 }
 .color div.decoration ul li > a:hover {
   text-decoration-color: #F1F5F7;
-}
-.color div.arrow li:before {
-  color: #F1F5F7;
-}
-.color .card div.arrow li:before,
-.color .callout div.arrow li:before {
-  color: #AD4200;
-}
-.color ul li a,
-.color ol li a {
-  font-weight: 900;
-  color: #A6FFFF;
-  padding-left: 0.5% !important;
-  padding-right: 0.5% !important;
-}
-.color ul li a:hover,
-.color ol li a:hover {
-  background-color: #A6FFFF;
-  color: #002D48;
-}
-
-.color.grey ul li a,
-.color.grey ol li a,
-.color.dark-grey ul li a,
-.color.dark-grey ol li a {
-  color: #FFF1DB;
-  padding-left: 0.5% !important;
-  padding-right: 0.5% !important;
-}
-.color.grey ul li a:hover,
-.color.grey ol li a:hover,
-.color.dark-grey ul li a:hover,
-.color.dark-grey ol li a:hover {
-  background-color: #FFF1DB;
-  color: #1A2429;
-}
-
-.color.orange ul li a,
-.color.orange ol li a,
-.color.darken ul li a,
-.color.darken ol li a {
-  color: #FFDEBD;
-  padding-left: 0.5% !important;
-  padding-right: 0.5% !important;
-}
-.color.orange ul li a:hover,
-.color.orange ol li a:hover,
-.color.darken ul li a:hover,
-.color.darken ol li a:hover {
-  background-color: #f7f5f0;
-  color: #470000;
 }
 
 ul.byline {
