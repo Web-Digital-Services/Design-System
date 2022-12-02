@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" class=" >
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#D45D00">
+
+    <link rel="stylesheet" href="../../css/main.css?1670007853034" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1670007853034" media="all" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  </head>
+  <body class=""><div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
+  <!-- Quicklinks Content -->
+  <div class="title-bar quicklinks">
+    <div class="title-bar-left">
+      <p><a href="#" data-close="offCanvasRight"><i class="fas fa-times"></i> Quicklinks</a></p>
+      <form class="search">
+    <input type="search" class="search-box" placeholder="Search">
+    <button type="submit">
+        <i class="fa fa-search"></i>
+    </button>
+</form>            
+      <div class="no-bullet arrow">
+        <ul>
+          <li><a href="https://www.uthscsa.edu/notices/coronavirus-update">COVID-19</a></li>
+          <li><a href="https://wellness360.uthealthsa.org/services/employee-student-health/student-immunization-records/covid-19-vaccines-for-incoming-students/">Student COVID Vaccinations</a></li>
+          <li><a href="https://impactcovid.org/">IMPACT Covid Magazine</a></li>
+          <li><a href="https://uthealthsa.sharepoint.com/COVID-19/Pages/Mission%20Rx.aspx">MissionRx</a></li>
+          <li><a href="http://news.uthscsa.edu/">Newsroom</a></li>
+          <li><a href="https://uthealthsa.givepulse.com/group/391559-UT-Health-San-Antonio">ENGAGED</a></li>
+        </ul>
+      </div>
+      <h4>Logins</h4>
+      <div class="no-bullet arrow">
+        <ul>
+          <li><a href="https://www.uthscsa.edu/canvas">Canvas</a></li>
+          <li><a href="https://outlook.office365.com/">Employee Email</a></li>
+          <li><a href="https://login.microsoftonline.com/login.srf?wa=wsignin1.0&whr=uthscsa.edu&wreply=https://uthealthsa.sharepoint.com">My UT Health</a></li>
+          <li><a href="http://outlook.com/livemail.uthscsa.edu">LiveMail</a></li>
+          <li><a href="https://uthscsa.kronos.net/">Kronos Time and Attendance</a></li>
+          <li><a href="https://cst.uthscsa.edu/psp/S92PRDT/?cmd=login">My Student Center</a></li>
+          <li><a href="https://shib.uthscsa.edu/idp/profile/SAML2/Unsolicited/SSO?providerId=https://login-eomf-saasfaprod1.fa.ocs.oraclecloud.com:443/oam/fed&target=https://fa-eomf-saasfaprod1.fa.ocs.oraclecloud.com/fscmUI/faces/FuseWelcome">UT Health Learns</a></li>
+                    
+        </ul>
+      </div>
+      <h4>Find</h4>
+      <div class="no-bullet arrow">
+        <ul>
+          <li><a href="http://uthscsa.edu/resources.asp">A to Z list</a></li>
+          <li><a href="http://uthscsa.edu/alumni">Alumni</a></li>
+          <li><a href="http://uthscsa.edu/direct.shtml">Directories</a></li>
+        </ul>
+      </div>
+      <h4>Events</h4>
+      <div class="no-bullet arrow">
+        <ul>
+          <li><a href="http://calendar.uthscsa.edu/">Calendars</a></li>
+        </ul>
+      </div>
+      <h4>Technology</h4>
+      <div class="no-bullet arrow">
+        <ul>
+          <li><a href="http://ims.uthscsa.edu/technology_support/tech_support_service.aspx">Service Desk</a></li>
+          <li><a href="https://pwr.uthscsa.edu/">Password Reset</a></li>
+          <li><a href="http://ims.uthscsa.edu/computer_networking/computer_store.aspx">TechZone (Computer Store)</a></li>
+        </ul>
+      </div>
+      <h4>More</h4>
+      <div class="no-bullet arrow">
+        <ul>
+          <li><a href="http://library.uthscsa.edu/">Library</a></li>
+          <li><a href="http://uthscsa.bncollege.com/">Bookstore</a></li>
+          <li><a href="http://catalog.uthscsa.edu/">Course Catalog</a></li>
+          <li><a href="http://uthscsa.edu/hr/">Human Resources</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div><header class="title-bar" data-responsive-toggle="header">
+    <a href="#"><img src="../../images/whiteUTHSA_logo.svg"></a>
+    <button class="menu-icon" type="button" data-toggle="header">Menu</button>
+</header>
+<header class="off-canvas-content" id="header" data-off-canvas-content>
+    <div class="group">
+        <div class="logo">
+            <a href="#"><img src="../../images/Logo-LSOM.svg" alt="UT Health San Antonio Long School of Medicine"></a>
+        </div>
+
+        <div class="right">
+            <div class="circle-icons">
+                <a href="#">
+                    <span class="fa-stack outline">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-hand-holding-heart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span>Give</span>
+                </a>
+                <a href="#" data-toggle="offCanvasRight">
+                    <span class="fa-stack outline">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-search fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span>Search/Quicklinks</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-bar" id="nav-bar-mobile">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Patient Care</a></li>
+                    <li><a href="#">Clinical Trials</a></li>
+                    <li><a href="#">Alumni</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header><nav class="nav-bar" id="nav-bar-full">
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#">Patient Care</a></li>
+                <li><a href="#">Clinical Trials</a></li>
+                <li><a href="#">Alumni</a></li>
+            </ul>
+        </div>
+    </div>
+</nav><nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+    <li><a href="#">Parent</a></li>
+    <li><a href="#">Child</a></li>
+    <li>
+      <span class="show-for-sr">Current: </span> Child
+    </li>
+  </ul>
+</nav>
+
+<div class="grid-container">
+  <h1>Curriculum</h1>
+  <p class="subheader">Undergraduate Medical Education</p>
+  <p class="subtext">Doctor of Medicine (M.D.)</p>
+  <div class="grid-x grid-margin-x">
+    <main class="cell large-8 large-order-1 medium-7 medium-order-1 small-12 small-order-2">
+      <img src="https://www.uthscsa.edu/sites/default/files/2020/LSOM/images/faculty-students.jpg" class="margin-bottom">
+      <p>The Doctor of Medicine (M.D.) degree program’s CIRCLE curriculum is guided by educational best practices in standardizing learning outcomes while providing students with opportunities to individualize the learning process. There is an emphasis on active learning with formative checkpoints for students to self-assess their progress and develop habits of self-directed learning and inquiry. The curriculum integrates basic & clinical science knowledge with early clinical experiences to provide students with a better understand of disease process and management. Ample time is provided for electives, selectives and exploration of career choices essential to professional identity formation.</p>
+      <section class="grid-x grid-margin-x">
+        <div class="cell large-6 medium-6 small-12">
+          <a>
+            <img src="https://www.uthscsa.edu/sites/default/files/2020/LSOM/images/curriculum-preclinical.jpg" alt="">
+            <h2 class="h3">Preclinical Curriculum</h2>
+          </a>
+          <p>The foundational 20-month preclinical curriculum emphasizes acquisition of formal knowledge and clinical skills in a systematic and incremental manner that emphasizes thematic relationships over rote memorization.</p>
+        </div>
+        <div class="cell large-6 medium-6 small-12">
+          <a>
+            <img src="https://www.uthscsa.edu/sites/default/files/2020/LSOM/images/curriculum-studivsty9.jpg" alt="">
+            <h2 class="h3">Clinical Curriculum</h2>
+          </a>
+          <p>The clinical phase of the curriculum includes core clerkships where students gain experience in a variety of settings. In fourth year, there is ample opportunity to explore career interests and gain additional experience and confidence in clinical skills needed to transition to residency.</p>
+        </div>
+      </section>
+      <h2>Program Highlights</h2>
+      <h3><a>Dual Degree & Distinction Programs</a></h3>
+      <p>Two dual degree programs are available to students. Students also have the opportunity to pursue a degree distinction during medical school.</p>
+
+      <h3><a href="https://wp.uthscsa.edu/lsom-ultrasound/education/">Hands On Bedside Ultrasound Curriculum</a></h3>
+      <p>Our basic bedside ultrasound curriculum will extend over all 4 academic years. The curriculum will focus on hands-on training using live and simulation models with associated supplementary didactics.</p>
+
+      <h3><a href="https://wp.uthscsa.edu/heb-clinical/">H-E-B Clinical Skills Center</a></h3>
+      <p>Standardized Patient Program provides students with opportunities to develop their clinical skills. Standardized patients are individuals carefully chosen to portray patients with specific medical conditions.</p>
+
+      <h2>Keys to Success</h2>
+      <div class="loose-list">
+        <ul>
+          <li><strong>Culture of Excellence</strong><br>We strive to maintain a culture of inclusion, high expectations and fairness. We embrace and celebrate distinctive perspectives and viewpoints that enrich all members of the Long School of Medicine and UT Health San Antonio.</li>
+          <li><strong>Proven Integrated Curriculum</strong><br>The CIRCLE Curriculum integrates clinical experiences from the first day of medical school with foundational science through all four years. We have a proven track record of student satisfaction and success on United States Medical Licensing Exam (USMLE) and in the National Resident Match Program (NRMP).</li>
+          <li><strong>Individualized Learning</strong><br>Students have the ability to individualize clinical activities. Opportunities are available to participate in Student-Faculty collaborative clinics in the community. Various community service learning projects and elective courses are available both locally and internationally.</li>
+          <li><strong>Dedicated Faculty</strong><br>An integrated group of talented, passionate, experienced medical educators who are Researchers, Clinicians, and Leaders.</li>
+        </ul>
+      </div>
+      <h2>Competencies and Objectives of the M.D. Degree Program</h2>
+      <div class="tab-container">
+        <ul class="tabs" data-tabs id="compObj">
+          <li class="tabs-title is-active"><a aria-selected="true" href="#panel1">Altruism</a></li>
+          <li class="tabs-title"><a data-tabs-target="panel2" href="#panel1">Knowledge</a></li>
+          <li class="tabs-title"><a data-tabs-target="panel3" href="#panel1">Skills</a></li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="compObj">
+          <div class="tabs-panel is-active" id="panel1">
+            <h3>Altruism</h3>
+            <p>Medical students must be compassionate and empathetic in caring for patients, and must be trustworthy and truthful in their professional dealings. They must act with integrity, honesty, and respect for patients’ privacy and dignity.</p>
+            <p>By the time of graduation, the Long School of Medicine M.D. student will be able to:</p>
+            <div class="indent-list">
+              <ul>
+                <li>List and define the basic principles guiding ethical decision making</li>
+                <li>Apply ethical concepts to medical ethical dilemmas</li>
+                <li>Demonstrate respect for human dignity</li>
+                <li>Provide compassionate patient care</li>
+                <li>Demonstrate honesty and integrity in educational and professional interactions</li>
+                <li>Demonstrate appropriate patient advocacy</li>
+                <li>Understand the factors that impact health</li>
+                <li>Appropriately address conflicts of interest inherent to the field of medicine</li>
+              </ul>
+            </div>
+            <p><a class="arrow" href="https://www.uthscsa.edu/sites/default/files/Medicine/forms/objectives_competencies_md_revised2020_master_200721.pdf">View the full list of objectives</a></p>
+          </div>
+          <div class="tabs-panel" id="panel2">
+            <h3>Knowledge</h3>
+            <p>Medical students must understand the scientific basis of medicine and be able to apply that understanding to the safe and effective practice of medicine. They must utilize self-assessment and self-knowledge to optimize their learning.</p>
+            <p>By the time of graduation, the Long School of Medicine M.D. student will be able to:</p>
+            <div class="indent-list">
+              <ul>
+                <li>Demonstrate knowledge of normal structure and function of the human body</li>
+                <li>Demonstrate knowledge of the pathogenesis and pathophysiology of disease and disorders</li>
+                <li>Demonstrate knowledge of the clinical manifestations of common conditions and disorders</li>
+                <li>Demonstrate knowledge of the pharmacotherapeutic modalities for common conditions and disorders</li>
+                <li>Demonstrate honesty and integrity in educational and professional interactions</li>
+                <li>Demonstrate knowledge of the basic principles of clinical and translational research</li>
+                <li>Demonstrate knowledge of the epidemiology of common conditions and disorders</li>
+                <li>Demonstrate knowledge of systems of healthcare delivery</li>
+              </ul>
+            </div>
+            <p><a class="arrow" href="https://www.uthscsa.edu/sites/default/files/Medicine/forms/objectives_competencies_md_revised2020_master_200721.pdf">View the full list of objectives</a></p>
+          </div>
+          <div class="tabs-panel" id="panel3">
+            <h3>Skills</h3>
+            <p>Medical students must acquire wide-ranging skills that will enable them to care for patients as a professional.</p>
+            <p>By the time of graduation, the Long School of Medicine M.D. student will be able to:</p>
+            <div class="indent-list">
+              <ul>
+                <li>Obtain an accurate and complete medical history</li>
+                <li>Perform all components of a complete physical examination</li>
+                <li>Prepare for and perform basic clinical procedures</li>
+                <li>Perform basic interpretation of commonly used diagnostic tests</li>
+                <li>Recognize the typical physical exam manifestations of common medical conditions and disorders</li>
+                <li>Demonstrate the skills of clinical reasoning and clinical problem solving for common conditions and disorders</li>
+                <li>Create appropriate management strategies for common conditions and disorders</li>
+                <li>Apply the principles of relieving total pain (physical, psychological, spiritual and social)</li>
+                <li>Demonstrate effective and appropriate communication of medical information, both in writing and verbally</li>
+                <li>Demonstrate the ability and commitment to continuously improved medical knowledge and skills</li>
+              </ul>
+            </div>
+            <p><a class="arrow" href="https://www.uthscsa.edu/sites/default/files/Medicine/forms/objectives_competencies_md_revised2020_master_200721.pdf">View the full list of objectives</a></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside class="cell large-4 large-order-2 medium-5 medium-order-2 small-12 small-order-1">
+      <ul class="vertical menu accordion-menu" data-accordion-menu id="subnav">
+        <li><a href="#">Undergraduate Medical Education</a></li>
+        <li>
+          <a href="#">Admissions</a>
+          <ul class="nested vertical menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Admission at a Glance</a></li>
+            <li><a href="#">Technical Standards</a></li>
+            <li><a href="#">Who Are We Looking For?</a></li>
+            <li><a href="#">Interview Process</a></li>
+            <li><a href="#">Paying for School</a></li>
+            <li><a href="#">Accepted? Next Steps</a></li>
+            <li><a href="#">COVID-19 Information</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Outreach</a>
+          <ul class="nested vertical menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Speaker Request for a Virtual Event</a></li>
+            <li><a href="#">I Want to be a doctor! What now?</a></li>
+            <li><a href="#">Club PreMed Connections</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Curriculum</a>
+          <ul class="nested vertical menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Preclinical Curriculum</a></li>
+            <li><a href="#">Clinical Curriculum</a></li>
+            <li><a href="#">Simulation Training</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Dual Degree & Distinction Programs</a>
+          <ul class="nested vertical menu">
+            <li><a href="#">Distinction in Medical Education</a></li>
+            <li><a href="#">Distinction in Medical Humanities</a></li>
+            <li><a href="#">Distinction in Research</a></li>
+            <li><a href="#">M.D./M.P.H. Program</a></li>
+            <li><a href="#">M.D./OMS Certificate</a></li>
+            <li><a href="#">M.D./Ph.D. Program (South Texas Medical Scientist Training Program)</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Student Affairs</a>
+          <ul class="nested vertical menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">4th Year Spring Events</a></li>
+            <li><a href="#">Quick Reference Guide</a></li>
+            <li><a href="#">Academic Advising</a></li>
+            <li><a href="#">Career Advising</a></li>
+            <li><a href="#">Elective Catalog</a></li>
+            <li><a href="#">Academic Enhancement</a></li>
+            <li><a href="#">Veritas</a></li>
+            <li><a href="#">Student Wellness</a></li>
+            <li><a href="#">Professional Formation</a></li>
+            <li><a href="#">Milestones</a></li>
+            <li><a href="#">Student Involvement</a></li>
+            <li><a href="#">Visiting Students</a></li>
+            <li><a href="#">New Student Orientation</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Administrative</a>
+          <ul class="nested vertical menu">
+            <li><a href="#">Our Office</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Intranet</a></li>
+            <li><a href="#">COVID-19 Medical Student Response Team</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="responsive-embed">
+        <iframe width="356" height="224" src="https://www.youtube.com/embed/nyJ9J2Ge5_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+    <div class="alamo">
+        <!--<img src="../../images/logo-alamo-only.svg">-->
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 116.256 47.344" enable-background="new 0 0 116.256 47.344" xml:space="preserve">
+        <path id="never-forget" d="M0.116,47.344l116.069-0.002V44.05v-10.1v-4.303h-14.539v-5.724h-3.418c0,0-7.529,0.29-13.178-3.052 c-5.586-3.306-6.625-6.449-6.641-6.464V9.806h-7.446C69.692,4.193,64.675,0,58.674,0c-6.003,0-11.02,4.193-12.29,9.806h-7.579v4.601c-0.029,0.03-1.068,3.165-6.639,6.464c-5.649,3.342-13.179,3.052-13.179,3.052h-4.449v5.724H0v4.303v10.1v3.228"></path>
+        </svg>
+    </div>
+    <div class="shield">
+        <section class="grid-container">
+            <div class="grid-x grid-margin-x align-center-middle">
+                <div class="cell large-12">
+                    <h2>UT Health San Antonio</h2>
+                    <h3>Teresa R. & Joe Lozano Long School of Medicine</h3>
+                </div>
+                <div class="cell large-3 medium-4 small-10">
+                    <div class="contact">
+                        <a href="#" class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+                        </a>
+                        <a href="#">210-567-4420</a> 
+                    </div>
+                    <div class="contact">
+                        <a href="https://uthscsa.edu/university/campus-maps" class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
+                        </a> 
+                    
+                        <address>
+                            7703 Floyd Curl Drive<br>
+                            San Antonio, TX 78226<br>
+                            <a href="https://uthscsa.edu/university/campus-maps" class="arrow">Map and directions</a>
+                        </address>
+                    </div>
+                    
+                </div>
+                <div class="cell large-3 medium-4 small-10">
+                    <ul>
+                        <li><a href="#" class="arrow">Contact us</a></li>
+                        <li><a href="https://wp.uthscsa.edu/careers/" class="arrow">Careers</a></li>
+                    </ul>
+
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/UTHealthSA"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                            <li><a href="https://www.instagram.com/uthealthsa/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/uthealthsa"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="https://twitter.com/uthealthsa"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                            <li><a href="https://www.youtube.com/uthscsa/"><i class="fab fa-youtube-square fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cell large-5 medium-4 small-10">
+                    <p class="large-text">We make lives better ®</p>
+                    <p>The University of Texas Health Science Center at San Antonio, also called <a href="#">UT Health San Antonio</a>, is a leading academic health center with a mission to make lives better through excellence in <a href="#">advanced academics</a>, <a href="#">life-saving research</a> and comprehensive clinical care including <a href="#">health</a>, <a href="#">dental</a> and <a href="#">cancer services</a>.</p>
+                </div>
+                <div class="cell large-1 medium-0 small-0"></div>
+            </div>    
+        </section>
+    </div>
+    <section class="bleed">
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="cell">
+                    <p><strong><a href="#">Web Privacy</a></strong> | Links from websites affiliated with UT Health's website (uthscsa.edu) to other websites do not constitute or imply university endorsement of those sites, their content, or products and services associated with those sites. The content on this website is intended to be used for informational purposes only. Health information on this site is not meant to be used to diagnose or treat conditions. Consult a health care provider if you are in need of treatment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer><script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-header-LSOM","lineagePath":"../../patterns/components-header-prototypes-header-LSOM/components-header-prototypes-header-LSOM.rendered.html"},{"lineagePattern":"components-navbar-LSOM","lineagePath":"../../patterns/components-navigation-prototypes-navbar-LSOM/components-navigation-prototypes-navbar-LSOM.rendered.html"},{"lineagePattern":"components-breadcrumbs","lineagePath":"../../patterns/components-navigation-breadcrumbs/components-navigation-breadcrumbs.rendered.html"},{"lineagePattern":"blocks-LSOM-alamo","lineagePath":"../../patterns/blocks-footer-LSOM-alamo/blocks-footer-LSOM-alamo.rendered.html"}],"lineage":[{"lineagePattern":"components-header-LSOM","lineagePath":"../../patterns/components-header-prototypes-header-LSOM/components-header-prototypes-header-LSOM.rendered.html"},{"lineagePattern":"components-navbar-LSOM","lineagePath":"../../patterns/components-navigation-prototypes-navbar-LSOM/components-navigation-prototypes-navbar-LSOM.rendered.html"},{"lineagePattern":"components-breadcrumbs","lineagePath":"../../patterns/components-navigation-breadcrumbs/components-navigation-breadcrumbs.rendered.html"},{"lineagePattern":"blocks-LSOM-alamo","lineagePath":"../../patterns/blocks-footer-LSOM-alamo/blocks-footer-LSOM-alamo.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>-Should inherit UME's subnav</p>\n<p>-Subnav should stack directly under the page title on mobile (this should be the case for almost all subnavs on mobile). This was done using <code>.small-order-1</code> and <code>.large-order-2</code> (Inspect code for more)</p>\n<p>-&quot;Dual Degree &amp; Distinction Programs&quot; should be a jump link to the section of the same name on the UME page.</p>\n<p>-Hyperlink inside tabs all goes to the same PDF that should be migrated to D9 site</p>\n<p>-Orange floating tabs (as shown in prototype) are prefered but if unavailable, any of the other DSP tabs will suffice</p>\n","patternBreadcrumb":{"patternGroup":"prototypes","patternSubgroup":"LSOM"},"patternExtension":"twig","patternName":"UME Curriculum","patternPartial":"prototypes-LSOM-Curriculum","patternState":"","patternEngineName":"twig-php","extraOutput":{"order":15}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-header-LSOM","lineagePath":"../../patterns/components-header-prototypes-header-LSOM/components-header-prototypes-header-LSOM.rendered.html"},{"lineagePattern":"components-navbar-LSOM","lineagePath":"../../patterns/components-navigation-prototypes-navbar-LSOM/components-navigation-prototypes-navbar-LSOM.rendered.html"},{"lineagePattern":"components-breadcrumbs","lineagePath":"../../patterns/components-navigation-breadcrumbs/components-navigation-breadcrumbs.rendered.html"},{"lineagePattern":"blocks-LSOM-alamo","lineagePath":"../../patterns/blocks-footer-LSOM-alamo/blocks-footer-LSOM-alamo.rendered.html"}],"lineage":[{"lineagePattern":"components-header-LSOM","lineagePath":"../../patterns/components-header-prototypes-header-LSOM/components-header-prototypes-header-LSOM.rendered.html"},{"lineagePattern":"components-navbar-LSOM","lineagePath":"../../patterns/components-navigation-prototypes-navbar-LSOM/components-navigation-prototypes-navbar-LSOM.rendered.html"},{"lineagePattern":"components-breadcrumbs","lineagePath":"../../patterns/components-navigation-breadcrumbs/components-navigation-breadcrumbs.rendered.html"},{"lineagePattern":"blocks-LSOM-alamo","lineagePath":"../../patterns/blocks-footer-LSOM-alamo/blocks-footer-LSOM-alamo.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>-Should inherit UME's subnav</p>\n<p>-Subnav should stack directly under the page title on mobile (this should be the case for almost all subnavs on mobile). This was done using <code>.small-order-1</code> and <code>.large-order-2</code> (Inspect code for more)</p>\n<p>-&quot;Dual Degree &amp; Distinction Programs&quot; should be a jump link to the section of the same name on the UME page.</p>\n<p>-Hyperlink inside tabs all goes to the same PDF that should be migrated to D9 site</p>\n<p>-Orange floating tabs (as shown in prototype) are prefered but if unavailable, any of the other DSP tabs will suffice</p>\n","patternBreadcrumb":{"patternGroup":"prototypes","patternSubgroup":"LSOM"},"patternExtension":"twig","patternName":"UME Curriculum","patternPartial":"prototypes-LSOM-Curriculum","patternState":"","patternEngineName":"twig-php","extraOutput":{"order":15}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1670007853034">
+  (function() {
+    if (self != top) {
+      var cb = '1670007853034';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1670007853034" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+<script type="text/javascript" src="../../js/vendor/jQuery/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/vendor/foundation/foundation.min.js"></script>
+<script type="text/javascript" src="../../js/vendor/motion-ui/motion-ui.min.js"></script>
+<script type="text/javascript" src="../../js/shield.min.js"></script>
+<script type="text/javascript" src="../../js/vendor/what-input/what-input.min.js"></script>
+</body>
+
+</html>
