@@ -65,7 +65,7 @@ a {
 
 }
 
-// ======= apply links to paragraph text
+// ======= apply link styles to paragraph text
 p {
     >a:not(.button) {
         position: relative;
@@ -155,12 +155,16 @@ a.highlight {
         color: $off-white;
 
 
-        &:hover {
-            color: $off-white;
+        &:hover,
+        &:focus {
+            color: $light-grey;
+            text-decoration: none;
         }
 
-        &:visited {
-            color: $light-grey;
+        &:focus-visible {
+            outline-color: $off-white;
+            outline-width: rem-calc(8px);
+            outline-offset: rem-calc(10px);
         }
     }
 
@@ -289,6 +293,7 @@ a.highlight {
         }
     }
 
+    //If link is in a white card/callout, use default link style
     .card,
     .callout {
         a:not(.button) {
@@ -303,6 +308,7 @@ a.highlight {
 
 }
 
+//Links on an image background
 .img-fill {
     p>a:not(.button) {
         background-image: linear-gradient($grey-link, $grey-link);
