@@ -23,6 +23,19 @@ div.arrow ul li:before {
     padding-right: .313rem;
 }
 
+.color {
+    div.arrow li:before {
+        color: $off-white;
+    }
+
+    .card,
+    .callout {
+        div.arrow li:before {
+            color: $orange;
+
+        }
+    }
+}
 
 div.check ul li:before {
     font-family: "Font Awesome 5 Free";
@@ -31,13 +44,6 @@ div.check ul li:before {
     content: "\f00c";
     padding-right: .313rem;
 }
-
-ul li a,
-ol li a {
-    font-size: 18.7px;
-    font-weight: 600;
-}
-
 
 div.lines {
 
@@ -100,7 +106,6 @@ div.decoration {
     }
 }
 
-//General styles on colored elements and blue styles
 .color {
     div.decoration {
         ul {
@@ -114,72 +119,7 @@ div.decoration {
             }
         }
     }
-
-    div.arrow li:before {
-        color: $off-white;
-    }
-
-    .card,
-    .callout {
-        div.arrow li:before {
-            color: $orange;
-
-        }
-    }
-
-    ul li a,
-    ol li a {
-        font-weight: 900;
-        color: $blue-link;
-        padding-left: .5% !important;
-        padding-right: .5% !important;
-
-
-        &:hover {
-            background-color: $blue-link;
-            color: $blue-90;
-        }
-    }
 }
-
-.color.grey,
-.color.dark-grey {
-
-    ul li a,
-    ol li a {
-        //background-image: linear-gradient($blue-link, $blue-link);
-        color: $grey-link;
-        padding-left: .5% !important;
-        padding-right: .5% !important;
-
-
-        &:hover {
-            background-color: $grey-link;
-            color: $grey-90;
-        }
-    }
-
-}
-
-.color.orange,
-.color.darken {
-
-    ul li a,
-    ol li a {
-        //background-image: linear-gradient($blue-link, $blue-link);
-        color: $orange-link;
-        padding-left: .5% !important;
-        padding-right: .5% !important;
-
-
-        &:hover {
-            background-color: $light-beige;
-            color: $orange-90;
-        }
-    }
-
-}
-
 
 ul.underline {
     @extend %link-underline;
