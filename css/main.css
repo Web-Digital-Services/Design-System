@@ -14042,11 +14042,14 @@ a.highlight:hover {
 .color a {
   color: #F1F5F7;
 }
-.color a:hover {
-  color: #F1F5F7;
-}
-.color a:visited {
+.color a:hover, .color a:focus {
   color: #E0E5E6;
+  text-decoration: none;
+}
+.color a:focus-visible {
+  outline-color: #F1F5F7;
+  outline-width: 0.5rem;
+  outline-offset: 0.625rem;
 }
 .color p > a:not(.button) {
   background-image: linear-gradient(#A6FFFF, #A6FFFF);
@@ -17543,7 +17546,6 @@ a.event.long .date {
   background: #AD4200;
   color: #F1F5F7;
   padding: 0.9375rem 1.5625rem;
-  max-width: unset;
   border-bottom-left-radius: 0.3125rem;
   border-top-left-radius: 0.3125rem;
   transition: 0.4s ease-in-out;
