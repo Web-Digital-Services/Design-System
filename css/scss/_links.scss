@@ -195,11 +195,11 @@ a.highlight {
 
         &.highlight {
             background-color: $blue-10;
-            color: $blue-90 !important;
-            background-image: linear-gradient(transparent, transparent), linear-gradient($blue-link, $blue-link) !important;
+            color: $blue-90;
+            background-image: linear-gradient(transparent, transparent), linear-gradient($blue-link, $blue-link);
 
             &:hover {
-                color: $blue-link !important;
+                color: $blue-link;
                 background-color: inherit;
             }
         }
@@ -353,69 +353,21 @@ a.highlight {
         a.no-underline {
             background-image: none;
         }
-    }
 
-    a.arrow {
-        &:after {
-            display: inline-block;
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f105";
-            color: $orange !important;
-            margin-left: .3rem;
-            transition: .5s ease-out;
-        }
+        //Highlighter Links
+        &.highlight {
+            background-color: $orange;
+            color: $off-white;
+            background-image: linear-gradient(transparent, transparent), linear-gradient($dark-orange, $dark-orange) !important;
 
-        &:hover:after {
-            transform: translatex(.2rem);
+            &:hover {
+                color: $dark-orange;
+                background-color: inherit;
+            }
         }
     }
 
-    a.external {
-        &:after {
-            display: inline-block;
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f35d";
-            margin-left: .3rem;
-            transition: .5s ease-out;
-            //transform: rotate(-45deg);
-        }
 
-        &:hover:after {
-            transform: translate(.1rem, -.1rem);
-
-        }
-    }
-
-    a.file {
-        &:after {
-            display: inline-block;
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f56d";
-            margin-left: .3rem;
-            transition: .5s ease-out;
-            //transform: rotate(-45deg);
-        }
-
-        &:hover:after {
-            transform: translate(.1rem, -.1rem);
-
-        }
-    }
-
-    //Highlighter Links
-    a.highlight {
-        background-color: $orange;
-        color: $off-white;
-        background-image: linear-gradient(transparent, transparent), linear-gradient($dark-orange, $dark-orange) !important;
-
-        &:hover {
-            color: $dark-orange;
-            background-color: inherit;
-        }
-    }
 }
 
 

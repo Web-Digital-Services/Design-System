@@ -118,7 +118,7 @@
         margin-bottom: rem-calc(18px);
 
         li.is-nested {
-            font-weight: 900 !important;
+            font-weight: 900;
             color: $dark-orange;
         }
     }
@@ -129,7 +129,7 @@
 }
 
 .accordion-menu .is-active:not(.nested) {
-    font-weight: 900 !important;
+    font-weight: 900;
     color: $dark-orange;
 }
 
