@@ -14073,11 +14073,11 @@ a.highlight:hover {
 }
 .color p > a:not(.button).highlight {
   background-color: #A4F8FF;
-  color: #002D48;
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#A6FFFF, #A6FFFF);
+  color: #002D48 !important;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#A6FFFF, #A6FFFF) !important;
 }
 .color p > a:not(.button).highlight:hover {
-  color: #A6FFFF;
+  color: #A6FFFF !important;
   background-color: inherit;
 }
 .color.orange p > a:not(.button), .color.darken p > a:not(.button) {
@@ -14184,14 +14184,54 @@ a.highlight:hover {
 .img-fill .white p a.no-underline {
   background-image: none;
 }
-.color .white p > a:not(.button).highlight,
-.img-fill .white p > a:not(.button).highlight {
+.color .white a.arrow:after,
+.img-fill .white a.arrow:after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  color: #AD4200 !important;
+  margin-left: 0.3rem;
+  transition: 0.5s ease-out;
+}
+.color .white a.arrow:hover:after,
+.img-fill .white a.arrow:hover:after {
+  transform: translatex(0.2rem);
+}
+.color .white a.external:after,
+.img-fill .white a.external:after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f35d";
+  margin-left: 0.3rem;
+  transition: 0.5s ease-out;
+}
+.color .white a.external:hover:after,
+.img-fill .white a.external:hover:after {
+  transform: translate(0.1rem, -0.1rem);
+}
+.color .white a.file:after,
+.img-fill .white a.file:after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f56d";
+  margin-left: 0.3rem;
+  transition: 0.5s ease-out;
+}
+.color .white a.file:hover:after,
+.img-fill .white a.file:hover:after {
+  transform: translate(0.1rem, -0.1rem);
+}
+.color .white a.highlight,
+.img-fill .white a.highlight {
   background-color: #AD4200;
   color: #F1F5F7;
   background-image: linear-gradient(transparent, transparent), linear-gradient(#7A0F00, #7A0F00) !important;
 }
-.color .white p > a:not(.button).highlight:hover,
-.img-fill .white p > a:not(.button).highlight:hover {
+.color .white a.highlight:hover,
+.img-fill .white a.highlight:hover {
   color: #7A0F00;
   background-color: inherit;
 }
@@ -14985,6 +15025,7 @@ div.decoration li > a:hover {
 
 .color div.decoration ul li > a {
   text-decoration-color: #F1F5F7;
+  transition: opacity 0.3s;
 }
 .color div.decoration ul li > a:hover {
   text-decoration-color: #F1F5F7;
@@ -14995,12 +15036,6 @@ div.decoration li > a:hover {
 .color .card div.arrow li:before,
 .color .callout div.arrow li:before {
   color: #AD4200;
-}
-.color .card ul li a:hover,
-.color .card ol li a:hover,
-.color .callout ul li a:hover,
-.color .callout ol li a:hover {
-  background-color: transparent;
 }
 .color ul li a,
 .color ol li a {
@@ -15603,18 +15638,10 @@ a.card.postcard:hover img {
   background-color: #AD4200;
   color: #F1F5F7;
 }
-.bleed.color .white .button:hover, .bleed.color .white .button:focus {
-  background-color: #7A0F00;
-  color: #F1F5F7;
-}
 .bleed.color .white .button.ghost {
   border: 0.0625rem solid #AD4200;
   background-color: #F1F5F7;
   color: #AD4200;
-}
-.bleed.color .white .button.ghost:hover, .bleed.color .white .button.ghost:focus {
-  background-color: #AD4200;
-  color: #F1F5F7;
 }
 .bleed.color .light-grey .button.ghost {
   border: 0.0625rem solid #AD4200;
@@ -15755,7 +15782,7 @@ a.card.postcard:hover img {
   margin-bottom: 1.125rem;
 }
 #subnav .nested.vertical.submenu li.is-nested {
-  font-weight: 900;
+  font-weight: 900 !important;
   color: #7A0F00;
 }
 
@@ -15764,7 +15791,7 @@ a.card.postcard:hover img {
 }
 
 .accordion-menu .is-active:not(.nested) {
-  font-weight: 900;
+  font-weight: 900 !important;
   color: #7A0F00;
 }
 

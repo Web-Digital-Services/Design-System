@@ -106,7 +106,7 @@ div.decoration {
         ul {
             li>a {
                 text-decoration-color: $off-white;
-                //transition: opacity .3s;
+                transition: opacity .3s;
 
                 &:hover {
                     text-decoration-color: $off-white;
@@ -115,26 +115,15 @@ div.decoration {
         }
     }
 
-    //arrow list on color backgrounds use white arrows
-
     div.arrow li:before {
         color: $off-white;
     }
 
-    //cards and callouts change back to default orange
     .card,
     .callout {
         div.arrow li:before {
             color: $orange;
 
-        }
-
-        ul li a,
-        ol li a {
-
-            &:hover {
-                background-color: transparent;
-            }
         }
     }
 
