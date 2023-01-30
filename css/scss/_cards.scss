@@ -2,9 +2,9 @@
     CARDS
 ============================================================ */
 
-//Similar to .nested but .framed is placed on parent div
+
 div.cell.nested {
-    border-radius: rem-calc(6px) !important;
+    border-radius: rem-calc(6px) !important; //test to remove
     background-color: $beige;
 
     &.color {
@@ -38,16 +38,18 @@ div.cell.nested {
 }
 
 a.card {
-    padding: 0 !important; //Overrides the bleed padding for <a>
-    border-radius: rem-calc(6px) !important;
+    //importants override the orange font color
+
+    padding: 0 !important; //Overrides the bleed padding for <a> //test to remove
+    border-radius: rem-calc(6px) !important; //test to remove
     border: 0;
     @extend %jump-base;
     position: relative;
-    color: $off-black !important;
+    color: $off-black !important; //test to remove
 
     &:hover {
         @extend %jump-hover;
-        color: $off-black !important;
+        color: $off-black !important; //test to remove
     }
 
     img{
@@ -72,6 +74,7 @@ a.card {
         }
     }
 
+    //importants should be tested for removal
     &.color {
         color: $off-white !important;
 
@@ -100,7 +103,7 @@ a.card {
         }
     }
 
-    .grid-x {
+    .grid-x { //This is for the icon in the longcard component
         &:after {
             position: absolute;
             display: block;

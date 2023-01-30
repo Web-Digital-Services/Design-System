@@ -36,7 +36,7 @@
 .button-group {
     .button {
         font-weight: 500;
-        margin-right: rem-calc(24px) !important;
+        margin-right: rem-calc(24px) !important;//test to remove
         font-size: rem-calc(18px);
     }
 }
@@ -64,7 +64,7 @@
         .button:hover {
             background-color: darken($pure-white, 20%);
         }
-        
+
         .button-group {
             .button {
                 background-color: $off-white;
@@ -89,6 +89,7 @@
                 background-color: transparent;
                 color: $off-white;
             }
+
             &.ghost:hover {
                 background-color: rgba(23, 23, 23, 0.5);
             }
@@ -114,10 +115,22 @@
                 background-color: $orange;
                 color: $off-white;
 
+                &:hover,
+                &:focus {
+                    background-color: $dark-orange;
+                    color: $off-white;
+                }
+
                 &.ghost {
                     border: rem-calc(1px) solid $orange;
                     background-color: $off-white;
                     color: $orange;
+
+                    &:hover,
+                    &:focus {
+                        background-color: $orange;
+                        color: $off-white;
+                    }
                 }
             }
 
@@ -174,8 +187,9 @@
 
     .button-group {
         flex-direction: column;
+
         .button {
-            width:100%;
+            width: 100%;
             margin-bottom: rem-calc(20px);
         }
     }

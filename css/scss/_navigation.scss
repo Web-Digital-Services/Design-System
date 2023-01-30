@@ -118,7 +118,7 @@
         margin-bottom: rem-calc(18px);
 
         li.is-nested {
-            font-weight: 900 !important;
+            font-weight: 900;
             color: $dark-orange;
         }
     }
@@ -129,7 +129,7 @@
 }
 
 .accordion-menu .is-active:not(.nested) {
-    font-weight: 900 !important;
+    font-weight: 900;
     color: $dark-orange;
 }
 
@@ -534,24 +534,24 @@ header {
         }
 
         .top-bar {
-            background-color: $dark-grey !important;
+            background-color: $dark-grey !important; //test to remove
             border-top: rem-calc(6px) solid $gold;
             display: block;
 
             ul {
                 display: block;
-                background-color: $dark-grey !important;
+                background-color: $dark-grey !important; //test to remove
 
                 li {
                     border-bottom: rem-calc(1.75px) solid $grey-10;
 
                     &:hover {
-                        background: $off-white !important;
+                        background: $off-white !important; //test to remove
                     }
 
                     a {
                         &:hover {
-                            color: $orange !important;
+                            color: $orange !important; //test to remove
                         }
                     }
                 }
@@ -559,7 +559,7 @@ header {
             }
 
             .top-bar-right {
-                border-left: none !important;
+                border-left: none !important; //test to remove
 
                 ul>li:last-child {
                     border-bottom: none;
