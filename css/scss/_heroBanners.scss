@@ -91,6 +91,11 @@ header.super-hero+.hero {
         background-color: transparent;
         overflow: initial; //Hidden produces a strange margin between hero area and new nav design. Clip accomplishes the same effect with no extra margins
 
+        &.orange {
+            background: rgba(148, 41, 0, 0.75);
+            color: $off-white !important;
+        }
+
         &.blur {
             background-color: rgba(23, 23, 23, 0.7);
             overflow: clip;
@@ -118,6 +123,11 @@ header.super-hero+.hero {
 
         &.orange {
             background: rgba(148, 41, 0, 0.85);
+            color: $off-white !important;
+        }
+
+        &.transparent {
+            background: transparent;
             color: $off-white !important;
         }
 

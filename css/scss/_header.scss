@@ -302,7 +302,7 @@ header {
         }
     }
 
-    //DSP Revise Jan 2022
+    //DSP Revise Feb 2023
     &#header {
 
         z-index: 6;
@@ -548,6 +548,18 @@ header {
 
             }
 
+        }
+
+        &.magazine-hero {
+
+            @media screen and (min-width:$small-screen) {
+                position: absolute;
+                border-top: 0;
+                top: 0;
+                background: transparent;
+                width: 100%;
+
+            }
         }
     }
 }

@@ -49,6 +49,14 @@
             padding-bottom: rem-calc(40px);
         }
     }
+    .massive {
+        padding-top: rem-calc(270px);
+        padding-bottom: rem-calc(270px);
+        @media screen and (max-width: $small-screen) {
+            padding-top: rem-calc(60px);
+            padding-bottom: rem-calc(60px);
+        }
+    }
 
     .bleed {
         color: $off-black;

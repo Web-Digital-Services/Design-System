@@ -372,7 +372,74 @@ div#level-1 {
         }
     }
 
+    &#magazine-nav {
 
+        background: none;
+        box-shadow: none;
+
+        .top-bar {
+            background-color: unset;
+            width: auto;
+
+            .top-bar-left {
+
+                ul {
+                    background-color: transparent; //This is so the color doesn't get overrided by the old nav styles. DELETE LATER
+                    justify-content: space-evenly;
+
+                    .is-active {
+                        >a {
+                            background: $orange;
+                            color: $off-white;
+                        }
+                    }
+
+                    li {
+
+                        &:hover {
+                            background: transparent; //This is so the color doesn't get overrided by the old nav styles. DELETE LATER
+                        }
+
+                        a,
+                        a:after {
+                            transition: .3s;
+                        }
+
+                        a {
+
+                            position: relative;
+                            z-index: 1;
+                            color: $orange;
+                            font-size: 24px;
+                            //expand click area
+                            padding-top: rem-calc(22px);
+                            padding-bottom: rem-calc(22px);
+
+
+                            &:hover {
+                                color: $dark-orange;
+
+                                &:after {
+                                    height: 100%; //expands pseudo fill container to height of container
+                                }
+                            }
+
+                            &:active {
+                                background: $orange;
+                                color: $off-white;
+                            }
+
+                            &:focus {
+                                background: $grey;
+                                color: $off-white;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 
 
     //OLD NAV DESIGN
