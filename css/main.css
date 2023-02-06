@@ -14523,8 +14523,8 @@ blockquote.fancy cite {
 }
 
 .massive {
-  padding-top: 16.875rem;
-  padding-bottom: 16.875rem;
+  padding-top: 21.875rem;
+  padding-bottom: 21.875rem;
 }
 @media screen and (max-width: 639px) {
   .massive {
@@ -17812,6 +17812,10 @@ header.super-hero + .hero.mission.img-fill video {
 }
 .hero.img-fill.orange {
   background: rgba(148, 41, 0, 0.75);
+  color: #F1F5F7 !important;
+}
+.hero.img-fill.black {
+  background: rgba(23, 23, 23, 0.75);
   color: #F1F5F7 !important;
 }
 .hero.img-fill.blur {

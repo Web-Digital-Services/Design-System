@@ -96,6 +96,11 @@ header.super-hero+.hero {
             color: $off-white !important;
         }
 
+        &.black {
+            background: rgba(23, 23, 23, 0.75);
+            color: $off-white !important;
+        }
+
         &.blur {
             background-color: rgba(23, 23, 23, 0.7);
             overflow: clip;
