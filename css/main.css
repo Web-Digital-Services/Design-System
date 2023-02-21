@@ -16804,6 +16804,12 @@ a .datebox:hover, a.event:hover.long, .tags li:hover, a.callout:hover, a.card:ho
   fill: #7A0F00;
 }
 
+/*.color .cell.divider-right {
+    width: 1px;
+    background-color: $white;
+    height: 75%;
+    float: right;
+}*/
 /* ============================================================
     TABS
 
