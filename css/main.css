@@ -14882,8 +14882,8 @@ a.callout:hover.dark-grey {
 }
 a.callout:hover.special {
   background: none;
-  background-color: #333d42;
-  transition: 0.8s ease-out;
+  background-color: #333d42 !important;
+  transition: 0.5s ease-out !important;
 }
 a.callout:hover.special h1,
 a.callout:hover.special h2,
