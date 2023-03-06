@@ -269,8 +269,8 @@ a.callout:hover {
 
     &.special {
         background: none;
-        background-color: $dark-grey;
-        transition: .8s ease-out;
+        background-color: $dark-grey !important;
+        transition: .5s ease-out !important;
 
         & h1,
         h2,
