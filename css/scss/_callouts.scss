@@ -228,6 +228,11 @@ a.callout {
             }
         }
     }
+
+    &.outline {
+        text-align: unset;
+        color: $off-black;
+    }
 }
 
 a.callout:hover {
@@ -288,5 +293,9 @@ a.callout:hover {
         & .fa-inverse {
             color: $orange;
         }
+    }
+
+    &.outline {
+        color: $off-white;
     }
 }

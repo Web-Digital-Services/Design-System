@@ -14851,6 +14851,10 @@ a.callout.special .circle .fa-circle {
   text-shadow: 3px 3px 7px rgb(23, 23, 1);
   transition: none;
 }
+a.callout.outline {
+  text-align: unset;
+  color: #171717;
+}
 
 a.callout:hover {
   background-color: #7A0F00 !important;
@@ -14898,6 +14902,9 @@ a.callout:hover.special .fa-circle {
 }
 a.callout:hover.special .fa-inverse {
   color: #AD4200;
+}
+a.callout:hover.outline {
+  color: #F1F5F7;
 }
 
 .demo-col {
