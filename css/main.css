@@ -15341,6 +15341,40 @@ footer.mission .contact .fa-inverse {
   color: #F1F5F7;
 }
 
+.scroll-page {
+  background: #F1F5F7;
+  box-shadow: 0.1875rem 0.1875rem 0.4375rem 0 rgba(23, 23, 23, 0.5);
+  border-radius: 0.33rem;
+  color: #AD4200;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 99;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  transition: 0.3s ease-in-out;
+}
+.scroll-page i {
+  font-size: 1.375rem;
+  color: #AD4200;
+  transition: 0.3s ease-in-out;
+}
+.scroll-page span {
+  display: block;
+}
+
+@media screen and (max-width: 465px) {
+  .top-page {
+    top: 75%;
+  }
+  .top-page i {
+    font-size: 1.125rem;
+  }
+}
+.icons-inline .fa-stack {
+  margin-left: 1rem;
+}
+
 /* ============================================================
     CARDS
 ============================================================ */
