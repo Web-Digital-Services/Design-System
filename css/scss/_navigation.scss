@@ -389,7 +389,7 @@ div#level-1 {
 
                     .is-active {
                         >a {
-                            background: $orange;
+                            background: $light-grey;
                             color: $off-white;
                         }
                     }
@@ -409,7 +409,7 @@ div#level-1 {
 
                             position: relative;
                             z-index: 1;
-                            color: $orange;
+                            color: $off-white;
                             font-size: 24px;
                             //expand click area
                             padding-top: rem-calc(22px);
@@ -417,7 +417,7 @@ div#level-1 {
 
 
                             &:hover {
-                                color: $dark-orange;
+                                color: $gold;
 
                                 &:after {
                                     height: 100%; //expands pseudo fill container to height of container

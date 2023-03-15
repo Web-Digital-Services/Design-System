@@ -451,6 +451,70 @@ header {
 
                     }
 
+                    .expand-search-mag {
+
+                        //margin-right: rem-calc(15px);
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        bottom: 2px;
+
+                        &:hover {
+                            input {
+                                width: 200px;
+                                cursor: text;
+                                padding-left: 15px;
+                                color: $off-black;
+                                border: 4px solid $off-white;
+                                box-shadow: none;
+                            }
+                        }
+
+                        input {
+                            margin-top: 2px;
+                            width: 30px;
+                            height: 30px;
+                            border: 4px solid $off-white;
+                            border-radius: 20px;
+                            padding: 14px;
+                            background-color: unset;
+                            //outline: 4px auto $orange;
+                            //transition-duration: 500ms;
+                            transition: 400ms ease-in-out;
+                            cursor: pointer;
+                            color: unset;
+                            //z-index: 1;
+
+                        }
+
+                        input:focus,
+                        input:active,
+                        input:hover {
+                            width: 200px;
+                            cursor: text;
+                            padding-left: 15px;
+                            color: $off-white;
+                            border: 4px solid $off-white;
+                            box-shadow: none;
+                        }
+
+                        input:focus-visible {
+                            outline-offset: unset;
+                        }
+
+                        button {
+                            cursor: pointer;
+                            //z-index: 1;
+                            position: relative;
+                            right: 26px;
+                            bottom: 5px;
+
+                            i {
+                                color: $off-white;
+                            }
+                        }
+                    }                    
+
                 }
 
             }
@@ -558,7 +622,6 @@ header {
                 top: 0;
                 background: transparent;
                 width: 100%;
-
             }
         }
     }

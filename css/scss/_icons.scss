@@ -181,6 +181,26 @@ a .fa-stack.outline {
     }
 }
 
+a .fa-stack.outline.white {
+    .fa-stack-2x {
+        color: $off-white;
+    }
+
+    .fa-stack-1x {
+        color: $off-white;
+    }
+
+    &:hover {
+        .fa-stack-2x {
+            color: $gold;
+        }
+
+        .fa-stack-1x {
+            color: $gold;
+        }
+    }
+}
+
 .callout {
     li>.fa-stack {
         margin-bottom: rem-calc(11px);
