@@ -17126,6 +17126,9 @@ img.float-right {
   img:not(.card > img) {
     margin-bottom: 0.625rem;
   }
+  .hidden-mobile {
+    display: none;
+  }
 }
 img.logo {
   width: 18.75rem;

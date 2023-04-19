@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="theme-color" content="#D45D00">
 
-    <link rel="stylesheet" href="../../css/main.css?1681911106120" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1681911106120" media="all" />
+    <link rel="stylesheet" href="../../css/main.css?1681922147642" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1681922147642" media="all" />
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
@@ -164,28 +164,46 @@
             </div>
         </div>
 </section>
+
 <section class="bleed">
     <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-            <div class="cell small-12 medium-2">
-            <div class="small-12 medium-2 cell">
-            <i class="fas fa-calendar-alt fa-10x dark-grey"></i>
-            </div></div>
-            <div class="cell small-12 medium-6">
-                <h2>Appointment Information</h2>
-                <h3 class="h5">Already a patient? Use MyChart:</h3>
-                <p><a href="#" class="button">MyChart login</a></p>
-                <h4 class="h5">Please call one of our OBGYN locations to make an appointment:</h3>
-                <p><a href="#1" class="button">Find a location</a></p>
+        <div class="grid-x grid-margin-x align-center">
+            <div class="small-12 medium-4 cell text-center">
+                <a>
+                    <span class="fa-stack fa-5x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4>MyChart login</h4>
+                </a>
+                <p>Already a patient? Use MyChart to schedule an appointment.</p>
             </div>
-            <aside class="cell small-12 medium-4">
-                <div class="callout outline">
-                <h5>Payment and insurance</h5>
-                <p>We accept most major <a>insurance plans</a>.</p>
+            <div class="small-12 medium-4 cell text-center">
+                <a>
+                    <span class="fa-stack fa-5x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-hospital fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4><a href="#1">Find a location</h4>
+                </a>
+                <p>Please call one of our OBGYN locations to make an appointment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bleed color">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x align-center-middle">
+            <div class="cell small-12 medium-8">
+                <h3>Payment and insurance</h3>
+            <p>We accept most major <a>insurance plans</a>.</p>
                 <p>Questions? Contact our customer service team at 210-450-6330 or by <a>email.</a></p>
                 <p><a class="arrow">Pay your bill online</a></p>
-         </div>
-            </aside>
+            </div>
+            <div class="sell small-12 medium-2 text-center">
+                <i class="fas fa-file-medical-alt fa-10x"></i>
+            </div>
         </div>
     </div>
 </section>
@@ -194,8 +212,8 @@
     <div class="grid-container">
 	<div class="grid-x grid-margin-x">
 		<div class="cell large-6 medium-6 small-12">
-			<img src="../../images/UTP-Map.png">
-		</div>
+			<div class="hidden-mobile"><img src="../../images/UTP-Map.png">
+		</div></div>
 		<div class="cell large-6 medium-6 small-12">
 		<a id="1" name="1"></a><h2>Practice locations</h2>
         	<div class="grid-x grid-margin-x">
@@ -243,66 +261,43 @@
     </div>
 </section>
 
-<section class="bleed color">
+<section class="bleed light-grey">
     <div class="grid-container">
-            <div class="grid-x grid-margin-x align-center">
-            <div class="cell small-10">
-                <h2 class="text-center">Features</h2>
-                <div class="button-group align-center">
-    </div></p>
-            </div>
-        <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
-            <div class="cell small-12 medium-4 card">
-                <div class="grid-x grid-padding-x">
-                    <div class="cell small-12 medium-4">
-                        <img src="https://providers.uthscsa.edu/wp-content/uploads/2022/09/450x630-57.jpg" alt="">
-                    </div>
-                    <div class="cell small-12 medium-8">
-                        <p class="eyebrow">Provider</p>
+        <h2 class="text-center">Features</h2>
+        <div class="grid-x grid-margin-x grid-padding-y small-up-1 large-up-4">
+            <a class="card cell color">
+                <img src="https://picsum.photos/400/250" alt="">
+                <div class="card-section">
+                    <p class="eyebrow">Provider</p>
                         <h4>Katherine Bartush, MD</h4>
-                        <p><strong>Locations</strong><br>
-                        <p><a class="arrow">Orthopaedic - Adult and Pediatric - Medical Arts & Research Center - MARC</a></p>
-                        
-                    </div>
+                        <p>Optional descriptive sentence.</p>
                 </div>
-            </div>
-            <div class="cell small-12 medium-4 card">
-                <div class="grid-x grid-padding-x">
-                    <div class="cell small-12 medium-4">
-                        <img src="https://providers.uthscsa.edu/wp-content/uploads/2022/09/450x630-127.jpg">
-                    </div>
-                    <div class="cell small-12 medium-8">
-                        <p class="eyebrow">Provider</p>
+            </a>
+            <a class="card cell color">
+                <img src="https://picsum.photos/400/250" alt="">
+                <div class="card-section">
+                    <p class="eyebrow">Provider</p>
                         <h4>Sekinat McCormick, MD</h4>
-                        <p><strong>Locations</strong><br>
-                        <p><a class="arrow">Orthopaedic - Adult and Pediatric - Medical Arts & Research Center - MARC</a></p>
-                      
-                    </div>
+                        <p>Optional descriptive sentence.</p>
                 </div>
-            </div>
-            <div class="cell small-12 medium-4 card">
-                <div class="grid-x grid-padding-x">
-                    <div class="cell small-12 medium-4">
-                        <img src="https://placedog.net/124/173">
-                    </div>
-                    <div class="cell small-12 medium-8">
-                    <p class="eyebrow">News Story</p>
-                        <h4>Story Headline</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p><a class="arrow">Read full story</a></p>
-                    </div>
+            </a>
+            <a class="card cell color">
+                <img src="https://picsum.photos/400/250" alt="">
+                <div class="card-section">
+                    <h4>Story Headline</h4>
+                        <p>Optional descriptive sentence.</p>
                 </div>
-            </div>
+            </a>
+            <a class="card cell color">
+                <img src="https://picsum.photos/400/250" alt="">
+                <div class="card-section">
+                    <h4>Story Headline</h4>
+                        <p>Optional descriptive sentence.</p>
+                </div>
+            </a>
         </div>
-        <div class="grid-x grid-margin-x align-center">
-        <div class="button-group">
-    <p><a href="#" class="button">Find a Provider</a></p>
-    <p><a href="#" class="button">View all news</a></p>
-</div>
     </div>
-
 </section>
-
 
 <footer class="flatten">
     <div class="shield">
@@ -409,10 +404,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1681911106120">
+<script id="pl-js-polyfill-insert-1681922147642">
   (function() {
     if (self != top) {
-      var cb = '1681911106120';
+      var cb = '1681922147642';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -425,7 +420,7 @@
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1681911106120" nomodule>
+<script id="pl-js-insert-1681922147642" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 

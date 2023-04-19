@@ -56,6 +56,10 @@ img.float-right {
     img:not(.card > img) {
         margin-bottom: rem-calc(10px);
     }
+
+    .hidden-mobile {
+        display: none;
+      }
 }
 
 // logo
