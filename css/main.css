@@ -14855,9 +14855,6 @@ a.callout.outline {
   text-align: unset;
   color: #171717;
 }
-a.callout.expand p {
-  opacity: 0;
-}
 
 a.callout:hover {
   background-color: #7A0F00 !important;
@@ -14908,9 +14905,6 @@ a.callout:hover.special .fa-inverse {
 }
 a.callout:hover.outline {
   color: #F1F5F7;
-}
-a.callout:hover.expand p {
-  opacity: 1;
 }
 
 .demo-col {
