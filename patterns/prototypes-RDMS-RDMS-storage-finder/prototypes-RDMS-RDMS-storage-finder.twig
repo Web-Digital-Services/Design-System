@@ -220,259 +220,261 @@
 <section class="grid-container">
   <div class="grid-x grid-margin-x">
     <div class="cell large-12 medium-12 small-12">
-      <table class="unstriped">
-        <thead>
-          <tr>
-            <th>Service Name</th>
-            <th>Description</th>
-            <th>Eligibility</th>
-            <th>Data Classification</th>
-            <th>Use Cases</th>
-            <th>Cost</th>
-            <th>Capacity</th>
-            <th>Access & Collaboration</th>
-            <th>Data Protection</th>
-            <th>Contact</th>
-          </tr>
-        </thead>
+      <p class="show-for-small-only">Scroll right for more <i class="fas fa-arrow-right"></i></p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Service Name</th>
+              <th>Description</th>
+              <th>Eligibility</th>
+              <th>Data Classification</th>
+              <th>Use Cases</th>
+              <th>Cost</th>
+              <th>Capacity</th>
+              <th>Access & Collaboration</th>
+              <th>Data Protection</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
 
-        <tbody>
-          <tr>
-            <td>UTHSA Big Storage Performance</td>
-            <td>Active Compute Frequently Accessed Computed against Shared within and outside of your department. </td>
-            <td>All UT Health SA faculty and staff.</td>
-            <td>Confidential/High Risk <br>Controlled Data<br>Published Data</td>
-            <td>Data storage for active compute servers, analytic applications, and databases that are located in UTHSA campus data centers.</td>
-            <td>Tier 1 $290 per TB per year (Data Analytics )</td>
-            <td>No file or folder limits.</td>
-            <td>Big shared storage is managed by the department’s own staff. The storage can be mapped using NFS, CIFS share for Windows, Linux, Mac OS. </td>
-            <td>The storage can be backed up or replicated to offsite for Disaster Recovery at an additional cost.</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>UTHSA Big Storage Active</td>
-            <td>Frequently Accessed Shared within and outside of your department</td>
-            <td>All UT Health SA faculty and staff.</td>
-            <td>Confidential/High Risk <br>Controlled Data<br>Published Data</td>
-            <td>Data storage for non active compute servers, applications, and databases that are located in UTHSA campus data centers.</td>
-            <td>Tier 2 $260 per TB per year (File Content)</td>
-            <td>No file or folder limits.</td>
-            <td>Big shared storage is managed by the department’s own staff. The storage can be mapped using NFS, CIFS share for Windows, Linux, Mac OS.</td>
-            <td>The storage can be backed up or replicated to offsite for Disaster Recovery at an additional cost.</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>UTHSA Big Storage Archive</td>
-            <td>Campus hosted low tier performance NAS storage for archive.</td>
-            <td>All UT Health SA faculty and staff.</td>
-            <td>Confidential/High Risk <br>Controlled Data<br>Published Data</td>
-            <td>Data storage for infrequent accessed datasets,  archive data that are located in UTHSA campus data centers</td>
-            <td>Tier 3 $190 per TB per year (Archive Storage)</td>
-            <td>No file or folder limits.</td>
-            <td>Big shared storage is managed by the department’s own staff. The storage can be mapped using NFS, CIFS share for Windows, Linux, Mac OS.</td>
-            <td>The storage can be backed up or replicated to offsite for Disaster Recovery at an additional cost.</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>UTHSA Systems-Managed Storage Share (LMS)</td>
-            <td>Campus hosted NAS storage for departmental file shares, and user home directories. Permissions managed by Systems</td>
-            <td>Any employee may submit a request, but it must be reviewed and approved by the appropriate business office before the requested access is granted.</td>
-            <td>Confidential/High Risk <br>Controlled Data<br>Published Data</td>
-            <td>Department basic file share<br>User/Home data basic file share</td>
-            <td>One-time setup per User 				$30.00<br>Permission and User Management Per User	            $7.50<br>LMS Storage per GB						$3.90 per year</td>
-            <td>No file or folder limits.</td>
-            <td>Leased mass storage (LMS) is file storage for groups and/or individuals of data on a server that is managed and maintained by UT Health IT</td>
-            <td> UT Health IT will ensure that the storage is backed up daily. This includes off-site backup. Files are being snapshotted twice a day at noon and 4 PM. The snapshots are kept locally for 3 days. Daily Backup data at 12 am is retained for two weeks locally. Weekly backup is replicated to DR site and kept for 1 month. Monthly backup is retained for 3 months and replicated to DR site. Longer retention times must be purchased through backup retention service. There is an additional charge for longer retention times.  For Windows and MacOS</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>Microsoft Azure Archive Blob</td>
-            <td>Azure archive storage is designed for long-term archival of data that is not often accessed.</td>
-            <td>All UT Health SA faculty and staff.</td>
-            <td>Confidential/High Risk* With exemption <br>Controlled Data<br>Published Data</td>
-            <td>Archival data</td>
-            <td>60 per TB per year</td>
-            <td>No file or folder limits.</td>
-            <td>&nbsp;</td>
-            <td>Single copy of data</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>TACC Ranch</td>
-            <td>Long-term data archiving environment designed, implemented, and supported to provide storage for data sets of the TACC user community.</td>
-            <td>Any Texas Researcher</td>
-            <td>Controlled Data<br>Published Data</td>
-            <td>Ranch is the long-term data archiving environment at TACC. The environment is designed, implemented, and supported to provide long-term storage for the data sets of the TACC user community. These data sets include both final data, as well as fixed external data imported into TACC for use on TACC’s other resources.</td>
-            <td>Contract-based</td>
-            <td>No file or folder limits.</td>
-            <td>Self Managed</td>
-            <td>Users are cautioned that Ranch contains only a single copy of any user's data. Ranch is a very large-scale archival system, and the data within it is not backed up or replicated. While best practices and best effort have always been brought to bear to support Ranch and the integrity of the user data within it, it is not a date backup/restore environment. Ranch is not designed, maintained, or supported to provide the sole storage location for user data.<br>If a higher integrity long-term archive is required, please contact TACC support.</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>Corral</td>
-            <td>Corral supports data-centric science at The University of Texas at Austin, and throughout the U.S. This storage and data management resource is designed and optimized to support large-scale collections and a collaborative research environment.</td>
-            <td>Any Texas Researcher</td>
-            <td>Controlled Data<br>Published Data</td>
-            <td>Storage and data management resource designed and optimized to support large-scale collections and a collaborative research environment.</td>
-            <td>Contract-based</td>
-            <td>No file or folder limits.</td>
-            <td>Self Managed</td>
-            <td>&nbsp; </td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>Microsoft SharePoint</td>
-            <td>Office 365 is a suite of web-based tools hosted by Microsoft. In addition to email and calendaring features, Office 365 provides multiple online applications such as SharePoint, the Office Suite and additional productivity tools.</td>
-            <td>All UT Health SA Students, faculty and staff.</td>
-            <td>Confidential/High Risk* With exemption <br>Controlled Data<br>Published Data</td>
-            <td>online collaboration tool for projects or teams with a small amount of data and also an easy way to share a secure web link as an alternative to an email attachment.</td>
-            <td>UT Health SA provides faculty, staff, and students Office 365 accounts at no cost.</td>
-            <td>Max File Size<br>15.0 GB</td>
-            <td>Self Managed/td>
-            <td>All changes are saved automatically and files are versioned.</td>
-            <td><a>sharepointteam@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>Microsoft OneDrive</td>
-            <td>Office 365 is a suite of web-based tools hosted by Microsoft. In addition to email and calendaring features, Office 365 provides multiple online applications such as OneDrive, the Office Suite and additional productivity tools.</td>
-            <td>All UT Health SA Students, faculty and staff.</td>
-            <td>Confidential/High Risk* With exemption <br>Controlled Data<br>Published Data</td>
-            <td>It works well as an online collaboration tool for projects or teams with less than 1 TB of data and also an easy way to share a secure web link as an alternative to an email attachment.</td>
-            <td>UT Health SA provides faculty, staff, and students Office 365 accounts at no cost.</td>
-            <td>Max File Size<br>15.0 GB<br>1 TB total Capacity</td>
-            <td>Self Managed</td>
-            <td>All changes are saved automatically and files are versioned.</td>
-            <td><a>sharepointteam@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>Microsoft Teams</td>
-            <td>Office 365 is a suite of web-based tools hosted by Microsoft. In addition to email and calendaring features, Office 365 provides multiple online applications such as Teams, the Office Suite and additional productivity tools.</td>
-            <td>All UT Health SA Students, faculty and staff.</td>
-            <td>Confidential/High Risk* With exemption <br>Controlled Data<br>Published Data</td>
-            <td>&nbsp;</td>
-            <td>UT Health SA provides faculty, staff, and students Office 365 accounts at no cost.</td>
-            <td>Max File Size<br>10.0 GB</td>
-            <td>Self Managed</td>
-            <td>All changes are saved automatically and files are versioned.</td>
-            <td><a>sharepointteam@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>UTHSA Box</td>
-            <td>Cloud-based storage and collaboration service.</td>
-            <td>All UT Health SA faculty and staff.</td>
-            <td>Controlled Data<br>Published Data</td>
-            <td>online collaboration tool for projects or teams with a small amount of data and also an easy way to share a secure web link as an alternative to an email attachment.</td>
-            <td>$250 per seat per year</td>
-            <td>Max File Size<br>50.0 GB</td>
-            <td>Self Managed</td>
-            <td>All changes are saved automatically when editing files directly in Box, Box Drive, and mobile clients.</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>Globus</td>
-            <td>Globus is a non-profit service for secure, reliable research data management. With Globus, users can move, share, & discover data via a single interface--whether your files live on a supercomputer, lab cluster, tape archive, public cloud or your laptop, you can manage this data from anywhere, using your existing identities, via just a web browser.​ Developers can also use Globus to build applications and gateways leveraging its advanced identity management, single sign-on, search, authorization, and automation capabilities.</td>
-            <td>All UT Health SA faculty and staff.</td>
-            <td>Our subscription covers the Globus High Assurance features. With a High Assurance or HIPAA BAA subscription, files that contain protected data can be transferred and shared using Globus in compliance with the data’s security requirements. When you use Globus, the content of your files is never sent to Globus servers. Consequently, any protected data stored in files is never shared with Globus.</td>
-            <td>Data collected from instruments (e.g., cryoEM, gene sequencers, remote sensors) can be transferred from the data collection point to a centralized storage resource, like UTHSA Block Big Storage, UTHSA Block Storage or the cloud. From there, the data can be processed for analysis or shared with external collaborators.</td>
-            <td>UT Health SA has a subscription that covers all community members, including staff and students. UTHSA research projects operating Globus Connect Server endpoints can add them to the subscription to unlock additional features, including guest collections to enable access by external collaborators. Individual researchers can join the UTHSA Globus Users Group to create guest collections on their Globus  endpoints. Our subscription also includes connectors for Microsoft Azure </td>
-            <td>Globus does not store data, it is a service that provides reliable and secure data transfers between endpoints. The endpoints are operated by users, projects, and data centers, and endpoint capacity is based on the storage it accesses. For example, if you have a Globus Connect Personal endpoint on your laptop, the maximum capacity is the free space on your laptop. However, if you’re using the Azure blob connector, the limiting factor is probably your budget.</td>
-            <td>Data access can be set up for only users on a system, or for sharing using a collaborators’s outside identity (i.e., from another university or ORCiD). These permissions are set on the folder level and managing access can be granted to users through roles.</td>
-            <td>Like capacity, the durability of data accessible via Globus depends on the underlying endpoint and its storage. However, Globus provides several mechanisms to ensure data integrity during and after transfer. The first is the reliability of the transfer. Globus will retry transfers when the source or destination endpoint, or the network between them, suffers an outage. Second, Globus can use checksums to verify the integrity of the transferred files. With the ability to schedule recurring transfers, Globus can also be used as a reliable tool for data replication between systems.</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>Consult Research IT</td>
-            <td>Reach out to Research IT Services at <a>crid@uthscsa.edu</a> for a personalized consultation.</td>
-            <td>All UT Health SA faculty and staff.</td>
-            <td>Consult</td>
-            <td>Don't know where to go, are these options overwhelming? Contact Research IT and they will help point you in the right direction.</td>
-            <td>Free</td>
-            <td>Consult</td>
-            <td>Consult</td>
-            <td>Consult</td>
-            <td><a>crid@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>UTHSA Backup & Restore</td>
-            <td>Systems Operations and Administration offers Offsite Data Storage, Server Data Backups, and a restore service for customers having a Server Management Agreement or Leased Mass Storage.</td>
-            <td>All UT Health SA faculty and staff.</td>
-            <td>Confidential/High Risk <br>Controlled Data <br>Published Data</td>
-            <td>The requesting department must have a Service Partnership Agreement (SPA) with Enterprise System Operation for backup services.  Any employee may submit a request, but it must be reviewed and approved by the appropriate business office before provisioning service.  Refer to Service Partnership Agreement  (SPA) for backup retention schedule.
-            <br>Site Recovery Manager (SRM) with VMware replication includes annual planned and unplanned failovers, failback and testing. VM replication policy with SRM of Recovery Point Objective (RPO) of 4 hrs.</td>
-            <td>Enterprise Backup for server at Advanced Data Center in San Antonio	Per GB	per year $1.00 <br>Enterprise Backup for server to data center in Austin for disaster recovery Per GB	per year $0.35<br>Big Storage Local File backup at Advanced Data Center in San Antonio - monthly snapshot 3 month retention Per TB per year $200.00<br>Big Storage Off-Site Backup to data center site in Austin	Block Of Per TB	per year $250.00<br>Virtual Server Disaster Recovery (SRM including Annual Failover/Recovery testing) per VM per year $400.00 + per GB per year $1.10</td>
-            <td>No practical file size limit.<br>No practical overall limit (costs incurred).<br>No practical limit to number of files.</td>
-            <td>N/A</td>
-            <td>Configurable backup frequency.<br>Configurable version retention (time, number).</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>HPC Storage</td>
-            <td>Storage that is served as a high performance parallel filesystem on UT Health San Antonio GENIE  High Performance Computing (HPC) infrastructure.  It is maintained and supported by the UT Health SA Cloud Research Infrastrucure and Data Management team.  This storage is only mounted on the GENIE HPC cluster and is intended to be used as file storage for computations on the GENIE HPC cluster.</td>
-            <td>UT Health SA Faculty sponsered by Glenn Biggs Institute or the Greehey Children’s Cancer Research Institute (GCCRI)</td>
-            <td>Confidential/High Risk <br>Controlled Data <br>Published Data</td>
-            <td>Researchers using UT Health San Antonio GENIE HPC resources.</td>
-            <td>No additional cost for sponsered memebers. </td>
-            <td>No file or folder limits.</td>
-            <td>HPC Storage is primarily accessible from the HPC clusters, which are accessible while on UT Health San Antonio network or VPN. Permissions on the clusters are controlled with standard Unix / ACLs.</td>
-            <td>Single copy of data</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>Texas Data Repository</td>
-            <td>a research data management system for Texas Digital Library (TDL) member institutions.</td>
-            <td>Texas Researchers</td>
-            <td>Published Data</td>
-            <td>The Texas Data Repository is a platform for publishing and managing datasets (and other data products) created by faculty, staff, and students at Texas higher education institutions.</td>
-            <td>Free</td>
-            <td>Individual data files up to 4GB in size</td>
-            <td>Self Managed</td>
-            <td>The TDL has an official backup strategy in which TDL retains:
-            <br>
-            the copy of the data residing on the production server, which is an Amazon S3 volume nightly snapshots that can be used to restore the entire service to a particular date within the preceding month and one snapshot from each month, retained for one year. 
-            <br>
-            Backups are stored in Amazon Elastic Block Store (EBS) snapshots, which is replicated storage with regular systematic data integrity checks. Although the TDL does not curate or conduct preservation planning on content within the Texas Data Repository, it provides some services to help ensure the integrity of the data it hosts. Also, the TDL ensures the accurate migration and/or transfer of data between storage spaces, servers, and systems whenever such may become necessary.</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>Virtualized Computing - Block Storage Tier 0 (high performance)</td>
-            <td>UT Health IT System Operations and Administration offers hosted Virtual Servers for a variety of different workloads. We monitor and maintain your Virtual Workloads as well as the underlying hardware so you can focus on your application.</td>
-            <td>All UT Health SA faculty and staff.</td>
-            <td>Confidential/High Risk <br>Controlled Data <br>Published Data</td>
-            <td>Netapp/Hyperflex - SSD Only</td>
-            <td>Annual Fees vCPU/core $37.50, RAM $9.00 per GB, SSD Disk 1.10 per GB,</td>
-            <td>No file or folder limits.<br>Max Disk Size 2 TB</td>
-            <td>Self Managed Sharing <br>*Admin Rights</td>
-            <td>Local Backup<br>Offsite Backup</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>Virtualized Computing - Block Storage Tier 1 (high performance)</td>
-            <td>High performance block storage for VM's (SSD)</td>
-            <td>All UT Health SA faculty and staff.</td>
-            <td>Confidential/High Risk <br>Controlled Data <br>Published Data</td>
-            <td>Netapp/HyperFlex</td>
-            <td>Annual Fees vCPU/core $37.50, RAM $9.00 per GB, SSD Disk 1.10 per GB,</td>
-            <td>No file or folder limits.<br>Max Disk Size 2 TB</td>
-            <td>Self Managed Sharing <br>*Admin Rights</td>
-            <td>Local Backup<br>Offsite Backup</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-          <tr>
-            <td>Virtualized Computing- Block Storage Tier 2 (standard performance)</td>
-            <td>Standard performance block storage for VM's (HDD)</td>
-            <td>All UT Health SA faculty and staff.</td>
-            <td>Confidential/High Risk <br>Controlled Data <br>Published Data</td>
-            <td>NetApp/Nimble</td>
-            <td>Annual Fees vCPU/core $37.50, RAM $9.00 per GB, SSD Disk 1.10 per GB,</td>
-            <td>No file or folder limits. <br>Max Disk Size 2 TB</td>
-            <td>Self Managed Sharing <br>*Admin Rights</td>
-            <td>Local Backup<br>Offsite Backup</td>
-            <td><a>systems-storage@uthscsa.edu</a></td>
-          </tr>
-        </tbody>
-      </table>
-
+          <tbody>
+            <tr>
+              <td>UTHSA Big Storage Performance</td>
+              <td>Active Compute Frequently Accessed Computed against Shared within and outside of your department. </td>
+              <td>All UT Health SA faculty and staff.</td>
+              <td>Confidential/High Risk <br>Controlled Data<br>Published Data</td>
+              <td>Data storage for active compute servers, analytic applications, and databases that are located in UTHSA campus data centers.</td>
+              <td>Tier 1 $290 per TB per year (Data Analytics )</td>
+              <td>No file or folder limits.</td>
+              <td>Big shared storage is managed by the department’s own staff. The storage can be mapped using NFS, CIFS share for Windows, Linux, Mac OS. </td>
+              <td>The storage can be backed up or replicated to offsite for Disaster Recovery at an additional cost.</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>UTHSA Big Storage Active</td>
+              <td>Frequently Accessed Shared within and outside of your department</td>
+              <td>All UT Health SA faculty and staff.</td>
+              <td>Confidential/High Risk <br>Controlled Data<br>Published Data</td>
+              <td>Data storage for non active compute servers, applications, and databases that are located in UTHSA campus data centers.</td>
+              <td>Tier 2 $260 per TB per year (File Content)</td>
+              <td>No file or folder limits.</td>
+              <td>Big shared storage is managed by the department’s own staff. The storage can be mapped using NFS, CIFS share for Windows, Linux, Mac OS.</td>
+              <td>The storage can be backed up or replicated to offsite for Disaster Recovery at an additional cost.</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>UTHSA Big Storage Archive</td>
+              <td>Campus hosted low tier performance NAS storage for archive.</td>
+              <td>All UT Health SA faculty and staff.</td>
+              <td>Confidential/High Risk <br>Controlled Data<br>Published Data</td>
+              <td>Data storage for infrequent accessed datasets,  archive data that are located in UTHSA campus data centers</td>
+              <td>Tier 3 $190 per TB per year (Archive Storage)</td>
+              <td>No file or folder limits.</td>
+              <td>Big shared storage is managed by the department’s own staff. The storage can be mapped using NFS, CIFS share for Windows, Linux, Mac OS.</td>
+              <td>The storage can be backed up or replicated to offsite for Disaster Recovery at an additional cost.</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>UTHSA Systems-Managed Storage Share (LMS)</td>
+              <td>Campus hosted NAS storage for departmental file shares, and user home directories. Permissions managed by Systems</td>
+              <td>Any employee may submit a request, but it must be reviewed and approved by the appropriate business office before the requested access is granted.</td>
+              <td>Confidential/High Risk <br>Controlled Data<br>Published Data</td>
+              <td>Department basic file share<br>User/Home data basic file share</td>
+              <td>One-time setup per User 				$30.00<br>Permission and User Management Per User	            $7.50<br>LMS Storage per GB						$3.90 per year</td>
+              <td>No file or folder limits.</td>
+              <td>Leased mass storage (LMS) is file storage for groups and/or individuals of data on a server that is managed and maintained by UT Health IT</td>
+              <td> UT Health IT will ensure that the storage is backed up daily. This includes off-site backup. Files are being snapshotted twice a day at noon and 4 PM. The snapshots are kept locally for 3 days. Daily Backup data at 12 am is retained for two weeks locally. Weekly backup is replicated to DR site and kept for 1 month. Monthly backup is retained for 3 months and replicated to DR site. Longer retention times must be purchased through backup retention service. There is an additional charge for longer retention times.  For Windows and MacOS</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>Microsoft Azure Archive Blob</td>
+              <td>Azure archive storage is designed for long-term archival of data that is not often accessed.</td>
+              <td>All UT Health SA faculty and staff.</td>
+              <td>Confidential/High Risk* With exemption <br>Controlled Data<br>Published Data</td>
+              <td>Archival data</td>
+              <td>60 per TB per year</td>
+              <td>No file or folder limits.</td>
+              <td>&nbsp;</td>
+              <td>Single copy of data</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>TACC Ranch</td>
+              <td>Long-term data archiving environment designed, implemented, and supported to provide storage for data sets of the TACC user community.</td>
+              <td>Any Texas Researcher</td>
+              <td>Controlled Data<br>Published Data</td>
+              <td>Ranch is the long-term data archiving environment at TACC. The environment is designed, implemented, and supported to provide long-term storage for the data sets of the TACC user community. These data sets include both final data, as well as fixed external data imported into TACC for use on TACC’s other resources.</td>
+              <td>Contract-based</td>
+              <td>No file or folder limits.</td>
+              <td>Self Managed</td>
+              <td>Users are cautioned that Ranch contains only a single copy of any user's data. Ranch is a very large-scale archival system, and the data within it is not backed up or replicated. While best practices and best effort have always been brought to bear to support Ranch and the integrity of the user data within it, it is not a date backup/restore environment. Ranch is not designed, maintained, or supported to provide the sole storage location for user data.<br>If a higher integrity long-term archive is required, please contact TACC support.</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>Corral</td>
+              <td>Corral supports data-centric science at The University of Texas at Austin, and throughout the U.S. This storage and data management resource is designed and optimized to support large-scale collections and a collaborative research environment.</td>
+              <td>Any Texas Researcher</td>
+              <td>Controlled Data<br>Published Data</td>
+              <td>Storage and data management resource designed and optimized to support large-scale collections and a collaborative research environment.</td>
+              <td>Contract-based</td>
+              <td>No file or folder limits.</td>
+              <td>Self Managed</td>
+              <td>&nbsp; </td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>Microsoft SharePoint</td>
+              <td>Office 365 is a suite of web-based tools hosted by Microsoft. In addition to email and calendaring features, Office 365 provides multiple online applications such as SharePoint, the Office Suite and additional productivity tools.</td>
+              <td>All UT Health SA Students, faculty and staff.</td>
+              <td>Confidential/High Risk* With exemption <br>Controlled Data<br>Published Data</td>
+              <td>online collaboration tool for projects or teams with a small amount of data and also an easy way to share a secure web link as an alternative to an email attachment.</td>
+              <td>UT Health SA provides faculty, staff, and students Office 365 accounts at no cost.</td>
+              <td>Max File Size<br>15.0 GB</td>
+              <td>Self Managed/td>
+              <td>All changes are saved automatically and files are versioned.</td>
+              <td><a>sharepointteam@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>Microsoft OneDrive</td>
+              <td>Office 365 is a suite of web-based tools hosted by Microsoft. In addition to email and calendaring features, Office 365 provides multiple online applications such as OneDrive, the Office Suite and additional productivity tools.</td>
+              <td>All UT Health SA Students, faculty and staff.</td>
+              <td>Confidential/High Risk* With exemption <br>Controlled Data<br>Published Data</td>
+              <td>It works well as an online collaboration tool for projects or teams with less than 1 TB of data and also an easy way to share a secure web link as an alternative to an email attachment.</td>
+              <td>UT Health SA provides faculty, staff, and students Office 365 accounts at no cost.</td>
+              <td>Max File Size<br>15.0 GB<br>1 TB total Capacity</td>
+              <td>Self Managed</td>
+              <td>All changes are saved automatically and files are versioned.</td>
+              <td><a>sharepointteam@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>Microsoft Teams</td>
+              <td>Office 365 is a suite of web-based tools hosted by Microsoft. In addition to email and calendaring features, Office 365 provides multiple online applications such as Teams, the Office Suite and additional productivity tools.</td>
+              <td>All UT Health SA Students, faculty and staff.</td>
+              <td>Confidential/High Risk* With exemption <br>Controlled Data<br>Published Data</td>
+              <td>&nbsp;</td>
+              <td>UT Health SA provides faculty, staff, and students Office 365 accounts at no cost.</td>
+              <td>Max File Size<br>10.0 GB</td>
+              <td>Self Managed</td>
+              <td>All changes are saved automatically and files are versioned.</td>
+              <td><a>sharepointteam@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>UTHSA Box</td>
+              <td>Cloud-based storage and collaboration service.</td>
+              <td>All UT Health SA faculty and staff.</td>
+              <td>Controlled Data<br>Published Data</td>
+              <td>online collaboration tool for projects or teams with a small amount of data and also an easy way to share a secure web link as an alternative to an email attachment.</td>
+              <td>$250 per seat per year</td>
+              <td>Max File Size<br>50.0 GB</td>
+              <td>Self Managed</td>
+              <td>All changes are saved automatically when editing files directly in Box, Box Drive, and mobile clients.</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>Globus</td>
+              <td>Globus is a non-profit service for secure, reliable research data management. With Globus, users can move, share, & discover data via a single interface--whether your files live on a supercomputer, lab cluster, tape archive, public cloud or your laptop, you can manage this data from anywhere, using your existing identities, via just a web browser.​ Developers can also use Globus to build applications and gateways leveraging its advanced identity management, single sign-on, search, authorization, and automation capabilities.</td>
+              <td>All UT Health SA faculty and staff.</td>
+              <td>Our subscription covers the Globus High Assurance features. With a High Assurance or HIPAA BAA subscription, files that contain protected data can be transferred and shared using Globus in compliance with the data’s security requirements. When you use Globus, the content of your files is never sent to Globus servers. Consequently, any protected data stored in files is never shared with Globus.</td>
+              <td>Data collected from instruments (e.g., cryoEM, gene sequencers, remote sensors) can be transferred from the data collection point to a centralized storage resource, like UTHSA Block Big Storage, UTHSA Block Storage or the cloud. From there, the data can be processed for analysis or shared with external collaborators.</td>
+              <td>UT Health SA has a subscription that covers all community members, including staff and students. UTHSA research projects operating Globus Connect Server endpoints can add them to the subscription to unlock additional features, including guest collections to enable access by external collaborators. Individual researchers can join the UTHSA Globus Users Group to create guest collections on their Globus  endpoints. Our subscription also includes connectors for Microsoft Azure </td>
+              <td>Globus does not store data, it is a service that provides reliable and secure data transfers between endpoints. The endpoints are operated by users, projects, and data centers, and endpoint capacity is based on the storage it accesses. For example, if you have a Globus Connect Personal endpoint on your laptop, the maximum capacity is the free space on your laptop. However, if you’re using the Azure blob connector, the limiting factor is probably your budget.</td>
+              <td>Data access can be set up for only users on a system, or for sharing using a collaborators’s outside identity (i.e., from another university or ORCiD). These permissions are set on the folder level and managing access can be granted to users through roles.</td>
+              <td>Like capacity, the durability of data accessible via Globus depends on the underlying endpoint and its storage. However, Globus provides several mechanisms to ensure data integrity during and after transfer. The first is the reliability of the transfer. Globus will retry transfers when the source or destination endpoint, or the network between them, suffers an outage. Second, Globus can use checksums to verify the integrity of the transferred files. With the ability to schedule recurring transfers, Globus can also be used as a reliable tool for data replication between systems.</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>Consult Research IT</td>
+              <td>Reach out to Research IT Services at <a>crid@uthscsa.edu</a> for a personalized consultation.</td>
+              <td>All UT Health SA faculty and staff.</td>
+              <td>Consult</td>
+              <td>Don't know where to go, are these options overwhelming? Contact Research IT and they will help point you in the right direction.</td>
+              <td>Free</td>
+              <td>Consult</td>
+              <td>Consult</td>
+              <td>Consult</td>
+              <td><a>crid@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>UTHSA Backup & Restore</td>
+              <td>Systems Operations and Administration offers Offsite Data Storage, Server Data Backups, and a restore service for customers having a Server Management Agreement or Leased Mass Storage.</td>
+              <td>All UT Health SA faculty and staff.</td>
+              <td>Confidential/High Risk <br>Controlled Data <br>Published Data</td>
+              <td>The requesting department must have a Service Partnership Agreement (SPA) with Enterprise System Operation for backup services.  Any employee may submit a request, but it must be reviewed and approved by the appropriate business office before provisioning service.  Refer to Service Partnership Agreement  (SPA) for backup retention schedule.
+              <br>Site Recovery Manager (SRM) with VMware replication includes annual planned and unplanned failovers, failback and testing. VM replication policy with SRM of Recovery Point Objective (RPO) of 4 hrs.</td>
+              <td>Enterprise Backup for server at Advanced Data Center in San Antonio	Per GB	per year $1.00 <br>Enterprise Backup for server to data center in Austin for disaster recovery Per GB	per year $0.35<br>Big Storage Local File backup at Advanced Data Center in San Antonio - monthly snapshot 3 month retention Per TB per year $200.00<br>Big Storage Off-Site Backup to data center site in Austin	Block Of Per TB	per year $250.00<br>Virtual Server Disaster Recovery (SRM including Annual Failover/Recovery testing) per VM per year $400.00 + per GB per year $1.10</td>
+              <td>No practical file size limit.<br>No practical overall limit (costs incurred).<br>No practical limit to number of files.</td>
+              <td>N/A</td>
+              <td>Configurable backup frequency.<br>Configurable version retention (time, number).</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>HPC Storage</td>
+              <td>Storage that is served as a high performance parallel filesystem on UT Health San Antonio GENIE  High Performance Computing (HPC) infrastructure.  It is maintained and supported by the UT Health SA Cloud Research Infrastrucure and Data Management team.  This storage is only mounted on the GENIE HPC cluster and is intended to be used as file storage for computations on the GENIE HPC cluster.</td>
+              <td>UT Health SA Faculty sponsered by Glenn Biggs Institute or the Greehey Children’s Cancer Research Institute (GCCRI)</td>
+              <td>Confidential/High Risk <br>Controlled Data <br>Published Data</td>
+              <td>Researchers using UT Health San Antonio GENIE HPC resources.</td>
+              <td>No additional cost for sponsered memebers. </td>
+              <td>No file or folder limits.</td>
+              <td>HPC Storage is primarily accessible from the HPC clusters, which are accessible while on UT Health San Antonio network or VPN. Permissions on the clusters are controlled with standard Unix / ACLs.</td>
+              <td>Single copy of data</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>Texas Data Repository</td>
+              <td>a research data management system for Texas Digital Library (TDL) member institutions.</td>
+              <td>Texas Researchers</td>
+              <td>Published Data</td>
+              <td>The Texas Data Repository is a platform for publishing and managing datasets (and other data products) created by faculty, staff, and students at Texas higher education institutions.</td>
+              <td>Free</td>
+              <td>Individual data files up to 4GB in size</td>
+              <td>Self Managed</td>
+              <td>The TDL has an official backup strategy in which TDL retains:
+              <br>
+              the copy of the data residing on the production server, which is an Amazon S3 volume nightly snapshots that can be used to restore the entire service to a particular date within the preceding month and one snapshot from each month, retained for one year. 
+              <br>
+              Backups are stored in Amazon Elastic Block Store (EBS) snapshots, which is replicated storage with regular systematic data integrity checks. Although the TDL does not curate or conduct preservation planning on content within the Texas Data Repository, it provides some services to help ensure the integrity of the data it hosts. Also, the TDL ensures the accurate migration and/or transfer of data between storage spaces, servers, and systems whenever such may become necessary.</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>Virtualized Computing - Block Storage Tier 0 (high performance)</td>
+              <td>UT Health IT System Operations and Administration offers hosted Virtual Servers for a variety of different workloads. We monitor and maintain your Virtual Workloads as well as the underlying hardware so you can focus on your application.</td>
+              <td>All UT Health SA faculty and staff.</td>
+              <td>Confidential/High Risk <br>Controlled Data <br>Published Data</td>
+              <td>Netapp/Hyperflex - SSD Only</td>
+              <td>Annual Fees vCPU/core $37.50, RAM $9.00 per GB, SSD Disk 1.10 per GB,</td>
+              <td>No file or folder limits.<br>Max Disk Size 2 TB</td>
+              <td>Self Managed Sharing <br>*Admin Rights</td>
+              <td>Local Backup<br>Offsite Backup</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>Virtualized Computing - Block Storage Tier 1 (high performance)</td>
+              <td>High performance block storage for VM's (SSD)</td>
+              <td>All UT Health SA faculty and staff.</td>
+              <td>Confidential/High Risk <br>Controlled Data <br>Published Data</td>
+              <td>Netapp/HyperFlex</td>
+              <td>Annual Fees vCPU/core $37.50, RAM $9.00 per GB, SSD Disk 1.10 per GB,</td>
+              <td>No file or folder limits.<br>Max Disk Size 2 TB</td>
+              <td>Self Managed Sharing <br>*Admin Rights</td>
+              <td>Local Backup<br>Offsite Backup</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+            <tr>
+              <td>Virtualized Computing- Block Storage Tier 2 (standard performance)</td>
+              <td>Standard performance block storage for VM's (HDD)</td>
+              <td>All UT Health SA faculty and staff.</td>
+              <td>Confidential/High Risk <br>Controlled Data <br>Published Data</td>
+              <td>NetApp/Nimble</td>
+              <td>Annual Fees vCPU/core $37.50, RAM $9.00 per GB, SSD Disk 1.10 per GB,</td>
+              <td>No file or folder limits. <br>Max Disk Size 2 TB</td>
+              <td>Self Managed Sharing <br>*Admin Rights</td>
+              <td>Local Backup<br>Offsite Backup</td>
+              <td><a>systems-storage@uthscsa.edu</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </section>
