@@ -190,9 +190,12 @@ header.super-hero+.hero {
 @media screen and (max-width:$small-screen) {
     .img-fill {
 
-        img,
-        video {
-            position: relative;
+        &:not(.blur) {
+
+            img,
+            video {
+                position: relative;
+            }
         }
     }
 }
