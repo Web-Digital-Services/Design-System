@@ -103,7 +103,7 @@ div.decoration {
 //General styles on colored elements and blue styles
 .color {
     div.decoration {
-        ul {
+        ul, ol {
             li>a {
                 text-decoration-color: $off-white;
                 //transition: opacity .3s;
@@ -111,6 +111,15 @@ div.decoration {
                 &:hover {
                     text-decoration-color: $off-white;
                 }
+            }
+        }
+    }
+
+    div.lines {
+
+        ul:not(.tags) {
+            >li {
+                border-bottom: solid rem-calc(1px) #b5c8d3;
             }
         }
     }

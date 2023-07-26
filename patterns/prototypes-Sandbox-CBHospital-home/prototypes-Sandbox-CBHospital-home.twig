@@ -4,7 +4,7 @@
   <div class="grid-container extra-roomy">
     <div class="grid-x grid-margin-x align-right">
       <div class="small-12 medium-5 large-5 cell callout">
-          <h1>Services/Treatments Heading</h1>
+          <h1>Trailblazing the future of care</h1>
           <p>Liquorice jelly sesame snaps icing cupcake jelly beans gummies brownie halvah. Lollipop cookie ice cream fruitcake tootsie roll sweet. Pastry fruitcake soufflé tiramisu shortbread. Chocolate cake cheesecake candy fruitcake macaroon lollipop. Biscuit chocolate bar bear claw dessert toffee gummies biscuit. Bonbon caramels tart marzipan fruitcake brownie dessert. </p>
           <p><a href="#" class="button">Services/Treatments CTA</a></p>
       </div>
@@ -12,7 +12,7 @@
   </div>
 </section>
 {% include "@components/navigation-prototypes/navbar-cb-hospital.twig" %}
-<section class="grid-container">
+<!--<section class="grid-container">
   <div class="grid-x grid-margin-x align-center">
     <div class="cell large-3 medium-3 small-12 flex-container">
       <a class="callout color orange flex-child-auto">
@@ -40,6 +40,46 @@
         </span>
         <h2 class="h4">For <br>Patients</h3>
       </a>
+    </div>
+  </div>
+</section>--> 
+<section class="grid-container no-bottom">
+  <div class="grid-x grid-margin-x align-center-middle">
+    <div class="cell large-5 medium-5 small-12">
+      <img src="https://everythingittakes.org/wp-content/uploads/2021/10/ut-pc-uthero-antemeke-min.png" alt="">
+    </div>
+    <div class="cell large-5 medium-5 small-12">
+      <section class="grid-container">
+        <div class="grid-y grid-margin-y">
+          <div class="cell large-3 medium-3 small-12 flex-container">
+            <a class="callout color orange flex-child-auto">
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-calendar-alt fa-stack-1x fa-inverse"></i>
+              </span>
+              <h2 class="h5">Schedule Appointment</h2>
+            </a>
+          </div>
+          <div class="cell large-3 medium-3 small-12 flex-container">
+            <a class="callout color orange flex-child-auto">
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-user-md fa-stack-1x fa-inverse"></i>
+              </span>
+              <h2 class="h5">Find a Doctor</h2>
+            </a>
+          </div>
+          <div class="cell large-3 medium-3 small-12 flex-container">
+            <a class="callout color orange flex-child-auto">
+              <span class="fa-stack fa-2x">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+              </span>
+              <h2 class="h5">For Patients</h3>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </section>
@@ -71,7 +111,7 @@
 		</div>
 	</div>
 </section> 
-<section class="grid-container">
+<!--<section class="grid-container">
   <div class="grid-x grid-margin-x align-center-middle">
     <div class="cell large-7 medium-7 small-12">
       <img src="https://uthealthsahospital.org/wp-content/uploads/2021/01/utsa-mrh-gallery-06.jpg" alt="">
@@ -86,9 +126,43 @@
         </div>
     </div>
   </div>
-</section>
+</section>-->
+<div class="bleed color orange noise pullquote">
+  <div class="grid-container">
+    <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+      <div class="grid-x align-center-middle">
+        <div class="cell small-10">
+          <ul class="orbit-container">
+            <li class="is-active orbit-slide">
+              <blockquote>
+                {% include "@components/blockquotes/blockquote-image-right.twig" %}
+              </blockquote>
+            </li>
+            <li class="orbit-slide">
+              {% include "@components/blockquotes/blockquote-image-right.twig" %}
+            </li>
+            <li class="orbit-slide">
+              {% include "@components/blockquotes/blockquote-image-right.twig" %}
+            </li>
+          </ul>
+        </div>
+        <div class="cell small-1">
+          <nav class="orbit-bullets">
+            <ul class="no-bullet">
+              <li><button class="is-active cell small-4" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button></li>
 
-<section class="bleed dark-beige">
+              <li><button class="cell small-4" data-slide="1"><span class="show-for-sr">Second slide details.</span></button></li>
+
+              <li><button class="cell small-4" data-slide="2"><span class="show-for-sr">Third slide details.</span></button></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="bleed beige">
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
       <div class="cell small-12 medium-6 large-4 flex-container flex-dir-column">
