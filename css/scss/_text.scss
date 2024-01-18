@@ -226,7 +226,9 @@ strong {
 
 h1+.subheader,
 h1+.subheader+.subheader,
-h1+.subheader+.subheader+.subheader {
+h1+.subheader+.subheader+.subheader,
+h1+.subheader+.subheader+.subheader+.subheader,
+h1+.subheader+.subheader+.subheader+.subheader+.subheader{
     font-family: $sans-serif-font;
     color: $off-black;
     font-size: rem-calc(32px);
