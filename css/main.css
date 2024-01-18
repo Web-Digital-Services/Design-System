@@ -13782,7 +13782,9 @@ strong {
 
 h1 + .subheader,
 h1 + .subheader + .subheader,
-h1 + .subheader + .subheader + .subheader {
+h1 + .subheader + .subheader + .subheader,
+h1 + .subheader + .subheader + .subheader + .subheader,
+h1 + .subheader + .subheader + .subheader + .subheader + .subheader {
   font-family: "Nunito Sans", sans-serif;
   color: #171717;
   font-size: 2rem;
