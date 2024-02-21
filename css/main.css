@@ -16437,6 +16437,18 @@ form.search button {
   cursor: pointer;
 }
 
+.alphabet ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+.alphabet ul li {
+  display: inline-block;
+  padding: 0 12px;
+}
+.alphabet ul li a {
+  font-size: 25px;
+}
+
 footer {
   color: #F1F5F7;
   background-color: #333d42;
