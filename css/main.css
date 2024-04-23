@@ -15525,6 +15525,52 @@ a.card.postcard:hover .card-section p {
 a.card.postcard:hover img {
   transform: scale(1.05);
 }
+a.card.simple {
+  border-radius: 0.0625rem !important;
+  border: 3px solid #D0C4D0;
+}
+a.card.simple .card-section h2,
+a.card.simple .card-section h3,
+a.card.simple .card-section h4 {
+  margin-right: 1.5rem;
+}
+a.card.simple .card-section p {
+  margin-bottom: 4rem;
+}
+a.card.simple .card-section:after {
+  font-weight: 600;
+  font-size: 2rem;
+  content: "\f061";
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #AD4200;
+}
+a.card.simple:hover {
+  border: 3px solid #4BA7AC;
+}
+a.card.simple:hover .card-section:after {
+  color: #4BA7AC;
+}
+a.card.top-border {
+  border-radius: 0.0625rem !important;
+  border-top: 20px solid #0083BF;
+}
+a.card.top-border .card-section h2,
+a.card.top-border .card-section h3,
+a.card.top-border .card-section h4 {
+  margin-right: 1.5rem;
+}
+a.card.top-border .card-section p {
+  margin-bottom: 4rem;
+}
+a.card.top-border .card-section:after {
+  font-weight: 600;
+  font-size: 2rem;
+  content: "\f061";
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #AD4200;
+}
 
 @media screen and (max-width: 639px) {
   a.card.postcard p {
