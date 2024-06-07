@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class=" >
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#D45D00">
+
+    <link rel="stylesheet" href="../../css/main.css?1717793064488" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1717793064488" media="all" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  </head>
+  <body class=""><div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
+    <!-- Quicklinks Content -->
+    <div class="title-bar quicklinks">
+        <div class="title-bar-left">
+            <p><a href="#" data-close="offCanvasRight"><i class="fas fa-times"></i> Quicklinks</a></p>
+            <form class="search">
+    <input type="search" class="search-box" placeholder="Search">
+    <button type="submit">
+        <i class="fa fa-search"></i>
+    </button>
+</form>            <h4>Find</h4>
+            <div class="no-bullet arrow">
+                <ul>
+                    <li><a href="#">A to Z list</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Calendars</a></li>
+                    <li><a href="#">Directories</a></li>
+                </ul>
+            </div>
+            <h4>Media</h4>
+            <div class="no-bullet arrow">
+                <ul>
+                    <li><a href="#">COVID-19</a></li>
+                    <li><a href="#">IMPACT COVID Magazine</a></li>
+                    <li><a href="#">MissionRX</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">ENGAGED</a></li>
+                </ul>
+            </div>
+            <h4>Logins</h4>
+            <div class="no-bullet arrow">
+                <ul>
+                    <li><a href="#">Canvas</a></li>
+                    <li><a href="#">Employee Email</a></li>
+                    <li><a href="#">MyUTHealth</a></li>
+                    <li><a href="#">LiveMail</a></li>
+                    <li><a href="#">My Student Center</a></li>
+                    <li><a href="#">UT Health Learns</a></li>
+                </ul>
+            </div>
+            <h4>Technology</h4>
+            <div class="no-bullet arrow">
+                <ul>
+                    <li><a href="#">Service Desk</a></li>
+                    <li><a href="#">Password Reset</a></li>
+                    <li><a href="#">TechZone (Computer Store)</a></li>
+                </ul>
+            </div>
+            <h4>More</h4>
+            <div class="no-bullet arrow">
+                <ul>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Bookstore</a></li>
+                    <li><a href="#">Course Catalog</a></li>
+                    <li><a href="#">Human Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div><header class="title-bar" data-responsive-toggle="header">
+    <a href="#"><img src="../../images/whiteUTHSA_logo.svg"></a>
+    <button class="menu-icon" type="button" data-toggle="header">Menu</button>
+</header>
+<header class="off-canvas-content" id="header" data-off-canvas-content>
+    <div class="group">
+        <div class="logo">
+            <a href="#"><img src="../../images/infosec-logo-top.svg" alt="UT Health San Antonio Information Security"></a>
+        </div>
+
+        <div class="right">
+            <div class="circle-icons">
+                <a href="#">
+                    <span class="fa-stack outline">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-envelope-open-text fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span>E-mail and Passwords</span>
+                </a>
+                <a href="#" data-toggle="offCanvasRight">
+                    <span class="fa-stack outline">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-search fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span>Search/Quicklinks</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="nav-bar" id="nav-bar-mobile">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li><a href="#">Information Security</a></li>
+                    <li><a href="#">Policy and Procedure</a></li>
+                    <li><a href="#">Hardware Security</a></li>
+                    <li><a href="#">Software Security</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<nav class="nav-bar" id="nav-bar-full">
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li><a href="#">Information Security</a></li>
+                <li><a href="#">Policy and Procedure</a></li>
+                <li><a href="#">Hardware Security</a></li>
+                <li><a href="#">Software Security</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <main class="cell large-8 medium-8 small-12">
+      <h1 class="h2">Phishing Prevention</h1>
+      <h2 class="h4">Best Practices for Phishing Prevention at UT Health San Antonio</h4>
+        <p>A phish is fraudulent email pretending to be from a genuine organization you may be familiar with, trying to
+          convince you to give up sensitive information. It may appear to come from your bank, credit card agency, a
+          loan institution, or even the University. The most common phishing seen at the University appears to come from
+          our own email team or Service Desk, but is really someone intent on stealing our information.</p>
+
+        <p>Always question anything that asks for your username and password, or any other sensitive information. No one
+          at the university will legitimately ask for that information. If someone does, they're trying to steal your
+          data, misuse your resources, or both.</p>
+
+        <h3 class="h5">What do I watch for?</h4>
+          <h4 class="h6">Sender's Email Address:</h4>
+          <p>Look at the “From” line. If the address claims to be from the University or is generic, but doesn't end in
+            uthscsa.edu, it is a phishing attempt. All email regarding University IT, email and security matters will
+            come from a University email address. There are instances where an email can be forged or spoofed to look
+            like an email address with uthscsa.edu. If the sender has an email address ending with uthscsa.edu but you
+            spot the other signs in #2-4 below, there's a high chance that the email is a phish.</p>
+          <h4 class="h6">Body of the Email:</h4>
+          <p>Messages in a phish usually don't flow very well and contain grammatical errors and spelling mistakes.
+            Legitimate companies with whom you have established a relationship with will often send you emails with a
+            personalized introduction, so if the email begins with a generic greeting like "Dear Customer" inspect the
+            email for other signs of phishing.</p>
+          <h4 class="h6">Links and URLs:</h4>
+          <p>If there are links in the message, don't click on them yet. Most phishing messages direct you to click on a
+            link in the message to "verify your identity," but, instead send you to another website that tries to
+            collect your information and even remotely compromise your computer. Before you click on any link, move your
+            mouse pointer over the link, but do not click. Floating the mouse pointer over a link will show you the true
+            destination of the link, regardless if the link says "Click here" or anything else.</p>
+
+          <p>Note: If you float your mouse pointer over a link and see owa.uthscsa.edu in the initial part of the URL,
+            make note that Outlook Web Access (OWA) rewrites links to go through a redirector on the OWA server for
+            security reasons. The redirector (/redir.aspx) obfuscates or obscures the mailbox name that would otherwise
+            be in the HTTP headers. Use extreme caution since there is no way to verify the actual destination of the
+            link. Here is an example of a URL that starts with owa.uthscsa.edu but redirects the user to a malicious
+            website:<br>
+            <small>https://owa.uthscsa.edu/owa/<mark>redir.aspx</mark>?REF=R6ar7sGrF7Rpo8gamvf7bWrBVWwMhO10yjTQd</small>
+          </p>
+
+          <h4 class="h6">Sense of Urgency:</h4>
+          <p>Does the message include some form of threat? Phishing messages try to generate a sense of urgency by
+            telling you something bad will happen if you don't comply, the most common being that your account will be
+            blocked or canceled.</p>
+
+          <p>When in doubt, call the IMS Service Desk for assistance at 210-567-7777 to help you determine if an email
+            you received is a phishing email.</p>
+
+          <div class="grid-x">
+            <div class="cell large-12 medium-12">
+              <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item is-active" data-accordion-item>
+                  <a href="#" class="accordion-title">Official signature blocks</a>
+                  <div class="accordion-content" data-tab-content>
+                    <p>All messages coming from the Information Management and Services (IMS) technology offices will
+                      have signature blocks like the ones below.</p>
+                    <img src="../../images/infosec/SigBlockSample2a.png">
+                    <p>Example 1</p>
+                    <img src="../../images/infosec/SigBlockSample.png">
+                    <p>Example 2</p>
+                    <h4 class="h6">Official signature blocks will have the following minimum elements:</h4>
+                    <p>
+                    <ul>
+                      <li>An official UT Health San Antonio logo on the left</li>
+                      <li>The sender's name</li>
+                      <li>A contact telephone number; use this number to validate the message</li>
+                    </ul>
+                    <p>The examples above have been watermarked to keep them from being copied and used in a phish.</p>
+
+                    <p>Many phishing messages claim to come from the "IT Help Desk". The official name of the department
+                      is "IMS Service Desk", as shown in Example 1. Example 2 shows a signature block sent on behalf of
+                      the Information Security Office.</p>
+
+                    <p>E-mail systems set up to receive text-only messages (no images) will show the text of the
+                      signature blocks only, without the logos. See Example 3 and Example 4.</p>
+                    <img src="../../images/infosec/SigBlockSample3.png">
+                    <p>Example 3</p>
+                    <img src="../../images/infosec/SigBlockSample4.png">
+                    <p>Example 4</p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">What do I do if I get a phish?</a>
+                  <div class="accordion-content" data-tab-content>
+                    <p>
+                    <ol>
+                      <li>
+                        Don't click on anything inside the message. Many times, the entire body of the message is a link
+                        to a website outside the university, usually a compromised site that will try to infect your
+                        computer. This also applies to any attachments, as they can be infected, as well.</li>
+                      <li>Forward a copy of the phish to the phishing response team as an attachment. Sending the
+                        original message as an attachment preserves the background information from the message, showing
+                        where the email really originated. This also allows the email team to block the message from
+                        coming in again. Additionally, it gives us the ability to find others who received the message
+                        and may have clicked on any viral links.</li>
+                    </ol>
+                  </p>
+                  <p><strong>
+                <i>Send the phish as an attachment by following these steps:</i></strong></p>
+                <p><i>Outlook for Windows, Mac or Outlook Web App (OWA)</i></p>
+                <p>
+                <ol>
+                  <li>Go to your inbox.</li>
+                  <li>Click ONCE on the suspicious email.</li>
+                  <li>Click the "Phish Alert" button in the Home tab.<br>
+                    <img src="../../images/infosec/UTHealthPhishbutton.png">
+                  </li>
+                  <li>A pop-up window will ask if you would like to report the phishing email, click "Yes".</li>
+                </ol>
+                <p>
+                <h6 class="color">If the Phish Alert button does not appear on your Outlook banner, follow the
+                  instructions below to report phishing emails:</h6>
+                </p>
+                <br>
+                <p><i>Outlook for Windows or Outlook Web App</i></p>
+
+                <p>
+                <ol>
+                  <li>Go to your inbox.</li>
+                  <li>Click ONCE on the suspicious email and press "Ctrl-Alt-f".</li>
+                  <li>A new blank message will open with the original as an attachment; address it to
+                    <a>spam@uthscsa.edu.</a></li>
+                  <li>Click "Send".</li>
+                </ol>
+                </p>
+
+                <br>
+                <p><i>Outlook for Mac</i></p>
+
+                <p>
+                <ol>
+                  <li>Go to your inbox.</li>
+                  <li>Click ONCE on the suspicious email.</li>
+                  <li>Make sure the Home tab is selected, then click the Attachment button.<br>
+                    <img src="../../images/infosec/attachment-outlook.png">
+                  </li>
+                  <li>A new blank message will open with the original as an attachment; address it to
+                    <a>spam@uthscsa.edu.</a></li>
+                  <li>Click "Send".</li>
+                </ol>
+                </p>
+                <br>
+                <p><i>Outlook for Livemail</i></p>
+                <p>Students with a Livemail account can submit a junk or phishing scam message to Microsoft:</p>
+                <ol>
+                  <li>Create a blank email message</li>
+                  <li>Address the message to the Microsoft team that reviews messages, as follows:
+                    <ul>
+                      <li>For junk messages: <a>junk@office365.microsoft.com</a></li>
+                      <li>For phishing scam messages: phish@office365.microsoft.com</a></li>
+                    </ul>
+                  </li>
+                  <li>Copy and paste the junk or phishing scam message into the new message as an attachment</a></li>
+                  <li>Click "Send".</li>
+                </ol>
+            </div>
+            </li>
+
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">What happens if I click on a link in the phish?</a>
+              <div class="accordion-content" data-tab-content>
+                <p>Clicking on a link in a phish sends you to a web site outside the control of the University. Many
+                  phishing sites are well-researched and well-designed to look like the real thing, and some just put
+                  fields for the data they want to steal. In either case, many of those sites also have applications
+                  running in the background, silently probing your computer for a way in. Your computer could be
+                  infected and you wouldn't necessarily know it; this is referred to as a "drive-by infection."</p>
+                <p>
+                <ol>
+                  <li>If you click on a link in a phish, immediately back out of the page and close your browser.</li>
+                  <li>Call the Service Desk, 210-567-7777 and let them know you clicked on the link in the phish. They
+                    will make arrangements with your IT Partner or technical support to have your computer scanned and,
+                    if necessary, cleaned.</li>
+                  <li>After you call the Service Desk, save your work, backup your data, and log out of your computer.
+                    If you did get a drive-by infection, these actions will minimize the effect of the malware on your
+                    data; they will also reduce the probability of your computer infecting others on the network.
+                    Actions may also be taken to remotely remove your computer from the network.</li>
+                  <li>Once your computer has been scanned and cleaned by technical personnel, it is highly recommended
+                    you change any passwords of any accounts accessed from that computer. If your computer was remotely
+                    removed from the network, access will be restored at this time.</li>
+                </ol>
+                </p>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">I already gave up my username and password. What now?</a>
+              <div class="accordion-content" data-tab-content>
+                <p>If someone has your University login credentials, that is, your username and password, anything you
+                  can do on your computer or the network, they can do. This puts the entire university at risk.</p>
+                <p>
+                <ol>
+                  <li>If you haven't already been contacted by Information Security, notify the Service Desk by calling
+                    210-567-7777. Send them a copy of the phish using the steps in "What do I do if I get a phish?"
+                    above.</li>
+                  <li>Your email account will be disabled to prevent it from being used for spam or for sending phishes
+                    to others.</li>
+                  <li>Your computer will be remotely removed from the network, in case it was compromised by malware
+                    from a drive-by infection; this protects the rest of the computers on the University's network.</li>
+                  <li>Your IT Partner or technical support will be notified and will be sent to scan your computer for
+                    malware and to clean or re-image it, if necessary.
+                  <li>Once your computer has been verified as clean, arrangements will be made to re-enable your
+                    computer's connection to the network.</li>
+                  <li>After access has been restored, you will be required to change your password immediately, as the
+                    phisher has your old one. This cuts off the phisher's access to our network.</li>
+                  <li>Finally, your email access will be restored.</li>
+                </ol>
+                </p>
+                <p>A note from Information Security: It's obvious from above that the best way to deal with a phish is
+                  to recognize it when you see it and to notify the appropriate personnel. Clicking in the phishing
+                  message or accidentally giving away your login credentials involves a great deal more work for
+                  everyone. It is a guaranteed loss of productivity while your computer is off the network and you can't
+                  get any work done. Also, once your computer is compromised, data loss or data theft are possible no
+                  matter how quickly technical support personnel gets your computer cleaned up.</p>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">How do I block senders in Outlook?</a>
+              <div class="accordion-content" data-tab-content>
+                <p>Blocking someone doesn't stop their email from coming to your mailbox, but it does automatically move
+                  the message to your Junk Email folder where you can review it (in case it was blocked in error).</p>
+
+                <p>Click to view Microsoft's instructions on: <a>How to block senders in Outlook</a></p>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">How do I block spam phone numbers and text messages on my phone?</a>
+              <div class="accordion-content" data-tab-content>
+                <p>If someone has already reached out to you by call or text message, you can block their phone number
+                  to prevent them from continuing to bother you. This article from DigitalTrends.com is a comprehensive
+                  guide to block spam phone numbers and text messages for iPhone and Android users:</p>
+
+                <p><a href="#">https://www.digitaltrends.com/mobile/how-to-block-text-messages-in-ios-and-android/</a>
+                </p>
+              </div>
+            </li>
+            </ul>
+          </div>
+  </div>
+
+  </main>
+  <aside class="cell large-4 medium-4 small-12">
+      <h3 class="h5 color">More information</h3>
+      <p>For further information, contact Information Security by email at <a href="#">infosec@uthscsa.edu</a> or by
+        phone at 210-567-0707.</p>
+    
+    <h3 class="h5 color">Additional Resources</h3>
+    <div class="arrow">
+      <ul>
+        <li><a href="#">The Phish Bowl - Anti-Phishing Awareness</a></li>
+        <li><a href="#">W-2 Phishing Scams Spread During Tax Season</a></li>
+        <li><a href="#">Ransomware Awareness</a></li>
+        <li><a href="#">Federal Trade Commission Scam Alerts</a></li>
+      </ul>
+    </div>
+  </aside>
+  </div>
+</section>
+
+<footer class="flatten">
+    <div class="shield">
+        <section class="grid-container">
+            <div class="grid-x grid-margin-x align-center-middle">
+                <div class="cell large-12">
+                    <h2>UT Health San Antonio</h2>
+                    <h3>South Texas Alzheimer's Disease Research Center</h3>
+                </div>
+                <div class="cell large-3 medium-4 small-10">
+                    <div class="contact">
+                        <a href="#" class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+                        </a>
+                        <a href="#">210-123-4567</a> 
+                    </div>
+                     <div class="contact">
+                      <a href="#" class="fa-stack">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                      </a>
+                      <a href="#">email@uthscsa.edu</a> 
+                    </div>
+                    <div class="contact">
+                        <a href="https://uthscsa.edu/university/campus-maps" class="fa-stack">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
+                        </a> 
+                    
+                        <address>
+                            7703 Floyd Curl Drive<br>
+                            San Antonio, TX 78229-3900<br>
+                            <a href="https://uthscsa.edu/university/campus-maps" class="arrow">Map and directions</a>
+                        </address>
+                    </div>
+                    
+                </div>
+                <div class="cell large-3 medium-4 small-10">
+                    <ul>
+                      <li><a href="#" class="arrow">Contact us</a></li>
+                    </ul>
+
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/UTHealthSA"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                            <li><a href="https://www.instagram.com/uthealthsa/"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/uthealthsa"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="https://twitter.com/uthealthsa"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                            <li><a href="https://www.youtube.com/uthscsa/"><i class="fab fa-youtube-square fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cell large-5 medium-4 small-10">
+                    <p class="large-text">We make lives better ®</p>
+                    <p>The University of Texas Health Science Center at San Antonio, also called <a href="#">UT Health San Antonio</a>, is a leading academic health center with a mission to make lives better through excellence in <a href="#">advanced academics</a>, <a href="#">life-saving research</a> and comprehensive clinical care including <a href="#">health</a>, <a href="#">dental</a> and <a href="#">cancer services</a>.</p>
+                </div>
+                <div class="cell large-1 medium-0 small-0"></div>
+            </div>    
+        </section>
+    </div>
+    <section class="bleed">
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="cell">
+                    <p><strong><a href="#">Web Privacy</a></strong> | Links from websites affiliated with UT Health's website (uthscsa.edu) to other websites do not constitute or imply university endorsement of those sites, their content, or products and services associated with those sites. The content on this website is intended to be used for informational purposes only. Health information on this site is not meant to be used to diagnose or treat conditions. Consult a health care provider if you are in need of treatment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer><script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-header-infosec","lineagePath":"../../patterns/components-header-prototypes-header-infosec/components-header-prototypes-header-infosec.rendered.html"},{"lineagePattern":"components-navbar-infosec","lineagePath":"../../patterns/components-navigation-prototypes-navbar-infosec/components-navigation-prototypes-navbar-infosec.rendered.html"},{"lineagePattern":"components-ADRC-footer","lineagePath":"../../patterns/components-footer-prototypes-ADRC-footer/components-footer-prototypes-ADRC-footer.rendered.html"}],"lineage":[{"lineagePattern":"components-header-infosec","lineagePath":"../../patterns/components-header-prototypes-header-infosec/components-header-prototypes-header-infosec.rendered.html"},{"lineagePattern":"components-navbar-infosec","lineagePath":"../../patterns/components-navigation-prototypes-navbar-infosec/components-navigation-prototypes-navbar-infosec.rendered.html"},{"lineagePattern":"components-ADRC-footer","lineagePath":"../../patterns/components-footer-prototypes-ADRC-footer/components-footer-prototypes-ADRC-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"prototypes","patternSubgroup":"Infosec"},"patternExtension":"twig","patternName":"Phishing Prevention (Basic page)","patternPartial":"prototypes-infosec-phishing","patternState":"","patternEngineName":"twig-php","extraOutput":{"order":6}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-header-infosec","lineagePath":"../../patterns/components-header-prototypes-header-infosec/components-header-prototypes-header-infosec.rendered.html"},{"lineagePattern":"components-navbar-infosec","lineagePath":"../../patterns/components-navigation-prototypes-navbar-infosec/components-navigation-prototypes-navbar-infosec.rendered.html"},{"lineagePattern":"components-ADRC-footer","lineagePath":"../../patterns/components-footer-prototypes-ADRC-footer/components-footer-prototypes-ADRC-footer.rendered.html"}],"lineage":[{"lineagePattern":"components-header-infosec","lineagePath":"../../patterns/components-header-prototypes-header-infosec/components-header-prototypes-header-infosec.rendered.html"},{"lineagePattern":"components-navbar-infosec","lineagePath":"../../patterns/components-navigation-prototypes-navbar-infosec/components-navigation-prototypes-navbar-infosec.rendered.html"},{"lineagePattern":"components-ADRC-footer","lineagePath":"../../patterns/components-footer-prototypes-ADRC-footer/components-footer-prototypes-ADRC-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"prototypes","patternSubgroup":"Infosec"},"patternExtension":"twig","patternName":"Phishing Prevention (Basic page)","patternPartial":"prototypes-infosec-phishing","patternState":"","patternEngineName":"twig-php","extraOutput":{"order":6}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1717793064488">
+  (function() {
+    if (self != top) {
+      var cb = '1717793064488';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1717793064488" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+<script type="text/javascript" src="../../js/vendor/jQuery/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/vendor/foundation/foundation.min.js"></script>
+<script type="text/javascript" src="../../js/vendor/motion-ui/motion-ui.min.js"></script>
+<script type="text/javascript" src="../../js/shield.min.js"></script>
+<script type="text/javascript" src="../../js/vendor/what-input/what-input.min.js"></script>
+</body>
+
+</html>
