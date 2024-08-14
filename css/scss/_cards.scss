@@ -275,10 +275,15 @@ a.card {
     &.portrait {
         .card-section {
             padding: unset;
+
+            a {
+                font-weight: 700;
+            }
         }
 
         .profile-info {
             padding: 1rem;
+            list-style-type: none;
         }
     }
 
