@@ -43,7 +43,7 @@
 <section class="bleed beige ">
 <div class="grid-container">
   <div class="grid-x grid-margin-x grid-padding-y">
-    <div class="small-12 medium-6 light-beige callout cell flex-container flex-dir-column">
+    <div class="small-12 medium-6 white callout cell flex-container flex-dir-column">
       <div class="flex-child-auto">
         <h2 class="text-center">News</h2>
         <div class="lines">
@@ -58,25 +58,11 @@
         <p class="text-center"><a href="#" class="button ghost">View All News</a></p>
       </div>
     </div>
-    <div class="small-12 medium-6 light-beige callout cell flex-container flex-dir-column">
+    <div class="small-12 medium-6 white callout cell flex-container flex-dir-column">
       <div class="flex-child-auto">
         <h2 class="text-center">Events</h2>
         <div class="lines">
-          <ul>
-            <li class="flex-container flex-dir-row align-middle">
-              <div class="flex-child-auto">
-                <a href="#">
-                  <div class="datebox">
-                    <div class="month">sept</div>
-                    <div class="day">04</div>
-                  </div>
-                </a>
-              </div>
-              <div class="flex-child-auto">
-                <a href="#">Fall 2024 Seminar Series: Shreya Rao, MD, MPH</a>
-              </div>
-            </li>
-          </ul>
+          {% include "@blocks/feeds/events-vertical.twig" %}
         </div>
       </div>
       <div class="flex-child-shrink">
