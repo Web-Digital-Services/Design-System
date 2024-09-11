@@ -15590,16 +15590,6 @@ a.card.top-border .card-section:after {
   margin-top: 1rem;
 }
 
-.card.portrait .card-section {
-  padding: unset;
-}
-.card.portrait .card-section a {
-  font-weight: 700;
-}
-.card.portrait .profile-info {
-  padding: 1rem;
-  list-style-type: none;
-}
 .card.popout {
   overflow: visible;
   margin-top: 4.375rem;
