@@ -302,10 +302,12 @@ a.highlight {
             &:hover {
                 color: $dark-orange;
             }
-
+        }
+        p>a:not(.button) {
+            background-image: linear-gradient($orange-underline, $orange-underline);
+            color: $orange;
         }
     }
-
 }
 
 //Links on an image background
