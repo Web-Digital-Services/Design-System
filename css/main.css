@@ -14176,11 +14176,6 @@ a.highlight:hover {
 .color .callout a:not(.button):hover {
   color: #7A0F00;
 }
-.color .card p > a:not(.button),
-.color .callout p > a:not(.button) {
-  background-image: linear-gradient(#ffd1a3, #ffd1a3);
-  color: #AD4200;
-}
 
 .img-fill p > a:not(.button) {
   background-image: linear-gradient(#FFF1DB, #FFF1DB);
