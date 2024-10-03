@@ -31,7 +31,6 @@
     right: 0;
 }*/
 
-
 %link-underline {
     //background-image: linear-gradient($gold, $gold),linear-gradient(to right, $gold, $gold 10%, $orange 25%, $dark-orange);
     background-image: linear-gradient($orange-underline, $orange-underline), linear-gradient($dark-orange, $dark-orange);
@@ -154,7 +153,6 @@ a.highlight {
     a {
         color: $off-white;
 
-
         &:hover,
         &:focus {
             color: $light-grey;
@@ -174,7 +172,6 @@ a.highlight {
         color: $blue-link;
         padding-left: .5% !important;
         padding-right: .5% !important;
-
 
         &:hover {
             background-color: $blue-link;
@@ -368,10 +365,7 @@ a.highlight {
             }
         }
     }
-
-
 }
-
 
 /*ul:not(.accordion, .menu) a {
     font-weight: 600;
