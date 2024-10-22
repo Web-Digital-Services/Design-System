@@ -58,14 +58,13 @@ cite:before {
     }
 }
 
-.bleed.color.pullquote {
+.bleed.pullquote {
     blockquote p:first-of-type::before {
         content: "\201C";
         position: absolute;
         top: rem-calc(-110px);
         left: rem-calc(-50px);
         font-size: 8.33rem;
-        color: $off-white;
         @media screen and (max-width: $small-screen) {
             left: rem-calc(-5px);
         }
@@ -73,6 +72,10 @@ cite:before {
     blockquote p:last-of-type::after {
         content: "\201D";
     }
+}
+
+.bleed.color.pullquote {
+    color: $off-white;
 }
 
 blockquote.fancy {
