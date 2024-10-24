@@ -18039,6 +18039,12 @@ a .datebox:hover {
     font-weight: 700;
   }
 }
+header.super-hero + .hero.mission video {
+  position: relative;
+}
+header.super-hero + .hero.mission video.callout {
+  position: absolute;
+}
 @media screen and (max-width: 639px) {
   header.super-hero + .hero.mission.img-fill img,
   header.super-hero + .hero.mission.img-fill video {
@@ -18140,7 +18146,8 @@ a .datebox:hover {
 
 @media screen and (max-width: 639px) {
   .img-fill:not(.blur) img,
-  .img-fill:not(.blur) video {
+  .img-fill:not(.blur) video,
+  .img-fill:not(.blur) .responsive-embed {
     position: relative;
   }
 }
