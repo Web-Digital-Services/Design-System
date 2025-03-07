@@ -13787,8 +13787,9 @@ h1 + .subheader + .subheader + .subheader + .subheader,
 h1 + .subheader + .subheader + .subheader + .subheader + .subheader {
   font-family: "Nunito Sans", sans-serif;
   color: #171717;
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin-top: -0.625rem;
+  padding-bottom: 0.9375rem;
 }
 h1 + .subheader.small,
 h1 + .subheader + .subheader.small,
@@ -13816,10 +13817,9 @@ h1 + .subheader + .subheader + .subheader + .subheader + .subheader.small {
   }
 }
 
-.subheader + .subheader {
-  margin-top: -1.125rem !important;
-}
-
+/**.subheader+.subheader {
+    margin-top: rem-calc(-18px) !important;
+}**/
 h2 + .subheader {
   font-size: 1.5625rem;
   font-family: "Nunito Sans", sans-serif;

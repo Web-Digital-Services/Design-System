@@ -231,8 +231,9 @@ h1+.subheader+.subheader+.subheader+.subheader,
 h1+.subheader+.subheader+.subheader+.subheader+.subheader {
     font-family: $sans-serif-font;
     color: $off-black;
-    font-size: rem-calc(32px);
+    font-size: rem-calc(28px);
     margin-top: rem-calc(-10px);
+    padding-bottom: rem-calc(15px);
 
     &.small {
         font-size: rem-calc(25px);
@@ -247,9 +248,9 @@ h1+.subheader+.subheader+.subheader+.subheader+.subheader {
     }
 }
 
-.subheader+.subheader {
+/**.subheader+.subheader {
     margin-top: rem-calc(-18px) !important;
-}
+}**/
 
 h2+.subheader {
     font-size: rem-calc(25px);
