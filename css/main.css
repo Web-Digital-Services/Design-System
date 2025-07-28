@@ -17772,37 +17772,6 @@ header#header .group .right .circle-icons .expand-search-mag button i {
   padding: 0;
 }
 
-.utsa-bar {
-  width: 100%;
-  height: 30px;
-  background-color: #032044;
-  color: #F1F5F7;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.utsa-bar p {
-  margin-right: 15px;
-  font-family: "Arsenal", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  margin-bottom: 0;
-  font-size: 16px;
-}
-
-.utsa-bar img {
-  display: inline-block;
-  height: 18px;
-  width: 18px;
-  margin-right: 3px;
-}
-
-@media screen and (max-width: 465px) {
-  .utsa-bar img {
-    margin-bottom: 0 !important;
-  }
-}
 /* ============================================================
     TAGS
 ============================================================ */
