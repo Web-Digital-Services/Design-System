@@ -136,7 +136,7 @@ header {
             align-items: center;
             justify-content: space-between;
             position: sticky;
-            top: 0;
+            top: 30px; //make room for UTSA bar
             padding: rem-calc(15px 12px);
             //box-shadow: rem-calc(0px 2px 5px 0) rgba(23, 23, 23, 0.5);
             z-index: 1;
@@ -604,9 +604,10 @@ header {
 
             @media screen and (min-width:$small-screen) {
                 position: absolute;
-                top: 0;
+                top: 30px; //make room for UT Health banner
                 background: rgba(255, 255, 255, 0.8); //set opacity
                 width: 100%;
+
 
             }
 
@@ -637,6 +638,9 @@ header {
     display: flex;
     justify-content: end;
     align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 7;
 }
 
 .utsa-bar p {
