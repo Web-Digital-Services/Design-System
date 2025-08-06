@@ -604,7 +604,7 @@ header {
 
             @media screen and (min-width:$small-screen) {
                 position: absolute;
-                top: 30px; //make room for UT Health
+                //top: 41.6px; //make room for UT Health
                 background: rgba(255, 255, 255, 0.8); //set opacity
                 width: 100%;
 
@@ -632,11 +632,11 @@ header {
 
 .utsa-bar {
     width: 100%;
-    height: 30px;
     background-color: #032044;
     color: $off-white;
     display: flex;
     justify-content: end;
+    padding: 8px 0 8px 0;
     align-items: center;
 }
 
@@ -649,10 +649,19 @@ header {
     font-size: 16px;
 }
 
+.utsa-bar p>a {
+    color: $off-white;
+    text-decoration: none;
+    background-image: none;
+}
+
+.utsa-bar a:hover {
+    color: $light-grey;
+}
+
 .utsa-bar img {
     display: inline-block;
-    height: 18px;
-    width: 18px;
+    //height: 18px;
     margin-right: 3px;
 }
 
