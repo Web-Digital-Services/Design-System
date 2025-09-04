@@ -17753,7 +17753,6 @@ header#header .group .right .circle-icons .expand-search-mag button i {
 @media screen and (min-width: 639px) {
   header#header.super-hero {
     position: absolute;
-    top: 0;
     background: rgba(255, 255, 255, 0.8);
     width: 100%;
   }
@@ -17772,6 +17771,45 @@ header#header .group .right .circle-icons .expand-search-mag button i {
   padding: 0;
 }
 
+.utsa-bar {
+  width: 100%;
+  background-color: #032044;
+  color: #F1F5F7;
+  display: flex;
+  justify-content: end;
+  padding: 8px 0 8px 0;
+  align-items: center;
+}
+
+.utsa-bar p {
+  margin-right: 15px;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.utsa-bar p > a {
+  color: #F1F5F7;
+  text-decoration: none;
+  background-image: none;
+}
+
+.utsa-bar a:hover {
+  color: #E0E5E6;
+}
+
+.utsa-bar img {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+@media screen and (max-width: 465px) {
+  .utsa-bar img {
+    margin-bottom: 0 !important;
+  }
+}
 /* ============================================================
     TAGS
 ============================================================ */
