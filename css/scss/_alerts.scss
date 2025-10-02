@@ -8,6 +8,7 @@
         color: $off-white;
         font-weight: 500;
         box-shadow: rem-calc(1px -1px 8px 0px) rgba(23, 23, 23, 0.55);
+        top: auto !important; //Overrides JS inserting large top margin on mobile
         //bottom: 0 !important;
         button.close-button {
             color: $pure-white;
@@ -16,22 +17,22 @@
         p>a {
             background-image: linear-gradient($grey-link, $grey-link) !important;
             color: $grey-link !important;
-    
+
             &:hover {
                 background-color: $grey-link;
                 color: $grey-90 !important;
             }
-    
+
             &.arrow {
                 background-color: transparent !important;
-    
+
                 &:after {
                     color: $grey-link;
                 }
-    
+
                 &:hover {
                     color: $grey-link !important;
-    
+
                     &:after {
                         color: $grey-link;
                     }
