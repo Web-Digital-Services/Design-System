@@ -103,3 +103,17 @@ blockquote.fancy cite {
     padding: 1.667rem;
     font-weight: 900;
 }
+
+blockquote.fancy.orange {
+    background-color: $beige;
+    p {
+        &:first-of-type::before {
+            color: $orange-60;
+        }
+    }
+}
+
+blockquote.fancy.orange cite {
+    background-color: $orange-60;
+    color: $off-white;
+}
