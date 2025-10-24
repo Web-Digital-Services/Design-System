@@ -19,15 +19,19 @@ table.gsc-search-box {
         border: none;
     }
 
-    table.gsc_input {
-        margin-bottom: none !important;
+    td.gsc-input {
+        padding-right: 0;
+    }
+
+    div.gsc-input-box {
+        border: none;
+    }
+
+    table.gsc-input {
+        margin-bottom: 0;
 
         td.gsib_b {
             display: none;
-        }
-
-        div.gsc-input-box {
-            border: none;
         }
     }
 }
