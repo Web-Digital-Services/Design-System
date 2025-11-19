@@ -8,8 +8,8 @@
 
     <meta name="robots" content="noindex, nofollow">
 
-    <link rel="stylesheet" href="../../css/main.css?1763487932929" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1763487932929" media="all" />
+    <link rel="stylesheet" href="../../css/main.css?1763569561460" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1763569561460" media="all" />
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
@@ -116,7 +116,6 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Our Team</a></li>
                     <li><a href="#">Training</a></li>
-                    <li><a href="#">FAQ</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
@@ -127,6 +126,7 @@
         <div class="grid-x grid-margin-x">
             <div class="small-12 medium-8 large-8 cell">
                 <h1>Contact Us</h1>
+                <p>The Tooth Project is recruiting 150 elementary school teachers from across South Texas to participate in the study. If you are interested in learning more about the study or how to participate, please complete the form below.</p>
                 
             </div>
         </div>
@@ -140,7 +140,6 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Our Team</a></li>
         <li><a href="#">Training</a></li>
-        <li><a href="#">FAQ</a></li>
         <li><a href="#">Contact Us</a></li>
     </div>
   </div>
@@ -149,12 +148,35 @@
     <div class="grid-x grid-margin-x">
         <div class="cell large-8 medium-8 small-12">
             <form>
-				<label>Name
+				<label>Full name
 					<input type="text">
 				</label>
-				<label>Email
+				<label>Your email address
 					<input type="text">
 				</label>
+                <legend><label>Are you currently an elementary school teacher?</label></legend>
+					<input type="radio" id="elementaryyes" name="elementaryyes" value="elementaryyes">
+                    <label for="elementaryyes">Yes</label><br>
+                    <input type="radio" id="elementaryno" name="elementaryno" value="elementaryno">
+                    <label for="elementaryno">No</label><br>
+                <label>Which grade are you currently teaching?
+					<input type="text">
+				</label>
+                <legend><label>Are your students between 5 and 10 years old?</label></legend>
+					<input type="radio" id="ageyes" name="ageyes" value="ageyes">
+                    <label for="ageyes">Yes</label><br>
+                    <input type="radio" id="ageno" name="ageno" value="ageno">
+                    <label for="ageno">No</label><br>
+                <label>How many students are you currently teaching?
+					<input type="text">
+				</label>
+                 <label>Name of the school where you are currently teaching:
+					<input type="text">
+				</label>
+                 <label>Address of the school where you are currently teaching:
+					<input type="text">
+				</label>
+                
 				<!--<label>Subject
 					<input type="text">
 				</label>-->
@@ -166,9 +188,24 @@
             </form>
         </div>
         <div class="cell large-4 medium-4 small-12">
-            <p><strong>The Tooth Project</strong><br>School of Dentisry<br>7703 Floyd Curl Drive<br>San Antonio, TX 78229<br><a href="http://www.uthscsa.edu/university/maps-and-directions">Maps & Directions</a></p>
-            <p>Phone: <a>210-000-4900</a><br>Email: <a>kajimoton@uthscsa.edu</a></p>
+            <!--<p><strong>The Tooth Project</strong><br>School of Dentisry<br>7703 Floyd Curl Drive<br>San Antonio, TX 78229<br><a href="http://www.uthscsa.edu/university/maps-and-directions">Maps & Directions</a></p>
+            <p>Phone: <a>210-000-4900</a><br>Email: <a>kajimoton@uthscsa.edu</a></p>-->
 </p>
+            <a class="callout color orange flex-child-auto">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-list fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3>FAQ</h3>
+            </a>
+            <a class="callout color blue flex-child-auto">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3>Training</h3>
+            </a>
+            
         </div>
         
 
@@ -290,10 +327,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1763487932929">
+<script id="pl-js-polyfill-insert-1763569561460">
   (function() {
     if (self != top) {
-      var cb = '1763487932929';
+      var cb = '1763569561460';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -306,7 +343,7 @@
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1763487932929" nomodule>
+<script id="pl-js-insert-1763569561460" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 
