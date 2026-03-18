@@ -1,0 +1,109 @@
+{% include "@components/header-prototypes/header-UTP.twig" %}
+{% include "@components/navigation-prototypes/navbar-UTP.twig" %}
+{% include "@components/navigation/breadcrumbs.twig" %}
+<div class="grid-container">
+    <h1>Eyelid Surgery Case #1</h1>
+    <p class="subheader">Before & After Gallery</p>
+    <div class="grid-x grid-margin-x">
+        <main class="cell large-8 medium-7 small-12">
+					<p id="start">
+					<img class="img-margin" src="https://stage.uthscsa.edu/sites/default/files/2018/test-images/demo-eyelid-surgery.jpg">
+					<div class="grid-x grid-margin-x">
+						<div class="cell small-6 medium-3 large-3">
+							<a data-open="modal-thumbnail-1" aria-controls="modal-thumbnail-1" aria-haspopup="dialog" tabindex="0">
+								<img src="https://stage.uthscsa.edu/sites/default/files/placeholder/1049-450x300.jpg" alt="" class="profile-thumbnail">
+							</a>
+						</div>
+						<div class="cell small-6 medium-3 large-3">
+							<a data-open="modal-thumbnail-2" aria-controls="modal-thumbnail-2" aria-haspopup="dialog" tabindex="0">
+								<img src="https://stage.uthscsa.edu/sites/default/files/placeholder/1049-450x300.jpg" alt="" class="profile-thumbnail">
+							</a>
+						</div>
+						<div class="cell small-6 medium-3 large-3">
+							<a data-open="modal-thumbnail-3" aria-controls="modal-thumbnail-3" aria-haspopup="dialog" tabindex="0">
+								<img src="https://stage.uthscsa.edu/sites/default/files/placeholder/1049-450x300.jpg" alt="" class="profile-thumbnail">
+							</a>
+						</div>
+						<div class="cell small-6 medium-3 large-3">
+							<a data-open="modal-thumbnail-4" aria-controls="modal-thumbnail-4" aria-haspopup="dialog" tabindex="0">
+								<img src="https://stage.uthscsa.edu/sites/default/files/placeholder/1049-450x300.jpg" alt="" class="profile-thumbnail">
+							</a>
+						</div>
+					</div>
+					<!-- MODAL CONTENTS-2-->
+					<div class="reveal modal" id="modal-thumbnail-1" aria-labelledby="modal-thumbnail-1"
+						data-reveal>
+						<div class="grid-x grid-margin-x">
+							<div class="cell medium-12 large-12 flex-container modal-thumbnail-2">
+								<div class="flex-child-auto">
+									<img src="https://stage.uthscsa.edu/sites/default/files/placeholder/1049-450x300.jpg" alt="" class="margin-top">
+								</div>
+							</div>
+							<button class="close-button" data-close aria-label="Close Accessible Modal"
+								type="button">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+					</div>
+					<div class="reveal modal" id="modal-thumbnail-2" aria-labelledby="modal-thumbnail-2"
+						data-reveal>
+						<div class="grid-x grid-margin-x">
+							<div class="cell medium-12 large-12 flex-container modal-thumbnail-2">
+								<div class="flex-child-auto">
+									<img src="https://stage.uthscsa.edu/sites/default/files/placeholder/1049-450x300.jpg" alt="" class="margin-top">
+								</div>
+							</div>
+							<button class="close-button" data-close aria-label="Close Accessible Modal"
+								type="button">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+					</div>
+					<div class="reveal modal" id="modal-thumbnail-3" aria-labelledby="modal-thumbnail-3"
+						data-reveal>
+						<div class="grid-x grid-margin-x">
+							<div class="cell medium-12 large-12 flex-container modal-thumbnail-2">
+								<div class="flex-child-auto">
+									<img src="https://stage.uthscsa.edu/sites/default/files/placeholder/1049-450x300.jpg" alt="" class="margin-top">
+								</div>
+							</div>
+							<button class="close-button" data-close aria-label="Close Accessible Modal"
+								type="button">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+					</div>
+					<div class="reveal modal" id="modal-thumbnail-4" aria-labelledby="modal-thumbnail-4"
+						data-reveal>
+						<div class="grid-x grid-margin-x">
+							<div class="cell medium-12 large-12 flex-container modal-thumbnail-2">
+								<div class="flex-child-auto">
+									<img src="https://stage.uthscsa.edu/sites/default/files/placeholder/1049-450x300.jpg" alt="" class="margin-top">
+								</div>
+							</div>
+							<button class="close-button" data-close aria-label="Close Accessible Modal"
+								type="button">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+					</div>
+					<br>
+					<h2>Case Detail</h2>
+					<p><strong>Procedure:</strong> Eyelid Surgery</p>
+					<p><strong>Age:</strong> 40</p>
+					<p><strong>Height:</strong> 6'1"</p>
+					<p><strong>Weight:</strong> 188lbs</p>
+					<p><strong>After Photos Taken:</strong> 4 months post-op</p>
+					<p>Apple pie donut croissant toffee tart shortbread cupcake shortbread sesame snaps. Cotton candy gummi bears biscuit tiramisu gummi bears sesame snaps biscuit pie. Lemon drops icing chupa chups.</p>
+					<p id="stop">
+        </main>
+        <aside class="cell large-4 medium-5 small-12" data-sticky-container>
+					<div class="sticky" data-sticky data-top-anchor="start:top" data-btm-anchor="stop:bottom">
+            <h2>Consultation</h2>
+            <p>Please call 210-450-9950 to schedule a consultation, or <a>make an appointment</a>.</p>
+					</div>
+        </aside>
+    </div>
+</div>
+
+{% include "@components/footer-prototypes/UTP-no-alamo.twig" %}

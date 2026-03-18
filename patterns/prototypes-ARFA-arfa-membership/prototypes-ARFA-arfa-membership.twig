@@ -1,0 +1,78 @@
+{% include "@components/header-prototypes/header-arfa.twig" %}
+
+<section class="hero bleed">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="cell large-7 small-12">
+                <h1>Membership</h1>
+                <p>Stay connected - ARFA is for you! Continue to enjoy the company of colleagues and stay informed of
+                    the many wonderful accomplishments of the University. We look forward to seeing you!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "@components/navigation-prototypes/navbar-arfa.twig" %}
+
+
+<section class="bleed">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <main class="small-12 medium-8 cell">
+
+                <p>You can register for membership below. If you have questions regarding membership, please contact
+                    Matt
+                    Scott <a>scottm5@uthscsa</a>.edu and your request will be honored.</p>
+                <form>
+
+                    <h2 class="h3">Membership Registration</h2>
+                    <h3 class="h5 color">Member Type</h3>
+                    <input type="radio" name="radio" value="1" id="formRadio1" required=""><label for="formRadio1">Solo
+                        Membership - $20</label>
+                    <input type="radio" name="radio" value="2" id="formRadio2"><label for="formRadio2">Retiree and
+                        Spouse Membership - $40</label>
+                    <h3 class="h5 color">Member Information</h3>
+                    <label>First Name<span class="required">*</span><input type="text">
+                    </label>
+                    <label>Last Name<span class="required">*</span><input type="text">
+                    </label>
+                    <label>Address<span class="required">*</span><input type="text">
+                    </label>
+                    <label>City<span class="required">*</span><input type="text">
+                    </label>
+                    <label>State<span class="required">*</span>
+                        <select>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                        </select>
+                    </label>
+                    <label>Phone Number<span class="required">*</span><input type="text">
+                    </label>
+                    <label>Email Address<span class="required">*</span><input type="text">
+                    </label>
+                    <h3 class="h5 color">Additional Information</h3>
+                    <label>Spouse's Name<span class=""></span><input type="text">
+                    </label>
+
+                    <p><a href="#" class="button">Submit</a></p>
+                </form>
+            </main>
+
+
+            <aside class="small-12 medium-4 cell">
+                <a class="callout color orange">
+                    <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-hand-holding-medical fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3>Giving</h3>
+                </a>
+            </aside>
+        </div>
+    </div>
+</section>
+
+
+{% include "@components/footer-prototypes/arfa-footer.twig" %}
