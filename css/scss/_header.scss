@@ -70,6 +70,16 @@
     }
 }
 
+.utsa-bar {
+    width: 100%;
+    background-color: #032044;
+    color: #F1F5F7;
+    display: flex;
+    justify-content: end;
+    padding: 8px 0 8px 0;
+    align-items: center;
+}
+
 .off-canvas {
     background-color: $dark-grey;
 
