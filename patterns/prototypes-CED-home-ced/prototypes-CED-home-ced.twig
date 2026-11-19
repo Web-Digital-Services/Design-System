@@ -1,0 +1,89 @@
+{% include "@components/header-prototypes/header-ced.twig" %}
+<section class="hero full bleed img-fill">
+    <img src="../../images/ced-banner.jpeg" alt="banner">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x align-left">
+            <div class="small-12 medium-4 large-4 cell callout">
+                <h1>Center for Excellence in Diabetes</h1>
+                <p>The Center for Excellence in Diabetes supports the advancement of clinical care of Diabetes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "@components/navigation-prototypes/navbar-ced.twig" %}
+
+<section class="grid-container">
+    <div class="grid-x grid-margin-x align-center">
+        <div class="cell large-8 medium-8 small-12">
+            <p>The University of Texas Health Science Center at San Antonio, Joe R. & Teresa Lozano Long School of Medicine, established the <strong>Center for Excellence in Diabetes</strong> in the summer of 2025 to advance clinical care, research, and innovation in diabetes.</p>
+            <p>Designed as a collaborative hub, the Center brings together clinicians and researchers across disciplines to conduct cutting-edge clinical trials and develop forward-thinking treatment strategies. With strong philanthropic and community support, the Center is poised to become a leading resource for improving diabetes care in South Texas and beyond.</p>
+            <p>Faculty members represent diverse areas of expertise, united in their commitment to understanding diabetes, its comorbidities, and strategies for prevention, management, and cure. They actively foster partnerships within the Long School of Medicine and across institutions to accelerate the translation of research discoveries into clinical practice.</p>
+            <p>As part of UT Health San Antonio—a comprehensive academic health university and one of five health institutions in The University of Texas System—the Center reflects the institution’s mission to educate future health professionals, advance life sciences research, and provide exceptional patient care for the region.</p>
+            
+        </div>
+        <div class="cell large-4 medium-4 small-12">
+            <h2>Connect with us</h2>
+            <div class="loose-list">
+            <ul class="no-bullet">
+                <li>
+                    <a href="https://www.facebook.com/UTHealthEndocrinology/">
+                        <span class="fa-stack">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span>Like us on Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/ut-health-san-antonio-division-of-endocrinology/">
+                        <span class="fa-stack">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-linkedin-in  fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span>Follow on Linkedin</span>
+                    </a>
+                </li>
+            </ul>
+</div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<section class="bleed beige">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-padding-y">
+            <div class="small-12 medium-6 callout white cell flex-container flex-dir-column">
+                <div class="flex-child-auto">
+                    <h2 class="text-center">News</h2>
+                    <div class="lines">
+                    <ul>
+                        <li><a href="#">Metabolic treatment: A potential breakthrough in diabetic heart disease</a></li>
+                        <li><a href="#">What you can’t feel can hurt you: Understanding hidden dangers of diabetic neuropathy</a></li>
+                        <li><a href="#">Key risk factors for diabetic foot reinfections uncovered in UT Health San Antonio study </a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="flex-child-shrink">
+                    <p class="text-center"><a href="#" class="button ghost">View all news</a></p>
+                </div>
+            </div>
+            <div class="small-12 medium-6 callout white cell flex-container flex-dir-column">
+                <div class="flex-child-auto">
+                    <h2 class="text-center">Events</h2>
+                     {% include "@blocks/feeds/events-vertical.twig" %} 
+                </div>
+                <div class="flex-child-shrink">
+                    <p class="text-center"><a href="#" class="button ghost">View all events</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "@components/footer-prototypes/ced-footer.twig" %}
